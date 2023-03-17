@@ -9,7 +9,8 @@ end KeyControl;
 
 architecture arcangel of KeyControl is
 
-type STATE_TYPE is(FIRST, SECOND, THIRD);
+--type STATE_TYPE is(FIRST, SECOND, THIRD);
+type STATE_TYPE is(FIRST, SECOND);
 
 signal CurrentState, NextState: STATE_TYPE;
 
@@ -27,19 +28,19 @@ process (CurrentState, Kpress, Kack)
 									NextState <= FIRST;
 								end if;
 			when SECOND => if (Kack = '1') then
-									NextState <= THIRD;
+									if (Kpress = '0') then
+										NextState <= FIRST;
+									else
+										NextState <= SECOND;
+									end if;
+									--NextState <= THIRD;
 								else
 									NextState <= SECOND;
-								end if;
-			when THIRD => if (Kpress = '1') then
-									NextState <= THIRD;
-								else 
-									NextState <= FIRST;
 								end if;
 		end case;
 	end process;
 	
-Kval <= '1' when ( CurrentState = SECOND or CurrentState = THIRD) else '0';
-Kscan <= '1' when ( CurrentState = SECOND or CurrentState = THIRD) else '0';
+Kval <= '1' when ( CurrentState = SECOND) else '0';
+Kscan <= '1' when ( CurrentState = FIRST) else '0';
 
 end arcangel;

@@ -11,6 +11,11 @@ K : out std_logic_vector(3 downto 0));
 end KeyDecode;
 
 architecture arc_kd of KeyDecode is
+component CLKDIV
+port ( clk_in: in std_logic;
+		 clk_out: out std_logic);
+end component;
+
 component KeyScan
 port(
 KScan, CLK, Reset: in std_logic;
@@ -26,13 +31,17 @@ Kpress, Kack, CLK, Reset: in std_logic;
 Kval, Kscan: out std_logic);
 end component;
 
-signal estalo, agua : std_logic;
+signal estalo, agua, cenas : std_logic;
 
 begin
 
+clock: clkDIV port map(
+clk_in => CLK,
+clk_out => cenas);
+
 scan : KeyScan port map(
 KScan => agua,
-CLK => CLK,
+CLK => cenas,
 Reset => Reset,
 I => I,
 Kpress => estalo,
@@ -42,7 +51,7 @@ K => K);
 control : KeyControl port map(
 Kpress => estalo,
 Kack => Kack,
-CLK => CLK,
+CLK => cenas,
 Reset => Reset,
 Kval => Kval,
 KScan => agua);

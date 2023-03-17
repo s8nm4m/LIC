@@ -74,10 +74,10 @@ set_global_assignment -name VHDL_FILE KeyDecode.vhd
 set_location_assignment PIN_P11 -to CLK
 set_location_assignment PIN_C10 -to Kack
 set_location_assignment PIN_C11 -to Reset
-set_location_assignment PIN_W5 -to I[0]
-set_location_assignment PIN_AA14 -to I[1]
-set_location_assignment PIN_W12 -to I[2]
-set_location_assignment PIN_AB12 -to I[3]
+set_location_assignment PIN_D12 -to I[0]
+set_location_assignment PIN_C12 -to I[1]
+set_location_assignment PIN_A12 -to I[2]
+set_location_assignment PIN_B12 -to I[3]
 set_location_assignment PIN_A8 -to Kval
 set_location_assignment PIN_AB11 -to O[0]
 set_location_assignment PIN_AB10 -to O[1]

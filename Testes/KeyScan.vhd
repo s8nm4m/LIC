@@ -48,7 +48,7 @@ count: Counter port map(
 PL => Reset,
 Data_in => "0000",
 CE => KScan,
-CLK => CLK,
+CLK => cenas,
 Q(3) => lab,
 Q(2) => info,
 Q(1) => e,

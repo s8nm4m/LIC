@@ -9,7 +9,7 @@ end Decoder;
 
 architecture arc_dec of Decoder is
 begin
-O(2)<=(not S(1) and not S(0)) or (not S(1) and S(0)) or (S(1) and S(0)); 
-O(1)<=(not S(1) and not S(0)) or (S(1) and not S(0)) or (S(1) and S(0)); 
-O(0)<=(not S(1) and S(0)) or (S(1) and not S(0)) or (S(1) and S(0)); 
+O(2)<=((not S(1)) and (not S(0))) or ((not S(1)) and S(0)) or (S(1) and S(0)); 
+O(1)<=((not S(1)) and (not S(0))) or (S(1) and (not S(0))) or (S(1) and S(0)); 
+O(0)<=((not S(1)) and S(0)) or (S(1) and (not S(0))) or (S(1) and S(0)); 
 end arc_dec;
