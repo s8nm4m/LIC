@@ -1,5 +1,5 @@
 
-State Machine - |KeyControl|CurrentState
+State Machine - |KeyDecode|KeyControl:control|CurrentState
 Name CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
 CurrentState.FIRST 0 0 0 
 CurrentState.SECOND 0 1 1 

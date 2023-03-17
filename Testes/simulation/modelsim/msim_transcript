@@ -10,43 +10,190 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:48 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CLKDIV
+# -- Compiling architecture bhv of CLKDIV
+# End time: 09:13:48 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:48 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Terminal_Count
+# -- Compiling architecture arc_tc of Terminal_Count
+# End time: 09:13:49 on Mar 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:49 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registry
+# -- Compiling architecture arc_reg of Registry
+# End time: 09:13:49 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:49 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX2x1
+# -- Compiling architecture arc_mux of MUX2x1
+# End time: 09:13:49 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:49 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture arc_fa of full_adder
+# End time: 09:13:49 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:49 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FFD
+# -- Compiling architecture logicFunction of FFD
+# End time: 09:13:49 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:49 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture arc_adder of adder
+# End time: 09:13:49 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:50 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX4x1
+# -- Compiling architecture arc_mux of MUX4x1
+# End time: 09:13:50 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:50 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter
+# -- Compiling architecture arc_cc of Counter
+# End time: 09:13:50 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:50 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder
+# -- Compiling architecture arc_dec of Decoder
+# End time: 09:13:50 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:13:50 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan
+# -- Compiling architecture arc_Keyscan of KeyScan
+# End time: 09:13:50 on Mar 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:15:24 on Mar 14,2023
+# Start time: 09:13:50 on Mar 17,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity KeyControl
 # -- Compiling architecture arcangel of KeyControl
-# End time: 16:15:25 on Mar 14,2023, Elapsed time: 0:00:01
+# End time: 09:13:50 on Mar 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl_tb.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:16:10 on Mar 14,2023
-# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl_tb.vhd 
+# Start time: 09:13:50 on Mar 17,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity KeyControl_tb
-# -- Compiling architecture arc of KeyControl_tb
-# End time: 16:16:10 on Mar 14,2023, Elapsed time: 0:00:00
+# -- Compiling entity KeyDecode
+# -- Compiling architecture arc_kd of KeyDecode
+# End time: 09:13:50 on Mar 17,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.keycontrol_tb
-# vsim work.keycontrol_tb 
-# Start time: 16:16:14 on Mar 14,2023
+# 
+vsim work.keydecode
+# vsim work.keydecode 
+# Start time: 09:14:07 on Mar 17,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.keycontrol_tb(arc)
+# Loading work.keydecode(arc_kd)
+# Loading work.keyscan(arc_keyscan)
+# Loading ieee.numeric_std(body)
+# Loading work.clkdiv(bhv)
+# Loading work.counter(arc_cc)
+# Loading work.adder(arc_adder)
+# Loading work.full_adder(arc_fa)
+# Loading work.mux2x1(arc_mux)
+# Loading work.registry(arc_reg)
+# Loading work.ffd(logicfunction)
+# Loading work.terminal_count(arc_tc)
+# Loading work.decoder(arc_dec)
+# Loading work.mux4x1(arc_mux)
 # Loading work.keycontrol(arcangel)
-add wave -position end  sim:/keycontrol_tb/Kpress_tb
-add wave -position end  sim:/keycontrol_tb/Kack_tb
-add wave -position end  sim:/keycontrol_tb/CLK_tb
-add wave -position end  sim:/keycontrol_tb/Reset_tb
-add wave -position end  sim:/keycontrol_tb/Kval_tb
-add wave -position end  sim:/keycontrol_tb/Kscan_tb
+add wave -position end  sim:/keydecode/Kack
+add wave -position end  sim:/keydecode/CLK
+add wave -position end  sim:/keydecode/Reset
+add wave -position end  sim:/keydecode/I
+add wave -position end  sim:/keydecode/Kval
+add wave -position end  sim:/keydecode/O
+add wave -position end  sim:/keydecode/K
+force -freeze sim:/keydecode/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/keydecode/I 0001 0
+force -freeze sim:/keydecode/Kack 0 0
+force -freeze sim:/keydecode/Reset 1 0
+run
+run
+run
+force -freeze sim:/keydecode/Reset 0 0
+run
+run
+run
+force -freeze sim:/keydecode/Kack 1 0
 run
 run
 run
@@ -57,14 +204,82 @@ run
 run
 run
 run
-# Break key hit
-restart
 run
-restart
 run
-restart
 run
-restart
 run
-# End time: 16:25:04 on Mar 14,2023, Elapsed time: 0:08:50
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/keydecode/Kack 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/keydecode/I 1111 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/keydecode/Kack 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 09:19:45 on Mar 17,2023, Elapsed time: 0:05:38
 # Errors: 0, Warnings: 0

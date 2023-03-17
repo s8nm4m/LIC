@@ -3,13 +3,13 @@ use ieee.std_logic_1164.all;
 
 entity Decoder is 
 port(
-S1, S0: in std_logic;
-O0, O1, O2: out std_logic);
+S: in std_logic_vector(1 downto 0);
+O: out std_logic_vector(2 downto 0));
 end Decoder;
 
 architecture arc_dec of Decoder is
 begin
-O2<=(not S1 and not S0) or (not S1 and S0) or (S1 and S0); 
-O1<=(not S1 and not S0) or (S1 and not S0) or (S1 and S0); 
-O0<=(not S1 and S0) or (S1 and not S0) or (S1 and S0); 
+O(2)<=(not S(1) and not S(0)) or (not S(1) and S(0)) or (S(1) and S(0)); 
+O(1)<=(not S(1) and not S(0)) or (S(1) and not S(0)) or (S(1) and S(0)); 
+O(0)<=(not S(1) and S(0)) or (S(1) and not S(0)) or (S(1) and S(0)); 
 end arc_dec;

@@ -3,9 +3,11 @@ use ieee.std_logic_1164.all;
 
 entity KeyScan is
 port(
-KScan, I0, I1, I2, I3, CLK, Reset: in std_logic;
-Kpress, O0, O1, O2: out std_logic;
-K: out std_logic_vector(3 downto 0));
+KScan, CLK, Reset: in std_logic;
+I : in std_logic_vector(3 downto 0);
+Kpress : out std_logic;
+K : out std_logic_vector(3 downto 0);
+O : out std_logic_vector(2 downto 0));
 end KeyScan;
 
 architecture arc_Keyscan of KeyScan is
@@ -24,13 +26,13 @@ end component;
 
 component Decoder
 port(
-S1, S0: in std_logic;
-O0, O1, O2: out std_logic);
+S: in std_logic_vector(1 downto 0);
+O: out std_logic_vector(2 downto 0));
 end component;
 
 component MUX4x1
-port(I0, I1, I2, I3: in std_logic;
-S1, S0: in std_logic;
+port(I: in std_logic_vector(3 downto 0);
+S: in std_logic_vector(1 downto 0);
 Y: out std_logic);
 end component;
 
@@ -53,24 +55,20 @@ Q(1) => e,
 Q(0) => comp);
 
 dec: Decoder port map(
-S1 => lab,
-S0 => info,
-O2 => eu,
-O1 => nao,
-O0 => sou);
+S(1) => lab,
+S(0) => info,
+O(2) => eu,
+O(1) => nao, 
+O(0) => sou);
 
 mux: MUX4x1 port map(
-S1 => e,
-S0 => comp,
-I0 => I0,
-I1 => I1,
-I2 => I2,
-I3 => I3,
+S(1) => e,
+S(0) => comp,
+I => I,
 Y => positivo);
 
-O2 <= not eu;
-O1 <= not nao;
-O0 <= not sou;
+O <= not eu & not nao & not sou;
+
 Kpress <= not positivo;
 
 K(3) <= lab;

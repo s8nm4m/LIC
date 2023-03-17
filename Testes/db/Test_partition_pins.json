@@ -8,11 +8,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "Kscan",
+					"name" : "O[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Kpress",
+					"name" : "O[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O[2]",
+					"strict" : false
+				},
+				{
+					"name" : "K[0]",
+					"strict" : false
+				},
+				{
+					"name" : "K[1]",
+					"strict" : false
+				},
+				{
+					"name" : "K[2]",
+					"strict" : false
+				},
+				{
+					"name" : "K[3]",
+					"strict" : false
+				},
+				{
+					"name" : "I[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I[3]",
 					"strict" : false
 				},
 				{
