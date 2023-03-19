@@ -3,19 +3,27 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -3.547
-TNS   : -49.952
+Slack : -3.692
+TNS   : -50.906
 
 Type  : Slow 1200mV 85C Model Setup 'CLKDIV:clock|tmp'
-Slack : -0.262
-TNS   : -0.678
+Slack : -3.288
+TNS   : -50.284
+
+Type  : Slow 1200mV 85C Model Setup 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : -0.419
+TNS   : -1.111
+
+Type  : Slow 1200mV 85C Model Hold 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : 0.330
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLKDIV:clock|tmp'
-Slack : 0.326
+Slack : 0.331
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.553
+Slack : 0.546
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -24,22 +32,34 @@ TNS   : -43.326
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLKDIV:clock|tmp'
 Slack : -1.222
+TNS   : -41.548
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : -1.222
 TNS   : -4.888
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -3.144
-TNS   : -42.235
+Slack : -3.257
+TNS   : -43.116
 
 Type  : Slow 1200mV 0C Model Setup 'CLKDIV:clock|tmp'
-Slack : -0.142
-TNS   : -0.344
+Slack : -2.886
+TNS   : -42.499
+
+Type  : Slow 1200mV 0C Model Setup 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : -0.294
+TNS   : -0.663
 
 Type  : Slow 1200mV 0C Model Hold 'CLKDIV:clock|tmp'
-Slack : 0.296
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.508
+Slack : 0.503
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
@@ -48,29 +68,45 @@ TNS   : -43.326
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLKDIV:clock|tmp'
 Slack : -1.222
+TNS   : -41.548
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : -1.222
 TNS   : -4.888
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -1.260
-TNS   : -8.255
+Slack : -1.346
+TNS   : -8.799
 
 Type  : Fast 1200mV 0C Model Setup 'CLKDIV:clock|tmp'
-Slack : 0.390
+Slack : -1.123
+TNS   : -8.187
+
+Type  : Fast 1200mV 0C Model Setup 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : 0.326
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLKDIV:clock|tmp'
-Slack : 0.149
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'KeyScan:scan|CLKDIV:clock|tmp'
+Slack : 0.152
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.251
+Slack : 0.246
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -37.122
+TNS   : -37.188
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLKDIV:clock|tmp'
+Slack : -1.000
+TNS   : -34.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KeyScan:scan|CLKDIV:clock|tmp'
 Slack : -1.000
 TNS   : -4.000
 
