@@ -1,0 +1,14 @@
+terminal count - umera (não fazer ainda)
+registry - umera
+mux4x1 - ruben
+mux2x1 - ruben
+decoder - umera
+keydecode - umera
+keycontrol - andre
+keyscan - andre
+full adder - ruben
+adder - ruben
+ffd - andre
+clk - andre
+
+
