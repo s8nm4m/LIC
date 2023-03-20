@@ -12,7 +12,7 @@ Kpress, Kack, CLK, Reset: in std_logic;
 Kval, Kscan: out std_logic);
 end component;
 
-constant MCLK_PERIOD : time := 20 ns;
+constant MCLK_PERIOD : time := 2 ns;
 constant MCLK_HALF_PERIOD: time := MCLK_PERIOD / 2;
 
 signal Kpress_tb, Kack_tb, CLK_tb, Reset_tb, Kval_tb, Kscan_tb : std_logic;
