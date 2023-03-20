@@ -6,8 +6,8 @@ port(
 KScan, CLK, Reset: in std_logic;
 I : in std_logic_vector(3 downto 0);
 Kpress : out std_logic;
-K : out std_logic_vector(3 downto 0);
-O : out std_logic_vector(2 downto 0));
+O : out std_logic_vector(2 downto 0);
+K : out std_logic_vector(3 downto 0));
 end KeyScan;
 
 architecture arc_Keyscan of KeyScan is
