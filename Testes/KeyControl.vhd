@@ -7,7 +7,7 @@ Kpress, Kack, CLK, Reset: in std_logic;
 Kval, Kscan: out std_logic);
 end KeyControl;
 
-architecture arcangel of KeyControl is
+architecture arcKC of KeyControl is
 
 --type STATE_TYPE is(FIRST, SECOND, THIRD);
 type STATE_TYPE is(FIRST, SECOND);
@@ -43,4 +43,4 @@ process (CurrentState, Kpress, Kack)
 Kval <= '1' when ( CurrentState = SECOND) else '0';
 Kscan <= '1' when ( CurrentState = FIRST) else '0';
 
-end arcangel;
+end arcKC;

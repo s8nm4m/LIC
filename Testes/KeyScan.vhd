@@ -11,10 +11,6 @@ O : out std_logic_vector(2 downto 0));
 end KeyScan;
 
 architecture arc_Keyscan of KeyScan is
-component clkDIV
-port ( clk_in: in std_logic;
-		 clk_out: out std_logic);
-end component;
 
 component Counter
 port(
@@ -31,49 +27,40 @@ O: out std_logic_vector(2 downto 0));
 end component;
 
 component MUX4x1
-port(I: in std_logic_vector(3 downto 0);
+port(
 S: in std_logic_vector(1 downto 0);
+I: in std_logic_vector(3 downto 0);
 Y: out std_logic);
 end component;
 
-signal lab, info, e, comp, cenas, eu, nao, sou, positivo : std_logic;
+signal kp : std_logic;
+signal col : std_logic_vector(2 downto 0);
+signal qcount : std_logic_vector(3 downto 0);
 
 begin
-
-clock: clkDIV port map(
-clk_in => CLK,
-clk_out => cenas);
 
 count: Counter port map(
 PL => Reset,
 Data_in => "0000",
 CE => KScan,
-CLK => cenas,
-Q(3) => lab,
-Q(2) => info,
-Q(1) => e,
-Q(0) => comp);
+CLK => CLK,
+Q => qcount);
 
 dec: Decoder port map(
-S(1) => lab,
-S(0) => info,
-O(2) => eu,
-O(1) => nao, 
-O(0) => sou);
+S(1) => qcount(3),
+S(0) => qcount(2),
+O => col);
 
 mux: MUX4x1 port map(
-S(1) => e,
-S(0) => comp,
+S(1) => qcount(1),
+S(0) => qcount(0),
 I => I,
-Y => positivo);
+Y => kp);
 
-O <= not eu & not nao & not sou;
+O <= not col;
 
-Kpress <= not positivo;
+Kpress <= not kp;
 
-K(3) <= lab;
-K(2) <= info;
-K(1) <= e;
-K(0) <= comp;
+K <= qcount;
 
 end arc_Keyscan;
