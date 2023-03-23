@@ -33,11 +33,21 @@ I: in std_logic_vector(3 downto 0);
 Y: out std_logic);
 end component;
 
-signal kp : std_logic;
+component CLKDIV
+generic(div: natural := 50000000);
+port ( clk_in: in std_logic;
+		 clk_out: out std_logic);
+end component;
+
+signal kp, clock : std_logic;
 signal col : std_logic_vector(2 downto 0);
 signal qcount : std_logic_vector(3 downto 0);
 
 begin
+
+clockm: CLKDIV generic map (50000000) port map(
+clk_in => CLK,
+clk_out => clock);
 
 count: Counter port map(
 PL => Reset,
@@ -57,7 +67,7 @@ S(0) => qcount(0),
 I => I,
 Y => kp);
 
-O <= not col;
+O <= col;
 
 Kpress <= not kp;
 

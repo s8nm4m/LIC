@@ -3,10 +3,11 @@ object KBD {
 
     }
 
-    const val NONE = 0
+    const val NONE = 0.toChar()
 
     fun getKey(): Char {
-        return '0'
+
+        return NONE
     }
 
     fun waitKey(timeout: Long): Char {

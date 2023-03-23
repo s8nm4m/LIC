@@ -31,17 +31,17 @@ Kpress, Kack, CLK, Reset: in std_logic;
 Kval, Kscan: out std_logic);
 end component;
 
-signal kp, ks, clock : std_logic;
+signal kp, ks, clockm : std_logic;
 
 begin
 
 clock: clkDIV port map(
 clk_in => CLK,
-clk_out => clock);
+clk_out => clockm);
 
 scan : KeyScan port map(
 KScan => ks,
-CLK => clock,
+CLK => clockm,
 Reset => Reset,
 I => I,
 Kpress => kp,
@@ -51,7 +51,7 @@ K => K);
 control : KeyControl port map(
 Kpress => kp,
 Kack => Kack,
-CLK => clock,
+CLK => clockm,
 Reset => Reset,
 Kval => Kval,
 KScan => ks);

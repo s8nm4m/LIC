@@ -9,456 +9,128 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/simulation/modelsim
-Eadder
-Z1 w1672994536
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 6
-R0
-Z4 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd
-Z5 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd
-l0
-L4 1
-V[28gl<clFlg8mQfYAK`AY0
-!s100 dK>m7RnE8AHWen?TQ_m4L0
-Z6 OV;C;2020.1;71
-31
-Z7 !s110 1679056569
-!i10b 1
-Z8 !s108 1679056569.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd|
-Z10 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd|
-!i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
-Aarc_adder
-R2
-R3
-DEx4 work 5 adder 0 22 [28gl<clFlg8mQfYAK`AY0
-!i122 6
-l20
-L12 39
-VgCAXSDcL2Pm?iPgGZH3KG2
-!s100 6z6L78AH5Lg0dM]JT]lNE3
-R6
-31
-R7
-!i10b 1
-R8
-R9
-R10
-!i113 1
-R11
-R12
 Eclkdiv
-Z13 w1639053742
-Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R2
-R3
+Z1 w1639053742
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z15 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd
-Z16 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd
+Z5 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd
+Z6 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd
 l0
 L5 1
 VZ=f7g^c?a5zF`2O:4UlYN0
 !s100 `V>M>?BkYR7zEBSMA5V8A0
-R6
+Z7 OV;C;2020.1;71
 31
-Z17 !s110 1679056568
+Z8 !s110 1679498076
 !i10b 1
-Z18 !s108 1679056568.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd|
-Z20 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd|
+Z9 !s108 1679498076.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd|
+Z11 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd|
 !i113 1
-R11
-R12
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
 Abhv
-R14
 R2
 R3
+R4
 DEx4 work 6 clkdiv 0 22 Z=f7g^c?a5zF`2O:4UlYN0
 !i122 0
 l16
 L11 22
 VgbaYXVPKT2[U5kSbZMFS63
 !s100 <1TaS59>[IjzZo4K_;_?R1
-R6
-31
-R17
-!i10b 1
-R18
-R19
-R20
-!i113 1
-R11
-R12
-Ecounter
-Z21 w1678441701
-R2
-R3
-!i122 8
-R0
-Z22 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd
-Z23 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd
-l0
-L5 1
-V0nGk4QmPTim[DJUdPSYGC1
-!s100 oHaegSiN:7KZO0G>b1F^E0
-R6
-31
-Z24 !s110 1679056570
-!i10b 1
-R8
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd|
-Z26 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd|
-!i113 1
-R11
-R12
-Aarc_cc
-R2
-R3
-DEx4 work 7 counter 0 22 0nGk4QmPTim[DJUdPSYGC1
-!i122 8
-l41
-L12 56
-VXGVI]zRi82GaD6Y1a1jNz1
-!s100 Le]k0D;mA;bAgm4VKYTVB2
-R6
-31
-R24
-!i10b 1
-R8
-R25
-R26
-!i113 1
-R11
-R12
-Edecoder
-Z27 w1679056455
-R2
-R3
-!i122 9
-R0
-Z28 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd
-Z29 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd
-l0
-L4 1
-VOi<G2?^7jGL^KF8a;mn4m1
-!s100 l=kRWniPfAZ]C8hACBnW?0
-R6
-31
-R24
-!i10b 1
-Z30 !s108 1679056570.000000
-Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd|
-Z32 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd|
-!i113 1
-R11
-R12
-Aarc_dec
-R2
-R3
-DEx4 work 7 decoder 0 22 Oi<G2?^7jGL^KF8a;mn4m1
-!i122 9
-l11
-L10 6
-VS8kRd8<@IiCh5O<IfHaC13
-!s100 :gfRj8B]cc@CZ14@ZMh8W3
-R6
-31
-R24
-!i10b 1
-R30
-R31
-R32
-!i113 1
-R11
-R12
-Effd
-R1
-R2
-R3
-!i122 5
-R0
-Z33 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd
-Z34 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd
-l0
-L4 1
-VlLnJhUY99`]7^:0M0ZT@z3
-!s100 7zIA7N0c8k?G4DH:]Q7>;3
-R6
-31
 R7
-!i10b 1
+31
 R8
-Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd|
-Z36 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd|
-!i113 1
-R11
-R12
-Alogicfunction
-R2
-R3
-DEx4 work 3 ffd 0 22 lLnJhUY99`]7^:0M0ZT@z3
-!i122 5
-l16
-L14 9
-VXLGJhA0YLNkWk3eiz=LFX0
-!s100 EbhLHDh93W5h:OfQP8>M81
-R6
-31
-R7
 !i10b 1
-R8
-R35
-R36
-!i113 1
+R9
+R10
 R11
-R12
-Efull_adder
-R1
-R2
-R3
-!i122 4
-R0
-Z37 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd
-Z38 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd
-l0
-L4 1
-V1?8e@Z?oo];B5ik63z<5?2
-!s100 2>nkmB_jW`<He?1n_RLb^2
-R6
-31
-R7
-!i10b 1
-R8
-Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd|
-Z40 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd|
 !i113 1
-R11
 R12
-Aarc_fa
-R2
-R3
-DEx4 work 10 full_adder 0 22 1?8e@Z?oo];B5ik63z<5?2
-!i122 4
-l10
-L9 5
-V3E:A;e?EmcK4l6JIUkJ5a3
-!s100 CPTbUhTiSZJkiQHake`U>2
-R6
-31
-R7
-!i10b 1
-R8
-R39
-R40
-!i113 1
-R11
-R12
-Ekeyscan
-Z41 w1679055458
-R2
-R3
-!i122 10
-R0
-Z42 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd
-Z43 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd
-l0
-L4 1
-VJ^:?o>5I[HjOYUK:4DnIc1
-!s100 BZ]T2Z0MTi7RcRoM7aFdU1
-R6
-31
-R24
-!i10b 1
-R30
-Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd|
-!s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd|
-!i113 1
-R11
-R12
-Aarc_keyscan
-R2
-R3
-DEx4 work 7 keyscan 0 22 J^:?o>5I[HjOYUK:4DnIc1
-!i122 10
-l41
-L13 67
-VgaO=Nb2>2Pm0UQES966lo2
-!s100 3_6Q<nKAHC;Gi=kcQkbl70
-R6
-31
-R24
-!i10b 1
-R30
-R44
-Z45 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd|
-!i113 1
-R11
-R12
-Emux2x1
-R1
-R2
-R3
-!i122 3
-R0
-Z46 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd
-Z47 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd
-l0
-L4 1
-VG3R8]18i]3eLK1ngz^Y;=0
-!s100 KJW7OzjElD@@f=Hl3mClA0
-R6
-31
-R7
-!i10b 1
-R8
-Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd|
-Z49 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd|
-!i113 1
-R11
-R12
-Aarc_mux
-R2
-R3
-DEx4 work 6 mux2x1 0 22 G3R8]18i]3eLK1ngz^Y;=0
-!i122 3
-l11
-Z50 L10 7
-V^_R;XZ9@lLSZh]@lO:L5b2
-!s100 oa`RnifN@5MmUD`5^5m=m2
-R6
-31
-R7
-!i10b 1
-R8
-R48
-R49
-!i113 1
-R11
-R12
-Emux4x1
-Z51 w1679056405
-R2
-R3
-!i122 7
-R0
-Z52 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd
-Z53 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd
-l0
-L4 1
-V=>c4jZ5H_Q7[RW@daghjk3
-!s100 9mC]W77UVLgPWTdlDUN>O0
-R6
-31
-R7
-!i10b 1
-R8
-Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd|
-Z55 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd|
-!i113 1
-R11
-R12
-Aarc_mux
-R2
-R3
-DEx4 work 6 mux4x1 0 22 =>c4jZ5H_Q7[RW@daghjk3
-!i122 7
-l11
-R50
-VdU=<UfYzC:DfJ6iFO<fLT0
-!s100 >5<L=?@;3F]ZPG`VLjXeh1
-R6
-31
-R7
-!i10b 1
-R8
-R54
-R55
-!i113 1
-R11
-R12
+R13
 Eregistry
-R1
-R2
+Z14 w1672994536
 R3
+R4
 !i122 2
 R0
-Z56 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd
-Z57 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd
+Z15 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd
+Z16 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd
 l0
 L4 1
 V`kcm^AOI26o1^RBETR5Z72
 !s100 eB48`a5IYYT:>9C4]NDz[3
-R6
-31
 R7
+31
+Z17 !s110 1679498077
 !i10b 1
-R18
-Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd|
-Z59 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd|
+Z18 !s108 1679498077.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd|
+!s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd|
 !i113 1
-R11
 R12
+R13
 Aarc_reg
-R2
 R3
+R4
 DEx4 work 8 registry 0 22 `kcm^AOI26o1^RBETR5Z72
 !i122 2
 l22
 L11 46
 Vh3zcPUaGZ_9aZ3LmG[UJ?0
 !s100 Z36c9MATS<0OIYfRdm4L[3
-R6
-31
 R7
-!i10b 1
-R18
-R58
-R59
-!i113 1
-R11
-R12
-Eterminal_count
-R1
-R2
-R3
-!i122 1
-R0
-Z60 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd
-Z61 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd
-l0
-L4 1
-V]K6J;X@Un3ea0J=b:Sga]1
-!s100 m70aK:g>^g_aT[KPl0kNc1
-R6
 31
 R17
 !i10b 1
 R18
-Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd|
-Z63 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd|
+R19
+Z20 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd|
 !i113 1
-R11
 R12
-Aarc_tc
-R2
+R13
+Eterminal_count
+R14
 R3
+R4
+!i122 1
+R0
+Z21 8C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd
+Z22 FC:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd
+l0
+L4 1
+V]K6J;X@Un3ea0J=b:Sga]1
+!s100 m70aK:g>^g_aT[KPl0kNc1
+R7
+31
+R17
+!i10b 1
+R18
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd|
+Z24 !s107 C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd|
+!i113 1
+R12
+R13
+Aarc_tc
+R3
+R4
 DEx4 work 14 terminal_count 0 22 ]K6J;X@Un3ea0J=b:Sga]1
 !i122 1
 l11
 L10 4
 VIaQ_S46BaYd5];IhO_B6V1
 !s100 Y[J`FkfXPceKdWeLcF]iN2
-R6
+R7
 31
 R17
 !i10b 1
 R18
-R62
-R63
+R23
+R24
 !i113 1
-R11
 R12
+R13

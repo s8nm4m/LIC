@@ -2,98 +2,51 @@ import isel.leic.UsbPort
 
 
 object HAL {
-    fun init() {}
-
-    // done
-    fun readBits(mask: Int): Int {
-        val state = unmask(UsbPort.read())
-        val unmasked = unmask(mask)
-        var int = 0
-        for ((idx, i) in (state.size - 1 downTo 0).withIndex()) {
-            int += state[i] * power(2, idx) * unmasked[i]
-        }
-        return int
+    var lastState = 0
+    fun init() {
+        UsbPort.write(0)
+        lastState = 0
     }
 
-    // auxiliar
-    private fun power(val1: Int, val2: Int): Int {
-        if (val2 == 0) return 1
-        var i = val1
-        for (a in 1 until val2) {
-            i *= val1
-        }
-        return i
+    fun readBits(mask: Int) : Int{ // mask = 00001111
+
+        val value = UsbPort.read() // 00011011
+        return value.and(mask) // 00001011
+
     }
 
-    // turn int to binary through IntArray
-    private fun unmask(mask: Int): IntArray {
-        val state = IntArray(8)
-        var value = mask
-        var idx = state.size - 1
-        while (idx >= 0) {
-            val rest = value % 2
-            state[idx] = rest
-            value /= 2
-            if (value == 0) {
-                break
-            }
-            idx--
+    fun isBit(mask: Int) : Boolean{  // mask = 00000001
+
+        val value = UsbPort.read() // 00000010
+        val newValue = value.and(mask) // 00000000
+        if(newValue == 0 ){ // reads 0, so false
+            return false
         }
-        return state
+        return true
+
     }
 
-    // done
-    fun isBit(mask: Int): Boolean {
-        val unmasked = unmask(mask)
-        val state = unmask(UsbPort.read())
-        for (i in state.indices) {
-            if (state[i] == unmasked[i] && state[i] == 1) return true
-        }
-        return false
+    fun setBits(mask: Int){ // mask = 00001111
+
+        val value = lastState.or(mask) // 01000001
+        UsbPort.write(value) // 01001111
+        lastState = value
     }
 
-    // done
-    fun setBits(mask: Int) {
-        val state = unmask(UsbPort.read())
-        val unmasked = unmask(mask)
-        for (i in unmasked.indices) {
-            if (unmasked[i] == 1) {
-                state[i] = 1
-            }
-        }
-        UsbPort.write(mask(state))
+    fun clrBits(mask: Int){ //mask = 0000011
+
+        val value = lastState // 01001110
+        val newMask = mask.inv() // 11111100
+        UsbPort.write(value.and(newMask)) // 01001100
+
     }
 
-    // turn binary to int through IntArray
-    private fun mask(state: IntArray): Int {
-        var int = 0
-        for ((idx, i) in (state.size - 1 downTo 0).withIndex()) {
-            int += state[i] * power(2, idx)
-        }
-        return int
-    }
+    fun writeBits(mask: Int, value: Int){ // mask = 00001111 value = 00001001
 
-    // done
-    fun clrBits(mask: Int) {
-        val state = unmask(UsbPort.read())
-        val unmasked = unmask(mask)
-        for (i in unmasked.indices) {
-            if (unmasked[i] == 1) {
-                state[i] = 0
-            }
-        }
-        UsbPort.write(mask(state))
-    }
+        val value2 = UsbPort.read() // 01001101
+        val newMask = mask.inv() // 11110000
+        val newValue = value2.and(newMask) // 01000000
+        UsbPort.write(value.or(newValue)) // 01001001
 
-    // done
-    fun writeBits(mask: Int, value: Int) {
-        val state = unmask(UsbPort.read())
-        val unmasked = unmask(mask)
-        val v = unmask(value)
-        for (i in state.indices) {
-            if (unmasked[i] == 1) {
-                state[i] = v[i]
-            }
-        }
     }
 }

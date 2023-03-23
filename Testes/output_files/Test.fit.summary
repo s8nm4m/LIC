@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Mar 19 17:27:36 2023
+Fitter Status : Successful - Wed Mar 22 15:30:45 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
 Top-level Entity Name : KeyDecode
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 126 / 49,760 ( < 1 % )
-    Total combinational functions : 124 / 49,760 ( < 1 % )
-    Dedicated logic registers : 71 / 49,760 ( < 1 % )
-Total registers : 71
+Total logic elements : 71 / 49,760 ( < 1 % )
+    Total combinational functions : 70 / 49,760 ( < 1 % )
+    Dedicated logic registers : 38 / 49,760 ( < 1 % )
+Total registers : 38
 Total pins : 15 / 360 ( 4 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

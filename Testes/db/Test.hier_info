@@ -56,23 +56,24 @@ clk_out <= tmp.DB_MAX_OUTPUT_PORT_TYPE
 
 |KeyDecode|KeyScan:scan
 KScan => Counter:count.CE
-CLK => clkDIV:clock.clk_in
+CLK => CLKDIV:clockm.clk_in
+CLK => Counter:count.CLK
 Reset => Counter:count.PL
 I[0] => MUX4x1:mux.I[0]
 I[1] => MUX4x1:mux.I[1]
 I[2] => MUX4x1:mux.I[2]
 I[3] => MUX4x1:mux.I[3]
 Kpress <= MUX4x1:mux.Y
-K[0] <= Counter:count.Q[3]
-K[1] <= Counter:count.Q[2]
-K[2] <= Counter:count.Q[1]
-K[3] <= Counter:count.Q[0]
 O[0] <= Decoder:dec.O[0]
 O[1] <= Decoder:dec.O[1]
 O[2] <= Decoder:dec.O[2]
+K[0] <= Counter:count.Q[0]
+K[1] <= Counter:count.Q[1]
+K[2] <= Counter:count.Q[2]
+K[3] <= Counter:count.Q[3]
 
 
-|KeyDecode|KeyScan:scan|CLKDIV:clock
+|KeyDecode|KeyScan:scan|CLKDIV:clockm
 clk_in => tmp.CLK
 clk_in => count[0].CLK
 clk_in => count[1].CLK
@@ -320,10 +321,11 @@ Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 |KeyDecode|KeyControl:control
 Kpress => NextState.DATAB
 Kpress => NextState.DATAB
+Kpress => Kscan.IN1
 Kack => NextState.OUTPUTSELECT
 CLK => CurrentState.CLK
 Reset => CurrentState.ACLR
 Kval <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
-Kscan <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+Kscan <= Kscan.DB_MAX_OUTPUT_PORT_TYPE
 
 

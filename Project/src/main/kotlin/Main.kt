@@ -1,5 +1,6 @@
 import isel.leic.UsbPort
 
+
 fun readBits(mask: Int) : Int{ // mask = 00001111
 
     val value = UsbPort.read() // 00011011

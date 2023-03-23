@@ -41,6 +41,6 @@ process (CurrentState, Kpress, Kack)
 	end process;
 	
 Kval <= '1' when ( CurrentState = SECOND) else '0';
-Kscan <= '1' when ( CurrentState = FIRST) else '0';
+Kscan <= '1' when ( CurrentState = FIRST and Kpress = '0') else '0';
 
 end arcKC;
