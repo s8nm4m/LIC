@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logid_1164.all;
+
+entity SWWH is
+end SWWH;
+
+architecture swwh of SWWH is
+component KeyDecode
+port(
+Kack , CLK, Reset: in std_logic;
+I : in std_logic_vector(3 downto 0);
+Kval : out std_logic;
+O : out std_logic_vector(2 downto 0);
+K : out std_logic_vector(3 downto 0));
+end component;
+
+component UsbPort
+	PORT
+	(
+		inputPort:  IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+		outputPort :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 0)
+	);
+END component;
+
