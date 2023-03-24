@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Mar 22 15:30:29 2023
+Analysis & Synthesis Status : Successful - Fri Mar 24 12:02:00 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : KeyDecode
+Top-level Entity Name : SCA
 Family : MAX 10
-Total logic elements : 69
-    Total combinational functions : 69
-    Dedicated logic registers : 38
-Total registers : 38
+Total logic elements : 163
+    Total combinational functions : 139
+    Dedicated logic registers : 91
+Total registers : 91
 Total pins : 15
 Total virtual pins : 0
 Total memory bits : 0

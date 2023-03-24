@@ -2,7 +2,7 @@ import isel.leic.UsbPort
 
 
 object HAL {
-    var lastState = 0
+    private var lastState = 0
     fun init() {
         UsbPort.write(0)
         lastState = 0
