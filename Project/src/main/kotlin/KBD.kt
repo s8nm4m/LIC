@@ -7,9 +7,9 @@ object KBD {
         HAL.init()
     }
 
-    private const val NONE = 0.toChar()
+    const val NONE = 0.toChar()
 
-    private fun getKey(): Char {
+    fun getKey(): Char {
         if (HAL.isBit(Kval)) {
             val c = when (HAL.readBits(K).shr(1)) {
                 0 -> '1'
@@ -44,13 +44,5 @@ object KBD {
             if (c != NONE) return c
             if (time - timeInit >= timeout) return NONE
         }
-    }
-}
-
-fun main() {
-    KBD.init()
-    while (true) {
-        val c = KBD.waitKey(2000)
-        println(c)
     }
 }

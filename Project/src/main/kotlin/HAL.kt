@@ -36,10 +36,10 @@ object HAL {
     }
 
     fun writeBits(mask: Int, value: Int){ // mask = 00001111 value = 00001001
-        val value2 = UsbPort.read() // 01001101
+        val value2 = lastState // 01001101
         val newMask = mask.inv() // 11110000
         val newValue = value2.and(newMask) // 01000000
         UsbPort.write(value.or(newValue)) // 01001001
-        lastState = value2.or(newValue)
+        lastState = value.or(newValue)
     }
 }

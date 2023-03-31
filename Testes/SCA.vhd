@@ -50,12 +50,12 @@ inputPort(4) => kapa(3),
 --inputPort() =>,
 --inputPort() =>,
 outputPort(0) => ka,
-outputPort() =>en,
-outputPort() =>rs,
-outputPort() =>lcd(0),
-outputPort() =>lcd(1),
-outputPort() =>lcd(2),
-outputPort() =>lcd(3)--,
+outputPort(1) =>en,
+outputPort(2) =>rs,
+outputPort(3) =>lcd(0),
+outputPort(4) =>lcd(1),
+outputPort(5) =>lcd(2),
+outputPort(6) =>lcd(3)--,
 --outputPort() =>
 );
 

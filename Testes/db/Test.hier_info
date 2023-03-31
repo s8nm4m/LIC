@@ -1,8 +1,8 @@
 |SCA
 Reset => KeyboardReader:kr.Reset
 CLK => KeyboardReader:kr.CLK
-LCD_RS <= LCD_RS.DB_MAX_OUTPUT_PORT_TYPE
-LCD_EN <= LCD_EN.DB_MAX_OUTPUT_PORT_TYPE
+LCD_RS <= UsbPort:usb.outputPort[2]
+LCD_EN <= UsbPort:usb.outputPort[1]
 O[0] <= KeyboardReader:kr.O[0]
 O[1] <= KeyboardReader:kr.O[1]
 O[2] <= KeyboardReader:kr.O[2]
@@ -10,10 +10,10 @@ I[0] => KeyboardReader:kr.I[0]
 I[1] => KeyboardReader:kr.I[1]
 I[2] => KeyboardReader:kr.I[2]
 I[3] => KeyboardReader:kr.I[3]
-LCD_data[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-LCD_data[1] <= LCD_data[1].DB_MAX_OUTPUT_PORT_TYPE
-LCD_data[2] <= LCD_data[2].DB_MAX_OUTPUT_PORT_TYPE
-LCD_data[3] <= LCD_data[3].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[0] <= UsbPort:usb.outputPort[3]
+LCD_data[1] <= UsbPort:usb.outputPort[4]
+LCD_data[2] <= UsbPort:usb.outputPort[5]
+LCD_data[3] <= UsbPort:usb.outputPort[6]
 
 
 |SCA|KeyboardReader:kr
