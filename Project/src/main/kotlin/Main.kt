@@ -5,7 +5,6 @@ fun main() {
     Thread.sleep(2000)
     LCD.clear()
     while (true) {
-//        LCD.clear()
         val v = KBD.waitKey(2000)
         println(v)
         if (v != KBD.NONE) LCD.write(v)

@@ -80,12 +80,10 @@ object LCD {
 
     // Envia comando para posicionar cursor (‘line’:0..LINES-1 , ‘column’:0..COLS-1)
     fun cursor(line: Int, column: Int) {
-        writeCMD(10)
     }
 
     // Envia comando para limpar o ecrã e posicionar o cursor em (0,0)
     fun clear() {
         writeCMD(1)
-        cursor(0, 0)
     }
 }
