@@ -80,6 +80,9 @@ object LCD {
 
     // Envia comando para posicionar cursor (‘line’:0..LINES-1 , ‘column’:0..COLS-1)
     fun cursor(line: Int, column: Int) {
+        val b1 = if (line == 1) 4 else 0
+        val b = (b1 + 8) * 16 + column
+        writeByte(false, b)
     }
 
     // Envia comando para limpar o ecrã e posicionar o cursor em (0,0)
