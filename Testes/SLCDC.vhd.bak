@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SLCDC is
+port(
+SS, SCLK, SDX: in std_logic;
+Wrl: out std_logic;
+Dout: out std_logic_vector(3 downto 0)); 
+end SLCDC;
+

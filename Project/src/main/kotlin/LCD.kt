@@ -1,6 +1,4 @@
 object LCD {
-    private const val LINES = 2
-    private const val COLS = 16
     private const val RS = 0x04
     private const val Enable = 0x02
     private const val DATA = 0x78

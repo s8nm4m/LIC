@@ -4,55 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "O[0]",
+					"name" : "DXval",
 					"strict" : false
 				},
 				{
-					"name" : "O[1]",
+					"name" : "SS",
 					"strict" : false
 				},
 				{
-					"name" : "O[2]",
-					"strict" : false
-				},
-				{
-					"name" : "I[1]",
-					"strict" : false
-				},
-				{
-					"name" : "I[2]",
-					"strict" : false
-				},
-				{
-					"name" : "I[0]",
-					"strict" : false
-				},
-				{
-					"name" : "I[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Reset",
-					"strict" : false
-				},
-				{
-					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tms",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tck",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tdi",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tdo",
+					"name" : "SCLK",
 					"strict" : false
 				}
 			]

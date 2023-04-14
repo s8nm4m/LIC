@@ -1,0 +1,7 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity SerialControl is
+port(
+enRx, accept, eq5 : in std_logic;
+clr, wr, DXval : out std_logic);
+end SerialControl;
