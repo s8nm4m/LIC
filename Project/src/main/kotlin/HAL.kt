@@ -15,10 +15,7 @@ object HAL {
     fun isBit(mask: Int): Boolean {  // mask = 00000001
         val value = UsbPort.read() // 00000010
         val newValue = value.and(mask) // 00000000
-        if (newValue == 0) { // reads 0, so false
-            return false
-        }
-        return true
+        return newValue != 0
     }
 
     fun setBits(mask: Int) { // mask = 00001111

@@ -9,8 +9,7 @@ end KeyControl;
 
 architecture arcKC of KeyControl is
 
---type STATE_TYPE is(FIRST, SECOND, THIRD);
-type STATE_TYPE is(FIRST, SECOND);
+type STATE_TYPE is (FIRST, SECOND);
 
 signal CurrentState, NextState: STATE_TYPE;
 
@@ -33,12 +32,11 @@ process (CurrentState, Kpress, Kack)
 									else
 										NextState <= SECOND;
 									end if;
-									--NextState <= THIRD;
 								else
 									NextState <= SECOND;
 								end if;
 		end case;
-	end process;
+end process;
 	
 Kval <= '1' when ( CurrentState = SECOND) else '0';
 Kscan <= '1' when ( CurrentState = FIRST and Kpress = '0') else '0';

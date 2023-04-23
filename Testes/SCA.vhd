@@ -26,8 +26,16 @@ inputPort:  in std_logic_vector(7 downto 0);
 outputPort :  out std_logic_vector(7 downto 0));
 end component;
 
-signal kv, ka, rs, en : std_logic;
-signal kapa, lcd : std_logic_vector(3 downto 0);
+component SLCDC
+port(
+SS, SCLK, CLK, SDX, Reset : in std_logic;
+Wrl : out std_logic;
+Dout : out std_logic_vector(4 downto 0)); 
+end component;
+
+signal kv, ka, rs, en, ss, sdx, sclk : std_logic;
+signal kapa : std_logic_vector(3 downto 0);
+signal lcd : std_logic_vector(4 downto 0);
 
 begin
 
@@ -40,6 +48,15 @@ K => kapa,
 Reset => Reset,
 CLK => CLK);
 
+sl: SLCDC port map(
+cLK => CLK,
+Reset => Reset,
+SS => ss, 
+SCLK => sclk, 
+SDX => sdx,
+Wrl => en,
+Dout => lcd); 
+
 usb: UsbPort port map(
 inputPort(0) => kv,
 inputPort(1) => kapa(0),
@@ -50,18 +67,18 @@ inputPort(4) => kapa(3),
 --inputPort() =>,
 --inputPort() =>,
 outputPort(0) => ka,
-outputPort(1) =>en,
-outputPort(2) =>rs,
-outputPort(3) =>lcd(0),
-outputPort(4) =>lcd(1),
-outputPort(5) =>lcd(2),
-outputPort(6) =>lcd(3)--,
+outputPort(1) => ss,
+outputPort(2) => sdx,
+outputPort(3) => sclk--,
+--outputPort(4) => lcd(1),
+--outputPort(5) => lcd(2),
+--outputPort(6) => lcd(3)--,
 --outputPort() =>
 );
 
-LCD_data <= lcd;
+LCD_data <= lcd(4 downto 1);
 LCD_EN <= en;
-LCD_RS <= rs;
+LCD_RS <= lcd(0);
 
 end arc_sca;
  

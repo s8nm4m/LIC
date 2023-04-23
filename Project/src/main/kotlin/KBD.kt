@@ -9,7 +9,7 @@ object KBD {
 
     const val NONE = 0.toChar()
 
-    fun getKey(): Char {
+    private fun getKey(): Char {
         if (HAL.isBit(Kval)) {
             val c = when (HAL.readBits(K).shr(1)) {
                 0 -> '1'

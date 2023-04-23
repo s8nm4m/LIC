@@ -14,16 +14,19 @@ object LCD {
         HAL.setBits(Enable)
         Thread.sleep(0, 230)
         HAL.clrBits(Enable)
-        Thread.sleep(0, 10)
-        Thread.sleep(0, 260)
+        Thread.sleep(0, 270)
     }
 
     // Escreve um nibble de comando/dados no LCD em série
-    private fun writeNibbleSerial(rs: Boolean, data: Int) {}
+    private fun writeNibbleSerial(rs: Boolean, data: Int) {
+        val r = if (rs) 1 else 0
+        SerialEmitter.send(SerialEmitter.Destination.LCD, data + r)
+    }
 
     // Escreve um nibble de comando/dados no LCD
     private fun writeNibble(rs: Boolean, data: Int) {
         writeNibbleParallel(rs, data)
+//        writeNibbleSerial(rs, data)
     }
 
     // Escreve um byte de comando/dados no LCD
@@ -78,7 +81,7 @@ object LCD {
 
     // Envia comando para posicionar cursor (‘line’:0..LINES-1 , ‘column’:0..COLS-1)
     fun cursor(line: Int, column: Int) {
-        val b1 = if (line == 1) 4 else 0
+        val b1 = line * 4
         val b = (b1 + 8) * 16 + column
         writeByte(false, b)
     }
