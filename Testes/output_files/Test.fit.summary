@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Apr 21 17:14:52 2023
+Fitter Status : Successful - Sun Apr 23 11:15:44 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : SCA
+Top-level Entity Name : SerialReceiver
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 183 / 49,760 ( < 1 % )
-    Total combinational functions : 161 / 49,760 ( < 1 % )
-    Dedicated logic registers : 105 / 49,760 ( < 1 % )
-Total registers : 105
-Total pins : 15 / 360 ( 4 % )
+Total logic elements : 17 / 49,760 ( < 1 % )
+    Total combinational functions : 13 / 49,760 ( < 1 % )
+    Dedicated logic registers : 12 / 49,760 ( < 1 % )
+Total registers : 12
+Total pins : 12 / 360 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

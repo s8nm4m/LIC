@@ -13,10 +13,7 @@ object SerialEmitter {
         HAL.clrBits(SS)
         for (i in 0 until 5) {
             HAL.clrBits(SCLOCK)
-            val mask = 1.shl(i)
-//            println("mask = $mask")
-            val b = data.and(mask)
-//            println(b)
+            val b = data.and(1.shl(i))
             if (b == 0)
                 HAL.clrBits(SDX)
             else

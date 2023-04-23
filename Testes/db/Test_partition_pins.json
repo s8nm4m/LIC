@@ -4,19 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LCD_EN",
+					"name" : "DXval",
 					"strict" : false
 				},
 				{
-					"name" : "O[0]",
+					"name" : "D[0]",
 					"strict" : false
 				},
 				{
-					"name" : "O[1]",
+					"name" : "D[1]",
 					"strict" : false
 				},
 				{
-					"name" : "O[2]",
+					"name" : "D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D[4]",
+					"strict" : false
+				},
+				{
+					"name" : "accept",
+					"strict" : false
+				},
+				{
+					"name" : "SS",
 					"strict" : false
 				},
 				{
@@ -28,35 +44,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "I[1]",
+					"name" : "SCLK",
 					"strict" : false
 				},
 				{
-					"name" : "I[2]",
-					"strict" : false
-				},
-				{
-					"name" : "I[0]",
-					"strict" : false
-				},
-				{
-					"name" : "I[3]",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tms",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tck",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tdi",
-					"strict" : false
-				},
-				{
-					"name" : "altera_reserved_tdo",
+					"name" : "SDX",
 					"strict" : false
 				}
 			]

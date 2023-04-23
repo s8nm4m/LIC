@@ -7,8 +7,7 @@ object LCD {
 
     // Escreve um nibble de comando/dados no LCD em paralelo
     private fun writeNibbleParallel(rs: Boolean, data: Int) {
-        val r = if (rs) 1 else 0
-        HAL.writeBits(RS, r.shl(2))
+        HAL.writeBits(RS, (if (rs) 1 else 0).shl(2))
         HAL.writeBits(DATA, data.shl(3))
         Thread.sleep(0, 40)
         HAL.setBits(Enable)
@@ -25,16 +24,14 @@ object LCD {
 
     // Escreve um nibble de comando/dados no LCD
     private fun writeNibble(rs: Boolean, data: Int) {
-        writeNibbleParallel(rs, data)
-//        writeNibbleSerial(rs, data)
+//        writeNibbleParallel(rs, data)
+        writeNibbleSerial(rs, data)
     }
 
     // Escreve um byte de comando/dados no LCD
     private fun writeByte(rs: Boolean, data: Int) {
-        val d1 = data.and(HIGH)
-        val d2 = data.and(LOW)
-        writeNibble(rs, d1.shr(4))
-        writeNibble(rs, d2)
+        writeNibble(rs, data.and(HIGH).shr(4))
+        writeNibble(rs, data.and(LOW))
     }
 
     // Escreve um comando no LCD
@@ -81,9 +78,7 @@ object LCD {
 
     // Envia comando para posicionar cursor (‘line’:0..LINES-1 , ‘column’:0..COLS-1)
     fun cursor(line: Int, column: Int) {
-        val b1 = line * 4
-        val b = (b1 + 8) * 16 + column
-        writeByte(false, b)
+        writeByte(false, (line * 4 + 8) * 16 + column)
     }
 
     // Envia comando para limpar o ecrã e posicionar o cursor em (0,0)

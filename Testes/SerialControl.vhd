@@ -21,7 +21,7 @@ process(CurrentState, enRx, eq5, accept)
 	begin
 		case CurrentState is 
 			when FIRST => 
-				if (enRx = '1') then NextState <= SECOND;
+				if (enRx = '0') then NextState <= SECOND;
 				else NextState <= FIRST;
 				end if;
 			when SECOND =>
