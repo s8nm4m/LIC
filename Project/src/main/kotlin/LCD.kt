@@ -19,7 +19,7 @@ object LCD {
     // Escreve um nibble de comando/dados no LCD em série
     private fun writeNibbleSerial(rs: Boolean, data: Int) {
         val r = if (rs) 1 else 0
-        SerialEmitter.send(SerialEmitter.Destination.LCD, data + r)
+        SerialEmitter.send(SerialEmitter.Destination.LCD, data.shl(1) + r)
     }
 
     // Escreve um nibble de comando/dados no LCD

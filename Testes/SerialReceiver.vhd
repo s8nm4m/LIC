@@ -17,7 +17,7 @@ end component;
 
 component ShiftRegister
 port(
-data, clk, enable : in std_logic;
+data, clk, enable, reset : in std_logic;
 D : out std_logic_vector(4 downto 0));
 end component;
 
@@ -29,7 +29,7 @@ TC: out std_logic;
 Q: out std_logic_vector(3 downto 0));
 end component;
 
-signal data : std_logic_vector(3 downto 0);
+signal count : std_logic_vector(3 downto 0);
 signal equal, clear, enwr, cenable : std_logic;
 
 begin
@@ -39,13 +39,13 @@ PL => clear,
 CE => cenable,
 CLK => SCLK,
 Data_in => "0000",
-Q => data);
+Q => count);
 
-equal <= '1' when (data(2) = '1' and data(1) = '0' and data(0) = '1') else '0';
+equal <= '1' when (count(2) = '1' and count(1) = '0' and count(0) = '1') else '0';
 
 sc : SerialControl port map(
 Reset => Reset,
-CLK => CLK,
+CLK => SCLK,
 enRx => SS,
 accept => accept,
 eq5 => equal,
@@ -55,8 +55,9 @@ wr => enwr,
 DXval => DXval);
 
 sr : ShiftRegister port map(
+reset => '0',
 data => SDX, 
-clk => SCLK, 
+clk => CLK, 
 enable => enwr,
 D => D);
 

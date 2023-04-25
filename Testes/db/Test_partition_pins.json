@@ -4,35 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "DXval",
+					"name" : "Wrl",
 					"strict" : false
 				},
 				{
-					"name" : "D[0]",
+					"name" : "Dout[0]",
 					"strict" : false
 				},
 				{
-					"name" : "D[1]",
+					"name" : "Dout[1]",
 					"strict" : false
 				},
 				{
-					"name" : "D[2]",
+					"name" : "Dout[2]",
 					"strict" : false
 				},
 				{
-					"name" : "D[3]",
+					"name" : "Dout[3]",
 					"strict" : false
 				},
 				{
-					"name" : "D[4]",
-					"strict" : false
-				},
-				{
-					"name" : "accept",
-					"strict" : false
-				},
-				{
-					"name" : "SS",
+					"name" : "Dout[4]",
 					"strict" : false
 				},
 				{
@@ -44,11 +36,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "SCLK",
+					"name" : "altera_reserved_tms",
 					"strict" : false
 				},
 				{
-					"name" : "SDX",
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
 					"strict" : false
 				}
 			]

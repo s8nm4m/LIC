@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Apr 23 11:15:38 2023
+Analysis & Synthesis Status : Successful - Mon Apr 24 19:31:56 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : SerialReceiver
+Top-level Entity Name : SLCDC_Wrapper
 Family : MAX 10
-Total logic elements : 16
-    Total combinational functions : 12
-    Dedicated logic registers : 12
-Total registers : 12
+Total logic elements : 173
+    Total combinational functions : 145
+    Dedicated logic registers : 105
+Total registers : 105
 Total pins : 12
 Total virtual pins : 0
 Total memory bits : 0

@@ -28,7 +28,7 @@ begin
 
 cup: Counter port map(
 PL => countclear,
-CE => '1',
+CE => not countclear,
 CLK => CLK,
 Data_in => "0000",
 Q => count);
@@ -58,5 +58,6 @@ end process;
 countclear <= '1' when (CurrentState = FIRST) else '0';
 Wrl <= '1' when (CurrentState = SECOND) else '0';
 done <= '1' when (CurrentState = THIRD) else '0';
+Dout <= Din;
 
 end arc_lcdd;

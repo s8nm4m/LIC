@@ -41,7 +41,7 @@ clk_out => clockm);
 
 scan : KeyScan port map(
 KScan => ks,
-CLK =>CLK,
+CLK => clockm,
 Reset => Reset,
 I => I,
 Kpress => kp,
