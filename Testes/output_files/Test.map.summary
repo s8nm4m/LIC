@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Apr 26 23:06:02 2023
+Analysis & Synthesis Status : Successful - Wed Apr 26 23:16:11 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : adder
+Top-level Entity Name : KeyScan
 Family : MAX 10
-Total logic elements : 8
-    Total combinational functions : 8
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 14
+Total logic elements : 10
+    Total combinational functions : 10
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 15
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

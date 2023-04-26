@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Test
-Wed Apr 26 23:06:02 2023
+Wed Apr 26 23:16:11 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,9 +14,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff3"
+ 10. Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff2"
+ 11. Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff1"
+ 12. Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff0"
+ 13. Port Connectivity Checks: "Counter:count|Registry:reg"
+ 14. Port Connectivity Checks: "Counter:count|adder:ad"
+ 15. Port Connectivity Checks: "Counter:count"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +50,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 26 23:06:02 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 26 23:16:11 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
-; Top-level Entity Name              ; adder                                       ;
+; Top-level Entity Name              ; KeyScan                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 8                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
+; Total logic elements               ; 10                                          ;
+;     Total combinational functions  ; 10                                          ;
+;     Dedicated logic registers      ; 4                                           ;
+; Total registers                    ; 4                                           ;
+; Total pins                         ; 15                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -68,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; adder              ; Test               ;
+; Top-level entity name                                            ; KeyScan            ; Test               ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,66 +164,81 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                          ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
-; full_adder.vhd                   ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/full_adder.vhd ;         ;
-; adder.vhd                        ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------+---------+
+; Terminal_Count.vhd               ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd ;         ;
+; Registry.vhd                     ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd       ;         ;
+; MUX2x1.vhd                       ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd         ;         ;
+; full_adder.vhd                   ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/full_adder.vhd     ;         ;
+; FFD.vhd                          ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd            ;         ;
+; adder.vhd                        ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd          ;         ;
+; MUX4x1.vhd                       ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd         ;         ;
+; Counter.vhd                      ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd        ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd        ;         ;
+; KeyScan.vhd                      ; yes             ; User VHDL File  ; D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd        ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 8                   ;
-;                                             ;                     ;
-; Total combinational functions               ; 8                   ;
-; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 0                   ;
-;     -- 3 input functions                    ; 8                   ;
-;     -- <=2 input functions                  ; 0                   ;
-;                                             ;                     ;
-; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 8                   ;
-;     -- arithmetic mode                      ; 0                   ;
-;                                             ;                     ;
-; Total registers                             ; 0                   ;
-;     -- Dedicated logic registers            ; 0                   ;
-;     -- I/O registers                        ; 0                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 14                  ;
-;                                             ;                     ;
-; Embedded Multiplier 9-bit elements          ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; full_adder:fa1|Co~0 ;
-; Maximum fan-out                             ; 2                   ;
-; Total fan-out                               ; 43                  ;
-; Average fan-out                             ; 1.19                ;
-+---------------------------------------------+---------------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                        ;
++---------------------------------------------+--------------------------------------+
+; Resource                                    ; Usage                                ;
++---------------------------------------------+--------------------------------------+
+; Estimated Total logic elements              ; 10                                   ;
+;                                             ;                                      ;
+; Total combinational functions               ; 10                                   ;
+; Logic element usage by number of LUT inputs ;                                      ;
+;     -- 4 input functions                    ; 4                                    ;
+;     -- 3 input functions                    ; 1                                    ;
+;     -- <=2 input functions                  ; 5                                    ;
+;                                             ;                                      ;
+; Logic elements by mode                      ;                                      ;
+;     -- normal mode                          ; 10                                   ;
+;     -- arithmetic mode                      ; 0                                    ;
+;                                             ;                                      ;
+; Total registers                             ; 4                                    ;
+;     -- Dedicated logic registers            ; 4                                    ;
+;     -- I/O registers                        ; 0                                    ;
+;                                             ;                                      ;
+; I/O pins                                    ; 15                                   ;
+;                                             ;                                      ;
+; Embedded Multiplier 9-bit elements          ; 0                                    ;
+;                                             ;                                      ;
+; Maximum fan-out node                        ; Counter:count|Registry:reg|FFD:ff0|Q ;
+; Maximum fan-out                             ; 7                                    ;
+; Total fan-out                               ; 64                                   ;
+; Average fan-out                             ; 1.45                                 ;
++---------------------------------------------+--------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name   ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
-; |adder                     ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |adder                ; adder       ; work         ;
-;    |full_adder:fa1|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |adder|full_adder:fa1 ; full_adder  ; work         ;
-;    |full_adder:fa2|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |adder|full_adder:fa2 ; full_adder  ; work         ;
-;    |full_adder:fa3|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |adder|full_adder:fa3 ; full_adder  ; work         ;
-;    |full_adder:fa4|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |adder|full_adder:fa4 ; full_adder  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                            ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------+-------------+--------------+
+; |KeyScan                   ; 10 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |KeyScan                                       ; KeyScan     ; work         ;
+;    |Counter:count|         ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count                         ; Counter     ; work         ;
+;       |Registry:reg|       ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|Registry:reg            ; Registry    ; work         ;
+;          |FFD:ff0|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|Registry:reg|FFD:ff0    ; FFD         ; work         ;
+;          |FFD:ff1|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|Registry:reg|FFD:ff1    ; FFD         ; work         ;
+;          |FFD:ff2|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|Registry:reg|FFD:ff2    ; FFD         ; work         ;
+;          |FFD:ff3|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|Registry:reg|FFD:ff3    ; FFD         ; work         ;
+;       |adder:ad|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|adder:ad                ; adder       ; work         ;
+;          |full_adder:fa3|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Counter:count|adder:ad|full_adder:fa3 ; full_adder  ; work         ;
+;    |Decoder:dec|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|Decoder:dec                           ; Decoder     ; work         ;
+;    |MUX4x1:mux|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |KeyScan|MUX4x1:mux                            ; MUX4x1      ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,14 +247,80 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff3" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff2" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff1" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count|Registry:reg|FFD:ff0" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count|Registry:reg" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; e    ; Input ; Info     ; Stuck at VCC                 ;
++------+-------+----------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count|adder:ad"                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; b    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Counter:count"                                                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; pl      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -240,13 +328,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 14                          ;
-; cycloneiii_lcell_comb ; 8                           ;
-;     normal            ; 8                           ;
-;         3 data inputs ; 8                           ;
+; boundary_port         ; 15                          ;
+; cycloneiii_ff         ; 4                           ;
+;     CLR               ; 4                           ;
+; cycloneiii_lcell_comb ; 13                          ;
+;     normal            ; 13                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.94                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.96                        ;
 +-----------------------+-----------------------------+
 
 
@@ -265,7 +358,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Apr 26 23:05:54 2023
+    Info: Processing started: Wed Apr 26 23:16:00 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Test -c Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -335,19 +428,27 @@ Info (12021): Found 2 design units, including 1 entities, in source file shiftre
 Info (12021): Found 2 design units, including 1 entities, in source file slcdc_wrapper.vhd
     Info (12022): Found design unit 1: SLCDC_Wrapper-arc_slcdc File: D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd Line: 11
     Info (12023): Found entity 1: SLCDC_Wrapper File: D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd Line: 4
-Info (12127): Elaborating entity "adder" for the top level hierarchy
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:fa1" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd Line: 22
+Info (12127): Elaborating entity "KeyScan" for the top level hierarchy
+Info (12128): Elaborating entity "Counter" for hierarchy "Counter:count" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd Line: 42
+Info (12128): Elaborating entity "adder" for hierarchy "Counter:count|adder:ad" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd Line: 44
+Info (12128): Elaborating entity "full_adder" for hierarchy "Counter:count|adder:ad|full_adder:fa1" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd Line: 22
+Info (12128): Elaborating entity "MUX2x1" for hierarchy "Counter:count|MUX2x1:mux" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd Line: 50
+Info (12128): Elaborating entity "Registry" for hierarchy "Counter:count|Registry:reg" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd Line: 56
+Info (12128): Elaborating entity "FFD" for hierarchy "Counter:count|Registry:reg|FFD:ff0" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd Line: 24
+Info (12128): Elaborating entity "Terminal_Count" for hierarchy "Counter:count|Terminal_Count:utc" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd Line: 65
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:dec" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd Line: 50
+Info (12128): Elaborating entity "MUX4x1" for hierarchy "MUX4x1:mux" File: D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd Line: 55
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 8 logic cells
+Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 10 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4788 megabytes
-    Info: Processing ended: Wed Apr 26 23:06:02 2023
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Wed Apr 26 23:16:11 2023
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:11
 
 
