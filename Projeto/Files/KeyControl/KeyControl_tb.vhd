@@ -13,10 +13,11 @@ Kval, Kscan: out std_logic);
 end component;
 
 constant MCLK_PERIOD : time := 2 ns;
-constant MCLK_HALF_PERIOD: time := MCLK_PERIOD / 2;
+constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 
 signal Kpress_tb, Kack_tb, CLK_tb, Reset_tb, Kval_tb, Kscan_tb : std_logic;
 
+-- 19 ns
 begin
 
 UUT:KeyControl port map(

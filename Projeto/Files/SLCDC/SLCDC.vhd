@@ -18,9 +18,9 @@ end component;
 
 component LCDDispatcher
 port(
-Dval, CLK : in std_logic;
+Dval, CLK, Reset : in std_logic;
 Din : in std_logic_vector(4 downto 0);
-WRL, done : out std_logic;
+Wrl, done : out std_logic;
 Dout : out std_logic_vector(4 downto 0));
 end component;
 
@@ -40,10 +40,11 @@ DXval => v,
 D => d);
 
 lcdd : LCDDispatcher port map(
+Reset => Reset,
 CLK => CLK,
 Dval => v,
 Din => d,
-WRL => Wrl,
+Wrl => Wrl,
 done => state,
 Dout => Dout);
 

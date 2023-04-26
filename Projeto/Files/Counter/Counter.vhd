@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 -- CC -> contador crescente!
 entity Counter is 
 port(
-PL, CE, CLK: in std_logic;
+PL, CE, CLK, Reset: in std_logic;
 Data_in: in std_logic_vector(3 downto 0);
 TC: out std_logic;
 Q: out std_logic_vector(3 downto 0));
@@ -27,7 +27,7 @@ end component;
 component Registry
 port(
 D:in std_logic_vector(3 downto 0);
-CLK, E: in std_logic;
+CLK, E, Reset: in std_logic;
 Q: out std_logic_vector(3 downto 0));
 end component;
 
@@ -54,6 +54,7 @@ S => PL,
 Y => outmux);
 
 reg: Registry port map(
+Reset => Reset,
 E => '1',
 D => outmux,
 CLK => CLK,

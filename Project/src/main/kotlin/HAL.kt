@@ -30,3 +30,15 @@ object HAL {
         UsbPort.write(lastState)
     }
 }
+
+fun main() {
+    HAL.init()
+    println(HAL.isBit(8))
+    HAL.writeBits(8, 7)
+    println(HAL.readBits(8))
+    HAL.clrBits(2)
+    println(HAL.readBits(2))
+    HAL.setBits(0)
+    println(HAL.readBits(0))
+
+}

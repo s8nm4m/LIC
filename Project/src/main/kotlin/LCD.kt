@@ -95,7 +95,7 @@ fun main(){
         println("write")
         LCD.write("ajuda")
         println("cursor")
-//        LCD.cursor(1,0)
+        LCD.cursor(1,0)
         Thread.sleep(2000)
     }
 }

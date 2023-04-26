@@ -9,6 +9,16 @@ D : out std_logic_vector(4 downto 0));
 end SerialReceiver;
 
 architecture arc_sr of SerialReceiver is
+component FFD
+PORT(	CLK : in std_logic;
+		RESET : in STD_LOGIC;
+		SET : in std_logic;
+		D : IN STD_LOGIC;
+		EN : IN STD_LOGIC;
+		Q : out std_logic
+		);
+END component;
+
 component SerialControl 
 port(
 Reset, enRx, accept, eq5, CLK : in std_logic;
@@ -23,7 +33,7 @@ end component;
 
 component Counter
 port(
-PL, CE, CLK: in std_logic;
+PL, CE, CLK, Reset: in std_logic;
 Data_in: in std_logic_vector(3 downto 0);
 TC: out std_logic;
 Q: out std_logic_vector(3 downto 0));
@@ -31,13 +41,31 @@ end component;
 
 signal count : std_logic_vector(3 downto 0);
 signal equal, clear, enwr, cenable : std_logic;
+signal ssw, sclkw : std_logic;
 
 begin
 
+f:FFD port map(
+CLK => CLK,
+RESET => '0',
+SET => '0',
+D => SS,
+EN => '1',
+Q => ssw);
+
+fsc:FFD port map(
+CLK => CLK,
+RESET => '0',
+SET => '0',
+D => SCLK,
+EN => '1',
+Q => sclkw);
+
 c : Counter port map(
-PL => clear,
+Reset => clear,
+PL => '0',
 CE => cenable,
-CLK => SCLK,
+CLK => sclkw,
 Data_in => "0000",
 Q => count);
 
@@ -46,7 +74,7 @@ equal <= '1' when (count(2) = '1' and count(1) = '0' and count(0) = '1') else '0
 sc : SerialControl port map(
 Reset => Reset,
 CLK => CLK,
-enRx => SS,
+enRx => ssw,
 accept => accept,
 eq5 => equal,
 clr => clear,
@@ -57,7 +85,7 @@ DXval => DXval);
 sr : ShiftRegister port map(
 reset => '0',
 data => SDX, 
-clk => SCLK, 
+clk => sclkw, 
 enable => enwr,
 D => D);
 

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Apr 26 16:31:42 2023
+Analysis & Synthesis Status : Successful - Wed Apr 26 23:06:02 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : SCA
+Top-level Entity Name : adder
 Family : MAX 10
-Total logic elements : 237
-    Total combinational functions : 209
-    Dedicated logic registers : 147
-Total registers : 147
-Total pins : 21
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
