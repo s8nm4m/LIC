@@ -14,7 +14,7 @@ architecture arc_Keyscan of KeyScan is
 
 component Counter
 port(
-PL, CE, CLK: in std_logic;
+PL, CE, CLK, Reset: in std_logic;
 Data_in: in std_logic_vector(3 downto 0);
 TC: out std_logic;
 Q: out std_logic_vector(3 downto 0));
@@ -33,27 +33,18 @@ I: in std_logic_vector(3 downto 0);
 Y: out std_logic);
 end component;
 
-component CLKDIV
-generic(div: natural := 50000000);
-port ( clk_in: in std_logic;
-		 clk_out: out std_logic);
-end component;
-
-signal kp, clock : std_logic;
+signal kp : std_logic;
 signal col : std_logic_vector(2 downto 0);
 signal qcount : std_logic_vector(3 downto 0);
 
 begin
 
-clockm: CLKDIV generic map (50000000) port map(
-clk_in => CLK,
-clk_out => clock);
-
 count: Counter port map(
-PL => Reset,
+Reset => Reset,
+PL => '0',
 Data_in => "0000",
 CE => KScan,
-CLK => clock,
+CLK => CLK,
 Q => qcount);
 
 dec: Decoder port map(

@@ -18,16 +18,17 @@ object SerialEmitter {
             val b = data.and(1.shl(i))
             if (b == 0) {
                 HAL.clrBits(SDX)
-                print(0)
+//                print(0)
             } else {
                 HAL.setBits(SDX)
-                print(1)
+//                print(1)
             }
             HAL.setBits(SCLOCK)
 //            print(b)
         }
         HAL.clrBits(SCLOCK)
         HAL.setBits(SS)
+        Thread.sleep(1)
         println()
     }
 

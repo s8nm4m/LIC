@@ -2,9 +2,13 @@ import isel.leic.UsbPort
 
 object HAL {
     private var lastState = 0
+    private var initialize = false
     fun init() {
-        UsbPort.write(0)
-        lastState = 0
+        if (!initialize) {
+            UsbPort.write(0)
+            lastState = 0
+            initialize = true
+        }
     }
 
     fun readBits(mask: Int) = UsbPort.read().and(mask)

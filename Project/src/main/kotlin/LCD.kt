@@ -46,6 +46,7 @@ object LCD {
 
     // Envia a sequência de iniciação para comunicação a 4 bits.
     fun init() {
+        SerialEmitter.init()
         Thread.sleep(40)
         writeNibble(false, 0x03)
         Thread.sleep(5)
@@ -84,5 +85,17 @@ object LCD {
     // Envia comando para limpar o ecrã e posicionar o cursor em (0,0)
     fun clear() {
         writeCMD(1)
+    }
+}
+fun main(){
+    LCD.init()
+    while (true){
+        println("clear")
+        LCD.clear()
+        println("write")
+        LCD.write("ajuda")
+        println("cursor")
+//        LCD.cursor(1,0)
+        Thread.sleep(2000)
     }
 }

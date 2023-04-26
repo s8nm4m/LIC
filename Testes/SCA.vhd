@@ -5,6 +5,7 @@ entity SCA is
 port(
 Reset, CLK : in std_logic;
 LCD_RS, LCD_EN : out std_logic;
+LEDS : out std_logic_vector(5 downto 0);
 O : out std_logic_vector(2 downto 0);
 I : in std_logic_vector(3 downto 0);
 LCD_data : out std_logic_vector(3 downto 0));
@@ -76,6 +77,9 @@ outputPort(3) => sclk--,
 --outputPort() =>
 );
 
+LEDS(3 downto 0) <= lcd(4 downto 1);
+LEDS(4) <= lcd(0);
+LEDS(5) <= en; 
 LCD_data <= lcd(4 downto 1);
 LCD_EN <= en;
 LCD_RS <= lcd(0);

@@ -12,23 +12,30 @@ end LCDDispatcher;
 architecture arc_lcdd of LCDDispatcher is
 component Counter
 port(
-PL, CE, CLK: in std_logic;
+PL, CE, CLK, Reset: in std_logic;
 Data_in: in std_logic_vector(3 downto 0);
 TC: out std_logic;
 Q: out std_logic_vector(3 downto 0));
 end component;
 
+component clkDIV
+generic(div: natural := 5000000);
+port ( clk_in: in std_logic;
+		 clk_out: out std_logic);
+end component;
+
 type STATE_TYPE is (FIRST, SECOND, THIRD);
 
 signal CurrentState, NextState: STATE_TYPE;
-signal eq12, countclear: std_logic;
+signal eq12, countclear, cenable: std_logic;
 signal count: std_logic_vector(3 downto 0);
 
 begin
 
 cup: Counter port map(
-PL => countclear,
-CE => not countclear,
+Reset => countclear,
+PL => '0',
+CE => cenable,
 CLK => CLK,
 Data_in => "0000",
 Q => count);
@@ -55,6 +62,7 @@ process(CurrentState, Dval, eq12)
 		end case;
 end process;
 
+cenable <= '1' when (CurrentState = SECOND) else '0';
 countclear <= '1' when (CurrentState = FIRST) else '0';
 Wrl <= '1' when (CurrentState = SECOND) else '0';
 done <= '1' when (CurrentState = THIRD) else '0';

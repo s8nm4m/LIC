@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Test
-Mon Apr 24 19:31:56 2023
+Wed Apr 26 16:31:42 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,30 +14,35 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. State Machine - |SLCDC_Wrapper|SerialReceiver:sr|SerialControl:sc|CurrentState
- 10. State Machine - |SLCDC_Wrapper|LCDDispatcher:lcdd|CurrentState
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Parameter Settings for User Entity Instance: UsbPort:usbp|sld_virtual_jtag:b2v_inst
- 14. Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0"
- 15. Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1"
- 16. Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2"
- 17. Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3"
- 18. Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4"
- 19. Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr"
- 20. Port Connectivity Checks: "SerialReceiver:sr|Counter:c"
- 21. Port Connectivity Checks: "UsbPort:usbp"
- 22. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3"
- 23. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2"
- 24. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff1"
- 25. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0"
- 26. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg"
- 27. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|adder:ad"
- 28. Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup"
- 29. Virtual JTAG Settings
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
+  9. State Machine - |SCA|SLCDC:sl|LCDDispatcher:lcdd|CurrentState
+ 10. State Machine - |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState
+ 11. State Machine - |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Parameter Settings for User Entity Instance: KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock
+ 15. Parameter Settings for User Entity Instance: UsbPort:usb|sld_virtual_jtag:b2v_inst
+ 16. Port Connectivity Checks: "UsbPort:usb"
+ 17. Port Connectivity Checks: "SLCDC:sl|LCDDispatcher:lcdd|Counter:cup"
+ 18. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0"
+ 19. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1"
+ 20. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2"
+ 21. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3"
+ 22. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4"
+ 23. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr"
+ 24. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|Counter:c"
+ 25. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|FFD:fsc"
+ 26. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|FFD:f"
+ 27. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff3"
+ 28. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff2"
+ 29. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff1"
+ 30. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff0"
+ 31. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg"
+ 32. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad"
+ 33. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count"
+ 34. Virtual JTAG Settings
+ 35. Post-Synthesis Netlist Statistics for Top Partition
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -64,16 +69,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 24 19:31:56 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 26 16:31:42 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
-; Top-level Entity Name              ; SLCDC_Wrapper                               ;
+; Top-level Entity Name              ; SCA                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 173                                         ;
-;     Total combinational functions  ; 145                                         ;
-;     Dedicated logic registers      ; 105                                         ;
-; Total registers                    ; 105                                         ;
-; Total pins                         ; 12                                          ;
+; Total logic elements               ; 237                                         ;
+;     Total combinational functions  ; 209                                         ;
+;     Dedicated logic registers      ; 147                                         ;
+; Total registers                    ; 147                                         ;
+; Total pins                         ; 21                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -89,7 +94,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; SLCDC_Wrapper      ; Test               ;
+; Top-level entity name                                            ; SCA                ; Test               ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -191,19 +196,27 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                               ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------+
+; KeyboardReader.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd                                                 ;             ;
 ; UsbPort.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd                                                        ;             ;
+; clkDIV.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd                                                         ;             ;
 ; Terminal_Count.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd                                                 ;             ;
 ; Registry.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd                                                       ;             ;
 ; MUX2x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd                                                         ;             ;
 ; full_adder.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd                                                     ;             ;
 ; FFD.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd                                                            ;             ;
 ; adder.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd                                                          ;             ;
+; MUX4x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd                                                         ;             ;
 ; Counter.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd                                                        ;             ;
+; Decoder.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd                                                        ;             ;
+; KeyScan.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd                                                        ;             ;
+; KeyControl.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd                                                     ;             ;
+; KeyDecode.vhd                                                      ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd                                                      ;             ;
+; SCA.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd                                                            ;             ;
+; SLCDC.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd                                                          ;             ;
 ; SerialReceiver.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd                                                 ;             ;
 ; LCDDispatcher.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd                                                  ;             ;
 ; SerialControl.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd                                                  ;             ;
 ; ShiftRegister.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd                                                  ;             ;
-; SLCDC_Wrapper.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd                                                  ;             ;
 ; sld_virtual_jtag.v                                                 ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v                                                  ;             ;
 ; sld_virtual_jtag_basic.v                                           ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v                                            ;             ;
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                       ;             ;
@@ -225,91 +238,119 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 173                      ;
+; Estimated Total logic elements              ; 237                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 145                      ;
+; Total combinational functions               ; 209                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 61                       ;
-;     -- 3 input functions                    ; 39                       ;
-;     -- <=2 input functions                  ; 45                       ;
+;     -- 4 input functions                    ; 82                       ;
+;     -- 3 input functions                    ; 43                       ;
+;     -- <=2 input functions                  ; 84                       ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 137                      ;
-;     -- arithmetic mode                      ; 8                        ;
+;     -- normal mode                          ; 170                      ;
+;     -- arithmetic mode                      ; 39                       ;
 ;                                             ;                          ;
-; Total registers                             ; 105                      ;
-;     -- Dedicated logic registers            ; 105                      ;
+; Total registers                             ; 147                      ;
+;     -- Dedicated logic registers            ; 147                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 12                       ;
+; I/O pins                                    ; 21                       ;
 ;                                             ;                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 107                      ;
-; Total fan-out                               ; 794                      ;
-; Average fan-out                             ; 2.81                     ;
+; Total fan-out                               ; 1080                     ;
+; Average fan-out                             ; 2.65                     ;
 +---------------------------------------------+--------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                       ; Entity Name                       ; Library Name ;
-+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SLCDC_Wrapper                                                                                                                          ; 145 (2)             ; 105 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 12   ; 0            ; 0          ; |SLCDC_Wrapper                                                                                                                                                                                                                                                                                                                                            ; SLCDC_Wrapper                     ; work         ;
-;    |LCDDispatcher:lcdd|                                                                                                                 ; 9 (4)               ; 7 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd                                                                                                                                                                                                                                                                                                                         ; LCDDispatcher                     ; work         ;
-;       |Counter:cup|                                                                                                                     ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup                                                                                                                                                                                                                                                                                                             ; Counter                           ; work         ;
-;          |MUX2x1:mux|                                                                                                                   ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup|MUX2x1:mux                                                                                                                                                                                                                                                                                                  ; MUX2x1                            ; work         ;
-;          |Registry:reg|                                                                                                                 ; 0 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup|Registry:reg                                                                                                                                                                                                                                                                                                ; Registry                          ; work         ;
-;             |FFD:ff0|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0                                                                                                                                                                                                                                                                                        ; FFD                               ; work         ;
-;             |FFD:ff1|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff1                                                                                                                                                                                                                                                                                        ; FFD                               ; work         ;
-;             |FFD:ff2|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                                                        ; FFD                               ; work         ;
-;             |FFD:ff3|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3                                                                                                                                                                                                                                                                                        ; FFD                               ; work         ;
-;    |SerialReceiver:sr|                                                                                                                  ; 12 (0)              ; 12 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr                                                                                                                                                                                                                                                                                                                          ; SerialReceiver                    ; work         ;
-;       |Counter:c|                                                                                                                       ; 4 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c                                                                                                                                                                                                                                                                                                                ; Counter                           ; work         ;
-;          |MUX2x1:mux|                                                                                                                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|MUX2x1:mux                                                                                                                                                                                                                                                                                                     ; MUX2x1                            ; work         ;
-;          |Registry:reg|                                                                                                                 ; 0 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|Registry:reg                                                                                                                                                                                                                                                                                                   ; Registry                          ; work         ;
-;             |FFD:ff0|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff0                                                                                                                                                                                                                                                                                           ; FFD                               ; work         ;
-;             |FFD:ff1|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff1                                                                                                                                                                                                                                                                                           ; FFD                               ; work         ;
-;             |FFD:ff2|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                                                           ; FFD                               ; work         ;
-;          |adder:ad|                                                                                                                     ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|adder:ad                                                                                                                                                                                                                                                                                                       ; adder                             ; work         ;
-;             |full_adder:fa3|                                                                                                            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa3                                                                                                                                                                                                                                                                                        ; full_adder                        ; work         ;
-;       |SerialControl:sc|                                                                                                                ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|SerialControl:sc                                                                                                                                                                                                                                                                                                         ; SerialControl                     ; work         ;
-;       |ShiftRegister:sr|                                                                                                                ; 1 (0)               ; 5 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|ShiftRegister:sr                                                                                                                                                                                                                                                                                                         ; ShiftRegister                     ; work         ;
-;          |FFD:ffd0|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0                                                                                                                                                                                                                                                                                                ; FFD                               ; work         ;
-;          |FFD:ffd1|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1                                                                                                                                                                                                                                                                                                ; FFD                               ; work         ;
-;          |FFD:ffd2|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2                                                                                                                                                                                                                                                                                                ; FFD                               ; work         ;
-;          |FFD:ffd3|                                                                                                                     ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3                                                                                                                                                                                                                                                                                                ; FFD                               ; work         ;
-;          |FFD:ffd4|                                                                                                                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4                                                                                                                                                                                                                                                                                                ; FFD                               ; work         ;
-;    |sld_hub:auto_hub|                                                                                                                   ; 122 (1)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
-;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 121 (0)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
-;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 121 (0)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
-;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 121 (1)             ; 86 (5)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
-;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 120 (0)             ; 81 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
-;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 120 (82)            ; 81 (53)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
-;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 20 (20)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; sld_rom_sr                        ; work         ;
-;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 18 (18)             ; 19 (19)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
-+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |SCA                                                                                                                                    ; 209 (2)             ; 147 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; 0          ; |SCA                                                                                                                                                                                                                                                                                                                                            ; SCA                               ; work         ;
+;    |KeyboardReader:kr|                                                                                                                  ; 64 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr                                                                                                                                                                                                                                                                                                                          ; KeyboardReader                    ; work         ;
+;       |KeyDecode:kd|                                                                                                                    ; 64 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd                                                                                                                                                                                                                                                                                                             ; KeyDecode                         ; work         ;
+;          |CLKDIV:clock|                                                                                                                 ; 50 (50)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock                                                                                                                                                                                                                                                                                                ; CLKDIV                            ; work         ;
+;          |KeyControl:control|                                                                                                           ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control                                                                                                                                                                                                                                                                                          ; KeyControl                        ; work         ;
+;          |KeyScan:scan|                                                                                                                 ; 11 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan                                                                                                                                                                                                                                                                                                ; KeyScan                           ; work         ;
+;             |Counter:count|                                                                                                             ; 6 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count                                                                                                                                                                                                                                                                                  ; Counter                           ; work         ;
+;                |Registry:reg|                                                                                                           ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg                                                                                                                                                                                                                                                                     ; Registry                          ; work         ;
+;                   |FFD:ff0|                                                                                                             ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff0                                                                                                                                                                                                                                                             ; FFD                               ; work         ;
+;                   |FFD:ff1|                                                                                                             ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff1                                                                                                                                                                                                                                                             ; FFD                               ; work         ;
+;                   |FFD:ff2|                                                                                                             ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                             ; FFD                               ; work         ;
+;                   |FFD:ff3|                                                                                                             ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff3                                                                                                                                                                                                                                                             ; FFD                               ; work         ;
+;                |adder:ad|                                                                                                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad                                                                                                                                                                                                                                                                         ; adder                             ; work         ;
+;                   |full_adder:fa2|                                                                                                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa2                                                                                                                                                                                                                                                          ; full_adder                        ; work         ;
+;             |Decoder:dec|                                                                                                               ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Decoder:dec                                                                                                                                                                                                                                                                                    ; Decoder                           ; work         ;
+;             |MUX4x1:mux|                                                                                                                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|MUX4x1:mux                                                                                                                                                                                                                                                                                     ; MUX4x1                            ; work         ;
+;    |SLCDC:sl|                                                                                                                           ; 22 (0)              ; 21 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl                                                                                                                                                                                                                                                                                                                                   ; SLCDC                             ; work         ;
+;       |LCDDispatcher:lcdd|                                                                                                              ; 9 (4)               ; 7 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd                                                                                                                                                                                                                                                                                                                ; LCDDispatcher                     ; work         ;
+;          |Counter:cup|                                                                                                                  ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup                                                                                                                                                                                                                                                                                                    ; Counter                           ; work         ;
+;             |Registry:reg|                                                                                                              ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg                                                                                                                                                                                                                                                                                       ; Registry                          ; work         ;
+;                |FFD:ff0|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
+;                |FFD:ff1|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff1                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
+;                |FFD:ff2|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
+;                |FFD:ff3|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
+;             |adder:ad|                                                                                                                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad                                                                                                                                                                                                                                                                                           ; adder                             ; work         ;
+;                |full_adder:fa3|                                                                                                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa3                                                                                                                                                                                                                                                                            ; full_adder                        ; work         ;
+;       |SerialReceiver:sr|                                                                                                               ; 13 (0)              ; 14 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr                                                                                                                                                                                                                                                                                                                 ; SerialReceiver                    ; work         ;
+;          |Counter:c|                                                                                                                    ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c                                                                                                                                                                                                                                                                                                       ; Counter                           ; work         ;
+;             |Registry:reg|                                                                                                              ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|Registry:reg                                                                                                                                                                                                                                                                                          ; Registry                          ; work         ;
+;                |FFD:ff0|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff0                                                                                                                                                                                                                                                                                  ; FFD                               ; work         ;
+;                |FFD:ff1|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff1                                                                                                                                                                                                                                                                                  ; FFD                               ; work         ;
+;                |FFD:ff2|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                                                  ; FFD                               ; work         ;
+;          |FFD:fsc|                                                                                                                      ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|FFD:fsc                                                                                                                                                                                                                                                                                                         ; FFD                               ; work         ;
+;          |FFD:f|                                                                                                                        ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|FFD:f                                                                                                                                                                                                                                                                                                           ; FFD                               ; work         ;
+;          |SerialControl:sc|                                                                                                             ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc                                                                                                                                                                                                                                                                                                ; SerialControl                     ; work         ;
+;          |ShiftRegister:sr|                                                                                                             ; 1 (0)               ; 5 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr                                                                                                                                                                                                                                                                                                ; ShiftRegister                     ; work         ;
+;             |FFD:ffd0|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
+;             |FFD:ffd1|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
+;             |FFD:ffd2|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
+;             |FFD:ffd3|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
+;             |FFD:ffd4|                                                                                                                  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                   ; 121 (1)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
+;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 120 (0)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
+;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 120 (0)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
+;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 120 (1)             ; 86 (5)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
+;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 119 (0)             ; 81 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
+;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 119 (81)            ; 81 (53)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
+;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 20 (20)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; sld_rom_sr                        ; work         ;
+;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 18 (18)             ; 19 (19)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                                                                                                ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                                                                                                                                                                    ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
-; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                 ;                 ;
-; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                             ;                 ;
-; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_presplit:presplit   ;                 ;
-; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric ;                 ;
-; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SLCDC_Wrapper|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_splitter:splitter   ;                 ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                                                                                      ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                                                                                                                                                          ; IP Include File ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                 ;                 ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                             ;                 ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_presplit:presplit   ;                 ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric ;                 ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_splitter:splitter   ;                 ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------+
+; State Machine - |SCA|SLCDC:sl|LCDDispatcher:lcdd|CurrentState                       ;
++---------------------+--------------------+---------------------+--------------------+
+; Name                ; CurrentState.THIRD ; CurrentState.SECOND ; CurrentState.FIRST ;
++---------------------+--------------------+---------------------+--------------------+
+; CurrentState.FIRST  ; 0                  ; 0                   ; 0                  ;
+; CurrentState.SECOND ; 0                  ; 1                   ; 1                  ;
+; CurrentState.THIRD  ; 1                  ; 0                   ; 1                  ;
++---------------------+--------------------+---------------------+--------------------+
 
 
 Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------+
-; State Machine - |SLCDC_Wrapper|SerialReceiver:sr|SerialControl:sc|CurrentState                           ;
+; State Machine - |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState                            ;
 +---------------------+--------------------+--------------------+---------------------+--------------------+
 ; Name                ; CurrentState.FORTH ; CurrentState.THIRD ; CurrentState.SECOND ; CurrentState.FIRST ;
 +---------------------+--------------------+--------------------+---------------------+--------------------+
@@ -322,7 +363,7 @@ Encoding Type:  One-Hot
 
 Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------+
-; State Machine - |SLCDC_Wrapper|LCDDispatcher:lcdd|CurrentState                      ;
+; State Machine - |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState ;
 +---------------------+--------------------+---------------------+--------------------+
 ; Name                ; CurrentState.THIRD ; CurrentState.SECOND ; CurrentState.FIRST ;
 +---------------------+--------------------+---------------------+--------------------+
@@ -337,12 +378,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 105   ;
+; Total registers                              ; 147   ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 10    ;
-; Number of registers using Asynchronous Clear ; 40    ;
+; Number of registers using Asynchronous Clear ; 54    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 63    ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -352,168 +393,202 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0|Q                                                                                                                                                                                                                                                                                   ; 1       ;
-; SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1|Q                                                                                                                                                                                                                                                                                   ; 2       ;
-; SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2|Q                                                                                                                                                                                                                                                                                   ; 2       ;
-; SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3|Q                                                                                                                                                                                                                                                                                   ; 2       ;
-; SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4|Q                                                                                                                                                                                                                                                                                   ; 2       ;
-; LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0|Q                                                                                                                                                                                                                                                                           ; 5       ;
-; LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff1|Q                                                                                                                                                                                                                                                                           ; 4       ;
-; LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2|Q                                                                                                                                                                                                                                                                           ; 3       ;
-; LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3|Q                                                                                                                                                                                                                                                                           ; 2       ;
-; SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff1|Q                                                                                                                                                                                                                                                                              ; 4       ;
-; SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff0|Q                                                                                                                                                                                                                                                                              ; 5       ;
-; SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff2|Q                                                                                                                                                                                                                                                                              ; 3       ;
+; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0|Q                                                                                                                                                                                                                                                                          ; 2       ;
+; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1|Q                                                                                                                                                                                                                                                                          ; 3       ;
+; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2|Q                                                                                                                                                                                                                                                                          ; 3       ;
+; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3|Q                                                                                                                                                                                                                                                                          ; 3       ;
+; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4|Q                                                                                                                                                                                                                                                                          ; 3       ;
+; SLCDC:sl|SerialReceiver:sr|FFD:fsc|Q                                                                                                                                                                                                                                                                                            ; 8       ;
+; SLCDC:sl|SerialReceiver:sr|FFD:f|Q                                                                                                                                                                                                                                                                                              ; 3       ;
+; KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock|count[0]                                                                                                                                                                                                                                                                            ; 2       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 2       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
-; Total number of inverted registers = 14                                                                                                                                                                                                                                                                                         ;         ;
+; Total number of inverted registers = 10                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: UsbPort:usbp|sld_virtual_jtag:b2v_inst ;
-+-------------------------+------------------+----------------------------------------+
-; Parameter Name          ; Value            ; Type                                   ;
-+-------------------------+------------------+----------------------------------------+
-; sld_auto_instance_index ; YES              ; String                                 ;
-; sld_instance_index      ; 0                ; Signed Integer                         ;
-; sld_ir_width            ; 8                ; Signed Integer                         ;
-; sld_sim_n_scan          ; 0                ; Signed Integer                         ;
-; sld_sim_action          ; UNUSED           ; String                                 ;
-; sld_sim_total_length    ; 0                ; Signed Integer                         ;
-; lpm_type                ; sld_virtual_jtag ; String                                 ;
-; lpm_hint                ; UNUSED           ; String                                 ;
-+-------------------------+------------------+----------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; div            ; 1000  ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; set  ; Input ; Info     ; Stuck at GND                                  ;
-+------+-------+----------+-----------------------------------------------+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UsbPort:usb|sld_virtual_jtag:b2v_inst ;
++-------------------------+------------------+---------------------------------------+
+; Parameter Name          ; Value            ; Type                                  ;
++-------------------------+------------------+---------------------------------------+
+; sld_auto_instance_index ; YES              ; String                                ;
+; sld_instance_index      ; 0                ; Signed Integer                        ;
+; sld_ir_width            ; 8                ; Signed Integer                        ;
+; sld_sim_n_scan          ; 0                ; Signed Integer                        ;
+; sld_sim_action          ; UNUSED           ; String                                ;
+; sld_sim_total_length    ; 0                ; Signed Integer                        ;
+; lpm_type                ; sld_virtual_jtag ; String                                ;
+; lpm_hint                ; UNUSED           ; String                                ;
++-------------------------+------------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; set  ; Input ; Info     ; Stuck at GND                                  ;
-+------+-------+----------+-----------------------------------------------+
-
-
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; set  ; Input ; Info     ; Stuck at GND                                  ;
-+------+-------+----------+-----------------------------------------------+
-
-
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; set  ; Input ; Info     ; Stuck at GND                                  ;
-+------+-------+----------+-----------------------------------------------+
-
-
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; set  ; Input ; Info     ; Stuck at GND                                  ;
-+------+-------+----------+-----------------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|ShiftRegister:sr" ;
-+-------+-------+----------+-------------------------------------+
-; Port  ; Type  ; Severity ; Details                             ;
-+-------+-------+----------+-------------------------------------+
-; reset ; Input ; Info     ; Stuck at GND                        ;
-+-------+-------+----------+-------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UsbPort:usb"                                                                                    ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; outputport[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SerialReceiver:sr|Counter:c"                                                           ;
+; Port Connectivity Checks: "SLCDC:sl|LCDDispatcher:lcdd|Counter:cup"                                               ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
+; pl      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr" ;
++-------+-------+----------+----------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                      ;
++-------+-------+----------+----------------------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                                 ;
++-------+-------+----------+----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|Counter:c"                                                  ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; pl      ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; q[3]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UsbPort:usbp"                                                                                   ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                             ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; inputport[0]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; outputport[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; outputport[0]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|FFD:fsc" ;
++-------+-------+----------+-------------------------------------+
+; Port  ; Type  ; Severity ; Details                             ;
++-------+-------+----------+-------------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                        ;
+; set   ; Input ; Info     ; Stuck at GND                        ;
+; en    ; Input ; Info     ; Stuck at VCC                        ;
++-------+-------+----------+-------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3" ;
-+-------+-------+----------+------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                              ;
-+-------+-------+----------+------------------------------------------------------+
-; reset ; Input ; Info     ; Stuck at GND                                         ;
-; set   ; Input ; Info     ; Stuck at GND                                         ;
-+-------+-------+----------+------------------------------------------------------+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr|FFD:f" ;
++-------+-------+----------+-----------------------------------+
+; Port  ; Type  ; Severity ; Details                           ;
++-------+-------+----------+-----------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                      ;
+; set   ; Input ; Info     ; Stuck at GND                      ;
+; en    ; Input ; Info     ; Stuck at VCC                      ;
++-------+-------+----------+-----------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2" ;
-+-------+-------+----------+------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                              ;
-+-------+-------+----------+------------------------------------------------------+
-; reset ; Input ; Info     ; Stuck at GND                                         ;
-; set   ; Input ; Info     ; Stuck at GND                                         ;
-+-------+-------+----------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff3" ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff1" ;
-+-------+-------+----------+------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                              ;
-+-------+-------+----------+------------------------------------------------------+
-; reset ; Input ; Info     ; Stuck at GND                                         ;
-; set   ; Input ; Info     ; Stuck at GND                                         ;
-+-------+-------+----------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff2" ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0" ;
-+-------+-------+----------+------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                              ;
-+-------+-------+----------+------------------------------------------------------+
-; reset ; Input ; Info     ; Stuck at GND                                         ;
-; set   ; Input ; Info     ; Stuck at GND                                         ;
-+-------+-------+----------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff1" ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|Registry:reg" ;
-+------+-------+----------+-----------------------------------------------+
-; Port ; Type  ; Severity ; Details                                       ;
-+------+-------+----------+-----------------------------------------------+
-; e    ; Input ; Info     ; Stuck at VCC                                  ;
-+------+-------+----------+-----------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff0" ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg" ;
++------+-------+----------+--------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                  ;
++------+-------+----------+--------------------------------------------------------------------------+
+; e    ; Input ; Info     ; Stuck at VCC                                                             ;
++------+-------+----------+--------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup|adder:ad"                                            ;
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad"                 ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -523,22 +598,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LCDDispatcher:lcdd|Counter:cup"                                                        ;
+; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count"                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
+; pl      ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Virtual JTAG Settings                                                                                                                                    ;
-+----------------+------------+------------------+----------+---------+-----------------+-------------------------+----------------------------------------+
-; Instance Index ; Auto Index ; Index Reassigned ; IR Width ; Address ; USER1 DR length ; VIR capture instruction ; Hierarchy Location                     ;
-+----------------+------------+------------------+----------+---------+-----------------+-------------------------+----------------------------------------+
-; 0              ; YES        ; N/A              ; 8        ; 0x100   ; 9               ; 0x00B                   ; UsbPort:usbp|sld_virtual_jtag:b2v_inst ;
-+----------------+------------+------------------+----------+---------+-----------------+-------------------------+----------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Virtual JTAG Settings                                                                                                                                   ;
++----------------+------------+------------------+----------+---------+-----------------+-------------------------+---------------------------------------+
+; Instance Index ; Auto Index ; Index Reassigned ; IR Width ; Address ; USER1 DR length ; VIR capture instruction ; Hierarchy Location                    ;
++----------------+------------+------------------+----------+---------+-----------------+-------------------------+---------------------------------------+
+; 0              ; YES        ; N/A              ; 8        ; 0x100   ; 9               ; 0x00B                   ; UsbPort:usb|sld_virtual_jtag:b2v_inst ;
++----------------+------------+------------------+----------+---------+-----------------+-------------------------+---------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -546,21 +622,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 51                          ;
-; cycloneiii_ff         ; 19                          ;
-;     CLR               ; 7                           ;
+; boundary_port         ; 60                          ;
+; cycloneiii_ff         ; 61                          ;
+;     CLR               ; 20                          ;
 ;     ENA               ; 5                           ;
-;     plain             ; 7                           ;
-; cycloneiii_lcell_comb ; 27                          ;
-;     normal            ; 27                          ;
+;     ENA CLR           ; 1                           ;
+;     plain             ; 35                          ;
+; cycloneiii_lcell_comb ; 94                          ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 63                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 11                          ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 28                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.39                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -579,7 +658,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 24 19:31:12 2023
+    Info: Processing started: Wed Apr 26 16:31:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Test -c Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -625,17 +704,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file keyscan
 Info (12021): Found 2 design units, including 1 entities, in source file keycontrol.vhd
     Info (12022): Found design unit 1: KeyControl-arcKC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd Line: 10
     Info (12023): Found entity 1: KeyControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keycontrol_tb.vhd
-    Info (12022): Found design unit 1: KeyControl_tb-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl_tb.vhd Line: 7
-    Info (12023): Found entity 1: KeyControl_tb File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl_tb.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keyscan_tb.vhd
-    Info (12022): Found design unit 1: KeyScan_tb-arc_ks File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan_tb.vhd Line: 7
-    Info (12023): Found entity 1: KeyScan_tb File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file keydecode.vhd
     Info (12022): Found design unit 1: KeyDecode-arc_kd File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 13
     Info (12023): Found entity 1: KeyDecode File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sca.vhd
-    Info (12022): Found design unit 1: SCA-arc_sca File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 13
+    Info (12022): Found design unit 1: SCA-arc_sca File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 14
     Info (12023): Found entity 1: SCA File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file slcdc.vhd
     Info (12022): Found design unit 1: SLCDC-arc_slcdc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 11
@@ -655,21 +728,32 @@ Info (12021): Found 2 design units, including 1 entities, in source file shiftre
 Info (12021): Found 2 design units, including 1 entities, in source file slcdc_wrapper.vhd
     Info (12022): Found design unit 1: SLCDC_Wrapper-arc_slcdc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 11
     Info (12023): Found entity 1: SLCDC_Wrapper File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 4
-Info (12127): Elaborating entity "SLCDC_Wrapper" for the top level hierarchy
-Critical Warning (10920): VHDL Incomplete Partial Association warning at SLCDC_Wrapper.vhd(48): port or argument "inputPort" has 7/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 48
-Critical Warning (10920): VHDL Incomplete Partial Association warning at SLCDC_Wrapper.vhd(48): port or argument "outputPort" has 5/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 48
-Info (12128): Elaborating entity "LCDDispatcher" for hierarchy "LCDDispatcher:lcdd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 38
-Info (12128): Elaborating entity "Counter" for hierarchy "LCDDispatcher:lcdd|Counter:cup" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd Line: 29
-Info (12128): Elaborating entity "adder" for hierarchy "LCDDispatcher:lcdd|Counter:cup|adder:ad" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 44
-Info (12128): Elaborating entity "full_adder" for hierarchy "LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 22
-Info (12128): Elaborating entity "MUX2x1" for hierarchy "LCDDispatcher:lcdd|Counter:cup|MUX2x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 50
-Info (12128): Elaborating entity "Registry" for hierarchy "LCDDispatcher:lcdd|Counter:cup|Registry:reg" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 56
-Info (12128): Elaborating entity "FFD" for hierarchy "LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd Line: 24
-Info (12128): Elaborating entity "Terminal_Count" for hierarchy "LCDDispatcher:lcdd|Counter:cup|Terminal_Count:utc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 64
-Info (12128): Elaborating entity "UsbPort" for hierarchy "UsbPort:usbp" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 48
-Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "UsbPort:usbp|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
-Info (12130): Elaborated megafunction instantiation "UsbPort:usbp|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
-Info (12133): Instantiated megafunction "UsbPort:usbp|sld_virtual_jtag:b2v_inst" with the following parameter: File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
+Info (12127): Elaborating entity "SCA" for the top level hierarchy
+Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(61): port or argument "inputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 61
+Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(61): port or argument "outputPort" has 4/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 61
+Info (12128): Elaborating entity "KeyboardReader" for hierarchy "KeyboardReader:kr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 43
+Info (12128): Elaborating entity "KeyDecode" for hierarchy "KeyboardReader:kr|KeyDecode:kd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 25
+Info (12128): Elaborating entity "CLKDIV" for hierarchy "KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 39
+Info (12128): Elaborating entity "KeyScan" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 44
+Info (12128): Elaborating entity "Counter" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 42
+Info (12128): Elaborating entity "adder" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 44
+Info (12128): Elaborating entity "full_adder" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 22
+Info (12128): Elaborating entity "MUX2x1" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|MUX2x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 50
+Info (12128): Elaborating entity "Registry" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 56
+Info (12128): Elaborating entity "FFD" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff0" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd Line: 24
+Info (12128): Elaborating entity "Terminal_Count" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Terminal_Count:utc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 65
+Info (12128): Elaborating entity "Decoder" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Decoder:dec" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 50
+Info (12128): Elaborating entity "MUX4x1" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|MUX4x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 55
+Info (12128): Elaborating entity "KeyControl" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 53
+Info (12128): Elaborating entity "SLCDC" for hierarchy "SLCDC:sl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 52
+Info (12128): Elaborating entity "SerialReceiver" for hierarchy "SLCDC:sl|SerialReceiver:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 32
+Info (12128): Elaborating entity "SerialControl" for hierarchy "SLCDC:sl|SerialReceiver:sr|SerialControl:sc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 74
+Info (12128): Elaborating entity "ShiftRegister" for hierarchy "SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 85
+Info (12128): Elaborating entity "LCDDispatcher" for hierarchy "SLCDC:sl|LCDDispatcher:lcdd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 42
+Info (12128): Elaborating entity "UsbPort" for hierarchy "UsbPort:usb" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 61
+Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
+Info (12133): Instantiated megafunction "UsbPort:usb|sld_virtual_jtag:b2v_inst" with the following parameter: File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
     Info (12134): Parameter "lpm_type" = "sld_virtual_jtag"
     Info (12134): Parameter "sld_auto_instance_index" = "YES"
     Info (12134): Parameter "sld_instance_index" = "0"
@@ -677,17 +761,14 @@ Info (12133): Instantiated megafunction "UsbPort:usbp|sld_virtual_jtag:b2v_inst"
     Info (12134): Parameter "sld_sim_action" = "UNUSED"
     Info (12134): Parameter "sld_sim_n_scan" = "0"
     Info (12134): Parameter "sld_sim_total_length" = "0"
-Info (12128): Elaborating entity "sld_virtual_jtag_basic" for hierarchy "UsbPort:usbp|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v Line: 152
-Info (12131): Elaborated megafunction instantiation "UsbPort:usbp|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst", which is child of megafunction instantiation "UsbPort:usbp|sld_virtual_jtag:b2v_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v Line: 152
-Info (12128): Elaborating entity "sld_virtual_jtag_impl" for hierarchy "UsbPort:usbp|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 152
-Info (12131): Elaborated megafunction instantiation "UsbPort:usbp|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst", which is child of megafunction instantiation "UsbPort:usbp|sld_virtual_jtag:b2v_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 152
-Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "UsbPort:usbp|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 415
-Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "UsbPort:usbp|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
-Info (12128): Elaborating entity "SerialReceiver" for hierarchy "SerialReceiver:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 67
-Info (12128): Elaborating entity "SerialControl" for hierarchy "SerialReceiver:sr|SerialControl:sc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 46
-Info (12128): Elaborating entity "ShiftRegister" for hierarchy "SerialReceiver:sr|ShiftRegister:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 57
+Info (12128): Elaborating entity "sld_virtual_jtag_basic" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v Line: 152
+Info (12131): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst", which is child of megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v Line: 152
+Info (12128): Elaborating entity "sld_virtual_jtag_impl" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 152
+Info (12131): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst", which is child of megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 152
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 415
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.04.24.19:31:39 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.04.26.16:31:28 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -713,19 +794,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/s
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SS" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 6
-    Warning (15610): No output dependent on input pin "SCLK" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 6
-    Warning (15610): No output dependent on input pin "SDX" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 6
-    Warning (15610): No output dependent on input pin "accept" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd Line: 6
-Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 267 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 177 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Mon Apr 24 19:31:56 2023
-    Info: Elapsed time: 00:00:44
-    Info: Total CPU time (on all processors): 00:01:26
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 241 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Wed Apr 26 16:31:42 2023
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:01:01
 
 

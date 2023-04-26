@@ -4,27 +4,63 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Wrl",
+					"name" : "LCD_RS",
 					"strict" : false
 				},
 				{
-					"name" : "Dout[0]",
+					"name" : "LCD_EN",
 					"strict" : false
 				},
 				{
-					"name" : "Dout[1]",
+					"name" : "LEDS[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Dout[2]",
+					"name" : "LEDS[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Dout[3]",
+					"name" : "LEDS[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Dout[4]",
+					"name" : "LEDS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_data[3]",
 					"strict" : false
 				},
 				{
@@ -33,6 +69,22 @@
 				},
 				{
 					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "I[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I[3]",
 					"strict" : false
 				},
 				{

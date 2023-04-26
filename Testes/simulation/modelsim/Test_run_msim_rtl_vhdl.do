@@ -12,7 +12,9 @@ vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ful
 vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd}
 vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd}
 vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd}
+vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd}
 vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd}
+vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd}
 vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd}
 vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd}
 

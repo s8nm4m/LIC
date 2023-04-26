@@ -12,6 +12,7 @@ end KeyDecode;
 
 architecture arc_kd of KeyDecode is
 component CLKDIV
+generic(div: natural := 50000000);
 port ( clk_in: in std_logic;
 		 clk_out: out std_logic);
 end component;
@@ -35,7 +36,8 @@ signal kp, ks, clockm : std_logic;
 
 begin
 
-clock: clkDIV port map(
+clock: clkDIV generic map(1000)
+port map(
 clk_in => CLK,
 clk_out => clockm);
 
@@ -51,7 +53,7 @@ K => K);
 control : KeyControl port map(
 Kpress => kp,
 Kack => Kack,
-CLK => CLK,
+CLK => clockm,
 Reset => Reset,
 Kval => Kval,
 KScan => ks);

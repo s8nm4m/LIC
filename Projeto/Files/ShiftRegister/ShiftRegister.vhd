@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity ShiftRegister is
 port(
-data, clk, enable : in std_logic;
+data, clk, enable, reset : in std_logic;
 D : out std_logic_vector(4 downto 0));
 end ShiftRegister;
 
@@ -24,7 +24,7 @@ begin
 
 ffd4: FFD port map(
 SET => '0',
-RESET => '0',
+RESET => reset,
 CLK => clk,
 D => data,
 EN => enable,
@@ -32,7 +32,7 @@ Q => f4);
 
 ffd3: FFD port map(
 SET => '0',
-RESET => '0',
+RESET => reset,
 CLK => clk,
 D => f4,
 EN => enable,
@@ -40,7 +40,7 @@ Q => f3);
 
 ffd2: FFD port map(
 SET => '0',
-RESET => '0',
+RESET => reset,
 CLK => clk,
 D => f3,
 EN => enable,
@@ -48,7 +48,7 @@ Q => f2);
 
 ffd1: FFD port map(
 SET => '0',
-RESET => '0',
+RESET => reset,
 CLK => clk,
 D => f2,
 EN => enable,
@@ -56,11 +56,12 @@ Q => f1);
 
 ffd0: FFD port map(
 SET => '0',
-RESET => '0',
+RESET => reset,
 CLK => clk,
 D => f1,
 EN => enable,
 Q => D(0));
+
 
 D(1) <= f1;
 D(2) <= f2;
