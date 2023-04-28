@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DoorController is
+port(
+Dval, Sclose, Sopen, Psensor, Reset : in std_logic;
+Din : in std_logic_vector(4 downto 0);
+OnOff, done : out std_logic;
+Dout : out std_logic_vector(4 downto 0));
+end DoorController;

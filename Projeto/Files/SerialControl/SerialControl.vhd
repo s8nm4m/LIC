@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 entity SerialControl is
 port(
 Reset, enRx, accept, eq5, CLK : in std_logic;
-clr, wr, DXval, cenable : out std_logic);
+clr, wr, DXval, cenable, busy : out std_logic);
 end SerialControl;
 
 architecture arc_sc of SerialControl is
@@ -46,5 +46,6 @@ clr <= '1' when (CurrentState = FIRST) else '0';
 cenable <= '1' when (CurrentState = SECOND) else '0';
 wr <= '1' when (CurrentState = SECOND) else '0';
 DXval <= '1' when (CurrentState = THIRD) else '0';
+busy <= '0' when (CurrentState = FIRST) else '1';
 
 end arc_sc;

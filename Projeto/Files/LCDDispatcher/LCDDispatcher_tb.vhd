@@ -45,16 +45,16 @@ begin
 Reset_tb <= '1';
 Dval_tb <= '0';
 Din_tb <= "10101";
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
 
 Reset_tb <= '0';
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
 
 Dval_tb <= '1';
 wait for MCLK_PERIOD *26;
 
 Dval_tb <= '0';
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
 wait;
 end process;
 end;

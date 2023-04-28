@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SDC is
+port(
+SS, SDX, SCLK : in std_logic;
+OnOff : out std_logic;
+Dout : out std_logic_vector(4 downto 0));
+end SDC;
+
+architecture arc of SDC is 
+component SerialReceiver
+port(
+SS, SCLK, CLK, SDX, accept, Reset : in std_logic;
+DXval : out std_logic;
+D : out std_logic_vector(4 downto 0));
+end component;
