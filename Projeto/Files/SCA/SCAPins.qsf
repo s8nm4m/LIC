@@ -8,14 +8,23 @@ set_location_assignment PIN_P11 -to CLK
 
 # inputs
 set_location_assignment PIN_C10 -to Reset
+set_location_assignment PIN_C11 -to Sclose
+set_location_assignment PIN_D12 -to Sopen
+set_location_assignment PIN_C12 -to Psensor
+#set_location_assignment PIN_A12 -to SW[4]
+#set_location_assignment PIN_B12 -to SW[5]
+#set_location_assignment PIN_A13 -to SW[6]
+#set_location_assignment PIN_A14 -to SW[7]
+#set_location_assignment PIN_B14 -to SW[8]
+#set_location_assignment PIN_F15 -to SW[9]
 
 #Leds
-set_location_assignment PIN_A8 -to LEDS[0]
-set_location_assignment PIN_A9 -to LEDS[1]
-set_location_assignment PIN_A10 -to LEDS[2]
-set_location_assignment PIN_B10 -to LEDS[3]
-set_location_assignment PIN_D13 -to LEDS[4]
-set_location_assignment PIN_C13 -to LEDS[5]
+set_location_assignment PIN_A8 -to Door_data[0]
+set_location_assignment PIN_A9 -to Door_data[1]
+set_location_assignment PIN_A10 -to Door_data[2]
+set_location_assignment PIN_B10 -to Door_data[3]
+set_location_assignment PIN_D13 -to OC
+#set_location_assignment PIN_C13 -to LEDS[5]
 
 #Keypad
 set_location_assignment PIN_W5     -to  I[0]

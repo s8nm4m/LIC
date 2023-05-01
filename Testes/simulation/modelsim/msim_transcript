@@ -10,146 +10,208 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {D:/ISEL/2223/LEIC/s2/LIC/Testes/full_adder.vhd}
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:06:24 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/full_adder.vhd 
+# Start time: 11:30:07 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Terminal_Count
+# -- Compiling architecture arc_tc of Terminal_Count
+# End time: 11:30:07 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:08 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registry
+# -- Compiling architecture arc_reg of Registry
+# End time: 11:30:08 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:08 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX2x1
+# -- Compiling architecture arc_mux of MUX2x1
+# End time: 11:30:08 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:08 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder
 # -- Compiling architecture arc_fa of full_adder
-# End time: 23:06:24 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 11:30:08 on Apr 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd}
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:06:24 on Apr 26,2023
-# vcom -reportprogress 300 -93 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd 
+# Start time: 11:30:08 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FFD
+# -- Compiling architecture logicFunction of FFD
+# End time: 11:30:08 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:08 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder
 # -- Compiling architecture arc_adder of adder
-# End time: 23:06:24 on Apr 26,2023, Elapsed time: 0:00:00
+# End time: 11:30:09 on Apr 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:09 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter
+# -- Compiling architecture arc_cc of Counter
+# End time: 11:30:09 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:09 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialReceiver
+# -- Compiling architecture arc_sr of SerialReceiver
+# End time: 11:30:09 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:09 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialControl
+# -- Compiling architecture arc_sc of SerialControl
+# End time: 11:30:09 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:09 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftRegister
+# -- Compiling architecture arc_sr of ShiftRegister
+# End time: 11:30:09 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:09 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SDC
+# -- Compiling architecture arc of SDC
+# End time: 11:30:09 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:10 on Apr 28,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DoorController
+# -- Compiling architecture arc of DoorController
+# End time: 11:30:10 on Apr 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Files/SDC/SDC_tb.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:06:38 on Apr 26,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd 
+# Start time: 11:30:25 on Apr 28,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Files/SDC/SDC_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity adder_tb
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(7): near "is": (vcom-1576) expecting OF.
-# End time: 23:06:38 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:07:02 on Apr 26,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_tb
-# -- Compiling architecture arc of adder_tb
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(37): Illegal target for signal assignment.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(37): (vcom-1136) Unknown identifier "CLK_tb".
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(39): Illegal target for signal assignment.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(39): (vcom-1136) Unknown identifier "CLK_tb".
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(46): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(47): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(51): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(52): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(56): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(57): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(61): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(62): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(67): VHDL Compiler exiting
-# End time: 23:07:02 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 12, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:07:17 on Apr 26,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_tb
-# -- Compiling architecture arc of adder_tb
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(37): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(39): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(46): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(47): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(51): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(52): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(56): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(57): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(61): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(62): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(67): VHDL Compiler exiting
-# End time: 23:07:17 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 10, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:12:18 on Apr 26,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_tb
-# -- Compiling architecture arc of adder_tb
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(37): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(39): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(46): (vcom-1272) Length of expected is 4; length of actual is 3.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(47): (vcom-1272) Length of expected is 4; length of actual is 3.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(51): (vcom-1272) Length of expected is 4; length of actual is 3.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(52): (vcom-1272) Length of expected is 4; length of actual is 3.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(56): (vcom-1272) Length of expected is 4; length of actual is 3.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(57): (vcom-1272) Length of expected is 4; length of actual is 3.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(62): VHDL Compiler exiting
-# End time: 23:12:18 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 8, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:12:48 on Apr 26,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_tb
-# -- Compiling architecture arc of adder_tb
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(37): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(39): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd(62): VHDL Compiler exiting
-# End time: 23:12:48 on Apr 26,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:13:21 on Apr 26,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Files/adder/adder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder_tb
-# -- Compiling architecture arc of adder_tb
-# End time: 23:13:21 on Apr 26,2023, Elapsed time: 0:00:00
+# -- Compiling entity SDC_tb
+# -- Compiling architecture arc of SDC_tb
+# End time: 11:30:25 on Apr 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.adder_tb
-# vsim work.adder_tb 
-# Start time: 23:13:29 on Apr 26,2023
+vsim work.sdc_tb
+# vsim work.sdc_tb 
+# Start time: 11:30:30 on Apr 28,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.adder_tb(arc)
+# Loading work.sdc_tb(arc)
+# Loading work.sdc(arc)
+# Loading work.serialreceiver(arc_sr)
+# Loading work.counter(arc_cc)
 # Loading work.adder(arc_adder)
 # Loading work.full_adder(arc_fa)
-add wave -position end  sim:/adder_tb/A_tb
-add wave -position end  sim:/adder_tb/B_tb
-add wave -position end  sim:/adder_tb/S_tb
-add wave -position end  sim:/adder_tb/Ci_tb
-add wave -position end  sim:/adder_tb/Co_tb
-add wave -position end  sim:/adder_tb/CLK_tb
+# Loading work.mux2x1(arc_mux)
+# Loading work.registry(arc_reg)
+# Loading work.ffd(logicfunction)
+# Loading work.terminal_count(arc_tc)
+# Loading work.serialcontrol(arc_sc)
+# Loading work.shiftregister(arc_sr)
+# Loading work.doorcontroller(arc)
+add wave -position end  sim:/sdc_tb/SS_tb
+add wave -position end  sim:/sdc_tb/SDX_tb
+add wave -position end  sim:/sdc_tb/SCLK_tb
+add wave -position end  sim:/sdc_tb/Sclose_tb
+add wave -position end  sim:/sdc_tb/Sopen_tb
+add wave -position end  sim:/sdc_tb/Psensor_tb
+add wave -position end  sim:/sdc_tb/CLK_tb
+add wave -position end  sim:/sdc_tb/OnOff_tb
+add wave -position end  sim:/sdc_tb/busy_tb
+add wave -position end  sim:/sdc_tb/Reset_tb
+add wave -position end  sim:/sdc_tb/Dout_tb
 run
-# End time: 23:14:33 on Apr 26,2023, Elapsed time: 0:01:04
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Files/SDC/SDC_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:36:41 on Apr 28,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Files/SDC/SDC_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SDC_tb
+# -- Compiling architecture arc of SDC_tb
+# End time: 11:36:42 on Apr 28,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.sdc_tb(arc)
+run
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Files/SDC/SDC_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:39:03 on Apr 28,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Files/SDC/SDC_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SDC_tb
+# -- Compiling architecture arc of SDC_tb
+# End time: 11:39:03 on Apr 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.sdc_tb(arc)
+run
+# End time: 11:40:23 on Apr 28,2023, Elapsed time: 0:09:53
 # Errors: 0, Warnings: 0
