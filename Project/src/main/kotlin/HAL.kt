@@ -40,5 +40,4 @@ fun main() {
     println(HAL.readBits(2))
     HAL.setBits(0)
     println(HAL.readBits(0))
-
 }

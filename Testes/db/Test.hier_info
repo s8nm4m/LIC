@@ -1,22 +1,57 @@
-|KeyScan
-KScan => Counter:count.CE
-CLK => Counter:count.CLK
-Reset => Counter:count.Reset
-I[0] => MUX4x1:mux.I[0]
-I[1] => MUX4x1:mux.I[1]
-I[2] => MUX4x1:mux.I[2]
-I[3] => MUX4x1:mux.I[3]
-Kpress << MUX4x1:mux.Y
-O[0] << Decoder:dec.O[0]
-O[1] << Decoder:dec.O[1]
-O[2] << Decoder:dec.O[2]
-K[0] << Counter:count.Q[0]
-K[1] << Counter:count.Q[1]
-K[2] << Counter:count.Q[2]
-K[3] << Counter:count.Q[3]
+|SLCDC
+SS => SerialReceiver:sr.SS
+SCLK => SerialReceiver:sr.SCLK
+CLK => SerialReceiver:sr.CLK
+CLK => LCDDispatcher:lcdd.CLK
+SDX => SerialReceiver:sr.SDX
+Reset => SerialReceiver:sr.Reset
+Reset => LCDDispatcher:lcdd.Reset
+Wrl <= LCDDispatcher:lcdd.Wrl
+Dout[0] <= LCDDispatcher:lcdd.Dout[0]
+Dout[1] <= LCDDispatcher:lcdd.Dout[1]
+Dout[2] <= LCDDispatcher:lcdd.Dout[2]
+Dout[3] <= LCDDispatcher:lcdd.Dout[3]
+Dout[4] <= LCDDispatcher:lcdd.Dout[4]
 
 
-|KeyScan|Counter:count
+|SLCDC|SerialReceiver:sr
+SS => FFD:f.D
+SCLK => FFD:fsc.D
+CLK => FFD:f.CLK
+CLK => FFD:fsc.CLK
+CLK => SerialControl:sc.CLK
+SDX => ShiftRegister:sr.data
+accept => SerialControl:sc.accept
+Reset => SerialControl:sc.Reset
+DXval <= SerialControl:sc.DXval
+D[0] <= ShiftRegister:sr.D[0]
+D[1] <= ShiftRegister:sr.D[1]
+D[2] <= ShiftRegister:sr.D[2]
+D[3] <= ShiftRegister:sr.D[3]
+D[4] <= ShiftRegister:sr.D[4]
+
+
+|SLCDC|SerialReceiver:sr|FFD:f
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|SerialReceiver:sr|FFD:fsc
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|SerialReceiver:sr|Counter:c
 PL => MUX2x1:mux.S
 CE => adder:ad.Ci
 CLK => Registry:reg.CLK
@@ -32,7 +67,7 @@ Q[2] <= Registry:reg.Q[2]
 Q[3] <= Registry:reg.Q[3]
 
 
-|KeyScan|Counter:count|adder:ad
+|SLCDC|SerialReceiver:sr|Counter:c|adder:ad
 A[0] => full_adder:fa1.A
 A[1] => full_adder:fa2.A
 A[2] => full_adder:fa3.A
@@ -49,7 +84,7 @@ S[2] <= full_adder:fa3.S
 S[3] <= full_adder:fa4.S
 
 
-|KeyScan|Counter:count|adder:ad|full_adder:fa1
+|SLCDC|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa1
 A => S.IN0
 A => Co.IN0
 A => Co.IN0
@@ -63,7 +98,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|adder:ad|full_adder:fa2
+|SLCDC|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa2
 A => S.IN0
 A => Co.IN0
 A => Co.IN0
@@ -77,7 +112,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|adder:ad|full_adder:fa3
+|SLCDC|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa3
 A => S.IN0
 A => Co.IN0
 A => Co.IN0
@@ -91,7 +126,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|adder:ad|full_adder:fa4
+|SLCDC|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa4
 A => S.IN0
 A => Co.IN0
 A => Co.IN0
@@ -105,7 +140,7 @@ Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|MUX2x1:mux
+|SLCDC|SerialReceiver:sr|Counter:c|MUX2x1:mux
 A[0] => Y.IN0
 A[1] => Y.IN0
 A[2] => Y.IN0
@@ -128,7 +163,7 @@ Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|Registry:reg
+|SLCDC|SerialReceiver:sr|Counter:c|Registry:reg
 D[0] => FFD:ff0.D
 D[1] => FFD:ff1.D
 D[2] => FFD:ff2.D
@@ -151,7 +186,7 @@ Q[2] <= FFD:ff2.Q
 Q[3] <= FFD:ff3.Q
 
 
-|KeyScan|Counter:count|Registry:reg|FFD:ff0
+|SLCDC|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff0
 CLK => Q~reg0.CLK
 RESET => Q~reg0.ACLR
 RESET => Q.IN0
@@ -161,7 +196,7 @@ EN => Q~reg0.ENA
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|Registry:reg|FFD:ff1
+|SLCDC|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff1
 CLK => Q~reg0.CLK
 RESET => Q~reg0.ACLR
 RESET => Q.IN0
@@ -171,7 +206,7 @@ EN => Q~reg0.ENA
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|Registry:reg|FFD:ff2
+|SLCDC|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff2
 CLK => Q~reg0.CLK
 RESET => Q~reg0.ACLR
 RESET => Q.IN0
@@ -181,7 +216,7 @@ EN => Q~reg0.ENA
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|Registry:reg|FFD:ff3
+|SLCDC|SerialReceiver:sr|Counter:c|Registry:reg|FFD:ff3
 CLK => Q~reg0.CLK
 RESET => Q~reg0.ACLR
 RESET => Q.IN0
@@ -191,7 +226,7 @@ EN => Q~reg0.ENA
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Counter:count|Terminal_Count:utc
+|SLCDC|SerialReceiver:sr|Counter:c|Terminal_Count:utc
 Q[0] => TC.IN0
 Q[1] => TC.IN1
 Q[2] => TC.IN1
@@ -199,33 +234,299 @@ Q[3] => TC.IN1
 TC <= TC.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|Decoder:dec
-S[0] => O.IN0
-S[0] => O.IN0
-S[0] => O.IN0
-S[0] => O.IN0
-S[1] => O.IN1
-S[1] => O.IN1
-S[1] => O.IN1
-S[1] => O.IN1
-O[0] <= O.DB_MAX_OUTPUT_PORT_TYPE
-O[1] <= O.DB_MAX_OUTPUT_PORT_TYPE
-O[2] <= O.DB_MAX_OUTPUT_PORT_TYPE
+|SLCDC|SerialReceiver:sr|SerialControl:sc
+Reset => CurrentState~3.DATAIN
+enRx => NextState.OUTPUTSELECT
+enRx => NextState.OUTPUTSELECT
+enRx => Selector0.IN3
+enRx => Selector1.IN1
+accept => NextState.FORTH.DATAA
+accept => Selector0.IN2
+accept => Selector2.IN2
+eq5 => NextState.DATAB
+eq5 => NextState.DATAB
+CLK => CurrentState~1.DATAIN
+clr <= clr.DB_MAX_OUTPUT_PORT_TYPE
+wr <= wr.DB_MAX_OUTPUT_PORT_TYPE
+DXval <= DXval.DB_MAX_OUTPUT_PORT_TYPE
+cenable <= cenable.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyScan|MUX4x1:mux
-I[0] => Y.IN0
-I[1] => Y.IN0
-I[2] => Y.IN0
-I[3] => Y.IN0
-S[0] => Y.IN1
-S[0] => Y.IN1
-S[0] => Y.IN1
-S[0] => Y.IN1
-S[1] => Y.IN1
-S[1] => Y.IN1
-S[1] => Y.IN1
-S[1] => Y.IN1
-Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+|SLCDC|SerialReceiver:sr|ShiftRegister:sr
+data => FFD:ffd4.D
+clk => FFD:ffd4.CLK
+clk => FFD:ffd3.CLK
+clk => FFD:ffd2.CLK
+clk => FFD:ffd1.CLK
+clk => FFD:ffd0.CLK
+enable => FFD:ffd4.EN
+enable => FFD:ffd3.EN
+enable => FFD:ffd2.EN
+enable => FFD:ffd1.EN
+enable => FFD:ffd0.EN
+reset => FFD:ffd4.RESET
+reset => FFD:ffd3.RESET
+reset => FFD:ffd2.RESET
+reset => FFD:ffd1.RESET
+reset => FFD:ffd0.RESET
+D[0] <= FFD:ffd0.Q
+D[1] <= FFD:ffd1.Q
+D[2] <= FFD:ffd2.Q
+D[3] <= FFD:ffd3.Q
+D[4] <= FFD:ffd4.Q
+
+
+|SLCDC|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd
+Dval => Selector1.IN2
+Dval => Selector2.IN1
+Dval => Selector0.IN1
+Reset => CurrentState~3.DATAIN
+CLK => Counter:cup.CLK
+CLK => CurrentState~1.DATAIN
+Din[0] => Dout[0].DATAIN
+Din[1] => Dout[1].DATAIN
+Din[2] => Dout[2].DATAIN
+Din[3] => Dout[3].DATAIN
+Din[4] => Dout[4].DATAIN
+Wrl <= Wrl.DB_MAX_OUTPUT_PORT_TYPE
+done <= done.DB_MAX_OUTPUT_PORT_TYPE
+Dout[0] <= Din[0].DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Din[1].DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Din[2].DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Din[3].DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Din[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup
+PL => MUX2x1:mux.S
+CE => adder:ad.Ci
+CLK => Registry:reg.CLK
+Reset => Registry:reg.Reset
+Data_in[0] => MUX2x1:mux.A[0]
+Data_in[1] => MUX2x1:mux.A[1]
+Data_in[2] => MUX2x1:mux.A[2]
+Data_in[3] => MUX2x1:mux.A[3]
+TC <= Terminal_Count:utc.TC
+Q[0] <= Registry:reg.Q[0]
+Q[1] <= Registry:reg.Q[1]
+Q[2] <= Registry:reg.Q[2]
+Q[3] <= Registry:reg.Q[3]
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|adder:ad
+A[0] => full_adder:fa1.A
+A[1] => full_adder:fa2.A
+A[2] => full_adder:fa3.A
+A[3] => full_adder:fa4.A
+B[0] => full_adder:fa1.B
+B[1] => full_adder:fa2.B
+B[2] => full_adder:fa3.B
+B[3] => full_adder:fa4.B
+Ci => full_adder:fa1.Ci
+Co <= full_adder:fa4.Co
+S[0] <= full_adder:fa1.S
+S[1] <= full_adder:fa2.S
+S[2] <= full_adder:fa3.S
+S[3] <= full_adder:fa4.S
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa1
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa2
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa3
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa4
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|MUX2x1:mux
+A[0] => Y.IN0
+A[1] => Y.IN0
+A[2] => Y.IN0
+A[3] => Y.IN0
+B[0] => Y.IN0
+B[1] => Y.IN0
+B[2] => Y.IN0
+B[3] => Y.IN0
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|Registry:reg
+D[0] => FFD:ff0.D
+D[1] => FFD:ff1.D
+D[2] => FFD:ff2.D
+D[3] => FFD:ff3.D
+CLK => FFD:ff0.CLK
+CLK => FFD:ff1.CLK
+CLK => FFD:ff2.CLK
+CLK => FFD:ff3.CLK
+E => FFD:ff0.EN
+E => FFD:ff1.EN
+E => FFD:ff2.EN
+E => FFD:ff3.EN
+Reset => FFD:ff0.RESET
+Reset => FFD:ff1.RESET
+Reset => FFD:ff2.RESET
+Reset => FFD:ff3.RESET
+Q[0] <= FFD:ff0.Q
+Q[1] <= FFD:ff1.Q
+Q[2] <= FFD:ff2.Q
+Q[3] <= FFD:ff3.Q
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff0
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff1
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SLCDC|LCDDispatcher:lcdd|Counter:cup|Terminal_Count:utc
+Q[0] => TC.IN0
+Q[1] => TC.IN1
+Q[2] => TC.IN1
+Q[3] => TC.IN1
+TC <= TC.DB_MAX_OUTPUT_PORT_TYPE
 
 

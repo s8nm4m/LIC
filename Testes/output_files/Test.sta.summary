@@ -2,40 +2,124 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.484
+TNS   : -8.975
+
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -0.360
-TNS   : -0.563
+Slack : -0.659
+TNS   : -3.423
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.324
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.622
+TNS   : -4.866
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -0.284
+TNS   : -1.136
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 0.886
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : 2.080
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.888
+TNS   : -18.886
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.222
+TNS   : -9.776
+
+Type  : Slow 1200mV 0C Model Setup 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.367
+TNS   : -8.323
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -0.241
-TNS   : -0.332
+Slack : -0.513
+TNS   : -2.296
+
+Type  : Slow 1200mV 0C Model Hold 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : 0.299
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.293
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.488
+TNS   : -4.464
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -0.172
+TNS   : -0.688
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 0.818
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : 1.992
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.888
+TNS   : -18.886
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.222
+TNS   : -9.776
+
+Type  : Fast 1200mV 0C Model Setup 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -0.450
+TNS   : -2.142
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : 0.353
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : 0.151
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.147
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -0.545
+TNS   : -1.635
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : 1.205
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.124
+TNS   : -16.443
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SerialReceiver:sr|FFD:fsc|Q'
+Slack : -1.000
+TNS   : -8.000
 
 ------------------------------------------------------------

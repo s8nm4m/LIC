@@ -1,6 +1,13 @@
 
-State Machine - |KeyboardReader|KeyDecode:kd|KeyControl:control|CurrentState
+State Machine - |SLCDC|LCDDispatcher:lcdd|CurrentState
 Name CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
 CurrentState.FIRST 0 0 0 
 CurrentState.SECOND 0 1 1 
 CurrentState.THIRD 1 0 1 
+
+State Machine - |SLCDC|SerialReceiver:sr|SerialControl:sc|CurrentState
+Name CurrentState.FORTH CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
+CurrentState.FIRST 0 0 0 0 
+CurrentState.SECOND 0 0 1 1 
+CurrentState.THIRD 0 1 0 1 
+CurrentState.FORTH 1 0 0 1 
