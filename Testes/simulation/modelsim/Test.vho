@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "04/28/2023 11:58:57"
+-- DATE "05/05/2023 11:29:58"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -529,11 +529,6 @@ SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg\ : std_logic_vector(9 DOWNTO 0);
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \ALT_INV_altera_internal_jtag~TCKUTAPclkctrl_outclk\ : std_logic;
-SIGNAL \fsc|ALT_INV_Q~clkctrl_outclk\ : std_logic;
-SIGNAL \ALT_INV_Reset~input_o\ : std_logic;
-SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ : std_logic;
-SIGNAL \ALT_INV_altera_internal_jtag~TMSUTAP\ : std_logic;
 SIGNAL \serialDoorC|serialR|sr|ffd4|ALT_INV_Q~q\ : std_logic;
 SIGNAL \serialDoorC|serialR|sr|ffd3|ALT_INV_Q~q\ : std_logic;
 SIGNAL \serialDoorC|serialR|sr|ffd2|ALT_INV_Q~q\ : std_logic;
@@ -545,6 +540,11 @@ SIGNAL \sl|sr|sr|ffd1|ALT_INV_Q~q\ : std_logic;
 SIGNAL \kr|kd|scan|dec|ALT_INV_O[1]~2_combout\ : std_logic;
 SIGNAL \kr|kd|scan|dec|ALT_INV_O[1]~1_combout\ : std_logic;
 SIGNAL \sl|sr|sr|ffd0|ALT_INV_Q~q\ : std_logic;
+SIGNAL \ALT_INV_altera_internal_jtag~TCKUTAPclkctrl_outclk\ : std_logic;
+SIGNAL \fsc|ALT_INV_Q~clkctrl_outclk\ : std_logic;
+SIGNAL \ALT_INV_Reset~input_o\ : std_logic;
+SIGNAL \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ : std_logic;
+SIGNAL \ALT_INV_altera_internal_jtag~TMSUTAP\ : std_logic;
 
 BEGIN
 
@@ -586,11 +586,6 @@ ww_devpor <= devpor;
 \altera_internal_jtag~TCKUTAPclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \altera_internal_jtag~TCKUTAP\);
 
 \CLK~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \CLK~input_o\);
-\ALT_INV_altera_internal_jtag~TCKUTAPclkctrl_outclk\ <= NOT \altera_internal_jtag~TCKUTAPclkctrl_outclk\;
-\fsc|ALT_INV_Q~clkctrl_outclk\ <= NOT \fsc|Q~clkctrl_outclk\;
-\ALT_INV_Reset~input_o\ <= NOT \Reset~input_o\;
-\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ <= NOT \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|clr_reg~q\;
-\ALT_INV_altera_internal_jtag~TMSUTAP\ <= NOT \altera_internal_jtag~TMSUTAP\;
 \serialDoorC|serialR|sr|ffd4|ALT_INV_Q~q\ <= NOT \serialDoorC|serialR|sr|ffd4|Q~q\;
 \serialDoorC|serialR|sr|ffd3|ALT_INV_Q~q\ <= NOT \serialDoorC|serialR|sr|ffd3|Q~q\;
 \serialDoorC|serialR|sr|ffd2|ALT_INV_Q~q\ <= NOT \serialDoorC|serialR|sr|ffd2|Q~q\;
@@ -602,6 +597,11 @@ ww_devpor <= devpor;
 \kr|kd|scan|dec|ALT_INV_O[1]~2_combout\ <= NOT \kr|kd|scan|dec|O[1]~2_combout\;
 \kr|kd|scan|dec|ALT_INV_O[1]~1_combout\ <= NOT \kr|kd|scan|dec|O[1]~1_combout\;
 \sl|sr|sr|ffd0|ALT_INV_Q~q\ <= NOT \sl|sr|sr|ffd0|Q~q\;
+\ALT_INV_altera_internal_jtag~TCKUTAPclkctrl_outclk\ <= NOT \altera_internal_jtag~TCKUTAPclkctrl_outclk\;
+\fsc|ALT_INV_Q~clkctrl_outclk\ <= NOT \fsc|Q~clkctrl_outclk\;
+\ALT_INV_Reset~input_o\ <= NOT \Reset~input_o\;
+\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|ALT_INV_clr_reg~q\ <= NOT \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|clr_reg~q\;
+\ALT_INV_altera_internal_jtag~TMSUTAP\ <= NOT \altera_internal_jtag~TMSUTAP\;
 
 -- Location: FF_X38_Y37_N27
 \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|splitter_nodes_receive_0[3]\ : dffeas
