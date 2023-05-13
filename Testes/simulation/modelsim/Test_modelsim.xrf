@@ -23,6 +23,7 @@ source_file = 1, C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRe
 source_file = 1, C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd
 source_file = 1, C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd
 source_file = 1, C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd
+source_file = 1, C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd

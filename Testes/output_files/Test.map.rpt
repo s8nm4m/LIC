@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Test
-Fri Apr 28 11:58:33 2023
+Fri May 05 11:29:31 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 28 11:58:33 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 05 11:29:31 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
 ; Top-level Entity Name              ; SCA                                         ;
@@ -732,7 +732,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -742,7 +742,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Apr 28 11:57:57 2023
+    Info: Processing started: Fri May 05 11:28:45 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Test -c Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -818,6 +818,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file sdc.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file doorcontroller.vhd
     Info (12022): Found design unit 1: DoorController-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 12
     Info (12023): Found entity 1: DoorController File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mac.vhd
+    Info (12022): Found design unit 1: MAC-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd Line: 11
+    Info (12023): Found entity 1: MAC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd Line: 4
 Info (12127): Elaborating entity "SCA" for the top level hierarchy
 Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(114): port or argument "inputPort" has 2/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 114
 Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(114): port or argument "outputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 114
@@ -861,7 +864,7 @@ Info (12131): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jta
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 415
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.04.28.11:58:20 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.05.05.11:29:16 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -893,9 +896,9 @@ Info (21057): Implemented 296 device resources after synthesis - the final resou
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 267 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Fri Apr 28 11:58:33 2023
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:10
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Fri May 05 11:29:31 2023
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:06
 
 

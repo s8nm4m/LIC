@@ -1,5 +1,5 @@
 Fitter report for Test
-Fri Apr 28 11:58:45 2023
+Fri May 05 11:29:45 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 28 11:58:45 2023       ;
+; Fitter Status                      ; Successful - Fri May 05 11:29:45 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
 ; Top-level Entity Name              ; SCA                                         ;
@@ -150,12 +150,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.6%      ;
+;     Processor 2            ;   3.1%      ;
 +----------------------------+-------------+
 
 
@@ -1507,7 +1507,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  60 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 9 total pin(s) used --  43 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1531,9 +1531,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/output_files/Test.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5383 megabytes
-    Info: Processing ended: Fri Apr 28 11:58:45 2023
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 5379 megabytes
+    Info: Processing ended: Fri May 05 11:29:45 2023
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:14
 
 
