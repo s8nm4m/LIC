@@ -3,14 +3,34 @@ use ieee.std_logic_1164.all;
 
 entity SCA is
 port(
-Reset, CLK, Sclose, Sopen, Psensor : in std_logic;
-LCD_RS, LCD_EN, OnOff, OC: out std_logic;
+Reset, CLK, Pswitch, M : in std_logic;
+LCD_RS, LCD_EN, OC, OO : out std_logic;
 O : out std_logic_vector(2 downto 0);
 I : in std_logic_vector(3 downto 0);
-LCD_data, Door_data : out std_logic_vector(3 downto 0));
+LCD_data, Door_data : out std_logic_vector(3 downto 0);
+HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : out std_logic_vector(7 downto 0));
 end SCA;
 
 architecture arc_sca of SCA is
+component door_mecanism
+PORT(	MCLK 			: in std_logic;
+		RST			: in std_logic;
+		onOff			: in std_logic;
+		openClose	: in std_logic;
+		v			: in std_logic_vector(3 downto 0);
+		Pswitch		: in std_logic;
+		Sopen			: out std_logic;
+		Sclose		: out std_logic;
+		Pdetector	: out std_logic;
+		HEX0			: out std_logic_vector(7 downto 0);
+		HEX1			: out std_logic_vector(7 downto 0);
+		HEX2			: out std_logic_vector(7 downto 0);
+		HEX3			: out std_logic_vector(7 downto 0);
+		HEX4			: out std_logic_vector(7 downto 0);
+		HEX5			: out std_logic_vector(7 downto 0)
+		);
+END component;
+
 component FFD
 PORT(	CLK : in std_logic;
 		RESET : in STD_LOGIC;
@@ -23,11 +43,11 @@ END component;
 
 component KeyboardReader 
 port(
-Kack, Reset, CLK : in std_logic;
+ACK, Reset, CLK : in std_logic;
 I : in std_logic_vector(3 downto 0);
-Kval : out std_logic;
+Dval : out std_logic;
 O : out std_logic_vector(2 downto 0);
-K : out std_logic_vector(3 downto 0));
+D : out std_logic_vector(3 downto 0));
 end component;
 
 component UsbPort
@@ -50,11 +70,29 @@ OnOff, busy : out std_logic;
 Dout : out std_logic_vector(4 downto 0));
 end component;
 
-signal kv, ka, rs, en, sdx, ssdoor, sslcd, sclk, ssdoorw, busy, sslcdw, sclkw : std_logic;
+signal pdetect, sclose, sopen, nf, kv, ka, rs, en, sdx, ssdoor, sslcd, sclk, ssdoorw, busy, sslcdw, sclkw : std_logic;
 signal kapa : std_logic_vector(3 downto 0);
 signal lcd, door : std_logic_vector(4 downto 0);
-
+signal h0, h1, h2, h3, h4, h5 : std_logic_vector(7 downto 0);
 begin
+
+dm: door_mecanism port map(
+MCLK => CLK,
+RST => Reset,
+onOff => nf,
+openClose => door(0),
+v => door(4 downto 1),
+Pswitch => Pswitch,
+Sopen => sopen,
+Sclose => sclose,
+Pdetector => pdetect,
+HEX0 => h0,
+HEX1 => h1,
+HEX2 => h2,
+HEX3 => h3,
+HEX4 => h4,
+HEX5 => h5
+);
 
 flcd:FFD port map(
 CLK => CLK,
@@ -87,18 +125,18 @@ SCLK => sclkw,
 Reset => Reset, 
 Sclose => Sclose,  
 Sopen => Sopen, 
-Psensor => Psensor, 
+Psensor => pdetect, 
 CLK => CLK,
-OnOff => OnOff, 
+OnOff => nf, 
 busy => busy,
 Dout => door);
 
 kr: KeyboardReader port map(
 I => I,
 O => O,
-Kval => kv,
-Kack => ka,
-K => kapa,
+Dval => kv,
+ACK => ka,
+D => kapa,
 Reset => Reset,
 CLK => CLK);
 
@@ -112,7 +150,7 @@ Wrl => en,
 Dout => lcd); 
 
 usb: UsbPort port map(
-inputPort(0) => kv,
+--inputPort(0) => kv,
 inputPort(1) => kapa(0),
 inputPort(2) => kapa(1),
 inputPort(3) => kapa(2),
@@ -130,11 +168,18 @@ outputPort(4) => ssdoor--,
 --outputPort(7) =>
 );
 
-Door_data <= door(4 downto 1);
 OC <= door(0);
+OO <= nf;
+Door_data <= door(4 downto 1);
 LCD_data <= lcd(4 downto 1);
 LCD_EN <= en;
 LCD_RS <= lcd(0);
+HEX0 <= h0;
+HEX1 <= h1;
+HEX2 <= h2;
+HEX3 <= h3;
+HEX4 <= h4;
+HEX5 <= h5;
 
 end arc_sca;
  

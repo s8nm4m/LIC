@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Test
-Fri May 05 11:29:31 2023
+Fri May 19 12:11:40 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,38 +16,65 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. Analysis & Synthesis IP Cores Summary
   9. State Machine - |SCA|SLCDC:sl|LCDDispatcher:lcdd|CurrentState
  10. State Machine - |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState
- 11. State Machine - |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState
- 12. State Machine - |SCA|SDC:serialDoorC|DoorController:doorControl|CurrentState
- 13. State Machine - |SCA|SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc|CurrentState
- 14. General Register Statistics
- 15. Inverted Register Statistics
- 16. Parameter Settings for User Entity Instance: KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock
- 17. Parameter Settings for User Entity Instance: UsbPort:usb|sld_virtual_jtag:b2v_inst
- 18. Port Connectivity Checks: "UsbPort:usb"
- 19. Port Connectivity Checks: "SLCDC:sl|LCDDispatcher:lcdd|Counter:cup"
- 20. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr"
- 21. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count"
- 22. Port Connectivity Checks: "SDC:serialDoorC|DoorController:doorControl"
- 23. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd0"
- 24. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd1"
- 25. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd2"
- 26. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd3"
- 27. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd4"
- 28. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr"
- 29. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff3"
- 30. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff2"
- 31. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff1"
- 32. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff0"
- 33. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg"
- 34. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad"
- 35. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c"
- 36. Port Connectivity Checks: "FFD:fsc"
- 37. Port Connectivity Checks: "FFD:fdoor"
- 38. Port Connectivity Checks: "FFD:flcd"
- 39. Virtual JTAG Settings
- 40. Post-Synthesis Netlist Statistics for Top Partition
- 41. Elapsed Time Per Partition
- 42. Analysis & Synthesis Messages
+ 11. State Machine - |SCA|KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState
+ 12. State Machine - |SCA|KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState
+ 13. State Machine - |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState
+ 14. State Machine - |SCA|SDC:serialDoorC|DoorController:doorControl|CurrentState
+ 15. State Machine - |SCA|SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc|CurrentState
+ 16. Registers Removed During Synthesis
+ 17. Removed Registers Triggering Further Register Optimizations
+ 18. General Register Statistics
+ 19. Inverted Register Statistics
+ 20. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 21. Parameter Settings for User Entity Instance: door_mecanism:dm|CLKDIV:UCLK
+ 22. Parameter Settings for User Entity Instance: door_mecanism:dm|counter_pl:U6
+ 23. Parameter Settings for User Entity Instance: door_mecanism:dm|counter_pl:U6|adder_rc:U1
+ 24. Parameter Settings for User Entity Instance: door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2
+ 25. Parameter Settings for User Entity Instance: door_mecanism:dm|ShiftRegister_lr:U7
+ 26. Parameter Settings for User Entity Instance: door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1
+ 27. Parameter Settings for User Entity Instance: KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock
+ 28. Parameter Settings for User Entity Instance: KeyboardReader:kr|RingBuffer:rbuff|RAM:memory
+ 29. Parameter Settings for User Entity Instance: UsbPort:usb|sld_virtual_jtag:b2v_inst
+ 30. Port Connectivity Checks: "UsbPort:usb"
+ 31. Port Connectivity Checks: "SLCDC:sl|LCDDispatcher:lcdd|Counter:cup"
+ 32. Port Connectivity Checks: "SLCDC:sl|SerialReceiver:sr"
+ 33. Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|MUX2x1:idxDecider"
+ 34. Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet"
+ 35. Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut"
+ 36. Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control"
+ 37. Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count"
+ 38. Port Connectivity Checks: "KeyboardReader:kr"
+ 39. Port Connectivity Checks: "SDC:serialDoorC|DoorController:doorControl"
+ 40. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd0"
+ 41. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd1"
+ 42. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd2"
+ 43. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd3"
+ 44. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd4"
+ 45. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr"
+ 46. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff3"
+ 47. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff2"
+ 48. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff1"
+ 49. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg|FFD:ff0"
+ 50. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg"
+ 51. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad"
+ 52. Port Connectivity Checks: "SDC:serialDoorC|SerialReceiver:serialR|Counter:c"
+ 53. Port Connectivity Checks: "FFD:fsc"
+ 54. Port Connectivity Checks: "FFD:fdoor"
+ 55. Port Connectivity Checks: "FFD:flcd"
+ 56. Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U5"
+ 57. Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U4"
+ 58. Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U3"
+ 59. Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U2"
+ 60. Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U1"
+ 61. Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U0"
+ 62. Port Connectivity Checks: "door_mecanism:dm|ShiftRegister_lr:U7"
+ 63. Port Connectivity Checks: "door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2"
+ 64. Port Connectivity Checks: "door_mecanism:dm|counter_pl:U6|adder_rc:U1"
+ 65. Port Connectivity Checks: "door_mecanism:dm|counter_pl:U6"
+ 66. Virtual JTAG Settings
+ 67. Post-Synthesis Netlist Statistics for Top Partition
+ 68. Elapsed Time Per Partition
+ 69. Analysis & Synthesis Messages
 
 
 
@@ -74,16 +101,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 05 11:29:31 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 19 12:11:40 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
 ; Top-level Entity Name              ; SCA                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 263                                         ;
-;     Total combinational functions  ; 231                                         ;
-;     Dedicated logic registers      ; 164                                         ;
-; Total registers                    ; 164                                         ;
-; Total pins                         ; 24                                          ;
+; Total logic elements               ; 343                                         ;
+;     Total combinational functions  ; 311                                         ;
+;     Dedicated logic registers      ; 207                                         ;
+; Total registers                    ; 207                                         ;
+; Total pins                         ; 71                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -201,13 +228,20 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                               ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------+
+; DoorMechanism/full_adder.vhd                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/full_adder.vhd                                       ;             ;
+; full_add.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd                                                       ;             ;
+; DoorMechanism/ShiftRegister_lr.vhd                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd                                 ;             ;
+; DoorMechanism/register_D_E_R_value.vhd                             ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd                             ;             ;
+; DoorMechanism/door_mecanism.vhd                                    ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd                                    ;             ;
+; DoorMechanism/door_emulation_seg.vhd                               ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_emulation_seg.vhd                               ;             ;
+; DoorMechanism/counter_pl.vhd                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd                                       ;             ;
+; DoorMechanism/adder_rc.vhd                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd                                         ;             ;
 ; KeyboardReader.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd                                                 ;             ;
 ; UsbPort.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd                                                        ;             ;
 ; clkDIV.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd                                                         ;             ;
 ; Terminal_Count.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd                                                 ;             ;
 ; Registry.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd                                                       ;             ;
 ; MUX2x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd                                                         ;             ;
-; full_adder.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd                                                     ;             ;
 ; FFD.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd                                                            ;             ;
 ; adder.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd                                                          ;             ;
 ; MUX4x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd                                                         ;             ;
@@ -224,6 +258,13 @@ https://fpgasoftware.intel.com/eula.
 ; ShiftRegister.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd                                                  ;             ;
 ; SDC.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd                                                            ;             ;
 ; DoorController.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd                                                 ;             ;
+; MAC.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd                                                            ;             ;
+; RAM.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd                                                            ;             ;
+; RingBufferControl.vhd                                              ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd                                              ;             ;
+; RingBuffer.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd                                                     ;             ;
+; OutputRegister.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputRegister.vhd                                                 ;             ;
+; BufferControl.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd                                                  ;             ;
+; OutputBuffer.vhd                                                   ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd                                                   ;             ;
 ; sld_virtual_jtag.v                                                 ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v                                                  ;             ;
 ; sld_virtual_jtag_basic.v                                           ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v                                            ;             ;
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                       ;             ;
@@ -237,6 +278,7 @@ https://fpgasoftware.intel.com/eula.
 ; db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                    ;             ;
 ; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                      ;             ;
+; full_adder.vhd                                                     ; yes             ; User VHDL File                               ; full_adder.vhd                                                                                                             ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -245,30 +287,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 263                      ;
+; Estimated Total logic elements              ; 343                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 231                      ;
+; Total combinational functions               ; 311                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 91                       ;
-;     -- 3 input functions                    ; 52                       ;
-;     -- <=2 input functions                  ; 88                       ;
+;     -- 4 input functions                    ; 107                      ;
+;     -- 3 input functions                    ; 57                       ;
+;     -- <=2 input functions                  ; 147                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 192                      ;
-;     -- arithmetic mode                      ; 39                       ;
+;     -- normal mode                          ; 242                      ;
+;     -- arithmetic mode                      ; 69                       ;
 ;                                             ;                          ;
-; Total registers                             ; 164                      ;
-;     -- Dedicated logic registers            ; 164                      ;
+; Total registers                             ; 207                      ;
+;     -- Dedicated logic registers            ; 207                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 24                       ;
+; I/O pins                                    ; 71                       ;
 ;                                             ;                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 107                      ;
-; Total fan-out                               ; 1202                     ;
-; Average fan-out                             ; 2.66                     ;
+; Total fan-out                               ; 1587                     ;
+; Average fan-out                             ; 2.37                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -277,14 +319,14 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SCA                                                                                                                                    ; 231 (2)             ; 164 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |SCA                                                                                                                                                                                                                                                                                                                                            ; SCA                               ; work         ;
+; |SCA                                                                                                                                    ; 311 (2)             ; 207 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |SCA                                                                                                                                                                                                                                                                                                                                            ; SCA                               ; work         ;
 ;    |FFD:fdoor|                                                                                                                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:fdoor                                                                                                                                                                                                                                                                                                                                  ; FFD                               ; work         ;
 ;    |FFD:flcd|                                                                                                                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:flcd                                                                                                                                                                                                                                                                                                                                   ; FFD                               ; work         ;
 ;    |FFD:fsc|                                                                                                                            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:fsc                                                                                                                                                                                                                                                                                                                                    ; FFD                               ; work         ;
-;    |KeyboardReader:kr|                                                                                                                  ; 64 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr                                                                                                                                                                                                                                                                                                                          ; KeyboardReader                    ; work         ;
-;       |KeyDecode:kd|                                                                                                                    ; 64 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd                                                                                                                                                                                                                                                                                                             ; KeyDecode                         ; work         ;
-;          |CLKDIV:clock|                                                                                                                 ; 50 (50)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock                                                                                                                                                                                                                                                                                                ; CLKDIV                            ; work         ;
-;          |KeyControl:control|                                                                                                           ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control                                                                                                                                                                                                                                                                                          ; KeyControl                        ; work         ;
+;    |KeyboardReader:kr|                                                                                                                  ; 63 (0)              ; 38 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr                                                                                                                                                                                                                                                                                                                          ; KeyboardReader                    ; work         ;
+;       |KeyDecode:kd|                                                                                                                    ; 63 (0)              ; 38 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd                                                                                                                                                                                                                                                                                                             ; KeyDecode                         ; work         ;
+;          |CLKDIV:clock|                                                                                                                 ; 51 (51)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock                                                                                                                                                                                                                                                                                                ; CLKDIV                            ; work         ;
+;          |KeyControl:control|                                                                                                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control                                                                                                                                                                                                                                                                                          ; KeyControl                        ; work         ;
 ;          |KeyScan:scan|                                                                                                                 ; 11 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan                                                                                                                                                                                                                                                                                                ; KeyScan                           ; work         ;
 ;             |Counter:count|                                                                                                             ; 6 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count                                                                                                                                                                                                                                                                                  ; Counter                           ; work         ;
 ;                |Registry:reg|                                                                                                           ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg                                                                                                                                                                                                                                                                     ; Registry                          ; work         ;
@@ -293,11 +335,11 @@ https://fpgasoftware.intel.com/eula.
 ;                   |FFD:ff2|                                                                                                             ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                             ; FFD                               ; work         ;
 ;                   |FFD:ff3|                                                                                                             ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|Registry:reg|FFD:ff3                                                                                                                                                                                                                                                             ; FFD                               ; work         ;
 ;                |adder:ad|                                                                                                               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad                                                                                                                                                                                                                                                                         ; adder                             ; work         ;
-;                   |full_adder:fa2|                                                                                                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa2                                                                                                                                                                                                                                                          ; full_adder                        ; work         ;
+;                   |full_add:fa2|                                                                                                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_add:fa2                                                                                                                                                                                                                                                            ; full_add                          ; work         ;
 ;             |Decoder:dec|                                                                                                               ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Decoder:dec                                                                                                                                                                                                                                                                                    ; Decoder                           ; work         ;
 ;             |MUX4x1:mux|                                                                                                                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|MUX4x1:mux                                                                                                                                                                                                                                                                                     ; MUX4x1                            ; work         ;
-;    |SDC:serialDoorC|                                                                                                                    ; 21 (0)              ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC                                                                                                                                                                                                                                                                                                                            ; SDC                               ; work         ;
-;       |DoorController:doorControl|                                                                                                      ; 10 (10)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC|DoorController:doorControl                                                                                                                                                                                                                                                                                                 ; DoorController                    ; work         ;
+;    |SDC:serialDoorC|                                                                                                                    ; 24 (0)              ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC                                                                                                                                                                                                                                                                                                                            ; SDC                               ; work         ;
+;       |DoorController:doorControl|                                                                                                      ; 13 (13)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC|DoorController:doorControl                                                                                                                                                                                                                                                                                                 ; DoorController                    ; work         ;
 ;       |SerialReceiver:serialR|                                                                                                          ; 11 (0)              ; 12 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC|SerialReceiver:serialR                                                                                                                                                                                                                                                                                                     ; SerialReceiver                    ; work         ;
 ;          |Counter:c|                                                                                                                    ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c                                                                                                                                                                                                                                                                                           ; Counter                           ; work         ;
 ;             |Registry:reg|                                                                                                              ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg                                                                                                                                                                                                                                                                              ; Registry                          ; work         ;
@@ -320,7 +362,7 @@ https://fpgasoftware.intel.com/eula.
 ;                |FFD:ff2|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff2                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
 ;                |FFD:ff3|                                                                                                                ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|Registry:reg|FFD:ff3                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
 ;             |adder:ad|                                                                                                                  ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad                                                                                                                                                                                                                                                                                           ; adder                             ; work         ;
-;                |full_adder:fa3|                                                                                                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa3                                                                                                                                                                                                                                                                            ; full_adder                        ; work         ;
+;                |full_add:fa3|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_add:fa3                                                                                                                                                                                                                                                                              ; full_add                          ; work         ;
 ;       |SerialReceiver:sr|                                                                                                               ; 11 (0)              ; 12 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr                                                                                                                                                                                                                                                                                                                 ; SerialReceiver                    ; work         ;
 ;          |Counter:c|                                                                                                                    ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c                                                                                                                                                                                                                                                                                                       ; Counter                           ; work         ;
 ;             |Registry:reg|                                                                                                              ; 3 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|Registry:reg                                                                                                                                                                                                                                                                                          ; Registry                          ; work         ;
@@ -334,6 +376,21 @@ https://fpgasoftware.intel.com/eula.
 ;             |FFD:ffd2|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
 ;             |FFD:ffd3|                                                                                                                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
 ;             |FFD:ffd4|                                                                                                                  ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4                                                                                                                                                                                                                                                                                       ; FFD                               ; work         ;
+;    |door_mecanism:dm|                                                                                                                   ; 78 (7)              ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm                                                                                                                                                                                                                                                                                                                           ; door_mecanism                     ; work         ;
+;       |CLKDIV:UCLK|                                                                                                                     ; 49 (49)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|CLKDIV:UCLK                                                                                                                                                                                                                                                                                                               ; CLKDIV                            ; work         ;
+;       |ShiftRegister_lr:U7|                                                                                                             ; 9 (9)               ; 9 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|ShiftRegister_lr:U7                                                                                                                                                                                                                                                                                                       ; ShiftRegister_lr                  ; work         ;
+;          |register_D_E_R_value:U1|                                                                                                      ; 0 (0)               ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1                                                                                                                                                                                                                                                                               ; register_D_E_R_value              ; work         ;
+;       |counter_pl:U6|                                                                                                                   ; 7 (5)               ; 5 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|counter_pl:U6                                                                                                                                                                                                                                                                                                             ; counter_pl                        ; work         ;
+;          |adder_rc:U1|                                                                                                                  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1                                                                                                                                                                                                                                                                                                 ; adder_rc                          ; work         ;
+;             |full_adder:\SC:2:U1|                                                                                                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:2:U1                                                                                                                                                                                                                                                                             ; full_adder                        ; work         ;
+;             |full_adder:\SC:3:U1|                                                                                                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:3:U1                                                                                                                                                                                                                                                                             ; full_adder                        ; work         ;
+;          |register_D_E_R_value:U2|                                                                                                      ; 0 (0)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2                                                                                                                                                                                                                                                                                     ; register_D_E_R_value              ; work         ;
+;       |door_emulation_seg:U0|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|door_emulation_seg:U0                                                                                                                                                                                                                                                                                                     ; door_emulation_seg                ; work         ;
+;       |door_emulation_seg:U1|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|door_emulation_seg:U1                                                                                                                                                                                                                                                                                                     ; door_emulation_seg                ; work         ;
+;       |door_emulation_seg:U2|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|door_emulation_seg:U2                                                                                                                                                                                                                                                                                                     ; door_emulation_seg                ; work         ;
+;       |door_emulation_seg:U3|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|door_emulation_seg:U3                                                                                                                                                                                                                                                                                                     ; door_emulation_seg                ; work         ;
+;       |door_emulation_seg:U4|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|door_emulation_seg:U4                                                                                                                                                                                                                                                                                                     ; door_emulation_seg                ; work         ;
+;       |door_emulation_seg:U5|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|door_mecanism:dm|door_emulation_seg:U5                                                                                                                                                                                                                                                                                                     ; door_emulation_seg                ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 121 (1)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 120 (0)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 120 (0)             ; 86 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -385,6 +442,35 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SCA|KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState                                   ;
++--------------------------+-----------------------+------------------------+-------------------------+--------------------------+
+; Name                     ; CurrentState.WAIT_ACK ; CurrentState.SEND_DATA ; CurrentState.WRITE_DATA ; CurrentState.CAN_RECEIVE ;
++--------------------------+-----------------------+------------------------+-------------------------+--------------------------+
+; CurrentState.CAN_RECEIVE ; 0                     ; 0                      ; 0                       ; 0                        ;
+; CurrentState.WRITE_DATA  ; 0                     ; 0                      ; 1                       ; 1                        ;
+; CurrentState.SEND_DATA   ; 0                     ; 1                      ; 0                       ; 1                        ;
+; CurrentState.WAIT_ACK    ; 1                     ; 0                      ; 0                       ; 1                        ;
++--------------------------+-----------------------+------------------------+-------------------------+--------------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SCA|KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState                                                                                               ;
++-------------------------+----------------------+------------------------+-----------------------+----------------------+------------------------+-------------------------+------------------+
+; Name                    ; CurrentState.INC_GET ; CurrentState.WRITE_REG ; CurrentState.ACCEPTED ; CurrentState.INC_PUT ; CurrentState.WRITE_RAM ; CurrentState.SELECT_PUT ; CurrentState.ZEN ;
++-------------------------+----------------------+------------------------+-----------------------+----------------------+------------------------+-------------------------+------------------+
+; CurrentState.ZEN        ; 0                    ; 0                      ; 0                     ; 0                    ; 0                      ; 0                       ; 0                ;
+; CurrentState.SELECT_PUT ; 0                    ; 0                      ; 0                     ; 0                    ; 0                      ; 1                       ; 1                ;
+; CurrentState.WRITE_RAM  ; 0                    ; 0                      ; 0                     ; 0                    ; 1                      ; 0                       ; 1                ;
+; CurrentState.INC_PUT    ; 0                    ; 0                      ; 0                     ; 1                    ; 0                      ; 0                       ; 1                ;
+; CurrentState.ACCEPTED   ; 0                    ; 0                      ; 1                     ; 0                    ; 0                      ; 0                       ; 1                ;
+; CurrentState.WRITE_REG  ; 0                    ; 1                      ; 0                     ; 0                    ; 0                      ; 0                       ; 1                ;
+; CurrentState.INC_GET    ; 1                    ; 0                      ; 0                     ; 0                    ; 0                      ; 0                       ; 1                ;
++-------------------------+----------------------+------------------------+-----------------------+----------------------+------------------------+-------------------------+------------------+
+
+
+Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------+
 ; State Machine - |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState ;
 +---------------------+--------------------+---------------------+--------------------+
@@ -422,17 +508,73 @@ Encoding Type:  One-Hot
 +---------------------+--------------------+--------------------+---------------------+--------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+; Register name                                                                                           ; Reason for Removal                                               ;
++---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+; KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff3|Q                       ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff2|Q                       ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff1|Q                       ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff0|Q                       ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff0|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff1|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff1|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff2|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff2|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff3|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff3|Q ; Stuck at GND due to stuck port clock_enable                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.ZEN                           ; Stuck at GND due to stuck port clock                             ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.INC_GET                       ; Lost fanout                                                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.SELECT_PUT                    ; Stuck at GND due to stuck port clock                             ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.WRITE_RAM                     ; Stuck at GND due to stuck port clock                             ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.INC_PUT                       ; Stuck at GND due to stuck port clock                             ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.ACCEPTED                      ; Stuck at GND due to stuck port clock                             ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.WRITE_REG                     ; Stuck at GND due to stuck port clock                             ;
+; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.WRITE_DATA                      ; Stuck at GND due to stuck port data_in                           ;
+; KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState.THIRD                                    ; Stuck at GND due to stuck port data_in                           ;
+; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.CAN_RECEIVE                     ; Lost fanout                                                      ;
+; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.SEND_DATA                       ; Lost fanout                                                      ;
+; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.WAIT_ACK                        ; Lost fanout                                                      ;
+; KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState.SECOND                                   ; Lost fanout                                                      ;
+; door_mecanism:dm|CLKDIV:UCLK|count[0]                                                                   ; Merged with KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock|count[0] ;
+; door_mecanism:dm|CLKDIV:UCLK|count[1]                                                                   ; Merged with KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock|count[1] ;
+; Total Number of Removed Registers = 27                                                                  ;                                                                  ;
++---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                        ;
++---------------------------------------------------------------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------+
+; Register name                                                                                           ; Reason for Removal             ; Registers Removed due to This Register                                                                  ;
++---------------------------------------------------------------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------+
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.SELECT_PUT                    ; Stuck at GND                   ; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.WRITE_RAM,                    ;
+;                                                                                                         ; due to stuck port clock        ; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.INC_PUT,                      ;
+;                                                                                                         ;                                ; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.ACCEPTED                      ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.WRITE_REG                     ; Stuck at GND                   ; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.WRITE_DATA,                     ;
+;                                                                                                         ; due to stuck port clock        ; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.CAN_RECEIVE,                    ;
+;                                                                                                         ;                                ; KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState.WAIT_ACK                        ;
+; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.ZEN                           ; Stuck at GND                   ; KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState.INC_GET,                      ;
+;                                                                                                         ; due to stuck port clock        ; KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState.SECOND                                   ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff0|Q ; Stuck at GND                   ; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff3|Q ;
+;                                                                                                         ; due to stuck port clock_enable ;                                                                                                         ;
+; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q ; Stuck at GND                   ; KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff3|Q ;
+;                                                                                                         ; due to stuck port clock_enable ;                                                                                                         ;
++---------------------------------------------------------------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 164   ;
+; Total registers                              ; 207   ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 10    ;
-; Number of registers using Asynchronous Clear ; 65    ;
+; Number of registers using Asynchronous Clear ; 77    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 70    ;
+; Number of registers using Clock Enable       ; 84    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -443,23 +585,95 @@ Encoding Type:  One-Hot
 ; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd0|Q                                                                                                                                                                                                                                                                          ; 1       ;
+; door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1|Q[0]                                                                                                                                                                                                                                                               ; 5       ;
 ; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd1|Q                                                                                                                                                                                                                                                                          ; 2       ;
 ; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd2|Q                                                                                                                                                                                                                                                                          ; 2       ;
 ; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd3|Q                                                                                                                                                                                                                                                                          ; 2       ;
 ; SLCDC:sl|SerialReceiver:sr|ShiftRegister:sr|FFD:ffd4|Q                                                                                                                                                                                                                                                                          ; 2       ;
-; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd1|Q                                                                                                                                                                                                                                                              ; 2       ;
-; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd2|Q                                                                                                                                                                                                                                                              ; 2       ;
-; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd3|Q                                                                                                                                                                                                                                                              ; 2       ;
-; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd4|Q                                                                                                                                                                                                                                                              ; 2       ;
+; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd1|Q                                                                                                                                                                                                                                                              ; 3       ;
+; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd2|Q                                                                                                                                                                                                                                                              ; 3       ;
+; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd3|Q                                                                                                                                                                                                                                                              ; 3       ;
+; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd4|Q                                                                                                                                                                                                                                                              ; 3       ;
 ; FFD:fsc|Q                                                                                                                                                                                                                                                                                                                       ; 16      ;
 ; SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr|FFD:ffd0|Q                                                                                                                                                                                                                                                              ; 3       ;
 ; FFD:fdoor|Q                                                                                                                                                                                                                                                                                                                     ; 3       ;
 ; FFD:flcd|Q                                                                                                                                                                                                                                                                                                                      ; 3       ;
-; KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock|count[0]                                                                                                                                                                                                                                                                            ; 2       ;
+; KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock|count[0]                                                                                                                                                                                                                                                                            ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 2       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
-; Total number of inverted registers = 16                                                                                                                                                                                                                                                                                         ;         ;
+; Total number of inverted registers = 17                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SCA|door_mecanism:dm|door_emulation_seg:U0|dOut[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SCA|door_mecanism:dm|door_emulation_seg:U1|dOut[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SCA|door_mecanism:dm|door_emulation_seg:U2|dOut[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: door_mecanism:dm|CLKDIV:UCLK ;
++----------------+---------+------------------------------------------------+
+; Parameter Name ; Value   ; Type                                           ;
++----------------+---------+------------------------------------------------+
+; div            ; 2000000 ; Signed Integer                                 ;
++----------------+---------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: door_mecanism:dm|counter_pl:U6 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; width          ; 5     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: door_mecanism:dm|counter_pl:U6|adder_rc:U1 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; width          ; 5     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; width          ; 5     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: door_mecanism:dm|ShiftRegister_lr:U7 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; width          ; 9     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1 ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; width          ; 9     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------+
@@ -469,6 +683,17 @@ Encoding Type:  One-Hot
 +----------------+-------+-----------------------------------------------------------------+
 ; div            ; 1000  ; Signed Integer                                                  ;
 +----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: KeyboardReader:kr|RingBuffer:rbuff|RAM:memory ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; address_width  ; 3     ; Signed Integer                                                    ;
+; data_width     ; 4     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -518,6 +743,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|MUX2x1:idxDecider"      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y[3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet"      ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; pl      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut"      ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; pl      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control"                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                      ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; reset  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; clk    ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; incput ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; incget ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count"                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
@@ -527,6 +795,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; data_in ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; tc      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardReader:kr"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; dval ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -692,6 +969,101 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+--------------+
 
 
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U5" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; d[3] ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U4" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; d[3] ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U3" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; d[3] ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U2" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; d[3] ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U1" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; d[3] ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|door_emulation_seg:U0" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; d[3] ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|ShiftRegister_lr:U7" ;
++-----------------+-------+----------+-----------------------------+
+; Port            ; Type  ; Severity ; Details                     ;
++-----------------+-------+----------+-----------------------------+
+; sin_left        ; Input ; Info     ; Stuck at VCC                ;
+; sin_right       ; Input ; Info     ; Stuck at GND                ;
+; rst_value[8..1] ; Input ; Info     ; Stuck at GND                ;
+; rst_value[0]    ; Input ; Info     ; Stuck at VCC                ;
++-----------------+-------+----------+-----------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2" ;
++-----------+-------+----------+-----------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                             ;
++-----------+-------+----------+-----------------------------------------------------+
+; rst_value ; Input ; Info     ; Stuck at GND                                        ;
++-----------+-------+----------+-----------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|counter_pl:U6|adder_rc:U1"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; b    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; ci   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "door_mecanism:dm|counter_pl:U6" ;
++--------+-------+----------+--------------------------------+
+; Port   ; Type  ; Severity ; Details                        ;
++--------+-------+----------+--------------------------------+
+; din[0] ; Input ; Info     ; Stuck at GND                   ;
++--------+-------+----------+--------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Virtual JTAG Settings                                                                                                                                   ;
 +----------------+------------+------------------+----------+---------+-----------------+-------------------------+---------------------------------------+
@@ -706,24 +1078,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 63                          ;
-; cycloneiii_ff         ; 78                          ;
-;     CLR               ; 30                          ;
+; boundary_port         ; 110                         ;
+; cycloneiii_ff         ; 121                         ;
+;     CLR               ; 28                          ;
 ;     ENA               ; 10                          ;
-;     ENA CLR           ; 2                           ;
-;     plain             ; 36                          ;
-; cycloneiii_lcell_comb ; 120                         ;
-;     arith             ; 31                          ;
-;         2 data inputs ; 31                          ;
-;     normal            ; 89                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 37                          ;
+;     ENA CLR           ; 16                          ;
+;     plain             ; 67                          ;
+; cycloneiii_lcell_comb ; 207                         ;
+;     arith             ; 61                          ;
+;         2 data inputs ; 60                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 146                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 27                          ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 26                          ;
+;         4 data inputs ; 53                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.45                        ;
+; Average LUT depth     ; 2.84                        ;
 +-----------------------+-----------------------------+
 
 
@@ -742,10 +1115,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri May 05 11:28:45 2023
+    Info: Processing started: Fri May 19 12:11:05 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Test -c Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/full_adder.vhd
+    Info (12022): Found design unit 1: full_adder-Behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/full_adder.vhd Line: 30
+    Info (12023): Found entity 1: full_adder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/full_adder.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file full_add.vhd
+    Info (12022): Found design unit 1: full_add-arc_fa File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd Line: 9
+    Info (12023): Found entity 1: full_add File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/shiftregister_lr.vhd
+    Info (12022): Found design unit 1: ShiftRegister_lr-Structural File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd Line: 27
+    Info (12023): Found entity 1: ShiftRegister_lr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/register_d_e_r_value.vhd
+    Info (12022): Found design unit 1: register_D_E_R_value-Behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 34
+    Info (12023): Found entity 1: register_D_E_R_value File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/door_mecanism.vhd
+    Info (12022): Found design unit 1: door_mecanism-behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 38
+    Info (12023): Found entity 1: door_mecanism File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/door_emulation_seg.vhd
+    Info (12022): Found design unit 1: door_emulation_seg-behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_emulation_seg.vhd Line: 25
+    Info (12023): Found entity 1: door_emulation_seg File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_emulation_seg.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/counter_pl.vhd
+    Info (12022): Found design unit 1: counter_pl-Structural File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd Line: 36
+    Info (12023): Found entity 1: counter_pl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/adder_rc.vhd
+    Info (12022): Found design unit 1: adder_rc-Structural File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd Line: 33
+    Info (12023): Found entity 1: adder_rc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file keyboardreader.vhd
     Info (12022): Found design unit 1: KeyboardReader-kr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 13
     Info (12023): Found entity 1: KeyboardReader File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 4
@@ -764,9 +1161,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file registr
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
     Info (12022): Found design unit 1: MUX2x1-arc_mux File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd Line: 10
     Info (12023): Found entity 1: MUX2x1 File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file full_adder.vhd
-    Info (12022): Found design unit 1: full_adder-arc_fa File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd Line: 9
-    Info (12023): Found entity 1: full_adder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_adder.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ffd.vhd
     Info (12022): Found design unit 1: FFD-logicFunction File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd Line: 14
     Info (12023): Found entity 1: FFD File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd Line: 4
@@ -792,7 +1186,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file keydeco
     Info (12022): Found design unit 1: KeyDecode-arc_kd File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 13
     Info (12023): Found entity 1: KeyDecode File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sca.vhd
-    Info (12022): Found design unit 1: SCA-arc_sca File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 13
+    Info (12022): Found design unit 1: SCA-arc_sca File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 14
     Info (12023): Found entity 1: SCA File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file slcdc.vhd
     Info (12022): Found design unit 1: SLCDC-arc_slcdc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 11
@@ -819,17 +1213,47 @@ Info (12021): Found 2 design units, including 1 entities, in source file doorcon
     Info (12022): Found design unit 1: DoorController-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 12
     Info (12023): Found entity 1: DoorController File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mac.vhd
-    Info (12022): Found design unit 1: MAC-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd Line: 11
-    Info (12023): Found entity 1: MAC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd Line: 4
+    Info (12022): Found design unit 1: MemoryAddressControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd Line: 11
+    Info (12023): Found entity 1: MemoryAddressControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MAC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: RAM-behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 34
+    Info (12023): Found entity 1: RAM File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file ringbuffercontrol.vhd
+    Info (12022): Found design unit 1: RingBufferControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd Line: 10
+    Info (12023): Found entity 1: RingBufferControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ringbuffer.vhd
+    Info (12022): Found design unit 1: RingBuffer-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 12
+    Info (12023): Found entity 1: RingBuffer File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file outputregister.vhd
+    Info (12022): Found design unit 1: OutputRegister-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputRegister.vhd Line: 11
+    Info (12023): Found entity 1: OutputRegister File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputRegister.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file buffercontrol.vhd
+    Info (12022): Found design unit 1: BufferControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 10
+    Info (12023): Found entity 1: BufferControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file outputbuffer.vhd
+    Info (12022): Found design unit 1: OutputBuffer-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 12
+    Info (12023): Found entity 1: OutputBuffer File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 4
 Info (12127): Elaborating entity "SCA" for the top level hierarchy
-Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(114): port or argument "inputPort" has 2/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 114
-Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(114): port or argument "outputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 114
-Info (12128): Elaborating entity "FFD" for hierarchy "FFD:flcd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 59
-Info (12128): Elaborating entity "SDC" for hierarchy "SDC:serialDoorC" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 83
+Warning (10036): Verilog HDL or VHDL warning at SCA.vhd(73): object "kv" assigned a value but never read File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 73
+Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(152): port or argument "inputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 152
+Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(152): port or argument "outputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 152
+Info (12128): Elaborating entity "door_mecanism" for hierarchy "door_mecanism:dm" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 79
+Info (12128): Elaborating entity "CLKDIV" for hierarchy "door_mecanism:dm|CLKDIV:UCLK" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 81
+Info (12128): Elaborating entity "counter_pl" for hierarchy "door_mecanism:dm|counter_pl:U6" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 86
+Info (12128): Elaborating entity "adder_rc" for hierarchy "door_mecanism:dm|counter_pl:U6|adder_rc:U1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd Line: 74
+Info (12128): Elaborating entity "full_adder" for hierarchy "door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:0:U1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd Line: 53
+Info (12128): Elaborating entity "register_D_E_R_value" for hierarchy "door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at register_D_E_R_value.vhd(41): signal "RST_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 41
+Info (12128): Elaborating entity "ShiftRegister_lr" for hierarchy "door_mecanism:dm|ShiftRegister_lr:U7" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 88
+Info (12128): Elaborating entity "register_D_E_R_value" for hierarchy "door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at register_D_E_R_value.vhd(41): signal "RST_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 41
+Info (12128): Elaborating entity "door_emulation_seg" for hierarchy "door_mecanism:dm|door_emulation_seg:U0" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 95
+Info (12128): Elaborating entity "FFD" for hierarchy "FFD:flcd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 97
+Info (12128): Elaborating entity "SDC" for hierarchy "SDC:serialDoorC" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 121
 Info (12128): Elaborating entity "SerialReceiver" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd Line: 31
 Info (12128): Elaborating entity "Counter" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 37
 Info (12128): Elaborating entity "adder" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 44
-Info (12128): Elaborating entity "full_adder" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_adder:fa1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 22
+Info (12128): Elaborating entity "full_add" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 22
 Info (12128): Elaborating entity "MUX2x1" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|MUX2x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 50
 Info (12128): Elaborating entity "Registry" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 56
 Info (12128): Elaborating entity "Terminal_Count" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Terminal_Count:utc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 65
@@ -837,16 +1261,32 @@ Info (12128): Elaborating entity "SerialControl" for hierarchy "SDC:serialDoorC|
 Info (12128): Elaborating entity "ShiftRegister" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 59
 Info (12128): Elaborating entity "DoorController" for hierarchy "SDC:serialDoorC|DoorController:doorControl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd Line: 42
 Warning (10492): VHDL Process Statement warning at DoorController.vhd(25): signal "CurrentState" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 25
-Info (12128): Elaborating entity "KeyboardReader" for hierarchy "KeyboardReader:kr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 96
-Info (12128): Elaborating entity "KeyDecode" for hierarchy "KeyboardReader:kr|KeyDecode:kd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 25
+Info (12128): Elaborating entity "KeyboardReader" for hierarchy "KeyboardReader:kr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 134
+Info (12128): Elaborating entity "KeyDecode" for hierarchy "KeyboardReader:kr|KeyDecode:kd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 44
 Info (12128): Elaborating entity "CLKDIV" for hierarchy "KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 39
 Info (12128): Elaborating entity "KeyScan" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 44
 Info (12128): Elaborating entity "Decoder" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Decoder:dec" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 50
 Info (12128): Elaborating entity "MUX4x1" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|MUX4x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 55
 Info (12128): Elaborating entity "KeyControl" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 53
-Info (12128): Elaborating entity "SLCDC" for hierarchy "SLCDC:sl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 105
+Info (12128): Elaborating entity "RingBuffer" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 53
+Warning (10541): VHDL Signal Declaration warning at RingBuffer.vhd(38): used implicit default value for signal "incp" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 38
+Warning (10541): VHDL Signal Declaration warning at RingBuffer.vhd(38): used implicit default value for signal "incg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 38
+Info (12128): Elaborating entity "RingBufferControl" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at RingBufferControl.vhd(23): signal "CurrentState" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd Line: 23
+Info (12128): Elaborating entity "MemoryAddressControl" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 53
+Info (12128): Elaborating entity "RAM" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|RAM:memory" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at RAM.vhd(43): signal "ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at RAM.vhd(46): signal "din" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 46
+Info (12128): Elaborating entity "OutputBuffer" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 63
+Info (12128): Elaborating entity "BufferControl" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 30
+Warning (10541): VHDL Signal Declaration warning at BufferControl.vhd(7): used implicit default value for signal "Wreg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 7
+Warning (10541): VHDL Signal Declaration warning at BufferControl.vhd(7): used implicit default value for signal "OBfree" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 7
+Warning (10541): VHDL Signal Declaration warning at BufferControl.vhd(7): used implicit default value for signal "Dval" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 7
+Warning (10492): VHDL Process Statement warning at BufferControl.vhd(23): signal "CurrentState" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 23
+Info (12128): Elaborating entity "OutputRegister" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 39
+Info (12128): Elaborating entity "SLCDC" for hierarchy "SLCDC:sl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 143
 Info (12128): Elaborating entity "LCDDispatcher" for hierarchy "SLCDC:sl|LCDDispatcher:lcdd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 42
-Info (12128): Elaborating entity "UsbPort" for hierarchy "UsbPort:usb" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 114
+Info (12128): Elaborating entity "UsbPort" for hierarchy "UsbPort:usb" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 152
 Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
 Info (12130): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
 Info (12133): Instantiated megafunction "UsbPort:usb|sld_virtual_jtag:b2v_inst" with the following parameter: File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
@@ -864,7 +1304,7 @@ Info (12131): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jta
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 415
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.05.05.11:29:16 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.05.19.12:11:26 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -887,18 +1327,42 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 40
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 296 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 267 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Fri May 05 11:29:31 2023
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:01:06
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "M" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 6
+Info (21057): Implemented 423 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 347 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Fri May 19 12:11:40 2023
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:01:07
 
 

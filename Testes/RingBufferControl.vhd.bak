@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity RingBufferControl is
+port(
+DAV, CTS, full, empty : in std_logic;
+Wr, selPG, Wreg, DAC : out std_logic);
+end RingBufferControl;
+
+architecture arc of RingBufferControl is
+
+type:

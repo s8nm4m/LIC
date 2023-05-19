@@ -1,20 +1,21 @@
 |SCA
+Reset => door_mecanism:dm.RST
 Reset => SDC:serialDoorC.Reset
 Reset => KeyboardReader:kr.Reset
 Reset => SLCDC:sl.Reset
+CLK => door_mecanism:dm.MCLK
 CLK => FFD:flcd.CLK
 CLK => FFD:fdoor.CLK
 CLK => FFD:fsc.CLK
 CLK => SDC:serialDoorC.CLK
 CLK => KeyboardReader:kr.CLK
 CLK => SLCDC:sl.CLK
-Sclose => SDC:serialDoorC.Sclose
-Sopen => SDC:serialDoorC.Sopen
-Psensor => SDC:serialDoorC.Psensor
+Pswitch => door_mecanism:dm.Pswitch
+M => ~NO_FANOUT~
 LCD_RS <= SLCDC:sl.Dout[0]
 LCD_EN <= SLCDC:sl.Wrl
-OnOff <= SDC:serialDoorC.OnOff
 OC <= SDC:serialDoorC.Dout[0]
+OO <= SDC:serialDoorC.OnOff
 O[0] <= KeyboardReader:kr.O[0]
 O[1] <= KeyboardReader:kr.O[1]
 O[2] <= KeyboardReader:kr.O[2]
@@ -30,6 +31,650 @@ Door_data[0] <= SDC:serialDoorC.Dout[1]
 Door_data[1] <= SDC:serialDoorC.Dout[2]
 Door_data[2] <= SDC:serialDoorC.Dout[3]
 Door_data[3] <= SDC:serialDoorC.Dout[4]
+HEX0[0] <= door_mecanism:dm.HEX0[0]
+HEX0[1] <= door_mecanism:dm.HEX0[1]
+HEX0[2] <= door_mecanism:dm.HEX0[2]
+HEX0[3] <= door_mecanism:dm.HEX0[3]
+HEX0[4] <= door_mecanism:dm.HEX0[4]
+HEX0[5] <= door_mecanism:dm.HEX0[5]
+HEX0[6] <= door_mecanism:dm.HEX0[6]
+HEX0[7] <= door_mecanism:dm.HEX0[7]
+HEX1[0] <= door_mecanism:dm.HEX1[0]
+HEX1[1] <= door_mecanism:dm.HEX1[1]
+HEX1[2] <= door_mecanism:dm.HEX1[2]
+HEX1[3] <= door_mecanism:dm.HEX1[3]
+HEX1[4] <= door_mecanism:dm.HEX1[4]
+HEX1[5] <= door_mecanism:dm.HEX1[5]
+HEX1[6] <= door_mecanism:dm.HEX1[6]
+HEX1[7] <= door_mecanism:dm.HEX1[7]
+HEX2[0] <= door_mecanism:dm.HEX2[0]
+HEX2[1] <= door_mecanism:dm.HEX2[1]
+HEX2[2] <= door_mecanism:dm.HEX2[2]
+HEX2[3] <= door_mecanism:dm.HEX2[3]
+HEX2[4] <= door_mecanism:dm.HEX2[4]
+HEX2[5] <= door_mecanism:dm.HEX2[5]
+HEX2[6] <= door_mecanism:dm.HEX2[6]
+HEX2[7] <= door_mecanism:dm.HEX2[7]
+HEX3[0] <= door_mecanism:dm.HEX3[0]
+HEX3[1] <= door_mecanism:dm.HEX3[1]
+HEX3[2] <= door_mecanism:dm.HEX3[2]
+HEX3[3] <= door_mecanism:dm.HEX3[3]
+HEX3[4] <= door_mecanism:dm.HEX3[4]
+HEX3[5] <= door_mecanism:dm.HEX3[5]
+HEX3[6] <= door_mecanism:dm.HEX3[6]
+HEX3[7] <= door_mecanism:dm.HEX3[7]
+HEX4[0] <= door_mecanism:dm.HEX4[0]
+HEX4[1] <= door_mecanism:dm.HEX4[1]
+HEX4[2] <= door_mecanism:dm.HEX4[2]
+HEX4[3] <= door_mecanism:dm.HEX4[3]
+HEX4[4] <= door_mecanism:dm.HEX4[4]
+HEX4[5] <= door_mecanism:dm.HEX4[5]
+HEX4[6] <= door_mecanism:dm.HEX4[6]
+HEX4[7] <= door_mecanism:dm.HEX4[7]
+HEX5[0] <= door_mecanism:dm.HEX5[0]
+HEX5[1] <= door_mecanism:dm.HEX5[1]
+HEX5[2] <= door_mecanism:dm.HEX5[2]
+HEX5[3] <= door_mecanism:dm.HEX5[3]
+HEX5[4] <= door_mecanism:dm.HEX5[4]
+HEX5[5] <= door_mecanism:dm.HEX5[5]
+HEX5[6] <= door_mecanism:dm.HEX5[6]
+HEX5[7] <= door_mecanism:dm.HEX5[7]
+
+
+|SCA|door_mecanism:dm
+MCLK => CLKDIV:UCLK.clk_in
+RST => counter_pl:U6.RST
+RST => ShiftRegister_lr:U7.reset
+onOff => counter_pl:U6.CE
+onOff => ShiftRegister_lr:U7.en
+openClose => ShiftRegister_lr:U7.shiftLeft
+v[0] => counter_pl:U6.din[1]
+v[1] => counter_pl:U6.din[2]
+v[2] => counter_pl:U6.din[3]
+v[3] => counter_pl:U6.din[4]
+Pswitch => Pdetector.DATAIN
+Sopen <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+Sclose <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+Pdetector <= Pswitch.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= door_emulation_seg:U0.dOut[0]
+HEX0[1] <= door_emulation_seg:U0.dOut[1]
+HEX0[2] <= door_emulation_seg:U0.dOut[2]
+HEX0[3] <= door_emulation_seg:U0.dOut[3]
+HEX0[4] <= door_emulation_seg:U0.dOut[4]
+HEX0[5] <= door_emulation_seg:U0.dOut[5]
+HEX0[6] <= door_emulation_seg:U0.dOut[6]
+HEX0[7] <= door_emulation_seg:U0.dOut[7]
+HEX1[0] <= door_emulation_seg:U1.dOut[0]
+HEX1[1] <= door_emulation_seg:U1.dOut[1]
+HEX1[2] <= door_emulation_seg:U1.dOut[2]
+HEX1[3] <= door_emulation_seg:U1.dOut[3]
+HEX1[4] <= door_emulation_seg:U1.dOut[4]
+HEX1[5] <= door_emulation_seg:U1.dOut[5]
+HEX1[6] <= door_emulation_seg:U1.dOut[6]
+HEX1[7] <= door_emulation_seg:U1.dOut[7]
+HEX2[0] <= door_emulation_seg:U2.dOut[0]
+HEX2[1] <= door_emulation_seg:U2.dOut[1]
+HEX2[2] <= door_emulation_seg:U2.dOut[2]
+HEX2[3] <= door_emulation_seg:U2.dOut[3]
+HEX2[4] <= door_emulation_seg:U2.dOut[4]
+HEX2[5] <= door_emulation_seg:U2.dOut[5]
+HEX2[6] <= door_emulation_seg:U2.dOut[6]
+HEX2[7] <= door_emulation_seg:U2.dOut[7]
+HEX3[0] <= door_emulation_seg:U3.dOut[0]
+HEX3[1] <= door_emulation_seg:U3.dOut[1]
+HEX3[2] <= door_emulation_seg:U3.dOut[2]
+HEX3[3] <= door_emulation_seg:U3.dOut[3]
+HEX3[4] <= door_emulation_seg:U3.dOut[4]
+HEX3[5] <= door_emulation_seg:U3.dOut[5]
+HEX3[6] <= door_emulation_seg:U3.dOut[6]
+HEX3[7] <= door_emulation_seg:U3.dOut[7]
+HEX4[0] <= door_emulation_seg:U4.dOut[0]
+HEX4[1] <= door_emulation_seg:U4.dOut[1]
+HEX4[2] <= door_emulation_seg:U4.dOut[2]
+HEX4[3] <= door_emulation_seg:U4.dOut[3]
+HEX4[4] <= door_emulation_seg:U4.dOut[4]
+HEX4[5] <= door_emulation_seg:U4.dOut[5]
+HEX4[6] <= door_emulation_seg:U4.dOut[6]
+HEX4[7] <= door_emulation_seg:U4.dOut[7]
+HEX5[0] <= door_emulation_seg:U5.dOut[0]
+HEX5[1] <= door_emulation_seg:U5.dOut[1]
+HEX5[2] <= door_emulation_seg:U5.dOut[2]
+HEX5[3] <= door_emulation_seg:U5.dOut[3]
+HEX5[4] <= door_emulation_seg:U5.dOut[4]
+HEX5[5] <= door_emulation_seg:U5.dOut[5]
+HEX5[6] <= door_emulation_seg:U5.dOut[6]
+HEX5[7] <= door_emulation_seg:U5.dOut[7]
+
+
+|SCA|door_mecanism:dm|CLKDIV:UCLK
+clk_in => tmp.CLK
+clk_in => count[0].CLK
+clk_in => count[1].CLK
+clk_in => count[2].CLK
+clk_in => count[3].CLK
+clk_in => count[4].CLK
+clk_in => count[5].CLK
+clk_in => count[6].CLK
+clk_in => count[7].CLK
+clk_in => count[8].CLK
+clk_in => count[9].CLK
+clk_in => count[10].CLK
+clk_in => count[11].CLK
+clk_in => count[12].CLK
+clk_in => count[13].CLK
+clk_in => count[14].CLK
+clk_in => count[15].CLK
+clk_in => count[16].CLK
+clk_in => count[17].CLK
+clk_in => count[18].CLK
+clk_in => count[19].CLK
+clk_in => count[20].CLK
+clk_in => count[21].CLK
+clk_in => count[22].CLK
+clk_in => count[23].CLK
+clk_in => count[24].CLK
+clk_in => count[25].CLK
+clk_in => count[26].CLK
+clk_in => count[27].CLK
+clk_in => count[28].CLK
+clk_in => count[29].CLK
+clk_in => count[30].CLK
+clk_in => count[31].CLK
+clk_out <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|counter_pl:U6
+CLK => register_D_E_R_value:U2.CLK
+RST => register_D_E_R_value:U2.RST
+CE => register_D_E_R_value:U2.EN
+pl => cnt_atual_pl[4].OUTPUTSELECT
+pl => cnt_atual_pl[3].OUTPUTSELECT
+pl => cnt_atual_pl[2].OUTPUTSELECT
+pl => cnt_atual_pl[1].OUTPUTSELECT
+pl => cnt_atual_pl[0].OUTPUTSELECT
+din[0] => cnt_atual_pl[0].DATAB
+din[1] => cnt_atual_pl[1].DATAB
+din[2] => cnt_atual_pl[2].DATAB
+din[3] => cnt_atual_pl[3].DATAB
+din[4] => cnt_atual_pl[4].DATAB
+Q[0] <= register_D_E_R_value:U2.Q[0]
+Q[1] <= register_D_E_R_value:U2.Q[1]
+Q[2] <= register_D_E_R_value:U2.Q[2]
+Q[3] <= register_D_E_R_value:U2.Q[3]
+Q[4] <= register_D_E_R_value:U2.Q[4]
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1
+A[0] => full_adder:SC:0:U1.A
+A[1] => full_adder:SC:1:U1.A
+A[2] => full_adder:SC:2:U1.A
+A[3] => full_adder:SC:3:U1.A
+A[4] => full_adder:SC:4:U1.A
+B[0] => full_adder:SC:0:U1.B
+B[1] => full_adder:SC:1:U1.B
+B[2] => full_adder:SC:2:U1.B
+B[3] => full_adder:SC:3:U1.B
+B[4] => full_adder:SC:4:U1.B
+Ci => full_adder:SC:0:U1.Cin
+S[0] <= full_adder:SC:0:U1.S
+S[1] <= full_adder:SC:1:U1.S
+S[2] <= full_adder:SC:2:U1.S
+S[3] <= full_adder:SC:3:U1.S
+S[4] <= full_adder:SC:4:U1.S
+Co <= full_adder:SC:4:U1.Cout
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:0:U1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:1:U1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:2:U1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:3:U1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|adder_rc:U1|full_adder:\SC:4:U1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|counter_pl:U6|register_D_E_R_value:U2
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+RST => Q[0]~reg0.ALOAD
+RST => Q[1]~reg0.ALOAD
+RST => Q[2]~reg0.ALOAD
+RST => Q[3]~reg0.ALOAD
+RST => Q[4]~reg0.ALOAD
+EN => Q[0]~reg0.ENA
+EN => Q[1]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[4]~reg0.ENA
+RST_value[0] => Q[0]~reg0.ADATA
+RST_value[1] => Q[1]~reg0.ADATA
+RST_value[2] => Q[2]~reg0.ADATA
+RST_value[3] => Q[3]~reg0.ADATA
+RST_value[4] => Q[4]~reg0.ADATA
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|ShiftRegister_lr:U7
+clk => register_D_E_R_value:U1.CLK
+reset => register_D_E_R_value:U1.RST
+sin_left => dataShift_in[0].DATAB
+sin_right => dataShift_in[8].DATAA
+en => register_D_E_R_value:U1.EN
+shiftLeft => dataShift_in[8].OUTPUTSELECT
+shiftLeft => dataShift_in[7].OUTPUTSELECT
+shiftLeft => dataShift_in[6].OUTPUTSELECT
+shiftLeft => dataShift_in[5].OUTPUTSELECT
+shiftLeft => dataShift_in[4].OUTPUTSELECT
+shiftLeft => dataShift_in[3].OUTPUTSELECT
+shiftLeft => dataShift_in[2].OUTPUTSELECT
+shiftLeft => dataShift_in[1].OUTPUTSELECT
+shiftLeft => dataShift_in[0].OUTPUTSELECT
+rst_value[0] => register_D_E_R_value:U1.RST_value[0]
+rst_value[1] => register_D_E_R_value:U1.RST_value[1]
+rst_value[2] => register_D_E_R_value:U1.RST_value[2]
+rst_value[3] => register_D_E_R_value:U1.RST_value[3]
+rst_value[4] => register_D_E_R_value:U1.RST_value[4]
+rst_value[5] => register_D_E_R_value:U1.RST_value[5]
+rst_value[6] => register_D_E_R_value:U1.RST_value[6]
+rst_value[7] => register_D_E_R_value:U1.RST_value[7]
+rst_value[8] => register_D_E_R_value:U1.RST_value[8]
+Dout[0] <= register_D_E_R_value:U1.Q[0]
+Dout[1] <= register_D_E_R_value:U1.Q[1]
+Dout[2] <= register_D_E_R_value:U1.Q[2]
+Dout[3] <= register_D_E_R_value:U1.Q[3]
+Dout[4] <= register_D_E_R_value:U1.Q[4]
+Dout[5] <= register_D_E_R_value:U1.Q[5]
+Dout[6] <= register_D_E_R_value:U1.Q[6]
+Dout[7] <= register_D_E_R_value:U1.Q[7]
+Dout[8] <= register_D_E_R_value:U1.Q[8]
+
+
+|SCA|door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+CLK => Q[8]~reg0.CLK
+RST => Q[0]~reg0.ALOAD
+RST => Q[1]~reg0.ALOAD
+RST => Q[2]~reg0.ALOAD
+RST => Q[3]~reg0.ALOAD
+RST => Q[4]~reg0.ALOAD
+RST => Q[5]~reg0.ALOAD
+RST => Q[6]~reg0.ALOAD
+RST => Q[7]~reg0.ALOAD
+RST => Q[8]~reg0.ALOAD
+EN => Q[0]~reg0.ENA
+EN => Q[1]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[4]~reg0.ENA
+EN => Q[5]~reg0.ENA
+EN => Q[6]~reg0.ENA
+EN => Q[7]~reg0.ENA
+EN => Q[8]~reg0.ENA
+RST_value[0] => Q[0]~reg0.ADATA
+RST_value[1] => Q[1]~reg0.ADATA
+RST_value[2] => Q[2]~reg0.ADATA
+RST_value[3] => Q[3]~reg0.ADATA
+RST_value[4] => Q[4]~reg0.ADATA
+RST_value[5] => Q[5]~reg0.ADATA
+RST_value[6] => Q[6]~reg0.ADATA
+RST_value[7] => Q[7]~reg0.ADATA
+RST_value[8] => Q[8]~reg0.ADATA
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+D[8] => Q[8]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|door_mecanism:dm|door_emulation_seg:U0
+d[0] => Equal0.IN3
+d[0] => Equal1.IN3
+d[0] => Equal2.IN3
+d[0] => Equal3.IN2
+d[0] => Equal4.IN3
+d[0] => Equal5.IN3
+d[0] => Equal6.IN3
+d[0] => Equal7.IN3
+d[1] => Equal0.IN2
+d[1] => Equal1.IN2
+d[1] => Equal2.IN1
+d[1] => Equal3.IN1
+d[1] => Equal4.IN2
+d[1] => Equal5.IN2
+d[1] => Equal6.IN2
+d[1] => Equal7.IN2
+d[2] => Equal0.IN1
+d[2] => Equal1.IN0
+d[2] => Equal2.IN0
+d[2] => Equal3.IN0
+d[2] => Equal4.IN1
+d[2] => Equal5.IN1
+d[2] => Equal6.IN1
+d[2] => Equal7.IN1
+d[3] => Equal0.IN0
+d[3] => Equal1.IN1
+d[3] => Equal2.IN2
+d[3] => Equal3.IN3
+d[3] => Equal4.IN0
+d[3] => Equal5.IN0
+d[3] => Equal6.IN0
+d[3] => Equal7.IN0
+dOut[0] <= <VCC>
+dOut[1] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= <VCC>
+dOut[4] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= <VCC>
+
+
+|SCA|door_mecanism:dm|door_emulation_seg:U1
+d[0] => Equal0.IN3
+d[0] => Equal1.IN3
+d[0] => Equal2.IN3
+d[0] => Equal3.IN2
+d[0] => Equal4.IN3
+d[0] => Equal5.IN3
+d[0] => Equal6.IN3
+d[0] => Equal7.IN3
+d[1] => Equal0.IN2
+d[1] => Equal1.IN2
+d[1] => Equal2.IN1
+d[1] => Equal3.IN1
+d[1] => Equal4.IN2
+d[1] => Equal5.IN2
+d[1] => Equal6.IN2
+d[1] => Equal7.IN2
+d[2] => Equal0.IN1
+d[2] => Equal1.IN0
+d[2] => Equal2.IN0
+d[2] => Equal3.IN0
+d[2] => Equal4.IN1
+d[2] => Equal5.IN1
+d[2] => Equal6.IN1
+d[2] => Equal7.IN1
+d[3] => Equal0.IN0
+d[3] => Equal1.IN1
+d[3] => Equal2.IN2
+d[3] => Equal3.IN3
+d[3] => Equal4.IN0
+d[3] => Equal5.IN0
+d[3] => Equal6.IN0
+d[3] => Equal7.IN0
+dOut[0] <= <VCC>
+dOut[1] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= <VCC>
+dOut[4] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= <VCC>
+
+
+|SCA|door_mecanism:dm|door_emulation_seg:U2
+d[0] => Equal0.IN3
+d[0] => Equal1.IN3
+d[0] => Equal2.IN3
+d[0] => Equal3.IN2
+d[0] => Equal4.IN3
+d[0] => Equal5.IN3
+d[0] => Equal6.IN3
+d[0] => Equal7.IN3
+d[1] => Equal0.IN2
+d[1] => Equal1.IN2
+d[1] => Equal2.IN1
+d[1] => Equal3.IN1
+d[1] => Equal4.IN2
+d[1] => Equal5.IN2
+d[1] => Equal6.IN2
+d[1] => Equal7.IN2
+d[2] => Equal0.IN1
+d[2] => Equal1.IN0
+d[2] => Equal2.IN0
+d[2] => Equal3.IN0
+d[2] => Equal4.IN1
+d[2] => Equal5.IN1
+d[2] => Equal6.IN1
+d[2] => Equal7.IN1
+d[3] => Equal0.IN0
+d[3] => Equal1.IN1
+d[3] => Equal2.IN2
+d[3] => Equal3.IN3
+d[3] => Equal4.IN0
+d[3] => Equal5.IN0
+d[3] => Equal6.IN0
+d[3] => Equal7.IN0
+dOut[0] <= <VCC>
+dOut[1] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= <VCC>
+dOut[4] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= <VCC>
+
+
+|SCA|door_mecanism:dm|door_emulation_seg:U3
+d[0] => Equal0.IN3
+d[0] => Equal1.IN3
+d[0] => Equal2.IN3
+d[0] => Equal3.IN2
+d[0] => Equal4.IN3
+d[0] => Equal5.IN3
+d[0] => Equal6.IN3
+d[0] => Equal7.IN3
+d[1] => Equal0.IN2
+d[1] => Equal1.IN2
+d[1] => Equal2.IN1
+d[1] => Equal3.IN1
+d[1] => Equal4.IN2
+d[1] => Equal5.IN2
+d[1] => Equal6.IN2
+d[1] => Equal7.IN2
+d[2] => Equal0.IN1
+d[2] => Equal1.IN0
+d[2] => Equal2.IN0
+d[2] => Equal3.IN0
+d[2] => Equal4.IN1
+d[2] => Equal5.IN1
+d[2] => Equal6.IN1
+d[2] => Equal7.IN1
+d[3] => Equal0.IN0
+d[3] => Equal1.IN1
+d[3] => Equal2.IN2
+d[3] => Equal3.IN3
+d[3] => Equal4.IN0
+d[3] => Equal5.IN0
+d[3] => Equal6.IN0
+d[3] => Equal7.IN0
+dOut[0] <= <VCC>
+dOut[1] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= <VCC>
+dOut[4] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= <VCC>
+
+
+|SCA|door_mecanism:dm|door_emulation_seg:U4
+d[0] => Equal0.IN3
+d[0] => Equal1.IN3
+d[0] => Equal2.IN3
+d[0] => Equal3.IN2
+d[0] => Equal4.IN3
+d[0] => Equal5.IN3
+d[0] => Equal6.IN3
+d[0] => Equal7.IN3
+d[1] => Equal0.IN2
+d[1] => Equal1.IN2
+d[1] => Equal2.IN1
+d[1] => Equal3.IN1
+d[1] => Equal4.IN2
+d[1] => Equal5.IN2
+d[1] => Equal6.IN2
+d[1] => Equal7.IN2
+d[2] => Equal0.IN1
+d[2] => Equal1.IN0
+d[2] => Equal2.IN0
+d[2] => Equal3.IN0
+d[2] => Equal4.IN1
+d[2] => Equal5.IN1
+d[2] => Equal6.IN1
+d[2] => Equal7.IN1
+d[3] => Equal0.IN0
+d[3] => Equal1.IN1
+d[3] => Equal2.IN2
+d[3] => Equal3.IN3
+d[3] => Equal4.IN0
+d[3] => Equal5.IN0
+d[3] => Equal6.IN0
+d[3] => Equal7.IN0
+dOut[0] <= <VCC>
+dOut[1] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= <VCC>
+dOut[4] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= <VCC>
+
+
+|SCA|door_mecanism:dm|door_emulation_seg:U5
+d[0] => Equal0.IN3
+d[0] => Equal1.IN3
+d[0] => Equal2.IN3
+d[0] => Equal3.IN2
+d[0] => Equal4.IN3
+d[0] => Equal5.IN3
+d[0] => Equal6.IN3
+d[0] => Equal7.IN3
+d[1] => Equal0.IN2
+d[1] => Equal1.IN2
+d[1] => Equal2.IN1
+d[1] => Equal3.IN1
+d[1] => Equal4.IN2
+d[1] => Equal5.IN2
+d[1] => Equal6.IN2
+d[1] => Equal7.IN2
+d[2] => Equal0.IN1
+d[2] => Equal1.IN0
+d[2] => Equal2.IN0
+d[2] => Equal3.IN0
+d[2] => Equal4.IN1
+d[2] => Equal5.IN1
+d[2] => Equal6.IN1
+d[2] => Equal7.IN1
+d[3] => Equal0.IN0
+d[3] => Equal1.IN1
+d[3] => Equal2.IN2
+d[3] => Equal3.IN3
+d[3] => Equal4.IN0
+d[3] => Equal5.IN0
+d[3] => Equal6.IN0
+d[3] => Equal7.IN0
+dOut[0] <= <VCC>
+dOut[1] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= <VCC>
+dOut[4] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= <VCC>
 
 
 |SCA|FFD:flcd
@@ -116,75 +761,75 @@ Q[3] <= Registry:reg.Q[3]
 
 
 |SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad
-A[0] => full_adder:fa1.A
-A[1] => full_adder:fa2.A
-A[2] => full_adder:fa3.A
-A[3] => full_adder:fa4.A
-B[0] => full_adder:fa1.B
-B[1] => full_adder:fa2.B
-B[2] => full_adder:fa3.B
-B[3] => full_adder:fa4.B
-Ci => full_adder:fa1.Ci
-Co <= full_adder:fa4.Co
-S[0] <= full_adder:fa1.S
-S[1] <= full_adder:fa2.S
-S[2] <= full_adder:fa3.S
-S[3] <= full_adder:fa4.S
+A[0] => full_add:fa1.A
+A[1] => full_add:fa2.A
+A[2] => full_add:fa3.A
+A[3] => full_add:fa4.A
+B[0] => full_add:fa1.B
+B[1] => full_add:fa2.B
+B[2] => full_add:fa3.B
+B[3] => full_add:fa4.B
+Ci => full_add:fa1.Cin
+Co <= full_add:fa4.Cout
+S[0] <= full_add:fa1.S
+S[1] <= full_add:fa2.S
+S[2] <= full_add:fa3.S
+S[3] <= full_add:fa4.S
 
 
-|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_adder:fa1
+|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa1
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_adder:fa2
+|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa2
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_adder:fa3
+|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa3
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_adder:fa4
+|SCA|SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa4
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -412,21 +1057,25 @@ Dout[4] <= Din[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SCA|KeyboardReader:kr
-Kack => KeyDecode:kd.Kack
+ACK => OutputBuffer:obuff.ACK
 Reset => KeyDecode:kd.Reset
+Reset => RingBuffer:rbuff.Reset
+Reset => OutputBuffer:obuff.Reset
 CLK => KeyDecode:kd.CLK
+CLK => RingBuffer:rbuff.CLK
+CLK => OutputBuffer:obuff.CLK
 I[0] => KeyDecode:kd.I[0]
 I[1] => KeyDecode:kd.I[1]
 I[2] => KeyDecode:kd.I[2]
 I[3] => KeyDecode:kd.I[3]
-Kval <= KeyDecode:kd.Kval
+Dval <= OutputBuffer:obuff.Dval
 O[0] <= KeyDecode:kd.O[0]
 O[1] <= KeyDecode:kd.O[1]
 O[2] <= KeyDecode:kd.O[2]
-K[0] <= KeyDecode:kd.K[0]
-K[1] <= KeyDecode:kd.K[1]
-K[2] <= KeyDecode:kd.K[2]
-K[3] <= KeyDecode:kd.K[3]
+D[0] <= OutputBuffer:obuff.Q[0]
+D[1] <= OutputBuffer:obuff.Q[1]
+D[2] <= OutputBuffer:obuff.Q[2]
+D[3] <= OutputBuffer:obuff.Q[3]
 
 
 |SCA|KeyboardReader:kr|KeyDecode:kd
@@ -520,75 +1169,75 @@ Q[3] <= Registry:reg.Q[3]
 
 
 |SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad
-A[0] => full_adder:fa1.A
-A[1] => full_adder:fa2.A
-A[2] => full_adder:fa3.A
-A[3] => full_adder:fa4.A
-B[0] => full_adder:fa1.B
-B[1] => full_adder:fa2.B
-B[2] => full_adder:fa3.B
-B[3] => full_adder:fa4.B
-Ci => full_adder:fa1.Ci
-Co <= full_adder:fa4.Co
-S[0] <= full_adder:fa1.S
-S[1] <= full_adder:fa2.S
-S[2] <= full_adder:fa3.S
-S[3] <= full_adder:fa4.S
+A[0] => full_add:fa1.A
+A[1] => full_add:fa2.A
+A[2] => full_add:fa3.A
+A[3] => full_add:fa4.A
+B[0] => full_add:fa1.B
+B[1] => full_add:fa2.B
+B[2] => full_add:fa3.B
+B[3] => full_add:fa4.B
+Ci => full_add:fa1.Cin
+Co <= full_add:fa4.Cout
+S[0] <= full_add:fa1.S
+S[1] <= full_add:fa2.S
+S[2] <= full_add:fa3.S
+S[3] <= full_add:fa4.S
 
 
-|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa1
+|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_add:fa1
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa2
+|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_add:fa2
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa3
+|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_add:fa3
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_adder:fa4
+|SCA|KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Counter:count|adder:ad|full_add:fa4
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -732,6 +1381,580 @@ Kval <= Kval.DB_MAX_OUTPUT_PORT_TYPE
 Kscan <= Kscan.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|SCA|KeyboardReader:kr|RingBuffer:rbuff
+DAV => RingBufferControl:control.DAV
+CTS => RingBufferControl:control.CTS
+CLK => MemoryAddressControl:mac.CLK
+Reset => MemoryAddressControl:mac.Reset
+D[0] => RAM:memory.din[0]
+D[1] => RAM:memory.din[1]
+D[2] => RAM:memory.din[2]
+D[3] => RAM:memory.din[3]
+Wreg <= RingBufferControl:control.Wreg
+DAC <= RingBufferControl:control.DAC
+Q[0] <= RAM:memory.dout[0]
+Q[1] <= RAM:memory.dout[1]
+Q[2] <= RAM:memory.dout[2]
+Q[3] <= RAM:memory.dout[3]
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control
+DAV => NextState.OUTPUTSELECT
+DAV => NextState.OUTPUTSELECT
+DAV => NextState.OUTPUTSELECT
+DAV => Selector1.IN3
+DAV => Selector0.IN3
+CTS => NextState.OUTPUTSELECT
+CTS => NextState.OUTPUTSELECT
+CTS => Selector2.IN3
+CTS => NextState.INC_GET.DATAB
+full => NextState.OUTPUTSELECT
+full => NextState.OUTPUTSELECT
+full => NextState.DATAB
+empty => NextState.DATAB
+empty => NextState.DATAB
+Reset => CurrentState~3.DATAIN
+CLK => CurrentState~1.DATAIN
+Wr <= Wr.DB_MAX_OUTPUT_PORT_TYPE
+selPG <= selPG.DB_MAX_OUTPUT_PORT_TYPE
+Wreg <= Wreg.DB_MAX_OUTPUT_PORT_TYPE
+DAC <= DAC.DB_MAX_OUTPUT_PORT_TYPE
+incPut <= incPut.DB_MAX_OUTPUT_PORT_TYPE
+incGet <= incGet.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac
+putget => Mux2x1:idxDecider.S
+incPut => Counter:incrementPut.CE
+incGet => Counter:incrementGet.CE
+CLK => Counter:incrementPut.CLK
+CLK => Counter:incrementGet.CLK
+Reset => Counter:incrementPut.Reset
+Reset => Counter:incrementGet.Reset
+full <= full.DB_MAX_OUTPUT_PORT_TYPE
+empty <= empty.DB_MAX_OUTPUT_PORT_TYPE
+A[0] <= Mux2x1:idxDecider.Y[0]
+A[1] <= Mux2x1:idxDecider.Y[1]
+A[2] <= Mux2x1:idxDecider.Y[2]
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut
+PL => MUX2x1:mux.S
+CE => adder:ad.Ci
+CLK => Registry:reg.CLK
+Reset => Registry:reg.Reset
+Data_in[0] => MUX2x1:mux.A[0]
+Data_in[1] => MUX2x1:mux.A[1]
+Data_in[2] => MUX2x1:mux.A[2]
+Data_in[3] => MUX2x1:mux.A[3]
+TC <= Terminal_Count:utc.TC
+Q[0] <= Registry:reg.Q[0]
+Q[1] <= Registry:reg.Q[1]
+Q[2] <= Registry:reg.Q[2]
+Q[3] <= Registry:reg.Q[3]
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|adder:ad
+A[0] => full_add:fa1.A
+A[1] => full_add:fa2.A
+A[2] => full_add:fa3.A
+A[3] => full_add:fa4.A
+B[0] => full_add:fa1.B
+B[1] => full_add:fa2.B
+B[2] => full_add:fa3.B
+B[3] => full_add:fa4.B
+Ci => full_add:fa1.Cin
+Co <= full_add:fa4.Cout
+S[0] <= full_add:fa1.S
+S[1] <= full_add:fa2.S
+S[2] <= full_add:fa3.S
+S[3] <= full_add:fa4.S
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|adder:ad|full_add:fa1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|adder:ad|full_add:fa2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|adder:ad|full_add:fa3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|adder:ad|full_add:fa4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|MUX2x1:mux
+A[0] => Y.IN0
+A[1] => Y.IN0
+A[2] => Y.IN0
+A[3] => Y.IN0
+B[0] => Y.IN0
+B[1] => Y.IN0
+B[2] => Y.IN0
+B[3] => Y.IN0
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg
+D[0] => FFD:ff0.D
+D[1] => FFD:ff1.D
+D[2] => FFD:ff2.D
+D[3] => FFD:ff3.D
+CLK => FFD:ff0.CLK
+CLK => FFD:ff1.CLK
+CLK => FFD:ff2.CLK
+CLK => FFD:ff3.CLK
+E => FFD:ff0.EN
+E => FFD:ff1.EN
+E => FFD:ff2.EN
+E => FFD:ff3.EN
+Reset => FFD:ff0.RESET
+Reset => FFD:ff1.RESET
+Reset => FFD:ff2.RESET
+Reset => FFD:ff3.RESET
+Q[0] <= FFD:ff0.Q
+Q[1] <= FFD:ff1.Q
+Q[2] <= FFD:ff2.Q
+Q[3] <= FFD:ff3.Q
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff1
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff2
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff3
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Terminal_Count:utc
+Q[0] => TC.IN0
+Q[1] => TC.IN1
+Q[2] => TC.IN1
+Q[3] => TC.IN1
+TC <= TC.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet
+PL => MUX2x1:mux.S
+CE => adder:ad.Ci
+CLK => Registry:reg.CLK
+Reset => Registry:reg.Reset
+Data_in[0] => MUX2x1:mux.A[0]
+Data_in[1] => MUX2x1:mux.A[1]
+Data_in[2] => MUX2x1:mux.A[2]
+Data_in[3] => MUX2x1:mux.A[3]
+TC <= Terminal_Count:utc.TC
+Q[0] <= Registry:reg.Q[0]
+Q[1] <= Registry:reg.Q[1]
+Q[2] <= Registry:reg.Q[2]
+Q[3] <= Registry:reg.Q[3]
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|adder:ad
+A[0] => full_add:fa1.A
+A[1] => full_add:fa2.A
+A[2] => full_add:fa3.A
+A[3] => full_add:fa4.A
+B[0] => full_add:fa1.B
+B[1] => full_add:fa2.B
+B[2] => full_add:fa3.B
+B[3] => full_add:fa4.B
+Ci => full_add:fa1.Cin
+Co <= full_add:fa4.Cout
+S[0] <= full_add:fa1.S
+S[1] <= full_add:fa2.S
+S[2] <= full_add:fa3.S
+S[3] <= full_add:fa4.S
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|adder:ad|full_add:fa1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|adder:ad|full_add:fa2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|adder:ad|full_add:fa3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|adder:ad|full_add:fa4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|MUX2x1:mux
+A[0] => Y.IN0
+A[1] => Y.IN0
+A[2] => Y.IN0
+A[3] => Y.IN0
+B[0] => Y.IN0
+B[1] => Y.IN0
+B[2] => Y.IN0
+B[3] => Y.IN0
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg
+D[0] => FFD:ff0.D
+D[1] => FFD:ff1.D
+D[2] => FFD:ff2.D
+D[3] => FFD:ff3.D
+CLK => FFD:ff0.CLK
+CLK => FFD:ff1.CLK
+CLK => FFD:ff2.CLK
+CLK => FFD:ff3.CLK
+E => FFD:ff0.EN
+E => FFD:ff1.EN
+E => FFD:ff2.EN
+E => FFD:ff3.EN
+Reset => FFD:ff0.RESET
+Reset => FFD:ff1.RESET
+Reset => FFD:ff2.RESET
+Reset => FFD:ff3.RESET
+Q[0] <= FFD:ff0.Q
+Q[1] <= FFD:ff1.Q
+Q[2] <= FFD:ff2.Q
+Q[3] <= FFD:ff3.Q
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff0
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff1
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff2
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff3
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Terminal_Count:utc
+Q[0] => TC.IN0
+Q[1] => TC.IN1
+Q[2] => TC.IN1
+Q[3] => TC.IN1
+TC <= TC.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|MUX2x1:idxDecider
+A[0] => Y.IN0
+A[1] => Y.IN0
+A[2] => Y.IN0
+A[3] => Y.IN0
+B[0] => Y.IN0
+B[1] => Y.IN0
+B[2] => Y.IN0
+B[3] => Y.IN0
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+S => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|RingBuffer:rbuff|RAM:memory
+address[0] => ram.RADDR
+address[0] => ram.WADDR
+address[1] => ram.RADDR1
+address[1] => ram.WADDR1
+address[2] => ram.RADDR2
+address[2] => ram.WADDR2
+wr => ram.WE
+din[0] => ram.DATAIN
+din[1] => ram.DATAIN1
+din[2] => ram.DATAIN2
+din[3] => ram.DATAIN3
+dout[0] <= ram.DATAOUT
+dout[1] <= ram.DATAOUT1
+dout[2] <= ram.DATAOUT2
+dout[3] <= ram.DATAOUT3
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff
+Load => BufferControl:control.Load
+ACK => BufferControl:control.ACK
+CLK => BufferControl:control.CLK
+CLK => OutputRegister:outreg.CLK
+Reset => BufferControl:control.Reset
+Reset => OutputRegister:outreg.Reset
+D[0] => OutputRegister:outreg.D[0]
+D[1] => OutputRegister:outreg.D[1]
+D[2] => OutputRegister:outreg.D[2]
+D[3] => OutputRegister:outreg.D[3]
+OBfree <= BufferControl:control.OBfree
+Dval <= BufferControl:control.Dval
+Q[0] <= OutputRegister:outreg.Q[0]
+Q[1] <= OutputRegister:outreg.Q[1]
+Q[2] <= OutputRegister:outreg.Q[2]
+Q[3] <= OutputRegister:outreg.Q[3]
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control
+CLK => CurrentState~1.DATAIN
+Reset => CurrentState~3.DATAIN
+Load => NextState.WRITE_DATA.DATAB
+Load => Selector0.IN1
+Load => Selector1.IN1
+ACK => NextState.WAIT_ACK.DATAA
+ACK => Selector0.IN2
+ACK => Selector1.IN2
+Wreg <= Wreg.DB_MAX_OUTPUT_PORT_TYPE
+OBfree <= OBfree.DB_MAX_OUTPUT_PORT_TYPE
+Dval <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg
+CE => Registry:reg.E
+CLK => Registry:reg.CLK
+Reset => Registry:reg.Reset
+D[0] => Registry:reg.D[0]
+D[1] => Registry:reg.D[1]
+D[2] => Registry:reg.D[2]
+D[3] => Registry:reg.D[3]
+Q[0] <= Registry:reg.Q[0]
+Q[1] <= Registry:reg.Q[1]
+Q[2] <= Registry:reg.Q[2]
+Q[3] <= Registry:reg.Q[3]
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg
+D[0] => FFD:ff0.D
+D[1] => FFD:ff1.D
+D[2] => FFD:ff2.D
+D[3] => FFD:ff3.D
+CLK => FFD:ff0.CLK
+CLK => FFD:ff1.CLK
+CLK => FFD:ff2.CLK
+CLK => FFD:ff3.CLK
+E => FFD:ff0.EN
+E => FFD:ff1.EN
+E => FFD:ff2.EN
+E => FFD:ff3.EN
+Reset => FFD:ff0.RESET
+Reset => FFD:ff1.RESET
+Reset => FFD:ff2.RESET
+Reset => FFD:ff3.RESET
+Q[0] <= FFD:ff0.Q
+Q[1] <= FFD:ff1.Q
+Q[2] <= FFD:ff2.Q
+Q[3] <= FFD:ff3.Q
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff0
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff1
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff2
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SCA|KeyboardReader:kr|OutputBuffer:obuff|OutputRegister:outreg|Registry:reg|FFD:ff3
+CLK => Q~reg0.CLK
+RESET => Q~reg0.ACLR
+RESET => Q.IN0
+SET => Q.IN1
+D => Q~reg0.DATAIN
+EN => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |SCA|SLCDC:sl
 SS => SerialReceiver:sr.SS
 SCLK => SerialReceiver:sr.SCLK
@@ -782,75 +2005,75 @@ Q[3] <= Registry:reg.Q[3]
 
 
 |SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad
-A[0] => full_adder:fa1.A
-A[1] => full_adder:fa2.A
-A[2] => full_adder:fa3.A
-A[3] => full_adder:fa4.A
-B[0] => full_adder:fa1.B
-B[1] => full_adder:fa2.B
-B[2] => full_adder:fa3.B
-B[3] => full_adder:fa4.B
-Ci => full_adder:fa1.Ci
-Co <= full_adder:fa4.Co
-S[0] <= full_adder:fa1.S
-S[1] <= full_adder:fa2.S
-S[2] <= full_adder:fa3.S
-S[3] <= full_adder:fa4.S
+A[0] => full_add:fa1.A
+A[1] => full_add:fa2.A
+A[2] => full_add:fa3.A
+A[3] => full_add:fa4.A
+B[0] => full_add:fa1.B
+B[1] => full_add:fa2.B
+B[2] => full_add:fa3.B
+B[3] => full_add:fa4.B
+Ci => full_add:fa1.Cin
+Co <= full_add:fa4.Cout
+S[0] <= full_add:fa1.S
+S[1] <= full_add:fa2.S
+S[2] <= full_add:fa3.S
+S[3] <= full_add:fa4.S
 
 
-|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa1
+|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_add:fa1
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa2
+|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_add:fa2
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa3
+|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_add:fa3
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_adder:fa4
+|SCA|SLCDC:sl|SerialReceiver:sr|Counter:c|adder:ad|full_add:fa4
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1079,75 +2302,75 @@ Q[3] <= Registry:reg.Q[3]
 
 
 |SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad
-A[0] => full_adder:fa1.A
-A[1] => full_adder:fa2.A
-A[2] => full_adder:fa3.A
-A[3] => full_adder:fa4.A
-B[0] => full_adder:fa1.B
-B[1] => full_adder:fa2.B
-B[2] => full_adder:fa3.B
-B[3] => full_adder:fa4.B
-Ci => full_adder:fa1.Ci
-Co <= full_adder:fa4.Co
-S[0] <= full_adder:fa1.S
-S[1] <= full_adder:fa2.S
-S[2] <= full_adder:fa3.S
-S[3] <= full_adder:fa4.S
+A[0] => full_add:fa1.A
+A[1] => full_add:fa2.A
+A[2] => full_add:fa3.A
+A[3] => full_add:fa4.A
+B[0] => full_add:fa1.B
+B[1] => full_add:fa2.B
+B[2] => full_add:fa3.B
+B[3] => full_add:fa4.B
+Ci => full_add:fa1.Cin
+Co <= full_add:fa4.Cout
+S[0] <= full_add:fa1.S
+S[1] <= full_add:fa2.S
+S[2] <= full_add:fa3.S
+S[3] <= full_add:fa4.S
 
 
-|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa1
+|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_add:fa1
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa2
+|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_add:fa2
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa3
+|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_add:fa3
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_adder:fa4
+|SCA|SLCDC:sl|LCDDispatcher:lcdd|Counter:cup|adder:ad|full_add:fa4
 A => S.IN0
-A => Co.IN0
-A => Co.IN0
+A => Cout.IN0
+A => Cout.IN0
 B => S.IN1
-B => Co.IN1
-B => Co.IN0
-Ci => S.IN1
-Ci => Co.IN1
-Ci => Co.IN1
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
