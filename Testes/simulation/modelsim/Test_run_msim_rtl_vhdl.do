@@ -5,5 +5,5 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd}
+vcom -93 -work work {D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd}
 
