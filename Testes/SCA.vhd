@@ -4,9 +4,9 @@ use ieee.std_logic_1164.all;
 entity SCA is
 port(
 Reset, CLK, Pswitch, M : in std_logic;
+I : in std_logic_vector(3 downto 0);
 LCD_RS, LCD_EN, OC, OO : out std_logic;
 O : out std_logic_vector(2 downto 0);
-I : in std_logic_vector(3 downto 0);
 LCD_data, Door_data : out std_logic_vector(3 downto 0);
 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : out std_logic_vector(7 downto 0));
 end SCA;

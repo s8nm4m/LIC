@@ -18,29 +18,15 @@ begin
 CurrentState <= ZEN when Reset = '1' else NextState when rising_edge(CLK);
 
 GenerateNextState:
-process(DAV, full, empty, CTS)
+process(CurrentState,DAV, full, empty, CTS)
 	begin
 		case CurrentState is
 			when ZEN => 
-				if (DAV = '1') then
-					if (full = '0') then NextState <= SELECT_PUT;
-					else 
-						if (CTS = '1') then
-							if (empty = '0') then NextState <= WRITE_REG;
-							else NextState <= ZEN;
-							end if;
-						else NextState <= ZEN;
-						end if;
-					end if;
-				else
-					if (CTS = '1') then
-							if (empty = '0') then NextState <= WRITE_REG;
-							else NextState <= ZEN;
-							end if;
-						else NextState <= ZEN;
-						end if;
+				if (DAV = '1' and full = '0') then NextState <= SELECT_PUT;
+				elsif(DAV = '1' and full = '1' and CTS = '1') then NextState <= WRITE_REG;
+				elsif(DAV = '0' and CTS = '1' and empty = '0') then NExtState <= WRITE_REG;
+				else NextState <= ZEN;
 				end if;
-				
 			when SELECT_PUT => NextState <= WRITE_RAM;
 			when WRITE_RAM => NextState <= INC_PUT;
 			when INC_PUT => NextState <= ACCEPTED;

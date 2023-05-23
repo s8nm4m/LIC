@@ -31,7 +31,7 @@ end component;
 
 component RingBufferControl
 port(
-DAV, CTS, full, empty : in std_logic;
+DAV, CTS, full, empty, Reset, CLK : in std_logic;
 Wr, selPG, Wreg, DAC : out std_logic);
 end component;
 
@@ -41,6 +41,8 @@ signal idx : std_logic_vector(3 downto 0);
 begin
 
 control : RingBufferControl port map(
+Reset => Reset,
+CLK => CLK,
 DAV => DAV, 
 CTS => CTS, 
 full => f, 
