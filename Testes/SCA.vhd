@@ -150,13 +150,13 @@ Wrl => en,
 Dout => lcd); 
 
 usb: UsbPort port map(
---inputPort(0) => kv,
+inputPort(0) => kv,
 inputPort(1) => kapa(0),
 inputPort(2) => kapa(1),
 inputPort(3) => kapa(2),
 inputPort(4) => kapa(3),
 inputPort(5) => busy,
---inputPort(6) =>,
+inputPort(6) => M,
 --inputPort(7) =>,
 outputPort(0) => ka,
 outputPort(1) => sslcd,

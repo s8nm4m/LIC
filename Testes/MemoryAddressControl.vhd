@@ -28,10 +28,10 @@ signal r : std_logic;
 
 begin
 
-r <= Reset;
+--r <= Reset;
 -- contador do indice no qual o put se encontra
 incrementPut: Counter port map(
-PL => r, 
+PL => '0',--r, 
 CE => incPut, 
 CLK => CLK, 
 Reset => Reset,
@@ -40,7 +40,7 @@ Q => putIndex);
 
 -- contador do indice no qual o get se encontra
 incrementGet: Counter port map(
-PL => r, 
+PL => '0',--r, 
 CE => incGet, 
 CLK => CLK, 
 Reset => Reset,

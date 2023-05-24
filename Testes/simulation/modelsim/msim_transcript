@@ -1,4 +1,5 @@
 # Reading pref.tcl
+# ERROR: No extended dataflow license exists
 # do Test_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,377 +11,483 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd}
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:21:03 on May 23,2023
-# vcom -reportprogress 300 -93 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBufferControl
-# -- Compiling architecture arc of RingBufferControl
-# End time: 20:21:03 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:44 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity adder
-# -- Compiling architecture arc_adder of adder
-# End time: 20:23:44 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:44 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity BufferControl
-# -- Compiling architecture arc of BufferControl
-# End time: 20:23:44 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:44 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity CLKDIV
-# -- Compiling architecture bhv of CLKDIV
-# End time: 20:23:44 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:44 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Counter
-# -- Compiling architecture arc_cc of Counter
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:03
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Decoder
-# -- Compiling architecture arc_dec of Decoder
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity DoorController
-# -- Compiling architecture arc of DoorController
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity FFD
-# -- Compiling architecture logicFunction of FFD
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity full_add
-# -- Compiling architecture arc_fa of full_add
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity KeyboardReader
-# -- Compiling architecture kr of KeyboardReader
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyControl.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyControl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity KeyControl
-# -- Compiling architecture arcKC of KeyControl
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyDecode.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyDecode.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity KeyDecode
-# -- Compiling architecture arc_kd of KeyDecode
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity KeyScan
-# -- Compiling architecture arc_Keyscan of KeyScan
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/LCDDispatcher.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/LCDDispatcher.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity LCDDispatcher
-# -- Compiling architecture arc_lcdd of LCDDispatcher
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:47 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd 
+# Start time: 17:14:33 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MemoryAddressControl
 # -- Compiling architecture arc of MemoryAddressControl
-# End time: 20:23:47 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:14:33 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd 
+# Start time: 17:14:34 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_add
+# -- Compiling architecture arc_fa of full_add
+# End time: 17:14:34 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:34 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Terminal_Count
+# -- Compiling architecture arc_tc of Terminal_Count
+# End time: 17:14:34 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:34 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registry
+# -- Compiling architecture arc_reg of Registry
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:35 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MUX2x1
 # -- Compiling architecture arc_mux of MUX2x1
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd 
+# Start time: 17:14:35 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity MUX4x1
-# -- Compiling architecture arc_mux of MUX4x1
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity FFD
+# -- Compiling architecture logicFunction of FFD
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd 
+# Start time: 17:14:35 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity OutputBuffer
-# -- Compiling architecture arc of OutputBuffer
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity adder
+# -- Compiling architecture arc_adder of adder
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputRegister.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputRegister.vhd 
+# Start time: 17:14:35 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity OutputRegister
-# -- Compiling architecture arc of OutputRegister
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity Counter
+# -- Compiling architecture arc_cc of Counter
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd 
+# Start time: 17:14:35 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Compiling entity RAM
 # -- Compiling architecture behavioral of RAM
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Registry
-# -- Compiling architecture arc_reg of Registry
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer
-# -- Compiling architecture arc of RingBuffer
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd 
+# Start time: 17:14:35 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity RingBufferControl
 # -- Compiling architecture arc of RingBufferControl
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:14:35 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd
+# vcom -93 -work work {C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd 
+# Start time: 17:14:36 on May 24,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer
+# -- Compiling architecture arc of RingBuffer
+# End time: 17:14:36 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:57 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture arc_adder of adder
+# End time: 17:14:57 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:58 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BufferControl
+# -- Compiling architecture arc of BufferControl
+# End time: 17:14:58 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:58 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CLKDIV
+# -- Compiling architecture bhv of CLKDIV
+# End time: 17:14:58 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:58 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter
+# -- Compiling architecture arc_cc of Counter
+# End time: 17:14:58 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:58 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder
+# -- Compiling architecture arc_dec of Decoder
+# End time: 17:14:58 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:58 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DoorController
+# -- Compiling architecture arc of DoorController
+# End time: 17:14:58 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:58 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FFD
+# -- Compiling architecture logicFunction of FFD
+# End time: 17:14:58 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:59 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_add
+# -- Compiling architecture arc_fa of full_add
+# End time: 17:14:59 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:59 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyboardReader
+# -- Compiling architecture kr of KeyboardReader
+# End time: 17:14:59 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:59 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture arcKC of KeyControl
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(42): VHDL Compiler exiting
+# End time: 17:14:59 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:59 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyDecode
+# -- Compiling architecture arc_kd of KeyDecode
+# End time: 17:14:59 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:59 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan
+# -- Compiling architecture arc_Keyscan of KeyScan
+# End time: 17:14:59 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:59 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LCDDispatcher
+# -- Compiling architecture arc_lcdd of LCDDispatcher
+# End time: 17:14:59 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAddressControl
+# -- Compiling architecture arc of MemoryAddressControl
+# End time: 17:15:00 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX2x1
+# -- Compiling architecture arc_mux of MUX2x1
+# End time: 17:15:00 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX4x1
+# -- Compiling architecture arc_mux of MUX4x1
+# End time: 17:15:00 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputBuffer
+# -- Compiling architecture arc of OutputBuffer
+# End time: 17:15:00 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+# End time: 17:15:00 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registry
+# -- Compiling architecture arc_reg of Registry
+# End time: 17:15:00 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:00 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer
+# -- Compiling architecture arc of RingBuffer
+# End time: 17:15:01 on May 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:01 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBufferControl
+# -- Compiling architecture arc of RingBufferControl
+# End time: 17:15:01 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:15:01 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SCA
 # -- Compiling architecture arc_sca of SCA
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd(154): (vcom-1193) Formal "inputPort" length is 8; number of individual associations is 5.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd(161): (vcom-1193) Formal "outputPort" length is 8; number of individual associations is 5.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd(184): VHDL Compiler exiting
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd(154): (vcom-1193) Formal "inputPort" length is 8; number of individual associations is 5.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd(161): (vcom-1193) Formal "outputPort" length is 8; number of individual associations is 5.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd(184): VHDL Compiler exiting
+# End time: 17:15:01 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd 
+# Start time: 17:15:01 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SDC
 # -- Compiling architecture arc of SDC
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:15:01 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd 
+# Start time: 17:15:01 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SerialControl
 # -- Compiling architecture arc_sc of SerialControl
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:15:01 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd 
+# Start time: 17:15:01 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SerialReceiver
 # -- Compiling architecture arc_sr of SerialReceiver
-# End time: 20:23:48 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:15:01 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:48 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd 
+# Start time: 17:15:01 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ShiftRegister
 # -- Compiling architecture arc_sr of ShiftRegister
-# End time: 20:23:49 on May 23,2023, Elapsed time: 0:00:01
+# End time: 17:15:02 on May 24,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:49 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd 
+# Start time: 17:15:02 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SLCDC
 # -- Compiling architecture arc_slcdc of SLCDC
-# End time: 20:23:49 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:15:02 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:49 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd 
+# Start time: 17:15:02 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SLCDC_Wrapper
 # -- Compiling architecture arc_slcdc of SLCDC_Wrapper
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd(58): (vcom-1193) Formal "outputPort" length is 8; number of individual associations is 3.
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd(49): (vcom-1193) Formal "inputPort" length is 8; number of individual associations is 1.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd(78): VHDL Compiler exiting
-# End time: 20:23:49 on May 23,2023, Elapsed time: 0:00:00
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd(58): (vcom-1193) Formal "outputPort" length is 8; number of individual associations is 3.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd(49): (vcom-1193) Formal "inputPort" length is 8; number of individual associations is 1.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd(78): VHDL Compiler exiting
+# End time: 17:15:02 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:23:49 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd 
+# Start time: 17:15:02 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Terminal_Count
 # -- Compiling architecture arc_tc of Terminal_Count
-# End time: 20:23:49 on May 23,2023, Elapsed time: 0:00:00
+# End time: 17:15:02 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:24:51 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
+# Start time: 17:15:09 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:24:51 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity KeyboardReader_tb
+# -- Compiling architecture arc of KeyboardReader_tb
+# End time: 17:15:10 on May 24,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim work.ringbuffer_tb
-# vsim work.ringbuffer_tb 
-# Start time: 20:24:57 on May 23,2023
+vsim work.keyboardreader_tb
+# vsim work.keyboardreader_tb 
+# Start time: 17:15:16 on May 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ringbuffer_tb(arc)
-# Loading work.ringbuffer(arc)
-# Loading work.ringbuffercontrol(arc)
-# Loading work.memoryaddresscontrol(arc)
+# Loading work.keyboardreader_tb(arc)
+# Loading work.keyboardreader(kr)
+# Loading work.keydecode(arc_kd)
+# Loading ieee.numeric_std(body)
+# Loading work.clkdiv(bhv)
+# Loading work.keyscan(arc_keyscan)
 # Loading work.counter(arc_cc)
 # Loading work.adder(arc_adder)
 # Loading work.full_add(arc_fa)
@@ -388,677 +495,645 @@ vsim work.ringbuffer_tb
 # Loading work.registry(arc_reg)
 # Loading work.ffd(logicfunction)
 # Loading work.terminal_count(arc_tc)
+# Loading work.decoder(arc_dec)
+# Loading work.mux4x1(arc_mux)
+# ** Error: (vsim-3173) Entity 'C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/simulation/modelsim/rtl_work.keycontrol' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 17:15:17 on May 24,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:12 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyboardReader
+# -- Compiling architecture kr of KeyboardReader
+# End time: 17:16:12 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:12 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture arcKC of KeyControl
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(42): VHDL Compiler exiting
+# End time: 17:16:12 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:12 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyDecode
+# -- Compiling architecture arc_kd of KeyDecode
+# End time: 17:16:12 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:12 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan
+# -- Compiling architecture arc_Keyscan of KeyScan
+# End time: 17:16:12 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:15 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture arcKC of KeyControl
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(29): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd(42): VHDL Compiler exiting
+# End time: 17:16:16 on May 24,2023, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:40 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture arcKC of KeyControl
+# End time: 17:16:40 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:16:51 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyboardReader_tb
+# -- Compiling architecture arc of KeyboardReader_tb
+# End time: 17:16:52 on May 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.keyboardreader_tb
+# vsim work.keyboardreader_tb 
+# Start time: 17:16:55 on May 24,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.keyboardreader_tb(arc)
+# Loading work.keyboardreader(kr)
+# Loading work.keydecode(arc_kd)
+# Loading ieee.numeric_std(body)
+# Loading work.clkdiv(bhv)
+# Loading work.keyscan(arc_keyscan)
+# Loading work.counter(arc_cc)
+# Loading work.adder(arc_adder)
+# Loading work.full_add(arc_fa)
+# Loading work.mux2x1(arc_mux)
+# Loading work.registry(arc_reg)
+# Loading work.ffd(logicfunction)
+# Loading work.terminal_count(arc_tc)
+# Loading work.decoder(arc_dec)
+# Loading work.mux4x1(arc_mux)
+# Loading work.keycontrol(arckc)
+# Loading work.ringbuffer(arc)
+# Loading work.ringbuffercontrol(arc)
+# Loading work.memoryaddresscontrol(arc)
 # Loading ieee.std_logic_arith(body)
 # Loading work.ram(behavioral)
+# Loading work.outputbuffer(arc)
+# Loading work.buffercontrol(arc)
 add wave -position insertpoint  \
-sim:/ringbuffer_tb/DAV_tb \
-sim:/ringbuffer_tb/CTS_tb \
-sim:/ringbuffer_tb/CLK_tb \
-sim:/ringbuffer_tb/Reset_tb \
-sim:/ringbuffer_tb/Wreg_tb \
-sim:/ringbuffer_tb/DAC_tb \
-sim:/ringbuffer_tb/D_tb \
-sim:/ringbuffer_tb/Q_tb \
-sim:/ringbuffer_tb/MCLK_PERIOD \
-sim:/ringbuffer_tb/MCLK_HALF_PERIOD
+sim:/keyboardreader_tb/ACK_tb \
+sim:/keyboardreader_tb/Reset_tb \
+sim:/keyboardreader_tb/CLK_tb \
+sim:/keyboardreader_tb/Dval_tb \
+sim:/keyboardreader_tb/O_tb \
+sim:/keyboardreader_tb/I_tb \
+sim:/keyboardreader_tb/D_tb \
+sim:/keyboardreader_tb/MCLK_PERIOD \
+sim:/keyboardreader_tb/MCLK_HALF_PERIOD
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ammit  Hostname: DESKTOP-7VCPBOA  ProcessID: 2268
+#           Attempting to use alternate WLF file "./wlft224qta".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft224qta
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/uut/kd/Kack \
+sim:/keyboardreader_tb/uut/kd/CLK \
+sim:/keyboardreader_tb/uut/kd/Reset \
+sim:/keyboardreader_tb/uut/kd/I \
+sim:/keyboardreader_tb/uut/kd/Kval \
+sim:/keyboardreader_tb/uut/kd/O \
+sim:/keyboardreader_tb/uut/kd/K \
+sim:/keyboardreader_tb/uut/kd/kp \
+sim:/keyboardreader_tb/uut/kd/ks \
+sim:/keyboardreader_tb/uut/kd/clockm
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/uut/rbuff/DAV \
+sim:/keyboardreader_tb/uut/rbuff/CTS \
+sim:/keyboardreader_tb/uut/rbuff/CLK \
+sim:/keyboardreader_tb/uut/rbuff/Reset \
+sim:/keyboardreader_tb/uut/rbuff/D \
+sim:/keyboardreader_tb/uut/rbuff/Wreg \
+sim:/keyboardreader_tb/uut/rbuff/DAC \
+sim:/keyboardreader_tb/uut/rbuff/Q \
+sim:/keyboardreader_tb/uut/rbuff/putget \
+sim:/keyboardreader_tb/uut/rbuff/incp \
+sim:/keyboardreader_tb/uut/rbuff/incg \
+sim:/keyboardreader_tb/uut/rbuff/f \
+sim:/keyboardreader_tb/uut/rbuff/e \
+sim:/keyboardreader_tb/uut/rbuff/wram \
+sim:/keyboardreader_tb/uut/rbuff/idx
+add wave -position insertpoint  \
+sim:/keyboardreader_tb/uut/obuff/Load \
+sim:/keyboardreader_tb/uut/obuff/ACK \
+sim:/keyboardreader_tb/uut/obuff/CLK \
+sim:/keyboardreader_tb/uut/obuff/Reset \
+sim:/keyboardreader_tb/uut/obuff/D \
+sim:/keyboardreader_tb/uut/obuff/OBfree \
+sim:/keyboardreader_tb/uut/obuff/Dval \
+sim:/keyboardreader_tb/uut/obuff/Q \
+sim:/keyboardreader_tb/uut/obuff/w
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
 run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:27:09 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
+# Start time: 17:22:38 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:27:09 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity KeyboardReader_tb
+# -- Compiling architecture arc of KeyboardReader_tb
+# End time: 17:22:38 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ringbuffer_tb(arc)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
+# Loading work.keyboardreader_tb(arc)
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
+run
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:27:32 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
+# Start time: 17:23:53 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:27:32 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity KeyboardReader_tb
+# -- Compiling architecture arc of KeyboardReader_tb
+# End time: 17:23:53 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ringbuffer_tb(arc)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
+# Loading work.keyboardreader_tb(arc)
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 run
 run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
+run
+run
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:39 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
+# Start time: 17:26:15 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:28:39 on May 23,2023, Elapsed time: 0:00:00
+# -- Compiling entity KeyboardReader_tb
+# -- Compiling architecture arc of KeyboardReader_tb
+# End time: 17:26:15 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ringbuffer_tb(arc)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
+# Loading work.keyboardreader_tb(arc)
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 run
 run
 run
 run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:29:21 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# ** Error: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd(62): String literal has a character ' ' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
-# ** Error (suppressible): D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd(62): (vcom-1272) Length of expected is 4; length of actual is 5.
-# ** Note: D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd(73): VHDL Compiler exiting
-# End time: 20:29:21 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:29:34 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:29:34 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ringbuffer_tb(arc)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 0  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
+#    Time: 0 ps  Iteration: 1  Instance: /keyboardreader_tb/uut/rbuff/memory
 run
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 21 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 21 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/MAC/MAC_tb.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:33:31 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:33:31 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ringbuffer_tb(arc)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 21 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 21 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 33 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 33 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 45 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 45 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 57 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 57 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 69 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 69 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 81 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 81 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 93 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 93 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 105 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 105 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 117 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 117 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:36:42 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBuffer/RingBuffer_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBuffer_tb
-# -- Compiling architecture arc of RingBuffer_tb
-# End time: 20:36:42 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ringbuffer_tb(arc)
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 0  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ps  Iteration: 1  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 5 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 7 ns  Iteration: 5  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 9 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 19 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 21 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 21 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 31 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 33 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 33 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 43 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 45 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 45 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 55 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 57 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 57 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 67 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 69 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 69 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 79 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 81 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 81 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 91 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 93 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 93 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 103 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 105 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 105 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 115 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 117 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 117 ns  Iteration: 3  Instance: /ringbuffer_tb/uut/memory
-run
-run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/MAC/MAC_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:38:05 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/MAC/MAC_tb.vhd 
+# Start time: 18:29:28 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega2/MAC/MAC_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MAC_tb
 # -- Compiling architecture arc of MAC_tb
-# End time: 20:38:05 on May 23,2023, Elapsed time: 0:00:00
+# End time: 18:29:28 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:39 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture arc_adder of adder
+# End time: 18:29:39 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:39 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BufferControl
+# -- Compiling architecture arc of BufferControl
+# End time: 18:29:40 on May 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:40 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CLKDIV
+# -- Compiling architecture bhv of CLKDIV
+# End time: 18:29:40 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:40 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Counter
+# -- Compiling architecture arc_cc of Counter
+# End time: 18:29:40 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:40 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decoder
+# -- Compiling architecture arc_dec of Decoder
+# End time: 18:29:40 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:40 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DoorController
+# -- Compiling architecture arc of DoorController
+# End time: 18:29:40 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:40 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FFD
+# -- Compiling architecture logicFunction of FFD
+# End time: 18:29:40 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:41 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_add
+# -- Compiling architecture arc_fa of full_add
+# End time: 18:29:41 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:41 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyboardReader
+# -- Compiling architecture kr of KeyboardReader
+# End time: 18:29:41 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:41 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyControl
+# -- Compiling architecture arcKC of KeyControl
+# End time: 18:29:41 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:41 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyDecode
+# -- Compiling architecture arc_kd of KeyDecode
+# End time: 18:29:41 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:41 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KeyScan
+# -- Compiling architecture arc_Keyscan of KeyScan
+# End time: 18:29:41 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:41 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LCDDispatcher
+# -- Compiling architecture arc_lcdd of LCDDispatcher
+# End time: 18:29:41 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:42 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemoryAddressControl
+# -- Compiling architecture arc of MemoryAddressControl
+# End time: 18:29:42 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:42 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX2x1
+# -- Compiling architecture arc_mux of MUX2x1
+# End time: 18:29:42 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:42 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX4x1
+# -- Compiling architecture arc_mux of MUX4x1
+# End time: 18:29:42 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:42 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OutputBuffer
+# -- Compiling architecture arc of OutputBuffer
+# End time: 18:29:42 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:42 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity RAM
+# -- Compiling architecture behavioral of RAM
+# End time: 18:29:42 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:42 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Registry
+# -- Compiling architecture arc_reg of Registry
+# End time: 18:29:42 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:43 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBuffer
+# -- Compiling architecture arc of RingBuffer
+# End time: 18:29:43 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:43 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RingBufferControl
+# -- Compiling architecture arc of RingBufferControl
+# End time: 18:29:43 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:43 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SCA
+# -- Compiling architecture arc_sca of SCA
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd(153): (vcom-1193) Formal "inputPort" length is 8; number of individual associations is 6.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd(161): (vcom-1193) Formal "outputPort" length is 8; number of individual associations is 5.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd(184): VHDL Compiler exiting
+# End time: 18:29:43 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:43 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SDC
+# -- Compiling architecture arc of SDC
+# End time: 18:29:43 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:43 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialControl
+# -- Compiling architecture arc_sc of SerialControl
+# End time: 18:29:43 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:44 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SerialReceiver
+# -- Compiling architecture arc_sr of SerialReceiver
+# End time: 18:29:44 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:44 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ShiftRegister
+# -- Compiling architecture arc_sr of ShiftRegister
+# End time: 18:29:44 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:44 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLCDC
+# -- Compiling architecture arc_slcdc of SLCDC
+# End time: 18:29:44 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:44 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLCDC_Wrapper
+# -- Compiling architecture arc_slcdc of SLCDC_Wrapper
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd(58): (vcom-1193) Formal "outputPort" length is 8; number of individual associations is 3.
+# ** Error: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd(49): (vcom-1193) Formal "inputPort" length is 8; number of individual associations is 1.
+# ** Note: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC_Wrapper.vhd(78): VHDL Compiler exiting
+# End time: 18:29:44 on May 24,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:29:44 on May 24,2023
+# vcom -reportprogress 300 -work work C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Terminal_Count
+# -- Compiling architecture arc_tc of Terminal_Count
+# End time: 18:29:44 on May 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.mac_tb
-# End time: 20:38:13 on May 23,2023, Elapsed time: 0:13:16
-# Errors: 0, Warnings: 72
+# End time: 18:29:52 on May 24,2023, Elapsed time: 1:12:57
+# Errors: 0, Warnings: 4
 # vsim work.mac_tb 
-# Start time: 20:38:13 on May 23,2023
+# Start time: 18:29:52 on May 24,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -1071,6 +1146,7 @@ vsim work.mac_tb
 # Loading work.registry(arc_reg)
 # Loading work.ffd(logicfunction)
 # Loading work.terminal_count(arc_tc)
+# WARNING: No extended dataflow license exists
 add wave -position insertpoint  \
 sim:/mac_tb/putget_tb \
 sim:/mac_tb/incPut_tb \
@@ -1082,83 +1158,19 @@ sim:/mac_tb/empty_tb \
 sim:/mac_tb/A_tb \
 sim:/mac_tb/MCLK_PERIOD \
 sim:/mac_tb/MCLK_HALF_PERIOD
-run
-run
-run
-run
-vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBufferControl/RingBufferControl_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:33 on May 23,2023
-# vcom -reportprogress 300 -work work D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/RingBufferControl/RingBufferControl_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity RingBufferControl_tb
-# -- Compiling architecture behavioral of RingBufferControl_tb
-# End time: 20:40:33 on May 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.ringbuffercontrol_tb
-# End time: 20:40:41 on May 23,2023, Elapsed time: 0:02:28
-# Errors: 0, Warnings: 0
-# vsim work.ringbuffercontrol_tb 
-# Start time: 20:40:41 on May 23,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.ringbuffercontrol_tb(behavioral)
-# Loading work.ringbuffercontrol(arc)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ammit  Hostname: DESKTOP-7VCPBOA  ProcessID: 2268
+#           Attempting to use alternate WLF file "./wlftdykd98".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdykd98
 add wave -position insertpoint  \
-sim:/ringbuffercontrol_tb/DAV_tb \
-sim:/ringbuffercontrol_tb/CTS_tb \
-sim:/ringbuffercontrol_tb/full_tb \
-sim:/ringbuffercontrol_tb/empty_tb \
-sim:/ringbuffercontrol_tb/Reset_tb \
-sim:/ringbuffercontrol_tb/CLK_tb \
-sim:/ringbuffercontrol_tb/Wr_tb \
-sim:/ringbuffercontrol_tb/selPG_tb \
-sim:/ringbuffercontrol_tb/Wreg_tb \
-sim:/ringbuffercontrol_tb/DAC_tb \
-sim:/ringbuffercontrol_tb/incPut_tb \
-sim:/ringbuffercontrol_tb/incGet_tb \
-sim:/ringbuffercontrol_tb/MCLK_PERIOD \
-sim:/ringbuffercontrol_tb/MCLK_HALF_PERIOD
-run
-run
-run
-restart
-run
-run
-vsim work.ringbuffer_tb
-# End time: 20:43:34 on May 23,2023, Elapsed time: 0:02:53
-# Errors: 0, Warnings: 0
-# vsim work.ringbuffer_tb 
-# Start time: 20:43:34 on May 23,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.ringbuffer_tb(arc)
-# Loading work.ringbuffer(arc)
-# Loading work.ringbuffercontrol(arc)
-# Loading work.memoryaddresscontrol(arc)
-# Loading work.counter(arc_cc)
-# Loading work.adder(arc_adder)
-# Loading work.full_add(arc_fa)
-# Loading work.mux2x1(arc_mux)
-# Loading work.registry(arc_reg)
-# Loading work.ffd(logicfunction)
-# Loading work.terminal_count(arc_tc)
-# Loading ieee.std_logic_arith(body)
-# Loading work.ram(behavioral)
+sim:/mac_tb/uut/incrementPut/outreg
 add wave -position insertpoint  \
-sim:/ringbuffer_tb/DAV_tb \
-sim:/ringbuffer_tb/CTS_tb \
-sim:/ringbuffer_tb/CLK_tb \
-sim:/ringbuffer_tb/Reset_tb \
-sim:/ringbuffer_tb/Wreg_tb \
-sim:/ringbuffer_tb/DAC_tb \
-sim:/ringbuffer_tb/D_tb \
-sim:/ringbuffer_tb/Q_tb \
-sim:/ringbuffer_tb/MCLK_PERIOD \
-sim:/ringbuffer_tb/MCLK_HALF_PERIOD
-# End time: 21:24:52 on May 23,2023, Elapsed time: 0:41:18
-# Errors: 0, Warnings: 0
+sim:/mac_tb/uut/incrementGet/outreg
+run
+run
+run
+run
+run
+# End time: 18:39:01 on May 24,2023, Elapsed time: 0:09:09
+# Errors: 0, Warnings: 2

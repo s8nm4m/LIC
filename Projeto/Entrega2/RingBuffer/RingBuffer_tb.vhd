@@ -20,7 +20,7 @@ constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 signal DAV_tb, CTS_tb, CLK_tb, Reset_tb, Wreg_tb, DAC_tb : std_logic;
 signal D_tb, Q_tb : std_logic_vector(3 downto 0);
 
---  ns
+--  140 ns
 begin
 
 uut : RingBuffer port map(
@@ -47,82 +47,111 @@ begin
 Reset_tb <= '1';
 DAV_tb <= '0';
 CTS_tb <= '0';
-D_tb <= "0000";
+D_tb <= "0001";
 wait for MCLK_PERIOD;
 
 Reset_tb <= '0';
 wait for MCLK_PERIOD;
 
 DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "0001";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "0010";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "0011";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "0100";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
+wait for MCLK_PERIOD * 4;
 
 D_tb <= "0101";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "0110";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "0111";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "1000";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
-DAV_tb <= '0';
-wait for MCLK_PERIOD;
-
-D_tb <= "1001";
-DAV_tb <= '1';
-wait for MCLK_PERIOD * 5;
-
 DAV_tb <= '0';
 wait for MCLK_PERIOD;
 
 CTS_tb <= '1';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "0110";
+DAV_tb <= '0';
+wait for MCLK_PERIOD * 2;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "0111";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1000";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1001";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1010";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1010";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1011";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1100";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1101";
+DAV_tb <= '0';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '1';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '0';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '1';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '0';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '1';
+wait for MCLK_PERIOD;
+
+CTS_tb <= '0';
+wait for MCLK_PERIOD;
+
+DAV_tb <= '1';
+wait for MCLK_PERIOD * 4;
+
+D_tb <= "1101";
+DAV_tb <= '0';
 wait for MCLK_PERIOD;
 wait;
 end process;

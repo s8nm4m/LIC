@@ -6,6 +6,7 @@ object SerialEmitter {
     private const val SCLOCK = 0x08
     private const val SSDOOR = 0x10
     private const val busy = 0x20
+    private const val MAX_LENGTH = 5
     fun init() {
         HAL.init()
         HAL.setBits(SSLCD)
@@ -15,7 +16,7 @@ object SerialEmitter {
     fun send(addr: Destination, data: Int) {
         val mask = if (addr == Destination.DOOR) SSDOOR else SSLCD
         HAL.clrBits(mask)
-        for (i in 0 until 5) {
+        for (i in 0 until MAX_LENGTH) {
             HAL.clrBits(SCLOCK)
             val b = data.and(1.shl(i))
             if (b == 0) {

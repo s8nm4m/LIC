@@ -59,9 +59,7 @@ I => I,
 Y => kp);
 
 O <= col;
-
 Kpress <= not kp;
-
 K <= qcount;
 
 end arc_Keyscan;

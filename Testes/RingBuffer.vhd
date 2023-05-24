@@ -32,11 +32,11 @@ end component;
 component RingBufferControl
 port(
 DAV, CTS, full, empty, Reset, CLK : in std_logic;
-Wr, selPG, Wreg, DAC : out std_logic);
+Wr, selPG, Wreg, DAC, incPut, incGet : out std_logic);
 end component;
 
 signal putget, incp, incg, f, e, wram : std_logic;
-signal idx : std_logic_vector(3 downto 0);
+signal idx : std_logic_vector(2 downto 0);
 
 begin
 
@@ -50,7 +50,9 @@ empty => e,
 Wr => wram, 
 selPG => putget, 
 Wreg => Wreg, 
-DAC => DAC);
+DAC => DAC,
+incPut => incp,
+incGet => incg);
 
 mac : MemoryAddressControl port map(
 putget => putget, 
@@ -60,12 +62,11 @@ CLK => CLK,
 Reset => Reset,
 full => f, 
 empty => e,
-A => idx(2 downto 0));
+A => idx);
 
 memory : RAM port map(
 address => idx(2 downto 0),
 wr => wram,
 din => D,
 dout => Q);
-
 end arc;

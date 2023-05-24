@@ -16,7 +16,7 @@ constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 
 signal CLK_tb, Reset_tb, Load_tb, ACK_tb, Wreg_tb, OBfree_tb, Dval_tb : std_logic;
 
--- ns
+-- 13 ns
 begin
 
 uut : BufferControl port map(
@@ -48,13 +48,13 @@ Reset_tb <= '0';
 wait for MCLK_PERIOD;
 
 Load_tb <= '1';
-wait for MCLK_PERIOD * 10;
+wait for MCLK_PERIOD;
 
 Load_tb <= '0';
 wait for MCLK_PERIOD;
 
 ACK_tb <= '1';
-wait for MCLK_PERIOD * 5;
+wait for MCLK_PERIOD;
 
 ACK_tb <= '0';
 wait for MCLK_PERIOD;

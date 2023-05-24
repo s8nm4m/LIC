@@ -20,7 +20,7 @@ constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 signal Load_tb, ACK_tb, CLK_tb, Reset_tb, OBfree_tb, Dval_tb : std_logic;
 signal D_tb, Q_tb : std_logic_vector(3 downto 0);
 
---  ns
+--  13 ns
 begin
 
 uut : OutputBuffer port map(
@@ -54,6 +54,15 @@ Reset_tb <= '0';
 wait for MCLK_PERIOD;
 
 Load_tb <= '1';
+wait for MCLK_PERIOD;
+
+Load_tb <= '0';
+wait for MCLK_PERIOD;
+
+ACK_tb <= '1';
+wait for MCLK_PERIOD;
+
+ACK_tb <= '0';
 wait for MCLK_PERIOD;
 
 wait;

@@ -41,6 +41,7 @@ signal kdrb, rbob : std_logic_vector(3 downto 0);
 
 begin
 
+
 kd: KeyDecode port map(
 Kack => ka,
 CLK => CLK,

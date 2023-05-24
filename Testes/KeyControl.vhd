@@ -21,23 +21,18 @@ GenerateNextState:
 process (CurrentState, Kpress, Kack)
 	begin
 		case CurrentState is
-			when FIRST => if (Kpress = '1') then
-									NextState <= SECOND;
-								else
-									NextState <= FIRST;
-								end if;
-			when SECOND => if (Kack = '1') then
-									if (Kpress = '0') then
-										NextState <= THIRD;
-									else
-										NextState <= SECOND;
-									end if;
-								else
-									NextState <= SECOND;
-								end if;
-			when THIRD => if (Kack = '0') then NextState <= FIRST;
-								else NextState <= THIRD;
-								end if;
+			when FIRST => 
+				if (Kpress = '1') then NextState <= SECOND;
+				else NextState <= FIRST;
+				end if;
+			when SECOND => 
+				if (Kack = '1' and Kpress = '0') then NextState <= THIRD;
+				else NextState <= SECOND;
+				end if;
+			when THIRD => 
+				if (Kack = '0') then NextState <= FIRST;
+				else NextState <= THIRD;
+				end if;
 		end case;
 end process;
 	

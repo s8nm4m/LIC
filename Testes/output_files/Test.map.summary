@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue May 23 17:10:36 2023
+Analysis & Synthesis Status : Successful - Wed May 24 18:14:37 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : RingBufferControl
+Top-level Entity Name : SCA
 Family : MAX 10
-Total logic elements : 11
-    Total combinational functions : 9
-    Dedicated logic registers : 7
-Total registers : 7
-Total pins : 12
+Total logic elements : 437
+    Total combinational functions : 403
+    Dedicated logic registers : 232
+Total registers : 232
+Total pins : 71
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

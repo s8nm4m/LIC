@@ -39,4 +39,8 @@ process(Load, ACK)
 				end if;
 		end case;
 end procesS;
+
+OBfree <= '1' when (CurrentState = CAN_RECEIVE) else '0';
+Dval <= '1' when (CurrentState = SEND_DATA) else '0';
+Wreg <= '1' when (CurrentState = WRITE_DATA) else '0';
 end arc;

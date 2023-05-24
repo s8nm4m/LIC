@@ -1,5 +1,25 @@
 
-State Machine - |RingBufferControl|CurrentState
+State Machine - |SCA|SLCDC:sl|LCDDispatcher:lcdd|CurrentState
+Name CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
+CurrentState.FIRST 0 0 0 
+CurrentState.SECOND 0 1 1 
+CurrentState.THIRD 1 0 1 
+
+State Machine - |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState
+Name CurrentState.FORTH CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
+CurrentState.FIRST 0 0 0 0 
+CurrentState.SECOND 0 0 1 1 
+CurrentState.THIRD 0 1 0 1 
+CurrentState.FORTH 1 0 0 1 
+
+State Machine - |SCA|KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState
+Name CurrentState.WAIT_ACK CurrentState.SEND_DATA CurrentState.WRITE_DATA CurrentState.CAN_RECEIVE 
+CurrentState.CAN_RECEIVE 0 0 0 0 
+CurrentState.WRITE_DATA 0 0 1 1 
+CurrentState.SEND_DATA 0 1 0 1 
+CurrentState.WAIT_ACK 1 0 0 1 
+
+State Machine - |SCA|KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState
 Name CurrentState.INC_GET CurrentState.WRITE_REG CurrentState.ACCEPTED CurrentState.INC_PUT CurrentState.WRITE_RAM CurrentState.SELECT_PUT CurrentState.ZEN 
 CurrentState.ZEN 0 0 0 0 0 0 0 
 CurrentState.SELECT_PUT 0 0 0 0 0 1 1 
@@ -8,3 +28,23 @@ CurrentState.INC_PUT 0 0 0 1 0 0 1
 CurrentState.ACCEPTED 0 0 1 0 0 0 1 
 CurrentState.WRITE_REG 0 1 0 0 0 0 1 
 CurrentState.INC_GET 1 0 0 0 0 0 1 
+
+State Machine - |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState
+Name CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
+CurrentState.FIRST 0 0 0 
+CurrentState.SECOND 0 1 1 
+CurrentState.THIRD 1 0 1 
+
+State Machine - |SCA|SDC:serialDoorC|DoorController:doorControl|CurrentState
+Name CurrentState.FORTH CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
+CurrentState.FIRST 0 0 0 0 
+CurrentState.SECOND 0 0 1 1 
+CurrentState.THIRD 0 1 0 1 
+CurrentState.FORTH 1 0 0 1 
+
+State Machine - |SCA|SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc|CurrentState
+Name CurrentState.FORTH CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
+CurrentState.FIRST 0 0 0 0 
+CurrentState.SECOND 0 0 1 1 
+CurrentState.THIRD 0 1 0 1 
+CurrentState.FORTH 1 0 0 1 

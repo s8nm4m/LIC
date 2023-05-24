@@ -16,9 +16,9 @@ CLK, Reset, Load, ACK : in std_logic;
 Wreg, OBfree, Dval : out std_logic);
 end component;
 
-component OutputRegister
+component Registry
 port(
-CE, CLK, Reset : in std_logic;
+E, CLK, Reset : in std_logic;
 D : in std_logic_vector(3 downto 0);
 Q : out std_logic_vector(3 downto 0));
 end component;
@@ -36,8 +36,8 @@ Wreg => w,
 OBfree => OBfree,
 Dval => Dval);
 
-outreg : OutputRegister port map(
-CE => w,
+outreg : Registry port map(
+E => w,
 CLK => CLK,
 Reset => Reset,
 D => D,
