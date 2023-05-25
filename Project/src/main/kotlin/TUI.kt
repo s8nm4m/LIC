@@ -29,8 +29,8 @@ object TUI {
         writeString("Password: ")
     }
 
-    private fun readKey(): Char {
-        return KBD.waitKey(5000)
+    private fun readKey(): Int {
+        return KBD.waitKey(5000).toInt()
     }
 
     fun errorMessage() {
@@ -50,16 +50,17 @@ object TUI {
         LCD.cursor(1, 0)
     }
 
-    fun writeMessage(text: String){
+    fun writeMessage(text: String) {
         val s = text.split(":")
         writeString(s[0])
         nextLine()
         writeString(s[1])
     }
+
     fun readUser(): String? {
         var user = ""
         while (user.length < 3) {
-            val c = readKey()
+            val c = readKey().toChar()
             if (c == KBD.NONE) {
                 clear()
                 break
@@ -79,7 +80,7 @@ object TUI {
     fun readPassword(): String? {
         var pw = ""
         while (pw.length < 4) {
-            val c = readKey()
+            val c = readKey().toChar()
             if (c == KBD.NONE) {
                 clear()
                 break
