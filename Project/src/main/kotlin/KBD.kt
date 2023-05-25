@@ -1,7 +1,7 @@
 object KBD {
-    private const val Kval = 1
-    private const val Kack = 1
-    private const val K = 30
+    private const val Kval = 0x01
+    private const val Kack = 0x01
+    private const val K = 0x1E
 
     fun init() {
         HAL.init()
