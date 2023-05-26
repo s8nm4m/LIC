@@ -5,7 +5,7 @@ entity SCA is
 port(
 Reset, CLK, Pswitch, M : in std_logic;
 I : in std_logic_vector(3 downto 0);
-LCD_RS, LCD_EN, OC, OO : out std_logic;
+LCD_RS, LCD_EN, OC, OO, Sopen, Sclose, Psensor : out std_logic;
 O : out std_logic_vector(2 downto 0);
 LCD_data, Door_data : out std_logic_vector(3 downto 0);
 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : out std_logic_vector(7 downto 0));
@@ -70,7 +70,7 @@ OnOff, busy : out std_logic;
 Dout : out std_logic_vector(4 downto 0));
 end component;
 
-signal pdetect, sclose, sopen, nf, kv, ka, rs, en, sdx, ssdoor, sslcd, sclk, ssdoorw, busy, sslcdw, sclkw : std_logic;
+signal switch, pdetect, sc, so, nf, kv, ka, rs, en, sdx, ssdoor, sslcd, sclk, ssdoorw, busy, sslcdw, sclkw : std_logic;
 signal kapa : std_logic_vector(3 downto 0);
 signal lcd, door : std_logic_vector(4 downto 0);
 signal h0, h1, h2, h3, h4, h5 : std_logic_vector(7 downto 0);
@@ -82,9 +82,9 @@ RST => Reset,
 onOff => nf,
 openClose => door(0),
 v => door(4 downto 1),
-Pswitch => Pswitch,
-Sopen => sopen,
-Sclose => sclose,
+Pswitch => switch,
+Sopen => so,
+Sclose => sc,
 Pdetector => pdetect,
 HEX0 => h0,
 HEX1 => h1,
@@ -93,6 +93,14 @@ HEX3 => h3,
 HEX4 => h4,
 HEX5 => h5
 );
+
+ffperson:FFD port map(
+CLK => CLK,
+RESET => '0',
+SET => '0',
+D => Pswitch,
+EN => '1',
+Q => switch);
 
 flcd:FFD port map(
 CLK => CLK,
@@ -123,8 +131,8 @@ SS => ssdoorw,
 SDX => sdx, 
 SCLK => sclkw, 
 Reset => Reset, 
-Sclose => Sclose,  
-Sopen => Sopen, 
+Sclose => sc,  
+Sopen => so, 
 Psensor => pdetect, 
 CLK => CLK,
 OnOff => nf, 
@@ -168,6 +176,10 @@ outputPort(4) => ssdoor--,
 --outputPort(7) =>
 );
 
+
+Sopen <= so;
+Sclose <= sc;
+Psensor <= pdetect;
 OC <= door(0);
 OO <= nf;
 Door_data <= door(4 downto 1);

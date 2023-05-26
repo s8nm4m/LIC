@@ -51,7 +51,8 @@ process(Din(0), Dval, Sopen, Sclose, Psensor)
 		end case;
 end process;
 
-OnOff <= '1' when ((CurrentState = SECOND and Sopen = '0') or (CurrentState = THIRD and Psensor = '0' and Sclose = '0')) else '0';
+OnOff <= '1' when ((CurrentState = SECOND and Sopen = '0') 
+			or (CurrentState = THIRD and Psensor = '0' and Sclose = '0')) else '0';
 OpenClose <= '1'when (CurrentState = SECOND) else '0';
 done <= '1' when (CurrentState = FORTH) else '0';
 Dout(4 downto 1) <= Din(4 downto 1);

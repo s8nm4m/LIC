@@ -96,6 +96,10 @@ object TUI {
         }
         return if (pw.length == 4) pw else null
     }
+
+    fun readM(bit: Int): Boolean {
+
+    }
     /*
         fun access() {
             val reader = BufferedReader(FileReader("Users.txt"))

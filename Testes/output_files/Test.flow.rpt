@@ -1,5 +1,5 @@
 Flow report for Test
-Thu May 25 21:56:25 2023
+Fri May 26 09:37:38 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu May 25 21:56:25 2023       ;
+; Flow Status                        ; Successful - Fri May 26 09:37:38 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
-; Top-level Entity Name              ; KeyboardReader                              ;
+; Top-level Entity Name              ; SCA                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 157 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 153 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 63 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 63                                          ;
-; Total pins                         ; 15 / 360 ( 4 % )                            ;
+; Total logic elements               ; 432 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 404 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 233 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 233                                         ;
+; Total pins                         ; 74 / 360 ( 21 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -67,29 +67,29 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/25/2023 21:55:55 ;
+; Start date & time ; 05/26/2023 09:35:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Test                ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176156953962517.168504815507268        ; --            ; --             ; --         ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --             ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; KeyboardReader ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; KeyboardReader ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; KeyboardReader ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --             ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --             ; --         ;
-; TOP_LEVEL_ENTITY                    ; KeyboardReader                         ; Test          ; --             ; --         ;
-+-------------------------------------+----------------------------------------+---------------+----------------+------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 115410745769234.168509014806480        ; --            ; --          ; --         ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; SCA         ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; SCA         ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; SCA         ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; SCA                                    ; Test          ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -97,12 +97,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4803 MB             ; 00:00:10                           ;
-; Fitter               ; 00:00:11     ; 1.1                     ; 5780 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4693 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4848 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4653 MB             ; 00:00:00                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:59     ; 1.0                     ; 4812 MB             ; 00:01:31                           ;
+; Fitter               ; 00:00:26     ; 1.0                     ; 5388 MB             ; 00:00:26                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4688 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.1                     ; 4814 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4659 MB             ; 00:00:03                           ;
+; Total                ; 00:01:43     ; --                      ; --                  ; 00:02:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,11 +111,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Euzinho          ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Euzinho          ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Euzinho          ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Euzinho          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Euzinho          ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-7VCPBOA  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-7VCPBOA  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-7VCPBOA  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-7VCPBOA  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-7VCPBOA  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu May 25 21:56:04 2023
+Analysis & Synthesis Status : Successful - Fri May 26 09:36:48 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
-Top-level Entity Name : KeyboardReader
+Top-level Entity Name : SCA
 Family : MAX 10
-Total logic elements : 154
-    Total combinational functions : 152
-    Dedicated logic registers : 63
-Total registers : 63
-Total pins : 15
+Total logic elements : 437
+    Total combinational functions : 403
+    Dedicated logic registers : 233
+Total registers : 233
+Total pins : 74
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

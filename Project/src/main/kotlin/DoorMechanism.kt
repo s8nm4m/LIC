@@ -21,8 +21,8 @@ object DoorMechanism { // Controla o estado do mecanismo de abertura da porta.
 fun main() {
     DoorMechanism.init()
     DoorMechanism.open(10)
-    while (!DoorMechanism.finished()) {
-    }
+    while (!DoorMechanism.finished());
     DoorMechanism.close(10)
+    while (!DoorMechanism.finished());
     println(DoorMechanism.finished())
 }

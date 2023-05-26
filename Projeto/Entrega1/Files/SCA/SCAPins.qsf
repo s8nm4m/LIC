@@ -25,6 +25,9 @@ set_location_assignment PIN_A10 -to Door_data[2]
 set_location_assignment PIN_B10 -to Door_data[3]
 set_location_assignment PIN_D13 -to OC
 set_location_assignment PIN_C13 -to OO
+set_location_assignment PIN_E14 -to Sopen
+set_location_assignment PIN_D14 -to Sclose
+set_location_assignment PIN_A11 -to Psensor
 
 #Keypad
 set_location_assignment PIN_W5     -to  I[0]

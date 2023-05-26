@@ -9,6 +9,18 @@ object Users {
         }
         return map
     }
+
+    fun writeUsers(userList: HashMap<String, List<String>>) {
+        val list = ArrayList<String>()
+        for (user in userList) {
+            var u = ""
+            for (i in user.value) {
+                u += "$i;"
+            }
+            list.add(u)
+        }
+        FileAccess.writeFile(FILENAME, list)
+    }
 }
 
 fun main() {

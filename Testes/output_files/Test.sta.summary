@@ -2,112 +2,64 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -3.483
-TNS   : -79.788
-
-Type  : Slow 1200mV 85C Model Setup 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : -1.407
-TNS   : -8.702
-
-Type  : Slow 1200mV 85C Model Setup 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : -1.144
-TNS   : -19.960
-
-Type  : Slow 1200mV 85C Model Hold 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : -0.297
-TNS   : -0.643
-
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.314
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 46.465
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : 0.324
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.323
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -71.432
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : -1.222
-TNS   : -8.554
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : 0.289
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 98.297
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -3.073
-TNS   : -67.085
-
-Type  : Slow 1200mV 0C Model Setup 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : -1.201
-TNS   : -7.311
-
-Type  : Slow 1200mV 0C Model Setup 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : -0.963
-TNS   : -16.963
-
-Type  : Slow 1200mV 0C Model Hold 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : -0.173
-TNS   : -0.283
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.285
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.046
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'KeyDecode:kd|CLKDIV:clock|tmp'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.577
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 46.793
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
 Slack : 0.294
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -71.432
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : -1.222
-TNS   : -8.554
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : 0.369
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 98.439
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -1.228
-TNS   : -16.906
-
-Type  : Fast 1200mV 0C Model Setup 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : -0.160
-TNS   : -0.768
-
-Type  : Fast 1200mV 0C Model Setup 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : -0.097
-TNS   : -0.163
-
-Type  : Fast 1200mV 0C Model Hold 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : -0.043
-TNS   : -0.053
-
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.144
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.975
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : 0.148
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.602
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -60.769
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 48.548
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KeyDecode:kd|CLKDIV:clock|tmp'
-Slack : -1.000
-TNS   : -7.000
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.147
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementPut|Registry:reg|FFD:ff0|Q'
-Slack : 0.290
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 99.162
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.477
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.421
 TNS   : 0.000
 
 ------------------------------------------------------------
