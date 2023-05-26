@@ -1,4 +1,7 @@
 object TUI {
+    private const val MAXTEXTLENGTH = 16
+    private const val MAXUSERLENGTH = 3
+    private const val MAXPWLENGTH = 4
     fun init() {
         LCD.init()
         KBD.init()
@@ -9,12 +12,12 @@ object TUI {
     }
 
     private fun writeString(text: String) {
-        if (text.length >= 16) {
-            for (i in 0 until 16) {
+        if (text.length >= MAXTEXTLENGTH) {
+            for (i in 0 until MAXTEXTLENGTH) {
                 writeChar(text[i])
             }
             nextLine()
-            for (i in 16 until text.length) {
+            for (i in MAXTEXTLENGTH until text.length) {
                 writeChar(text[i])
             }
         } else
@@ -59,7 +62,7 @@ object TUI {
 
     fun readUser(): String? {
         var user = ""
-        while (user.length < 3) {
+        while (user.length < MAXUSERLENGTH) {
             val c = readKey().toChar()
             if (c == KBD.NONE) {
                 clear()
@@ -74,12 +77,12 @@ object TUI {
                 writeChar(c)
             }
         }
-        return if (user.length == 3) user else null
+        return if (user.length == MAXUSERLENGTH) user else null
     }
 
     fun readPassword(): String? {
         var pw = ""
-        while (pw.length < 4) {
+        while (pw.length < MAXPWLENGTH) {
             val c = readKey().toChar()
             if (c == KBD.NONE) {
                 clear()
@@ -94,76 +97,9 @@ object TUI {
                 writeChar('*')
             }
         }
-        return if (pw.length == 4) pw else null
+        return if (pw.length == MAXPWLENGTH) pw else null
     }
-    /*
-        fun access() {
-            val reader = BufferedReader(FileReader("Users.txt"))
-            val writer = PrintWriter("Log File.txt")
-            var user = ""
-            LCD.write("Username: ")
-            while (user.length < 3) {
-                val c = KBD.waitKey(5000)
-                if (c == KBD.NONE) {
-                    LCD.clear()
-                    break
-                } else if (user.isNotEmpty() && c == '*') {
-                    LCD.clear()
-                } else if (c == '*') {
-                    break
-                } else {
-                    user += c
-                    LCD.write(c)
-                }
-            }
-            var pw = ""
-            LCD.cursor(1, 0)
-            LCD.write("Password: ")
-            while (pw.length < 4) {
-                val c = KBD.waitKey(5000)
-                if (c == KBD.NONE) {
-                    LCD.clear()
-                    break
-                } else if (pw.isNotEmpty() && c == '*') {
-                    LCD.clear()
-                } else if (c == '*') {
-                    break
-                } else {
-                    pw += c
-                    LCD.write('*')
-                }
-            }
-            if (user.length == 3 && pw.length == 4) {
-                var line: String?
-                line = reader.readLine()
-                var exists = false
-                while (line != null) {
-                    val split = line.split(";")
-                    if (split[0].compareTo(user) == 0) {
-                        if (split[1].compareTo(pw) == 0) {
-                            LCD.clear()
-                            val message = split[2].split(":")
-                            LCD.write(message[0])
-                            LCD.cursor(1, 0)
-                            LCD.write(message[1])
-                            writer.println("${Date()} $user")
-                            exists = true
-                            break
-                        }
-                    }
-                    line = reader.readLine()
-                }
-                if (!exists) {
-                    LCD.clear()
-                    LCD.write("Utilizador ou")
-                    LCD.cursor(1, 0)
-                    LCD.write("password errada.")
-                    Thread.sleep(5000)
-                    LCD.clear()
-                }
-            }
-            writer.close()
-        }*/
+
 }
 
 fun main() {

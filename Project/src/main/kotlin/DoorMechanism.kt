@@ -1,4 +1,8 @@
+
+
 object DoorMechanism { // Controla o estado do mecanismo de abertura da porta.
+
+    private const val speed = 10
     // Inicia a classe, estabelecendo os valores iniciais.
     fun init() {
         SerialEmitter.init()
