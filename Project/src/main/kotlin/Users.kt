@@ -21,6 +21,10 @@ object Users {
         }
         FileAccess.writeFile(FILENAME, list)
     }
+
+    fun init(): java.util.HashMap<String, List<String>> {
+        return getUsers()
+    }
 }
 
 fun main() {

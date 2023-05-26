@@ -56,8 +56,10 @@ object TUI {
     fun writeMessage(text: String) {
         val s = text.split(":")
         writeString(s[0])
-        nextLine()
-        writeString(s[1])
+        if (s.size > 1) {
+            nextLine()
+            writeString(s[1])
+        }
     }
 
     fun readUser(): String? {
