@@ -24,16 +24,8 @@ object TUI {
             LCD.write(text)
     }
 
-    fun writeUser() {
-        writeString("Username: ")
-    }
-
-    fun writePassword() {
-        writeString("Password: ")
-    }
-
-    private fun readKey(): Int {
-        return KBD.waitKey(5000).toInt()
+    fun readKey(): Int {
+        return KBD.waitKey(5000).code
     }
 
     fun errorMessage() {
@@ -62,7 +54,24 @@ object TUI {
         }
     }
 
-    fun readUser(): String? {
+    fun writeUIN() {
+        writeString("UIN:")
+    }
+
+    fun writePIN() {
+        writeString("PIN:")
+    }
+
+    fun newPIN(): String? {
+        writePIN()
+        val pin = readPIN()
+        writePIN()
+        if (readPIN() == pin)
+            return pin
+        return null
+    }
+
+    fun readUIN(): String? {
         var user = ""
         while (user.length < MAXUSERLENGTH) {
             val c = readKey().toChar()
@@ -71,7 +80,7 @@ object TUI {
                 break
             } else if (user.isNotEmpty() && c == '*') {
                 clear()
-                writeUser()
+                writeUIN()
             } else if (c == '*') {
                 break
             } else {
@@ -82,7 +91,7 @@ object TUI {
         return if (user.length == MAXUSERLENGTH) user else null
     }
 
-    fun readPassword(): String? {
+    fun readPIN(): String? {
         var pw = ""
         while (pw.length < MAXPWLENGTH) {
             val c = readKey().toChar()
@@ -91,7 +100,7 @@ object TUI {
                 break
             } else if (pw.isNotEmpty() && c == '*') {
                 clear()
-                writePassword()
+                writePIN()
             } else if (c == '*') {
                 break
             } else {
@@ -105,11 +114,11 @@ object TUI {
 
 fun main() {
     TUI.init()
-    TUI.writeUser()
-    TUI.readUser()
+    TUI.writeUIN()
+    TUI.readUIN()
     TUI.nextLine()
-    TUI.writePassword()
-    TUI.readPassword()
+    TUI.writePIN()
+    TUI.readPIN()
     TUI.errorMessage()
     TUI.writeMessage("Andre:Ola")
 }

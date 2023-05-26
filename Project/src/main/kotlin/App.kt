@@ -1,6 +1,6 @@
 object App {
     private var log = ArrayList<List<String>>()
-    private var users = HashMap<String, List<String>>()
+    var users = HashMap<String, List<String>>()
     private const val MAX_NAME_LENGHT = 16
     fun init() {
         M.init()
@@ -63,7 +63,46 @@ object App {
 fun main() {
     App.init()
     while (true) {
+        TUI.clear()
+        TUI.writeUIN()
+        val user = TUI.readUIN()
+        TUI.nextLine()
+        TUI.writePIN()
+        val pin = TUI.readPIN()
+        var isIn = false
+        for (i in App.users) {
+            if (i.value[0] == user && i.value[1] == pin) {
+                TUI.clear()
+                isIn = true
+                var txt = i.value[2]
+                if (i.value.size == 4)
+                    txt += ":${i.value[3]}"
+                TUI.writeMessage(txt)
+                if (i.value.size == 4) {
+                    if (TUI.readKey() == '*'.code) {
+                        App.users[i.key] = i.value.dropLast(1)
+                    }
+                }
+                if (TUI.readKey() == '#'.code) {
+                    val p = TUI.newPIN()
+                    if (p != null) {
+                        val u = i.value.mapIndexed { index, s -> if (index == 2) pin else s }
+                        App.users[i.key] = u
+                    }
+                }
+                DoorMechanism.open(10)
+                while (!DoorMechanism.finished());
+                DoorMechanism.close(10)
+                while (!DoorMechanism.finished());
+            }
+        }
+        if (!isIn) {
+            TUI.clear()
+            TUI.writeMessage("User not registred.")
+            Thread.sleep(2000)
+        }
         if (M.readM()) {
+            TUI.clear()
             TUI.writeMessage("Out of Service")
             App.insertUser()
             App.usersList()
@@ -73,6 +112,7 @@ fun main() {
             App.usersList()
             App.removeUser()
             App.usersList()
+            while (M.readM());
             if (!M.readM()) {
                 App.turnOff()
                 break

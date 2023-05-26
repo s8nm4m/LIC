@@ -4,8 +4,8 @@ object LCD {
     private const val DATA = 0x78
     private const val HIGH = 0xF0
     private const val LOW = 0x0F
-    private const val SLEEPTIME  : Long = 1
-    const val waitTime : Long = 2000
+    private const val SLEEPTIME: Long = 1
+    const val waitTime: Long = 2000
     private const val SLEEPWRITE = 40
     private const val SLEEPSET = 230
     private const val SLEEPCLR = 270
@@ -92,15 +92,16 @@ object LCD {
         writeCMD(1)
     }
 }
-fun main(){
+
+fun main() {
     LCD.init()
-    while (true){
+    while (true) {
         //println("clear")
         LCD.clear()
         //println("write")
         LCD.write("ajuda")
         //println("cursor")
-        LCD.cursor(1,0)
+        LCD.cursor(1, 0)
         Thread.sleep(LCD.waitTime)
     }
 }

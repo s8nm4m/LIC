@@ -2,8 +2,8 @@ object KBD {
     private const val Kval = 0x01
     private const val Kack = 0x01
     private const val K = 0x1E
-    const val waitTime : Long = 2000
-    private const val sleepTime : Long = 10
+    const val waitTime: Long = 2000
+    private const val sleepTime: Long = 10
 
     fun init() {
         HAL.init()
@@ -12,7 +12,7 @@ object KBD {
 
     const val NONE = 0.toChar()
 
-    fun getKey(): Char {
+    private fun getKey(): Char {
         if (HAL.isBit(Kval)) {
             val c = when (HAL.readBits(K).shr(1)) {
                 0 -> '1'
