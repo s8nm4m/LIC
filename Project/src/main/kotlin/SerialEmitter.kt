@@ -1,6 +1,7 @@
 object SerialEmitter {
-    enum class Destination { LCD, DOOR }
 
+    enum class Destination { LCD, DOOR }
+    private const val SLEEPTIME : Long = 1
     private const val SSLCD = 0x02
     private const val SDX = 0x04
     private const val SCLOCK = 0x08
@@ -28,7 +29,7 @@ object SerialEmitter {
         }
         HAL.clrBits(SCLOCK)
         HAL.setBits(mask)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
     }
 
     fun isBusy() = HAL.isBit(busy)

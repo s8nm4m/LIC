@@ -4,16 +4,21 @@ object LCD {
     private const val DATA = 0x78
     private const val HIGH = 0xF0
     private const val LOW = 0x0F
+    private const val SLEEPTIME  : Long = 1
+    const val waitTime : Long = 2000
+    private const val SLEEPWRITE = 40
+    private const val SLEEPSET = 230
+    private const val SLEEPCLR = 270
 
     // Escreve um nibble de comando/dados no LCD em paralelo
     private fun writeNibbleParallel(rs: Boolean, data: Int) {
         HAL.writeBits(RS, (if (rs) 1 else 0).shl(2))
         HAL.writeBits(DATA, data.shl(3))
-        Thread.sleep(0, 40)
+        Thread.sleep(0, SLEEPWRITE)
         HAL.setBits(Enable)
-        Thread.sleep(0, 230)
+        Thread.sleep(0, SLEEPSET)
         HAL.clrBits(Enable)
-        Thread.sleep(0, 270)
+        Thread.sleep(0, SLEEPCLR)
     }
 
     // Escreve um nibble de comando/dados no LCD em série
@@ -47,23 +52,23 @@ object LCD {
     // Envia a sequência de iniciação para comunicação a 4 bits.
     fun init() {
         SerialEmitter.init()
-        Thread.sleep(40)
+        Thread.sleep(SLEEPTIME * 40)
         writeNibble(false, 0x03)
-        Thread.sleep(5)
+        Thread.sleep(SLEEPTIME * 5)
         writeNibble(false, 0x03)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeNibble(false, 0x03)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeNibble(false, 0x02)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeCMD(0x28)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeCMD(0x08)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeCMD(0x01)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeCMD(0x06)
-        Thread.sleep(1)
+        Thread.sleep(SLEEPTIME)
         writeCMD(0x0E)
     }
 
@@ -90,12 +95,12 @@ object LCD {
 fun main(){
     LCD.init()
     while (true){
-        println("clear")
+        //println("clear")
         LCD.clear()
-        println("write")
+        //println("write")
         LCD.write("ajuda")
-        println("cursor")
+        //println("cursor")
         LCD.cursor(1,0)
-        Thread.sleep(2000)
+        Thread.sleep(LCD.waitTime)
     }
 }
