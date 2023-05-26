@@ -2,10 +2,4 @@
 001;2072;George Boole;
 002;0;Maurice Karnaugh;Simplification is possible;
 003;0;John von Neumann;
-004;1111;andre;eu;
-005;1111;comida;na barrgia;
 006;0;Kathleen Booth;
-007;1234;said;4321;
-008;1234;124;1;
-009;1111;11;1;
-010;0000;dez;onze;
