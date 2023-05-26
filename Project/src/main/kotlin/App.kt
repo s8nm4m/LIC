@@ -11,9 +11,13 @@ object App {
     }
 
     fun insertUser() {
+        if (users.size==1000){
+            TUI.writeMessage("Database is full.")
+        }
         var i = 0
         while (i < users.size) {
-            if (users["$i"] == null) break
+            val txt = if (i < 10) "00$i" else if (i < 100) "0$i" else i
+            if (users["$txt"] == null) break
             else i++
         }
         var name: String
@@ -23,8 +27,9 @@ object App {
         } while (name.length > MAX_NAME_LENGHT)
         println("Insert PIN")
         val pin = readln()
-        val newUser = ("$i;$pin;$name;").split(";").dropLast(1)
-        users["$i"] = newUser
+        val txt = if (i < 10) "00$i" else if (i < 100) "0$i" else i
+        val newUser = ("$txt;$pin;$name;").split(";").dropLast(1)
+        users["$txt"] = newUser
     }
 
     fun removeUser() {
@@ -63,47 +68,49 @@ object App {
 fun main() {
     App.init()
     while (true) {
-        TUI.clear()
-        TUI.writeUIN()
-        val user = TUI.readUIN()
-        TUI.nextLine()
-        TUI.writePIN()
-        val pin = TUI.readPIN()
-        var isIn = false
-        for (i in App.users) {
-            if (i.value[0] == user && i.value[1] == pin) {
-                TUI.clear()
-                isIn = true
-                var txt = i.value[2]
-                if (i.value.size == 4)
-                    txt += ":${i.value[3]}"
-                TUI.writeMessage(txt)
-                if (i.value.size == 4) {
-                    if (TUI.readKey() == '*'.code) {
-                        App.users[i.key] = i.value.dropLast(1)
-                    }
-                }
-                if (TUI.readKey() == '#'.code) {
-                    val p = TUI.newPIN()
-                    if (p != null) {
-                        val u = i.value.mapIndexed { index, s -> if (index == 2) pin else s }
-                        App.users[i.key] = u
-                    }
-                }
-                DoorMechanism.open(10)
-                while (!DoorMechanism.finished());
-                DoorMechanism.close(10)
-                while (!DoorMechanism.finished());
-            }
-        }
-        if (!isIn) {
+        if (!M.readM()) {
             TUI.clear()
-            TUI.writeMessage("User not registred.")
-            Thread.sleep(2000)
-        }
-        if (M.readM()) {
+            TUI.writeUIN()
+            val user = TUI.readUIN()
+            TUI.nextLine()
+            TUI.writePIN()
+            val pin = TUI.readPIN()
+            var isIn = false
+            for (i in App.users) {
+                if (i.value[0] == user && i.value[1] == pin) {
+                    TUI.clear()
+                    isIn = true
+                    var txt = i.value[2]
+                    if (i.value.size == 4)
+                        txt += ":${i.value[3]}"
+                    TUI.writeMessage(txt)
+                    if (i.value.size == 4) {
+                        if (TUI.readKey() == '*'.code) {
+                            App.users[i.key] = i.value.dropLast(1)
+                        }
+                    }
+                    if (TUI.readKey() == '#'.code) {
+                        val p = TUI.newPIN()
+                        if (p != null) {
+                            val u = i.value.mapIndexed { index, s -> if (index == 2) pin else s }
+                            App.users[i.key] = u
+                        }
+                    }
+                    DoorMechanism.open(10)
+                    while (!DoorMechanism.finished());
+                    DoorMechanism.close(10)
+                    while (!DoorMechanism.finished());
+                }
+            }
+            if (!isIn) {
+                TUI.clear()
+                TUI.writeMessage("User not registred.")
+                Thread.sleep(2000)
+            }
+        } else {
             TUI.clear()
             TUI.writeMessage("Out of Service")
+            App.usersList()
             App.insertUser()
             App.usersList()
             val user = readln()
