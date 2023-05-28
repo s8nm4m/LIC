@@ -8,13 +8,13 @@ architecture arc of SerialControl_tb is
 component SerialControl
 port(
 Reset, enRx, accept, eq5, CLK : in std_logic;
-clr, wr, DXval, cenable : out std_logic);
+clr, wr, DXval, cenable, busy : out std_logic);
 end component;
 
 constant MCLK_PERIOD : time := 2 ns;
 constant MCLK_HALF_PERIOD: time := MCLK_PERIOD / 2;
 
-signal Reset_tb, enRx_tb, accept_tb, eq5_tb, CLK_tb, clr_tb, wr_tb, DXval_tb, cenable_tb: std_logic;
+signal Reset_tb, enRx_tb, accept_tb, eq5_tb, CLK_tb, clr_tb, wr_tb, DXval_tb, cenable_tb, busy_tb : std_logic;
 
 -- 30 ns
 begin
@@ -28,7 +28,8 @@ CLK => CLK_tb,
 clr => clr_tb, 
 wr => wr_tb, 
 DXval => DXval_tb, 
-cenable => cenable_tb);
+cenable => cenable_tb,
+busy => busy_tb);
 
 clk_gen : process
 begin 
@@ -45,7 +46,7 @@ Reset_tb <= '1';
 enRx_tb <= '1';
 accept_tb <= '0';
 eq5_tb <= '0';
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
 
 Reset_tb <= '0';
 wait for MCLK_PERIOD *2;

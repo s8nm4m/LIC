@@ -56,14 +56,11 @@ Reset_tb <= '0';
 wait for MCLK_PERIOD;
 
 Kack_tb <= '1';
-wait for MCLK_PERIOD;
+wait for MCLK_PERIOD * 10000;--por causa do clock Div
 
-Kack_tb <= '0';
-I_tb <= "0000";
-wait for MCLK_PERIOD;
-
-Kack_tb <= '1';
-wait for MCLK_PERIOD;
+--Kack_tb <= '0';
+--I_tb <= "0010";
+--wait for MCLK_PERIOD * 1000;
 wait;
 end process;
 end;

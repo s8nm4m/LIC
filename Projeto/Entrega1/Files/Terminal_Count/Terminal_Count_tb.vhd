@@ -14,10 +14,9 @@ end component;
 
 --UUT signals
 constant MCLK_PERIOD : time := 2 ns;
-constant MCLK_HALF_PERIOD :time	:= MCLK_PERIOD / 2;
 
 signal Q_tb : std_logic_vector(3 downto 0);
-signal TC_tb, CLK_tb : std_logic;
+signal TC_tb : std_logic;
 
 begin
 
@@ -25,14 +24,6 @@ begin
 uut :  Terminal_Count port map(
 Q => Q_tb,
 TC => TC_tb);
-
-CLK_gen : process
-begin
-CLK_tb <= '0';
-wait for MCLK_HALF_PERIOD;
-CLK_tb <= '1';
-wait for MCLK_PERIOD;
-end process;
 
 -- 12 ns
 stimulus: process 

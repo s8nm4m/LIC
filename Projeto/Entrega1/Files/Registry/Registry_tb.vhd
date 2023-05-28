@@ -21,7 +21,7 @@ signal D_tb : std_logic_vector(3 downto 0);
 signal CLK_tb, E_tb, Reset_tb : std_logic;
 signal Q_tb : std_logic_vector(3 downto 0);
 
---11 ns
+-- 20 ns
 begin
 
 --Unit Under Test
@@ -44,16 +44,14 @@ stimulus: process
 begin 
 
 Reset_tb <= '1';
-wait for MCLK_PERIOD;
-
-Reset_tb <= '0';
-wait for MCLK_PERIOD;
-
 E_tb <= '0';
 D_tb(0) <= '0';
 D_tb(1) <= '1';
 D_tb(2) <= '0';
 D_tb(3) <= '1';
+wait for MCLK_PERIOD;
+
+Reset_tb <= '0';
 wait for MCLK_PERIOD;
 
 E_tb <= '1';
@@ -64,7 +62,7 @@ D_tb(0) <= '1';
 D_tb(1) <= '0';
 D_tb(2) <= '0';
 D_tb(3) <= '1';
-wait for MCLK_PERIOD;
+wait for MCLK_PERIOD * 4;
 
 E_tb <= '1';
 wait for MCLK_PERIOD;

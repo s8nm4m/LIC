@@ -18,7 +18,7 @@ signal CLK_tb : std_logic;
 signal S_tb : std_logic_vector(1 downto 0);
 signal O_tb : std_logic_vector(2 downto 0);
 
--- 13 ns
+-- 15 ns
 begin
 
 dectb: Decoder port map(

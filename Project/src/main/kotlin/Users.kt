@@ -1,5 +1,6 @@
 object Users {
     private const val FILENAME = "USERS.txt"
+    // le o ficheiro txt e guarda os users registados
     fun getUsers(): HashMap<String, List<String>> {
         val map = HashMap<String, List<String>>()
         val list = FileAccess.readFile(FILENAME)
@@ -10,6 +11,7 @@ object Users {
         return map
     }
 
+    // escreve cada user em userList no ficheiro USERS.txt
     fun writeUsers(userList: HashMap<String, List<String>>) {
         val list = ArrayList<String>()
         for (user in userList) {
@@ -22,6 +24,7 @@ object Users {
         FileAccess.writeFile(FILENAME, list)
     }
 
+    // le o conteudo do ficheiro USERS
     fun init(): java.util.HashMap<String, List<String>> {
         return getUsers()
     }

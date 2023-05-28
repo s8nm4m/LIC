@@ -22,7 +22,7 @@ constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 
 signal CLK_tb, RESET_tb, SET_tb, D_tb, EN_tb, Q_tb : std_logic;
 
--- 11 ns
+-- 12 ns
 begin
 
 --Unit Under Test

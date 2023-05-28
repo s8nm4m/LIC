@@ -18,7 +18,7 @@ constant MCLK_HALF_PERIOD: time := MCLK_PERIOD / 2;
 signal SS_tb, SDX_tb, SCLK_tb, Sclose_tb, Sopen_tb, Psensor_tb, CLK_tb, OnOff_tb, busy_tb, Reset_tb : std_logic;
 signal Dout_tb : std_logic_vector(4 downto 0);
 
---
+-- 80 ns
 begin
 
 uut: SDC port map(
@@ -47,14 +47,15 @@ begin
 
 SS_tb <= '1';
 Reset_tb <= '1';
+Sclose_tb <= '0';
+Sopen_tb <= '0';
+Psensor_tb <= '0';
+SDX_tb <= '0';
+SCLK_tb <= '0';
 wait for MCLK_PERIOD;
 
 Reset_tb <= '0';
 wait for MCLK_PERIOD;
-
-Sclose_tb <= '0';
-Sopen_tb <= '0';
-Psensor_tb <= '0';
 
 SS_tb <= '0';
 wait for MCLK_PERIOD;

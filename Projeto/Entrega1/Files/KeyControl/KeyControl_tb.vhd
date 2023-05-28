@@ -17,7 +17,7 @@ constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 
 signal Kpress_tb, Kack_tb, CLK_tb, Reset_tb, Kval_tb, Kscan_tb : std_logic;
 
--- 19 ns
+-- 17 ns
 begin
 
 UUT:KeyControl port map(
@@ -41,10 +41,10 @@ begin
 Reset_tb <= '1';
 Kpress_tb <= '0';
 Kack_tb <= '0';
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
 
 Reset_tb <= '0';
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
 
 Kpress_tb <= '1';
 wait for MCLK_PERIOD *2;

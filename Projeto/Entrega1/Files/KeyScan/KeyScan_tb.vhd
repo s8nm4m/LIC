@@ -23,7 +23,7 @@ signal KScan_tb, CLK_tb, Reset_tb, Kpress_tb: std_logic;
 signal I_tb, K_tb : std_logic_vector(3 downto 0);
 signal O_tb : std_logic_vector(2 downto 0);
 
--- 7 ns
+-- 30 ns
 begin
 
 --Unit Under Test
@@ -59,6 +59,12 @@ KScan_tb <= '1';
 wait for MCLK_PERIOD;
 
 I_tb <= "1111";
+KScan_tb <= '0';
+wait for MCLK_PERIOD;
+
+KScan_tb <= '1';
+wait for MCLK_PERIOD * 10;
+
 KScan_tb <= '0';
 wait for MCLK_PERIOD;
 wait;

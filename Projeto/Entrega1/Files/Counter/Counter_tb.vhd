@@ -21,7 +21,7 @@ constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 signal PL_tb, CE_tb, CLK_tb, TC_tb, Reset_tb: std_logic;
 signal Data_in_tb, Q_tb: std_logic_vector(3 downto 0);
 
--- 15 ns
+-- 24 ns
 begin
 
 --Unit Under Test
@@ -48,7 +48,7 @@ begin
 Reset_tb <= '1';
 PL_tb <= '0';
 CE_tb <= '0';
-Data_in_tb <= "0101";
+Data_in_tb <= "0001";
 wait for MCLK_PERIOD;
 
 Reset_tb <= '0';
@@ -60,11 +60,11 @@ wait for MCLK_PERIOD *3;
 PL_tb <= '1';
 wait for MCLK_PERIOD * 4;
 
-CE_tb <= '0';
-wait for MCLK_PERIOD *2;
-
 PL_tb <= '0';
-wait for MCLK_PERIOD *2;
+wait for MCLK_PERIOD;
+
+CE_tb <= '0';
+wait for MCLK_PERIOD;
 wait;
 end process;
 end;

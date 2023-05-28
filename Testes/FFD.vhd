@@ -11,7 +11,7 @@ PORT(	CLK : in std_logic;
 		);
 END FFD;
 
-ARCHITECTURE logicFunction OF FFD IS
+ARCHITECTURE LogicFunction OF FFD IS
 
 BEGIN
 

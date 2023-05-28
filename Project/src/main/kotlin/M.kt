@@ -5,5 +5,6 @@ object M {
         HAL.init()
     }
 
-    fun readM(): Boolean = HAL.isBit(m)
+    // verifica se a chave de manutenção está ligada
+    fun isM(): Boolean = HAL.isBit(m)
 }

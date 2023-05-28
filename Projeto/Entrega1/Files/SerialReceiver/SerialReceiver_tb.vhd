@@ -45,6 +45,8 @@ begin
 SS_tb <= '1';
 accept_tb <= '0';
 Reset_tb <= '1';
+SCLK_tb <= '0';
+SDX_tb <= '0';
 wait for MCLK_PERIOD *2;
 
 Reset_tb <= '0';
@@ -53,7 +55,6 @@ wait for MCLK_PERIOD *2;
 SS_tb <= '0';
 wait for MCLK_PERIOD *2;
 wait for 0.5 ns;
-SCLK_tb <= '0';
 SDX_tb <= '1';
 wait for 0.5 ns;
 SCLK_tb <= '1';

@@ -9,39 +9,34 @@ end KeyControl;
 
 architecture arcKC of KeyControl is
 
-type STATE_TYPE is (FIRST, SECOND, THIRD);
+type STATE_TYPE is (WAIT_FOR_PRESS, VALIDATE, WAIT_FOR_AFK);
 
 signal CurrentState, NextState: STATE_TYPE;
 
 begin
 
-CurrentState <= FIRST when Reset = '1' else NextState when rising_edge(CLK);
+CurrentState <= WAIT_FOR_PRESS when Reset = '1' else NextState when rising_edge(CLK);
 
 GenerateNextState:
 process (CurrentState, Kpress, Kack)
 	begin
 		case CurrentState is
-			when FIRST => if (Kpress = '1') then
-									NextState <= SECOND;
-								else
-									NextState <= FIRST;
-								end if;
-			when SECOND => if (Kack = '1') then
-									if (Kpress = '0') then
-										NextState <= THIRD;
-									else
-										NextState <= SECOND;
-									end if;
-								else
-									NextState <= SECOND;
-								end if;
-			when THIRD => if (Kack = '0') then NextState <= FIRST;
-								else NextState <= THIRD;
-								end if;
+			when WAIT_FOR_PRESS => 
+				if (Kpress = '1') then NextState <= VALIDATE;
+				else NextState <= WAIT_FOR_PRESS;
+				end if;
+			when VALIDATE => 
+				if (Kack = '1' and Kpress = '0') then NextState <= WAIT_FOR_AFK;
+				else NextState <= VALIDATE;
+				end if;
+			when WAIT_FOR_AFK => 
+				if (Kack = '0') then NextState <= WAIT_FOR_PRESS;
+				else NextState <= WAIT_FOR_AFK;
+				end if;
 		end case;
 end process;
 	
-Kval <= '1' when ( CurrentState = SECOND) else '0';
-Kscan <= '1' when ( CurrentState = FIRST and Kpress = '0') else '0';
+Kval <= '1' when ( CurrentState = VALIDATE) else '0';
+Kscan <= '1' when ( CurrentState = WAIT_FOR_PRESS and Kpress = '0') else '0';
 
 end arcKC;

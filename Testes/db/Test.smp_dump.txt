@@ -1,9 +1,9 @@
 
-State Machine - |SCA|SLCDC:sl|LCDDispatcher:lcdd|CurrentState
-Name CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 
-CurrentState.FIRST 0 0 0 
-CurrentState.SECOND 0 1 1 
-CurrentState.THIRD 1 0 1 
+State Machine - |SCA|SLCDC:sl|LCDDispatcher:lcdd|Dispatcher:disp|CurrentState
+Name CurrentState.VALIDATE CurrentState.COUNT_WRITE CurrentState.ZEN 
+CurrentState.ZEN 0 0 0 
+CurrentState.COUNT_WRITE 0 1 1 
+CurrentState.VALIDATE 1 0 1 
 
 State Machine - |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState
 Name CurrentState.FORTH CurrentState.THIRD CurrentState.SECOND CurrentState.FIRST 

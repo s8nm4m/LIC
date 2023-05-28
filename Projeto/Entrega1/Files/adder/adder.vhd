@@ -10,41 +10,41 @@ end adder;
 
 
 architecture arc_adder of adder is
-component full_adder
-Port(A, B, Ci: in std_logic;
-Co, S: out std_logic);
+component full_add
+Port(A, B, Cin: in std_logic;
+Cout, S: out std_logic);
 end component;
 
 signal c1, c2, c3: std_logic;
 
 begin
 
-fa1: full_adder port map(
+fa1: full_add port map(
 A => A(0),
 B => B(0),
-Ci => Ci,
+Cin => Ci,
 S => S(0),
-Co => c1);
+Cout => c1);
 
-fa2: full_adder port map(
+fa2: full_add port map(
 A => A(1),
 B => B(1),
-Ci => C1,
+Cin => C1,
 S => S(1),
-Co => c2);
+Cout => c2);
 
-fa3: full_adder port map(
+fa3: full_add port map(
 A => A(2),
 B => B(2),
-Ci => C2,
+Cin => C2,
 S => S(2),
-Co => c3);
+Cout => c3);
 
-fa4: full_adder port map(
+fa4: full_add port map(
 A => A(3),
 B => B(3),
-Ci => C3,
+Cin => C3,
 S => S(3),
-Co => Co);
+Cout => Co);
 
 end arc_adder;

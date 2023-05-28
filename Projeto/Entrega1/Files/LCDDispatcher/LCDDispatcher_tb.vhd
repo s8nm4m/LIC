@@ -19,7 +19,7 @@ constant MCLK_HALF_PERIOD: time := MCLK_PERIOD / 2;
 signal Dval_tb, Wrl_tb, done_tb, CLK_tb, Reset_tb : std_logic;
 signal Din_tb, Dout_tb : std_logic_vector(4 downto 0);
 
--- 63 ns
+-- 65 ns
 begin 
 
 lcdd: LCDDispatcher port map(
@@ -51,7 +51,7 @@ Reset_tb <= '0';
 wait for MCLK_PERIOD;
 
 Dval_tb <= '1';
-wait for MCLK_PERIOD *26;
+wait for MCLK_PERIOD;
 
 Dval_tb <= '0';
 wait for MCLK_PERIOD;

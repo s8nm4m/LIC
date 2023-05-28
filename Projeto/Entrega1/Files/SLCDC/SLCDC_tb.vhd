@@ -18,7 +18,7 @@ constant MCLK_HALF_PERIOD: time := MCLK_PERIOD / 2;
 signal SS_tb, SCLK_tb, CLK_tb, SDX_tb, Reset_tb, Wrl_tb : std_logic;
 signal Dout_tb : std_logic_vector(4 downto 0);
 
---22 ns
+--28 ns
 begin
 
 slcdctb: SLCDC port map(
@@ -41,6 +41,8 @@ end process;
 stimulus: process
 begin
 
+SDX_tb <= '0';
+SCLK_tb <= '0';
 SS_tb <= '1';
 Reset_tb <= '1';
 wait for MCLK_PERIOD;

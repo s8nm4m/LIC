@@ -11,7 +11,7 @@ end DoorController;
 
 architecture arc of DoorController is
 
-type STATE_TYPE is (FIRST, SECOND, THIRD, FORTH);
+type STATE_TYPE is (ZEN, OPEN_DOOR, CLOSE_DOOR, FINISHED);
 
 signal CurrentState, NextState: STATE_TYPE;
 
@@ -23,38 +23,33 @@ GenerateNextState:
 process(Din(0), Dval, Sopen, Sclose, Psensor)
 	begin
 		case CurrentState is
-			when FIRST =>
-				if (Dval = '0') then NextState <= FIRST;
-				else
-					if (Din(0) = '1') then NextState <= SECOND;
-					else NextState <= THIRD;
-					end if;
+			when ZEN =>
+				if (Dval = '1' and Din(0) = '1') then NextState <= OPEN_DOOR;
+				elsif (Dval = '1' and Din(0) = '0') then NextState <= CLOSE_DOOR;
+				else NextState <= ZEN;
 				end if;
-			when SECOND =>
-				if (Sopen = '0') then NextState <= SECOND;
-				else
-					if (Din(0) = '0') then NextState <= THIRD;
-					else NextState <= FORTH;
-					end if;
+			when OPEN_DOOR =>
+				if (Sopen = '1' and Din(0) = '0') then NextState <= CLOSE_DOOR;
+				elsif (Sopen = '1' and Din(0) = '1') then NextState <= FINISHED;
+				else NextState <= OPEN_DOOR;
 				end if;
-			when THIRD =>
-				if (Psensor = '1') then NextState <= SECOND;
-				else
-					if (Sclose = '1') then NextState <= FORTH;
-					else NextState <= THIRD;
-					end if;
+			when CLOSE_DOOR =>
+				if (Psensor = '1') then NextState <= OPEN_DOOR;
+				elsif (Psensor = '0' and Sclose <= '1') then NextState <= FINISHED;
+				else NextState <= CLOSE_DOOR;
 				end if;
-			when FORTH =>
-				if (Dval = '0') then NextState <= FIRST;
-				else NextState <= FORTH;
+			when FINISHED =>
+				if (Dval = '0') then NextState <= ZEN;
+				else NextState <= FINISHED;
 				end if;
 		end case;
 end process;
 
-OnOff <= '1' when ((CurrentState = SECOND and Sopen = '0') or (CurrentState = THIRD and Psensor = '0' and Sclose = '0')) else '0';
-OpenClose <= '1'when (CurrentState = SECOND) else '0';
-done <= '1' when (CurrentState = FORTH) else '0';
+OnOff <= '1' when ((CurrentState = OPEN_DOOR and Sopen = '0') 
+			or (CurrentState = CLOSE_DOOR and Psensor = '0' and Sclose = '0')) 
+			else '0';
+OpenClose <= '1'when (CurrentState = OPEN_DOOR) else '0';
+done <= '1' when (CurrentState = FINISHED) else '0';
 Dout(4 downto 1) <= Din(4 downto 1);
-Dout(0) <= '1'when (CurrentState = SECOND) else '0';
-
+Dout(0) <= '1' when (CurrentState = OPEN_DOOR) else '0';
 end arc;

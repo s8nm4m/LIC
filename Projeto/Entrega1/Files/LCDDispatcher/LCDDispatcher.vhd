@@ -10,6 +10,12 @@ Dout : out std_logic_vector(4 downto 0));
 end LCDDispatcher;
 
 architecture arc_lcdd of LCDDispatcher is
+component Dispatcher
+port(
+Dval, Reset, CLK, eq12 : in std_logic;
+Wrl, done, countclear : out std_logic);
+end component;
+
 component Counter
 port(
 PL, CE, CLK, Reset: in std_logic;
@@ -18,54 +24,33 @@ TC: out std_logic;
 Q: out std_logic_vector(3 downto 0));
 end component;
 
-component clkDIV
-generic(div: natural := 5000000);
-port ( clk_in: in std_logic;
-		 clk_out: out std_logic);
-end component;
-
-type STATE_TYPE is (FIRST, SECOND, THIRD);
-
-signal CurrentState, NextState: STATE_TYPE;
-signal eq12, countclear, cenable: std_logic;
+signal eq12, countclear, cenable, wr, d, clean: std_logic;
 signal count: std_logic_vector(3 downto 0);
 
 begin
 
+disp: Dispatcher port map(
+Dval => Dval, 
+Reset => Reset, 
+CLK => CLK, 
+eq12 => eq12,
+Wrl => wr, 
+done => d,
+countclear => countclear);
+
 cup: Counter port map(
-Reset => countclear,
-PL => '0',
+Reset => Reset,
+PL => clean,
 CE => cenable,
 CLK => CLK,
 Data_in => "0000",
 Q => count);
 
-CurrentState <= FIRST when Reset = '1' else NextState when rising_edge(CLK);
-eq12 <= '1' when (count(3) = '1' and count(2) = '1' and count(1) = '0' and count(0) = '0') else '0';
-
-GenerateNextState:
-process(CurrentState, Dval, eq12)
-	begin
-		case CurrentState is
-			when FIRSt => 
-				if (Dval = '1') then NextState <= SECOND;
-				else NextState <= FIRST;
-				end if;
-			when SECOND =>
-				if (eq12 = '1') then NextState <= THIRD;
-				else NextState <= SECOND;
-				end if;
-			when THIRD =>
-				if (Dval = '0') then NextState <= FIRST;
-				else NextState <= THIRD;
-				end if;
-		end case;
-end process;
-
-cenable <= '1' when (CurrentState = SECOND) else '0';
-countclear <= '1' when (CurrentState = FIRST) else '0';
-Wrl <= '1' when (CurrentState = SECOND) else '0';
-done <= '1' when (CurrentState = THIRD) else '0';
+clean <= eq12 or countclear;
+Wrl <= wr;
+eq12 <= count(3) and count(2) and not count(1) and not count(0);
+done <= d;
 Dout <= Din;
+cenable <= wr or d;
 
 end arc_lcdd;

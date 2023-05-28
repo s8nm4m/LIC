@@ -1,50 +1,52 @@
 object TUI {
-    private const val MAXTEXTLENGTH = 16
-    private const val MAXUSERLENGTH = 3
-    private const val MAXPWLENGTH = 4
+    private const val MAX_TEXT_LENGTH = 16
+    private const val MAX_UIN_LENGTH = 3
+    private const val MAX_PIN_LENGTH = 4
+    private const val TIMEOUT: Long = 5000
+    private const val SECOND_LINE = 1
+    private const val FIRST_COL = 0
+
+    // inicia o lcd e o kbd
     fun init() {
         LCD.init()
         KBD.init()
     }
 
+    // escreve um caracter no lcd
     private fun writeChar(char: Char) {
         LCD.write(char)
     }
 
+    // escreve uma frase no lcd
     private fun writeString(text: String) {
-        if (text.length >= MAXTEXTLENGTH) {
-            for (i in 0 until MAXTEXTLENGTH) {
+        if (text.length >= MAX_TEXT_LENGTH) {
+            for (i in 0 until MAX_TEXT_LENGTH) {
                 writeChar(text[i])
             }
             nextLine()
-            for (i in MAXTEXTLENGTH until text.length) {
+            for (i in MAX_TEXT_LENGTH until text.length) {
                 writeChar(text[i])
             }
         } else
             LCD.write(text)
     }
 
+    // le uma tecla do kbd
     fun readKey(): Int {
-        return KBD.waitKey(5000).code
+        return KBD.waitKey(TIMEOUT).code
     }
 
-    fun errorMessage() {
-        clear()
-        writeString("Wrong Username")
-        nextLine()
-        writeString("or Password.")
-        Thread.sleep(2000)
-        clear()
-    }
-
+    // limpa o display do lcd
     fun clear() {
         LCD.clear()
     }
 
+    // poe o cursor no inicio da segunda linha
     fun nextLine() {
-        LCD.cursor(1, 0)
+        LCD.cursor(SECOND_LINE, FIRST_COL)
     }
 
+    // Escreve uma frase em cada linha separando po ":". Caso não haja ":", escreve tudo na mesma linha enquanto tiver espaço
     fun writeMessage(text: String) {
         val s = text.split(":")
         writeString(s[0])
@@ -54,61 +56,78 @@ object TUI {
         }
     }
 
+    //pede ao utilizador para introduzir o seu UIN
     fun writeUIN() {
         writeString("UIN:")
     }
 
+    // pede ao utilizador para introduzir o seu PIN
     fun writePIN() {
         writeString("PIN:")
     }
 
+    // Pede o novo pin, e depois pede uma confirmaçao. Caso sejam iguais retorna esse valor, caso contrario retorna null
     fun newPIN(): String? {
         writePIN()
         val pin = readPIN()
+        nextLine()
         writePIN()
         if (readPIN() == pin)
             return pin
         return null
     }
 
+    //le o UIN intrduzido pelo utilizador com 3 caracteres
+    //caso seja lido um extrisco durante este processo, ele limpa o que ja foi lido e começa a ler de início, caso ainda estivesse vazio, para de ler
+    // se houver um timeout, para de ler
     fun readUIN(): String? {
-        var user = ""
-        while (user.length < MAXUSERLENGTH) {
+        var uin = ""
+        while (uin.length < MAX_UIN_LENGTH) {
             val c = readKey().toChar()
             if (c == KBD.NONE) {
                 clear()
                 break
-            } else if (user.isNotEmpty() && c == '*') {
+            } else if (uin.isNotEmpty() && c == '*') {
                 clear()
                 writeUIN()
             } else if (c == '*') {
                 break
             } else {
-                user += c
+                uin += c
                 writeChar(c)
             }
         }
-        return if (user.length == MAXUSERLENGTH) user else null
+        return if (uin.length == MAX_UIN_LENGTH) uin else null
     }
 
+    //le o PIN intrduzido pelo utilizador com 4 caracteres
+    //caso seja lido um extrisco durante este processo, ele limpa o que ja foi lido e começa a ler do início, caso ainda estivesse vazio, para de ler
+    // se houver um timeout, para de ler
     fun readPIN(): String? {
-        var pw = ""
-        while (pw.length < MAXPWLENGTH) {
+        var pin = ""
+        while (pin.length < MAX_PIN_LENGTH) {
             val c = readKey().toChar()
             if (c == KBD.NONE) {
                 clear()
                 break
-            } else if (pw.isNotEmpty() && c == '*') {
+            } else if (pin.isNotEmpty() && c == '*') {
                 clear()
                 writePIN()
             } else if (c == '*') {
                 break
             } else {
-                pw += c
+                pin += c
                 writeChar('*')
             }
         }
-        return if (pw.length == MAXPWLENGTH) pw else null
+        return if (pin.length == MAX_PIN_LENGTH) pin else null
+    }
+
+    // limpa a segunda linha, sem alterar o conteudo da primeira, e prepara-se para escrever no inico da segunda linha
+    fun clearSecondLine() {
+        nextLine()
+        writeString("                ")
+        nextLine()
     }
 }
 
@@ -119,6 +138,5 @@ fun main() {
     TUI.nextLine()
     TUI.writePIN()
     TUI.readPIN()
-    TUI.errorMessage()
     TUI.writeMessage("Andre:Ola")
 }

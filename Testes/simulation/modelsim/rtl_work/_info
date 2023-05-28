@@ -13,7 +13,7 @@ Eadder
 Z1 w1684688467
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 21
+!i122 37
 R0
 Z4 8D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd
 Z5 FD:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd
@@ -23,9 +23,9 @@ VM9LLGbo[KHW=[kN4fXYCM1
 !s100 dK>m7RnE8AHWen?TQ_m4L0
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1685049455
+Z7 !s110 1685294561
 !i10b 1
-Z8 !s108 1685049455.000000
+Z8 !s108 1685294561.000000
 Z9 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd|
 Z10 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/adder.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Aarc_adder
 R2
 R3
 DEx4 work 5 adder 0 22 M9LLGbo[KHW=[kN4fXYCM1
-!i122 21
+!i122 37
 l20
 L12 39
 VS5]Nzio3d<Ckmi>PRPEEK2
@@ -50,14 +50,55 @@ R10
 !i113 1
 R11
 R12
-Ebuffercontrol
-Z13 w1684959528
+Eadder_tb
+Z13 w1684869533
 R2
 R3
-!i122 22
+!i122 36
 R0
-Z14 8D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd
-Z15 FD:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd
+Z14 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/adder/adder_tb.vhd
+Z15 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/adder/adder_tb.vhd
+l0
+L4 1
+VF=fmB8@d2_FoeKbA]=U]K2
+!s100 aEh6?6Gok:W1lFCKWNzUe2
+R6
+32
+Z16 !s110 1685294250
+!i10b 1
+Z17 !s108 1685294250.000000
+Z18 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/adder/adder_tb.vhd|
+Z19 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/adder/adder_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 8 adder_tb 0 22 F=fmB8@d2_FoeKbA]=U]K2
+!i122 36
+l25
+L7 56
+VTHKXTMa]0`K[AiDVGMOPe3
+!s100 Pa4Hj^aJaBkIBbG@6z_550
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ebuffercontrol
+Z20 w1684959528
+R2
+R3
+!i122 38
+R0
+Z21 8D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd
+Z22 FD:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd
 l0
 L4 1
 VY_8NAOEOQF9jHTmLf`1Sc1
@@ -67,8 +108,8 @@ R6
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd|
-Z17 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd|
+Z23 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd|
+Z24 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/BufferControl.vhd|
 !i113 1
 R11
 R12
@@ -76,7 +117,7 @@ Aarc
 R2
 R3
 DEx4 work 13 buffercontrol 0 22 Y_8NAOEOQF9jHTmLf`1Sc1
-!i122 22
+!i122 38
 l16
 L10 37
 VK;bXJ3cbAkFL[X67XPZPf0
@@ -86,20 +127,20 @@ R6
 R7
 !i10b 1
 R8
-R16
-R17
+R23
+R24
 !i113 1
 R11
 R12
 Eclkdiv
-Z18 w1678736351
-Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z25 w1678736351
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
-!i122 23
+!i122 39
 R0
-Z20 8D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd
-Z21 FD:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd
+Z27 8D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd
+Z28 FD:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd
 l0
 L5 1
 VNzFBFbTAg5`QeClhW33zK0
@@ -109,17 +150,17 @@ R6
 R7
 !i10b 1
 R8
-Z22 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd|
-Z23 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd|
+Z29 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd|
+Z30 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/clkDIV.vhd|
 !i113 1
 R11
 R12
 Abhv
-R19
+R26
 R2
 R3
 DEx4 work 6 clkdiv 0 22 NzFBFbTAg5`QeClhW33zK0
-!i122 23
+!i122 39
 l16
 L11 22
 V0FMMLNgC17:oXzY1NI[@?2
@@ -129,30 +170,30 @@ R6
 R7
 !i10b 1
 R8
-R22
-R23
+R29
+R30
 !i113 1
 R11
 R12
 Ecounter
-Z24 w1682540419
+Z31 w1682540419
 R2
 R3
-!i122 24
+!i122 71
 R0
-Z25 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd
-Z26 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd
+Z32 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter.vhd
+Z33 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter.vhd
 l0
 L5 1
 V?BC;0ZmTEQjIo_M<6GGH62
 !s100 Sl55z2OMm;=I1Dlm]=^Fo1
 R6
 32
-R7
+Z34 !s110 1685294909
 !i10b 1
-R8
-Z27 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd|
-Z28 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Counter.vhd|
+Z35 !s108 1685294909.000000
+Z36 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter.vhd|
+Z37 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter.vhd|
 !i113 1
 R11
 R12
@@ -160,40 +201,81 @@ Aarc_cc
 R2
 R3
 DEx4 work 7 counter 0 22 ?BC;0ZmTEQjIo_M<6GGH62
-!i122 24
+!i122 71
 l42
 L13 57
 Vd6O4:ePdWNRVTK0Q>O7jK3
 !s100 RNm74XVCYzlUS_;e=YZNi1
 R6
 32
-R7
+R34
 !i10b 1
-R8
-R27
-R28
+R35
+R36
+R37
+!i113 1
+R11
+R12
+Ecounter_tb
+Z38 w1685294800
+R2
+R3
+!i122 72
+R0
+Z39 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter_tb.vhd
+Z40 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter_tb.vhd
+l0
+L4 1
+VD8SHPHITSb3XUQGNYm1jX0
+!s100 YKeY_I_d@N2Kj2LJcQ68z3
+R6
+32
+R34
+!i10b 1
+R35
+Z41 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter_tb.vhd|
+Z42 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Counter/Counter_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 counter_tb 0 22 D8SHPHITSb3XUQGNYm1jX0
+!i122 72
+l25
+L7 64
+VGI9?LVbmfL`D>:0PE[]`10
+!s100 TVId11[QPz8zX7QUQ2CHD2
+R6
+32
+R34
+!i10b 1
+R35
+R41
+R42
 !i113 1
 R11
 R12
 Edecoder
-Z29 w1679260774
+Z43 w1679260774
 R2
 R3
-!i122 25
+!i122 41
 R0
-Z30 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd
-Z31 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd
+Z44 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd
+Z45 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd
 l0
 L4 1
 V>=z3^iC>N6SEn=Dik;X?Y2
 !s100 l=kRWniPfAZ]C8hACBnW?0
 R6
 32
-R7
+Z46 !s110 1685294562
 !i10b 1
-R8
-Z32 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd|
-Z33 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd|
+Z47 !s108 1685294562.000000
+Z48 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd|
+Z49 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Decoder.vhd|
 !i113 1
 R11
 R12
@@ -201,40 +283,185 @@ Aarc_dec
 R2
 R3
 DEx4 work 7 decoder 0 22 >=z3^iC>N6SEn=Dik;X?Y2
-!i122 25
+!i122 41
 l11
 L10 6
 V[2YB^1FVK2YW@o?OAaIEZ1
 !s100 :gfRj8B]cc@CZ14@ZMh8W3
 R6
 32
-R7
+R46
 !i10b 1
-R8
-R32
-R33
+R47
+R48
+R49
 !i113 1
 R11
 R12
-Edoorcontroller
-Z34 w1682961042
+Edecoder_tb
+R13
 R2
 R3
-!i122 26
+!i122 73
 R0
-Z35 8D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd
-Z36 FD:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd
+Z50 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Decoder/Decoder_tb.vhd
+Z51 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Decoder/Decoder_tb.vhd
+l0
+L4 1
+Vi6iFfY]K`jVClkT^FK^Bf3
+!s100 fY7IWc5JD[Z^VgVFe>5z70
+R6
+32
+Z52 !s110 1685294912
+!i10b 1
+Z53 !s108 1685294912.000000
+Z54 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Decoder/Decoder_tb.vhd|
+Z55 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Decoder/Decoder_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 10 decoder_tb 0 22 i6iFfY]K`jVClkT^FK^Bf3
+!i122 73
+l22
+L7 48
+VhIQIRzNX522W:?52ajDiG2
+!s100 _1V<878c<8bHa@:7WcW1Z3
+R6
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R11
+R12
+Edispatcher
+Z56 w1685294069
+R2
+R3
+!i122 76
+R0
+Z57 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher.vhd
+Z58 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher.vhd
+l0
+L4 1
+Vh[7H9cl4f43ieKkQ<^[0T2
+!s100 80U^O2g6dMz^_GZWfEl4J2
+R6
+32
+Z59 !s110 1685295446
+!i10b 1
+Z60 !s108 1685295446.000000
+Z61 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher.vhd|
+Z62 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 10 dispatcher 0 22 h[7H9cl4f43ieKkQ<^[0T2
+!i122 76
+l16
+L10 34
+V6S=BXE7a`^[3SML>7DnB_2
+!s100 CHA9ooSDdZ4mUn0NUCFlg1
+R6
+32
+R59
+!i10b 1
+R60
+R61
+R62
+!i113 1
+R11
+R12
+Edispatcher_tb
+Z63 w1685295707
+R2
+R3
+!i122 113
+R0
+Z64 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher_tb.vhd
+Z65 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher_tb.vhd
+l0
+L4 1
+VJI8i;3TTBjj3zB`;80WZZ1
+!s100 bIDNHQ^RQe:Tgf2WYZYi63
+R6
+32
+Z66 !s110 1685299719
+!i10b 1
+Z67 !s108 1685299719.000000
+Z68 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher_tb.vhd|
+Z69 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Dispatcher/Dispatcher_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 13 dispatcher_tb 0 22 JI8i;3TTBjj3zB`;80WZZ1
+!i122 113
+l20
+L7 58
+VV[;T?hR3:7RV^^PWP_Q7;1
+!s100 ?Yi;WLX;fWUcVMbU?hUmT3
+R6
+32
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 1
+R11
+R12
+Edoor_mecanism
+R1
+R2
+R3
+!i122 5
+R0
+8D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/door_mecanism.vhd
+FD:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/door_mecanism.vhd
+l0
+L19 1
+VSQhcoj399@7zX_2[;2S9]3
+!s100 <A<L4hBHY<nnAkbOY3hVn2
+R6
+31
+Z70 !s110 1685294222
+!i10b 1
+Z71 !s108 1685294222.000000
+!s90 -reportprogress|300|-93|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/door_mecanism.vhd|
+!s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/door_mecanism.vhd|
+!i113 1
+Z72 o-93 -work work
+R12
+Edoorcontroller
+Z73 w1685296442
+R2
+R3
+!i122 80
+R0
+8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController.vhd
+FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController.vhd
 l0
 L4 1
 Ve6F5=l?4>Qi[nGVi<6U3W1
 !s100 o9M6OC4b:XBaB2j]9MOc93
 R6
 32
-R7
+Z74 !s110 1685296463
 !i10b 1
-R8
-Z37 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd|
-Z38 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd|
+Z75 !s108 1685296463.000000
+!s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController.vhd|
+!s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController.vhd|
 !i113 1
 R11
 R12
@@ -242,40 +469,83 @@ Aarc
 R2
 R3
 DEx4 work 14 doorcontroller 0 22 e6F5=l?4>Qi[nGVi<6U3W1
-!i122 26
+!i122 43
 l18
-L12 49
-V:Edf`:ZCS38?bF@?]SX^D0
-!s100 0Yk;mj`V4VaQKUJLE^Ibn0
+L12 50
+Vf1MA5BM2T4n68n7]SQBAU3
+!s100 6NWc2:dY_=?_;hYVPAD_D0
 R6
 32
-R7
+R46
 !i10b 1
-R8
-R37
-R38
+R47
+!s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd|
+!s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd|
+!i113 1
+R11
+R12
+FD:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd
+8D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorController.vhd
+Edoorcontroller_tb
+R13
+R2
+R3
+!i122 81
+R0
+Z76 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController_tb.vhd
+Z77 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController_tb.vhd
+l0
+L4 1
+V6H[3EoA2NN?3GKXi?BMSl0
+!s100 F1lmPU9oePU_SfGGD40dX0
+R6
+32
+R74
+!i10b 1
+R75
+Z78 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController_tb.vhd|
+Z79 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/DoorController/DoorController_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 17 doorcontroller_tb 0 22 6H[3EoA2NN?3GKXi?BMSl0
+!i122 81
+l23
+L7 92
+V>ZojV6TOd4SNEIHiJK;6l1
+!s100 6C[nG>9En8`L[in>IjjcA0
+R6
+32
+R74
+!i10b 1
+R75
+R78
+R79
 !i113 1
 R11
 R12
 Effd
-R18
+Z80 w1685294433
 R2
 R3
-!i122 27
+!i122 44
 R0
-Z39 8D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd
-Z40 FD:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd
+Z81 8D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd
+Z82 FD:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd
 l0
 L4 1
 VK0>GGe0l_^fU6VFA?[c602
 !s100 7zIA7N0c8k?G4DH:]Q7>;3
 R6
 32
-Z41 !s110 1685049456
+R46
 !i10b 1
-R8
-Z42 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd|
-Z43 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd|
+R47
+Z83 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd|
+Z84 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/FFD.vhd|
 !i113 1
 R11
 R12
@@ -283,18 +553,59 @@ Alogicfunction
 R2
 R3
 DEx4 work 3 ffd 0 22 K0>GGe0l_^fU6VFA?[c602
-!i122 27
+!i122 44
 l16
 L14 9
-Vk;ih;aeijF1TF;GEL5B6T0
-!s100 EbhLHDh93W5h:OfQP8>M81
+V;10A@_l0aU6egj47Uai:`2
+!s100 9eb2@UB2XHjVDJiEgMh7D2
 R6
 32
-R41
+R46
 !i10b 1
-R8
-R42
-R43
+R47
+R83
+R84
+!i113 1
+R11
+R12
+Effd_tb
+R13
+R2
+R3
+!i122 82
+R0
+Z85 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/FFD/FFD_tb.vhd
+Z86 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/FFD/FFD_tb.vhd
+l0
+L4 1
+VeS2CNOhOQ`l2`BG=<acGn1
+!s100 3G_HkLD5SSdB]0kz;chlj0
+R6
+32
+Z87 !s110 1685296559
+!i10b 1
+Z88 !s108 1685296558.000000
+Z89 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/FFD/FFD_tb.vhd|
+Z90 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/FFD/FFD_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 6 ffd_tb 0 22 eS2CNOhOQ`l2`BG=<acGn1
+!i122 82
+l26
+Z91 L7 65
+Vb17Z7POL?cl67K46ZQ7io0
+!s100 fK]n;5@4QV2:a?1@gZ3403
+R6
+32
+R87
+!i10b 1
+R88
+R89
+R90
 !i113 1
 R11
 R12
@@ -302,21 +613,21 @@ Efull_add
 R1
 R2
 R3
-!i122 28
+!i122 45
 R0
-Z44 8D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd
-Z45 FD:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd
+Z92 8D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd
+Z93 FD:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd
 l0
 L4 1
 VT_aWQ1K@id`F[A<??:o7]2
 !s100 >9UQeLd:PHRPfeBTh5W020
 R6
 32
-R41
+R46
 !i10b 1
-Z46 !s108 1685049456.000000
-Z47 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd|
-Z48 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd|
+R47
+Z94 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd|
+Z95 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/full_add.vhd|
 !i113 1
 R11
 R12
@@ -324,40 +635,122 @@ Aarc_fa
 R2
 R3
 DEx4 work 8 full_add 0 22 T_aWQ1K@id`F[A<??:o7]2
-!i122 28
+!i122 45
 l10
 L9 5
 V8;A^f:mPEj:D1Ih?cYnM70
 !s100 F[;2UNI:BCPIWb_6>:=j72
 R6
 32
-R41
-!i10b 1
 R46
+!i10b 1
 R47
-R48
+R94
+R95
+!i113 1
+R11
+R12
+Efull_adder
+R1
+R2
+R3
+!i122 1
+R0
+Z96 8D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/full_adder.vhd
+Z97 FD:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/full_adder.vhd
+l0
+Z98 L20 1
+VGU04>i@czPD]9K<b;?:EE0
+!s100 1e37@n0jfh6j;R5PaQ2lM2
+R6
+31
+R70
+!i10b 1
+R71
+Z99 !s90 -reportprogress|300|-93|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/full_adder.vhd|
+Z100 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/full_adder.vhd|
+!i113 1
+R72
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 full_adder 0 22 GU04>i@czPD]9K<b;?:EE0
+!i122 1
+l32
+L30 6
+VGWRB?K1aOlab7m[C_Y;kQ1
+!s100 nbZjN2c8XN1<]<@[4ac2d2
+R6
+31
+R70
+!i10b 1
+R71
+R99
+R100
+!i113 1
+R72
+R12
+Efull_adder_tb
+Z101 w1685296929
+R2
+R3
+!i122 87
+R0
+Z102 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/full_adder/full_adder_tb.vhd
+Z103 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/full_adder/full_adder_tb.vhd
+l0
+L4 1
+VAHT2lUoMV>9CMNDoe<35i1
+!s100 6G4Df5hoYKk5ZLmN7e:X>1
+R6
+32
+Z104 !s110 1685296938
+!i10b 1
+Z105 !s108 1685296938.000000
+Z106 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/full_adder/full_adder_tb.vhd|
+Z107 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/full_adder/full_adder_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 13 full_adder_tb 0 22 AHT2lUoMV>9CMNDoe<35i1
+!i122 87
+l20
+L7 43
+VGe@8aX3:>J_H]EOCok5RT2
+!s100 a[9^gz3:8ld98jX1jWaK33
+R6
+32
+R104
+!i10b 1
+R105
+R106
+R107
 !i113 1
 R11
 R12
 Ekeyboardreader
-R13
+R20
 R2
 R3
-!i122 29
+!i122 46
 R0
-Z49 8D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd
-Z50 FD:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd
+Z108 8D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd
+Z109 FD:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd
 l0
 L4 1
 VXa1D@n>zJddFNdeTIl?M>0
 !s100 ;DHSgZ7ZaZni65GJ0C>TM1
 R6
 32
-R41
-!i10b 1
 R46
-Z51 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd|
-Z52 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd|
+!i10b 1
+R47
+Z110 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd|
+Z111 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyboardReader.vhd|
 !i113 1
 R11
 R12
@@ -365,81 +758,40 @@ Akr
 R2
 R3
 DEx4 work 14 keyboardreader 0 22 Xa1D@n>zJddFNdeTIl?M>0
-!i122 29
+!i122 46
 l42
 L13 61
 V`XzGC`9=7Ga`HD?Ia4@DU1
 !s100 ffZmb5A_o1Wdb[oMnbfGB3
 R6
 32
-R41
-!i10b 1
 R46
-R51
-R52
-!i113 1
-R11
-R12
-Ekeyboardreader_tb
-R13
-R2
-R3
-!i122 20
-R0
-Z53 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
-Z54 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd
-l0
-L4 1
-VR8Ti6k=z49]:z1LkKRd:b3
-!s100 ahEhC_F6ON]6kQQ:Hl0iT3
-R6
-32
-Z55 !s110 1685049230
 !i10b 1
-Z56 !s108 1685049230.000000
-Z57 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd|
-Z58 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega2/KeyboardReader/KeyboardReader_tb.vhd|
-!i113 1
-R11
-R12
-Aarc
-R2
-R3
-DEx4 work 17 keyboardreader_tb 0 22 R8Ti6k=z49]:z1LkKRd:b3
-!i122 20
-l25
-L7 140
-VOm5?zdh^VQLVj5hSXN7Y[3
-!s100 Mf5TThRTC?hzgk>n?k>Z@1
-R6
-32
-R55
-!i10b 1
-R56
-R57
-R58
+R47
+R110
+R111
 !i113 1
 R11
 R12
 Ekeycontrol
-R13
+Z112 w1685306052
 R2
 R3
-!i122 30
+!i122 126
 R0
-Z59 8D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyControl.vhd
-Z60 FD:/ISEL/2223/LEIC/s2/LIC/Testes/KeyControl.vhd
+Z113 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl.vhd
+Z114 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl.vhd
 l0
 L4 1
 VR0Oz80g@[3M21l1nP2V503
 !s100 3EPcmB7@X_7jmkUiRd?3:1
 R6
 32
-R41
+Z115 !s110 1685306058
 !i10b 1
-R46
-Z61 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyControl.vhd|
-Z62 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyControl.vhd|
+Z116 !s108 1685306057.000000
+Z117 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl.vhd|
+Z118 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl.vhd|
 !i113 1
 R11
 R12
@@ -447,40 +799,81 @@ Aarckc
 R2
 R3
 DEx4 work 10 keycontrol 0 22 R0Oz80g@[3M21l1nP2V503
-!i122 30
+!i122 126
 l16
 L10 33
-V@VhSSOH;CBGnM=0g6DacU2
-!s100 2g54?2G^nOf;L[PoPSdcb1
+VFSZhDZgj58TnkOZ2<zMB^0
+!s100 >BUK^YeJ2z:26jWNclaUO1
 R6
 32
-R41
+R115
 !i10b 1
-R46
-R61
-R62
+R116
+R117
+R118
+!i113 1
+R11
+R12
+Ekeycontrol_tb
+Z119 w1685306077
+R2
+R3
+!i122 127
+R0
+Z120 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl_tb.vhd
+Z121 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl_tb.vhd
+l0
+L4 1
+VP:KkhK[D:HRY_ccMG2YZQ3
+!s100 DSFWIMYhA1;?gQ0fAQeSO1
+R6
+32
+Z122 !s110 1685306083
+!i10b 1
+Z123 !s108 1685306083.000000
+Z124 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl_tb.vhd|
+Z125 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyControl/KeyControl_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 13 keycontrol_tb 0 22 P:KkhK[D:HRY_ccMG2YZQ3
+!i122 127
+l21
+Z126 L7 54
+V]a3bRm3`7l^R6mZiSB>Pf2
+!s100 L?5]@^n7ElOdaK;Hm3zfY0
+R6
+32
+R122
+!i10b 1
+R123
+R124
+R125
 !i113 1
 R11
 R12
 Ekeydecode
-Z63 w1685049440
+Z127 w1685050168
 R2
 R3
-!i122 31
+!i122 137
 R0
-Z64 8D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyDecode.vhd
-Z65 FD:/ISEL/2223/LEIC/s2/LIC/Testes/KeyDecode.vhd
+Z128 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode.vhd
+Z129 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode.vhd
 l0
 L4 1
 V^WLEaQ27g@5_GJV3R;PJ<2
 !s100 ojbGgVV9ZiO3Q?18n55jn2
 R6
 32
-R41
+Z130 !s110 1685309734
 !i10b 1
-R46
-Z66 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyDecode.vhd|
-Z67 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyDecode.vhd|
+Z131 !s108 1685309734.000000
+Z132 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode.vhd|
+Z133 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode.vhd|
 !i113 1
 R11
 R12
@@ -488,40 +881,81 @@ Aarc_kd
 R2
 R3
 DEx4 work 9 keydecode 0 22 ^WLEaQ27g@5_GJV3R;PJ<2
-!i122 31
+!i122 137
 l37
 L13 49
-VY2Qi166@9_YaI_49IX[ER3
-!s100 K[nAJaES^L]ozEiSBz?cT3
+VD7<;5omf7fM9ad>65Do;]1
+!s100 Pbn<8iU_=dHU8<^ESjR=W2
 R6
 32
-R41
+R130
 !i10b 1
-R46
-R66
-R67
+R131
+R132
+R133
+!i113 1
+R11
+R12
+Ekeydecode_tb
+Z134 w1685310317
+R2
+R3
+!i122 145
+R0
+Z135 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode_tb.vhd
+Z136 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode_tb.vhd
+l0
+L4 1
+VM1D5C2]ze>?QeAE]eZDH51
+!s100 NfFe>bVaRmgh9n?<I]]Ka3
+R6
+32
+Z137 !s110 1685310322
+!i10b 1
+Z138 !s108 1685310322.000000
+Z139 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode_tb.vhd|
+Z140 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyDecode/KeyDecode_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z141 DEx4 work 12 keydecode_tb 0 22 M1D5C2]ze>?QeAE]eZDH51
+!i122 145
+l27
+L7 60
+VISiMMJo?Z0:lfLAM79do33
+!s100 O<^N<Pnd9i64:llPeVND:0
+R6
+32
+R137
+!i10b 1
+R138
+R139
+R140
 !i113 1
 R11
 R12
 Ekeyscan
-R13
+R20
 R2
 R3
-!i122 32
+!i122 130
 R0
-Z68 8D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd
-Z69 FD:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd
+Z142 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan.vhd
+Z143 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan.vhd
 l0
 L4 1
 VD?CzD;YK0509^m6bZK=>g1
 !s100 lmi^Ya:7kAIWn=l^IN_P@0
 R6
 32
-R41
+Z144 !s110 1685306243
 !i10b 1
-R46
-Z70 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd|
-Z71 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/KeyScan.vhd|
+Z145 !s108 1685306243.000000
+Z146 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan.vhd|
+Z147 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan.vhd|
 !i113 1
 R11
 R12
@@ -529,40 +963,81 @@ Aarc_keyscan
 R2
 R3
 DEx4 work 7 keyscan 0 22 D?CzD;YK0509^m6bZK=>g1
-!i122 32
+!i122 130
 l40
 L13 53
 VK2ZAXjeTE5[L5A?oaNVT03
 !s100 1kVjFXcJhV49^M>;]^e_Q3
 R6
 32
-R41
+R144
 !i10b 1
-R46
-R70
-R71
+R145
+R146
+R147
+!i113 1
+R11
+R12
+Ekeyscan_tb
+Z148 w1685306523
+R2
+R3
+!i122 136
+R0
+Z149 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan_tb.vhd
+Z150 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan_tb.vhd
+l0
+L4 1
+VPec9`L;NiGa;M^lF4<eFm1
+!s100 a>i<b[ibDIciEZ0<S6DS32
+R6
+32
+Z151 !s110 1685306528
+!i10b 1
+Z152 !s108 1685306528.000000
+Z153 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan_tb.vhd|
+Z154 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/KeyScan/KeyScan_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 10 keyscan_tb 0 22 Pec9`L;NiGa;M^lF4<eFm1
+!i122 136
+l27
+Z155 L7 66
+VY6V:T4H9A^?`fO<Vik3C91
+!s100 VF5Z7N61INAI5YBfcHOE60
+R6
+32
+R151
+!i10b 1
+R152
+R153
+R154
 !i113 1
 R11
 R12
 Elcddispatcher
-R24
+Z156 w1685300044
 R2
 R3
-!i122 33
+!i122 116
 R0
-Z72 8D:/ISEL/2223/LEIC/s2/LIC/Testes/LCDDispatcher.vhd
-Z73 FD:/ISEL/2223/LEIC/s2/LIC/Testes/LCDDispatcher.vhd
+Z157 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher.vhd
+Z158 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher.vhd
 l0
 L4 1
 Va^z`jghD<T9>PoE_CkSEN1
 !s100 mIL@?j0YhPm[M9zR5GkGl3
 R6
 32
-Z74 !s110 1685049457
+Z159 !s110 1685300053
 !i10b 1
-R46
-Z75 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/LCDDispatcher.vhd|
-Z76 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/LCDDispatcher.vhd|
+Z160 !s108 1685300053.000000
+Z161 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher.vhd|
+Z162 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher.vhd|
 !i113 1
 R11
 R12
@@ -570,40 +1045,81 @@ Aarc_lcdd
 R2
 R3
 DEx4 work 13 lcddispatcher 0 22 a^z`jghD<T9>PoE_CkSEN1
-!i122 33
-l33
-L12 60
-VcCgPdKJdFnW81RdNK8:]G2
-!s100 cZk6T;Nzg_<`PQUm<kT5>2
+!i122 116
+l30
+L12 45
+V`oZVZk>@DDEZZk6L8YF?Z0
+!s100 zMhR?=CgY6K<C3VfM1N?G1
 R6
 32
-R74
+R159
 !i10b 1
-R46
-R75
-R76
+R160
+R161
+R162
+!i113 1
+R11
+R12
+Elcddispatcher_tb
+Z163 w1685297549
+R2
+R3
+!i122 115
+R0
+Z164 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher_tb.vhd
+Z165 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher_tb.vhd
+l0
+L4 1
+VzozQi0W@7dXc;AFFWdS<e3
+!s100 QdRFBRS71ZOUA1>1cAG^Q3
+R6
+32
+Z166 !s110 1685299834
+!i10b 1
+Z167 !s108 1685299834.000000
+Z168 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher_tb.vhd|
+Z169 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/LCDDispatcher/LCDDispatcher_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 16 lcddispatcher_tb 0 22 zozQi0W@7dXc;AFFWdS<e3
+!i122 115
+l23
+R126
+Vk]WGJC18PE]OXGBI=JaGa3
+!s100 Az=UJ`DbaFgk7>`ZJ<^`[2
+R6
+32
+R166
+!i10b 1
+R167
+R168
+R169
 !i113 1
 R11
 R12
 Ememoryaddresscontrol
-R13
+R20
 R2
 R3
-!i122 34
+!i122 51
 R0
-Z77 8D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd
-Z78 FD:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd
+Z170 8D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd
+Z171 FD:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd
 l0
 L4 1
 VAV1<l_V2eJ[8^:8>GfaQn2
 !s100 lNX_le<TCO;o3=<48OP<U1
 R6
 32
-R74
+R46
 !i10b 1
-Z79 !s108 1685049457.000000
-Z80 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd|
-Z81 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd|
+R47
+Z172 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd|
+Z173 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/MemoryAddressControl.vhd|
 !i113 1
 R11
 R12
@@ -611,40 +1127,40 @@ Aarc
 R2
 R3
 DEx4 work 20 memoryaddresscontrol 0 22 AV1<l_V2eJ[8^:8>GfaQn2
-!i122 34
+!i122 51
 l29
 L11 53
 VUSMJ9ZXM4Jh70]L1mejU50
 !s100 Q;o1@hz6cQTbSRX]VoMih1
 R6
 32
-R74
+R46
 !i10b 1
-R79
-R80
-R81
+R47
+R172
+R173
 !i113 1
 R11
 R12
 Emux2x1
-R18
+R25
 R2
 R3
-!i122 35
+!i122 52
 R0
-Z82 8D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd
-Z83 FD:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd
+Z174 8D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd
+Z175 FD:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd
 l0
 L4 1
 V3aI=P;ZmCZR;=BJfT18Xm1
 !s100 KJW7OzjElD@@f=Hl3mClA0
 R6
 32
-R74
+R46
 !i10b 1
-R79
-Z84 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd|
-Z85 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd|
+R47
+Z176 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd|
+Z177 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX2x1.vhd|
 !i113 1
 R11
 R12
@@ -652,40 +1168,81 @@ Aarc_mux
 R2
 R3
 DEx4 work 6 mux2x1 0 22 3aI=P;ZmCZR;=BJfT18Xm1
-!i122 35
+!i122 52
 l11
-Z86 L10 7
+Z178 L10 7
 VB:WVVM>4?5d`X_PAElG=o2
 !s100 oa`RnifN@5MmUD`5^5m=m2
 R6
 32
-R74
+R46
 !i10b 1
-R79
-R84
-R85
+R47
+R176
+R177
+!i113 1
+R11
+R12
+Emux2x1_tb
+Z179 w1685297686
+R2
+R3
+!i122 96
+R0
+Z180 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX2x1/MUX2x1_tb.vhd
+Z181 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX2x1/MUX2x1_tb.vhd
+l0
+L4 1
+VU6;4TDa4QIMd?=KnC?FGn3
+!s100 2Mhc;MYDIGLXQg[J`k:f>3
+R6
+32
+Z182 !s110 1685297698
+!i10b 1
+Z183 !s108 1685297698.000000
+Z184 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX2x1/MUX2x1_tb.vhd|
+Z185 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX2x1/MUX2x1_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 9 mux2x1_tb 0 22 U6;4TDa4QIMd?=KnC?FGn3
+!i122 96
+l23
+L7 40
+VilaM9n:2o:c`6VV]Yfb]c1
+!s100 QLJ926oYU;E15]XNG50FD3
+R6
+32
+R182
+!i10b 1
+R183
+R184
+R185
 !i113 1
 R11
 R12
 Emux4x1
-R29
+R43
 R2
 R3
-!i122 36
+!i122 53
 R0
-Z87 8D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd
-Z88 FD:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd
+Z186 8D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd
+Z187 FD:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd
 l0
 L4 1
 VBP4NibKT7X=aOL<J@a0F40
 !s100 9mC]W77UVLgPWTdlDUN>O0
 R6
 32
-R74
+Z188 !s110 1685294563
 !i10b 1
-R79
-Z89 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd|
-Z90 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd|
+R47
+Z189 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd|
+Z190 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/MUX4x1.vhd|
 !i113 1
 R11
 R12
@@ -693,40 +1250,81 @@ Aarc_mux
 R2
 R3
 DEx4 work 6 mux4x1 0 22 BP4NibKT7X=aOL<J@a0F40
-!i122 36
+!i122 53
 l11
-R86
+R178
 Vo]l4YcS]ZcPP;TFegaUed3
 !s100 >5<L=?@;3F]ZPG`VLjXeh1
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R89
-R90
+R47
+R189
+R190
+!i113 1
+R11
+R12
+Emux4x1_tb
+Z191 w1685297932
+R2
+R3
+!i122 101
+R0
+Z192 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX4x1/MUX4x1_tb.vhd
+Z193 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX4x1/MUX4x1_tb.vhd
+l0
+L4 1
+V92[H7>7T6F]79Ua5z`biC2
+!s100 oZHBUJ=m=aNeiP:^k3DiI1
+R6
+32
+Z194 !s110 1685297938
+!i10b 1
+Z195 !s108 1685297938.000000
+Z196 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX4x1/MUX4x1_tb.vhd|
+Z197 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/MUX4x1/MUX4x1_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 9 mux4x1_tb 0 22 92[H7>7T6F]79Ua5z`biC2
+!i122 101
+l24
+L7 50
+VU?eD:bNeH^jJ2e9M`0z<U3
+!s100 ?XIIH1k4X]fEC`BBEOhVV1
+R6
+32
+R194
+!i10b 1
+R195
+R196
+R197
 !i113 1
 R11
 R12
 Eoutputbuffer
-R13
+R20
 R2
 R3
-!i122 37
+!i122 54
 R0
-Z91 8D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd
-Z92 FD:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd
+Z198 8D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd
+Z199 FD:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd
 l0
 L4 1
 VQa9AYLC>D1R0Ff3KdYCJ53
 !s100 4;C6RaR?14@V3JNeTo_CV0
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z93 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd|
-Z94 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd|
+Z200 !s108 1685294563.000000
+Z201 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd|
+Z202 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/OutputBuffer.vhd|
 !i113 1
 R11
 R12
@@ -734,83 +1332,124 @@ Aarc
 R2
 R3
 DEx4 work 12 outputbuffer 0 22 Qa9AYLC>D1R0Ff3KdYCJ53
-!i122 37
+!i122 54
 l28
 L12 34
 VUGUaU177@P3Xg9C:BZQBF1
 !s100 =FRcUboiRaC2YRNRmEGDD0
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R93
-R94
+R200
+R201
+R202
 !i113 1
 R11
 R12
 Eram
 R1
-Z95 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z203 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R2
 R3
-!i122 38
+!i122 55
 R0
-Z96 8D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd
-Z97 FD:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd
+Z204 8D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd
+Z205 FD:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd
 l0
 L21 1
 VQJJ77cBd5c9FS?DZch@k03
 !s100 ?Nkfo<:[8oQFCSE2S@UW]1
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z98 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd|
-Z99 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd|
+R200
+Z206 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd|
+Z207 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/RAM.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R95
+R203
 R2
 R3
 DEx4 work 3 ram 0 22 QJJ77cBd5c9FS?DZch@k03
-!i122 38
+!i122 55
 l39
 L34 17
 V]>fRCRHcKRZTVoT7n=[>j3
 !s100 ]KDBZXJbb?dk<NB0hQ_ZP0
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R98
-R99
+R200
+R206
+R207
 !i113 1
 R11
 R12
-Eregistry
-R24
+Eregister_d_e_r_value
+R1
 R2
 R3
-!i122 39
+!i122 4
 R0
-Z100 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd
-Z101 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd
+Z208 8D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd
+Z209 FD:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd
+l0
+R98
+V^Z<FNR^NFMXjlAdG9S[4o0
+!s100 ]QF_QdjEcoAVf^kk2]M8_1
+R6
+31
+R70
+!i10b 1
+R71
+Z210 !s90 -reportprogress|300|-93|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd|
+Z211 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd|
+!i113 1
+R72
+R12
+Abehavioral
+R2
+R3
+DEx4 work 20 register_d_e_r_value 0 22 ^Z<FNR^NFMXjlAdG9S[4o0
+!i122 4
+l36
+L34 14
+V2:0H@cnUEc]<d26A]VjkQ3
+!s100 6J[X^Td`Q9HlaTXGG6BO:2
+R6
+31
+R70
+!i10b 1
+R71
+R210
+R211
+!i113 1
+R72
+R12
+Eregistry
+R31
+R2
+R3
+!i122 56
+R0
+Z212 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd
+Z213 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd
 l0
 L4 1
 VNE[?16_D3C^D6>D1A=?em2
 !s100 ]bLmm0h8AL?zCGMGJN]D93
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z102 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd|
-Z103 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd|
+R200
+Z214 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd|
+Z215 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Registry.vhd|
 !i113 1
 R11
 R12
@@ -818,40 +1457,81 @@ Aarc_reg
 R2
 R3
 DEx4 work 8 registry 0 22 NE[?16_D3C^D6>D1A=?em2
-!i122 39
+!i122 56
 l22
 L11 46
 V1A>?d06?=463Z;e>;?BoQ3
 !s100 a>B<T8k??n>I_NFKUAV560
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R102
-R103
+R200
+R214
+R215
+!i113 1
+R11
+R12
+Eregistry_tb
+Z216 w1685298064
+R2
+R3
+!i122 104
+R0
+Z217 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Registry/Registry_tb.vhd
+Z218 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Registry/Registry_tb.vhd
+l0
+L4 1
+VbL5_7F?DmChI<__lgb?1:0
+!s100 ?n4llUB=OKjac`>=IdH@n1
+R6
+32
+Z219 !s110 1685298071
+!i10b 1
+Z220 !s108 1685298071.000000
+Z221 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Registry/Registry_tb.vhd|
+Z222 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Registry/Registry_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 11 registry_tb 0 22 bL5_7F?DmChI<__lgb?1:0
+!i122 104
+l25
+R91
+VzO<EjY]BHk]b]S@GGH8_^3
+!s100 JL?;^QJ3nL?Z7oA6ZUj:=0
+R6
+32
+R219
+!i10b 1
+R220
+R221
+R222
 !i113 1
 R11
 R12
 Eringbuffer
-R13
+R20
 R2
 R3
-!i122 40
+!i122 57
 R0
-Z104 8D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd
-Z105 FD:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd
+Z223 8D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd
+Z224 FD:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd
 l0
 L4 1
 VO>U^Le:1zzomnahnTbEg^0
 !s100 ikzU2A74Jn8Snn=j;czMC1
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z106 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd|
-Z107 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd|
+R200
+Z225 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd|
+Z226 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBuffer.vhd|
 !i113 1
 R11
 R12
@@ -859,40 +1539,40 @@ Aarc
 R2
 R3
 DEx4 work 10 ringbuffer 0 22 O>U^Le:1zzomnahnTbEg^0
-!i122 40
+!i122 57
 l41
 L12 61
 V?M@VSc:;_nm:]8:]3nY3i2
 !s100 ?OfZjNJVK_]7hQQ;]JR_i1
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R106
-R107
+R200
+R225
+R226
 !i113 1
 R11
 R12
 Eringbuffercontrol
-Z108 w1684869533
+R13
 R2
 R3
-!i122 41
+!i122 58
 R0
-Z109 8D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd
-Z110 FD:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd
+Z227 8D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd
+Z228 FD:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd
 l0
 L4 1
 VADH70a1MGZ9E0^^`9I1>C3
 !s100 iCR^4FS;hnRjA]@a6SF023
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z111 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd|
-Z112 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd|
+R200
+Z229 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd|
+Z230 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/RingBufferControl.vhd|
 !i113 1
 R11
 R12
@@ -900,62 +1580,62 @@ Aarc
 R2
 R3
 DEx4 work 17 ringbuffercontrol 0 22 ADH70a1MGZ9E0^^`9I1>C3
-!i122 41
+!i122 58
 l16
 L10 42
 VG=:^DAe62IlFg`S_ZEACg0
 !s100 X[kAPdGZVS@bZd0BjGmlT3
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R111
-R112
+R200
+R229
+R230
 !i113 1
 R11
 R12
 Esca
-R13
+w1685279506
 R2
 R3
-!i122 42
+!i122 59
 R0
 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd
 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd
 l0
 L4 1
-V;6IR?n6ORSXcmVE=z@IPR2
-!s100 5=YIaX[hX3jR89DGoPnLP2
+VI@R4V7PR;mZdGb2l[7?UK2
+!s100 >jZ2GJWiNe<kbXSYIF?Ci1
 R6
 32
-R74
+R188
 !i10b 1
-R79
+R200
 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd|
 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SCA.vhd|
 !i113 1
 R11
 R12
 Esdc
-R34
+Z231 w1682961042
 R2
 R3
-!i122 43
+!i122 60
 R0
-Z113 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd
-Z114 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd
+Z232 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd
+Z233 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd
 l0
 L4 1
 Vj>n`k[SlBFfY8[C6_ZbM:1
 !s100 2o2R0LoGdCR]gHnzJSzSk2
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z115 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd|
-Z116 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd|
+R200
+Z234 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd|
+Z235 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SDC.vhd|
 !i113 1
 R11
 R12
@@ -963,40 +1643,81 @@ Aarc
 R2
 R3
 DEx4 work 3 sdc 0 22 j>n`k[SlBFfY8[C6_ZbM:1
-!i122 43
+!i122 60
 l30
 L11 44
 V=of^zS2oKY:z04=]z<lX12
 !s100 ng1eMeBWiWI`9XSGoaSRU2
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R115
-R116
+R200
+R234
+R235
+!i113 1
+R11
+R12
+Esdc_tb
+Z236 w1685298259
+R2
+R3
+!i122 107
+R0
+Z237 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SDC/SDC_tb.vhd
+Z238 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SDC/SDC_tb.vhd
+l0
+L4 1
+V<9@S`N?S?lKkF@XJJ_[To0
+!s100 ]U:M<GH?Y2hD1SW13R7Hl1
+R6
+32
+Z239 !s110 1685298264
+!i10b 1
+Z240 !s108 1685298264.000000
+Z241 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SDC/SDC_tb.vhd|
+Z242 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SDC/SDC_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 6 sdc_tb 0 22 <9@S`N?S?lKkF@XJJ_[To0
+!i122 107
+l22
+L7 155
+VYLTRTPBzHgIF4hE>639a40
+!s100 ?>[?:gzYlzbKi43L_N[B<0
+R6
+32
+R239
+!i10b 1
+R240
+R241
+R242
 !i113 1
 R11
 R12
 Eserialcontrol
-R34
+R231
 R2
 R3
-!i122 44
+!i122 61
 R0
-Z117 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd
-Z118 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd
+Z243 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd
+Z244 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd
 l0
 L3 1
 V>_>c9j^5AM94=S3eUOMz11
 !s100 OC^jcW>8@195NQckDCdH41
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z119 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd|
-Z120 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd|
+R200
+Z245 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd|
+Z246 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialControl.vhd|
 !i113 1
 R11
 R12
@@ -1004,40 +1725,81 @@ Aarc_sc
 R2
 R3
 DEx4 work 13 serialcontrol 0 22 >_>c9j^5AM94=S3eUOMz11
-!i122 44
+!i122 61
 l15
 L9 43
 V1PK^H`W9XONV@:]LeJnh`2
 !s100 H?dh?UUM;mG6gKZ237L^33
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R119
-R120
+R200
+R245
+R246
+!i113 1
+R11
+R12
+Eserialcontrol_tb
+Z247 w1685298568
+R2
+R3
+!i122 110
+R0
+Z248 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialControl/SerialControl_tb.vhd
+Z249 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialControl/SerialControl_tb.vhd
+l0
+L4 1
+VHE1jM;cG:;o8O2LJUF6>E3
+!s100 =dO2Ae_mR:VB5^J1GOoo20
+R6
+32
+Z250 !s110 1685298575
+!i10b 1
+Z251 !s108 1685298575.000000
+Z252 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialControl/SerialControl_tb.vhd|
+Z253 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialControl/SerialControl_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 16 serialcontrol_tb 0 22 HE1jM;cG:;o8O2LJUF6>E3
+!i122 110
+l20
+R155
+VHMP[EhIj;4T_=il[3j>^?3
+!s100 _k4b]@=3edUZolE48NS8l2
+R6
+32
+R250
+!i10b 1
+R251
+R252
+R253
 !i113 1
 R11
 R12
 Eserialreceiver
-R34
+R231
 R2
 R3
-!i122 45
+!i122 62
 R0
-Z121 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd
-Z122 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd
+Z254 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd
+Z255 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd
 l0
 L4 1
 V]14QoSEX1Ho;78Nk9KO6T2
 !s100 7<Z28fF4GD3OQHXDPWI6Q3
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z123 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd|
-Z124 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd|
+R200
+Z256 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd|
+Z257 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SerialReceiver.vhd|
 !i113 1
 R11
 R12
@@ -1045,40 +1807,81 @@ Aarc_sr
 R2
 R3
 DEx4 work 14 serialreceiver 0 22 ]14QoSEX1Ho;78Nk9KO6T2
-!i122 45
+!i122 62
 l35
 L11 56
 VNWASMj;V@LfX`m5PF<dKJ0
 !s100 2A17bVfohgQ64XO=@me181
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R123
-R124
+R200
+R256
+R257
+!i113 1
+R11
+R12
+Eserialreceiver_tb
+Z258 w1685298905
+R2
+R3
+!i122 112
+R0
+Z259 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialReceiver/SerialReceiver_tb.vhd
+Z260 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialReceiver/SerialReceiver_tb.vhd
+l0
+L4 1
+VllXQTn7`34>2Kf6Df^olG0
+!s100 oc3^DF^3SLlHkb=I:N5TU3
+R6
+32
+Z261 !s110 1685298910
+!i10b 1
+Z262 !s108 1685298910.000000
+Z263 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialReceiver/SerialReceiver_tb.vhd|
+Z264 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SerialReceiver/SerialReceiver_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 17 serialreceiver_tb 0 22 llXQTn7`34>2Kf6Df^olG0
+!i122 112
+l22
+L7 95
+VHIz7kOeY5C^JV<DgWOO6V0
+!s100 c6C7LGfN7A_RhNPFY2fAZ0
+R6
+32
+R261
+!i10b 1
+R262
+R263
+R264
 !i113 1
 R11
 R12
 Eshiftregister
-Z125 w1682418127
+Z265 w1682418127
 R2
 R3
-!i122 46
+!i122 63
 R0
-Z126 8D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd
-Z127 FD:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd
+Z266 8D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd
+Z267 FD:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd
 l0
 L4 1
 VU]aDn]M?JYKB7Jjmfebgo0
 !s100 [TWX;8UIL73V5[=QQ9U0H0
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z128 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd|
-Z129 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd|
+R200
+Z268 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd|
+Z269 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/ShiftRegister.vhd|
 !i113 1
 R11
 R12
@@ -1086,40 +1889,122 @@ Aarc_sr
 R2
 R3
 DEx4 work 13 shiftregister 0 22 U]aDn]M?JYKB7Jjmfebgo0
-!i122 46
+!i122 63
 l23
 L10 62
 Vg3afXZF?GU_;g>97Woo9I1
 !s100 Jc3oUTRU0g]VDJOo6EY601
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R128
-R129
+R200
+R268
+R269
+!i113 1
+R11
+R12
+Eshiftregister_lr
+R1
+R2
+R3
+!i122 3
+R0
+Z270 8D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd
+Z271 FD:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd
+l0
+R98
+V<>:fT>fh>DL7e_cj5fAXU3
+!s100 72dh>lCRKX0UbX>D<oV]32
+R6
+31
+R70
+!i10b 1
+R71
+Z272 !s90 -reportprogress|300|-93|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd|
+Z273 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd|
+!i113 1
+R72
+R12
+Astructural
+R2
+R3
+DEx4 work 16 shiftregister_lr 0 22 <>:fT>fh>DL7e_cj5fAXU3
+!i122 3
+l46
+L27 33
+V^BHkf2A_K:OUHf44:M=210
+!s100 n`hkJWfS4=bY[Z5m4][BQ3
+R6
+31
+R70
+!i10b 1
+R71
+R272
+R273
+!i113 1
+R72
+R12
+Eshiftregister_tb
+R13
+R2
+R3
+!i122 117
+R0
+Z274 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/ShiftRegister/ShiftRegister_tb.vhd
+Z275 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/ShiftRegister/ShiftRegister_tb.vhd
+l0
+L4 1
+VZgVJ5dfmiE8ileHL_U4Xk1
+!s100 T_b6SWh^FR59iV5azKf5P2
+R6
+32
+Z276 !s110 1685305467
+!i10b 1
+Z277 !s108 1685305466.000000
+Z278 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/ShiftRegister/ShiftRegister_tb.vhd|
+Z279 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/ShiftRegister/ShiftRegister_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 16 shiftregister_tb 0 22 ZgVJ5dfmiE8ileHL_U4Xk1
+!i122 117
+l21
+R91
+VdBCO7;mKW:4D@Z2W4aCkk3
+!s100 Ai7ec6NDSH_3<V=]PQ?Wi3
+R6
+32
+R276
+!i10b 1
+R277
+R278
+R279
 !i113 1
 R11
 R12
 Eslcdc
-R24
+R31
 R2
 R3
-!i122 47
+!i122 64
 R0
-Z130 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd
-Z131 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd
+Z280 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd
+Z281 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd
 l0
 L4 1
 V^:@X?`5@?CmEEQG[QPMMd3
 !s100 C8aFdYfeL97=UkRd@DJC50
 R6
 32
-R74
+R188
 !i10b 1
-R79
-Z132 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd|
-Z133 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd|
+R200
+Z282 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd|
+Z283 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC.vhd|
 !i113 1
 R11
 R12
@@ -1127,26 +2012,67 @@ Aarc_slcdc
 R2
 R3
 DEx4 work 5 slcdc 0 22 ^:@X?`5@?CmEEQG[QPMMd3
-!i122 47
+!i122 64
 l30
 L11 41
 Vknh8<cBE8kCnKHG0a9BB81
 !s100 DB1EVbn=OoDiQQgA6YG:]1
 R6
 32
-R74
+R188
 !i10b 1
-R79
-R132
-R133
+R200
+R282
+R283
+!i113 1
+R11
+R12
+Eslcdc_tb
+Z284 w1685305623
+R2
+R3
+!i122 119
+R0
+Z285 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SLCDC/SLCDC_tb.vhd
+Z286 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SLCDC/SLCDC_tb.vhd
+l0
+L4 1
+VTcR?>OZUB=BIbg93RJRk:2
+!s100 @D@PfCO<LQ]XUeiIHBWWR0
+R6
+32
+Z287 !s110 1685305627
+!i10b 1
+Z288 !s108 1685305627.000000
+Z289 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SLCDC/SLCDC_tb.vhd|
+Z290 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/SLCDC/SLCDC_tb.vhd|
+!i113 1
+R11
+R12
+Aarc
+R2
+R3
+DEx4 work 8 slcdc_tb 0 22 TcR?>OZUB=BIbg93RJRk:2
+!i122 119
+l22
+L7 89
+Vc4ibbPR2g66=G]zj78_]l0
+!s100 H`o9jihkYdbNzYd1<>nW:3
+R6
+32
+R287
+!i10b 1
+R288
+R289
+R290
 !i113 1
 R11
 R12
 Eslcdc_wrapper
-R125
+R265
 R2
 R3
-!i122 48
+!i122 65
 R0
 8D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd
 FD:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd
@@ -1156,33 +2082,33 @@ V2cAnA=DgZb728I]1dK<8[1
 !s100 0kH;1CdMEF17RYlh>]bg>2
 R6
 32
-Z134 !s110 1685049458
+R188
 !i10b 1
-R79
+R200
 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd|
 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/SLCDC_Wrapper.vhd|
 !i113 1
 R11
 R12
 Eterminal_count
-R18
+R25
 R2
 R3
-!i122 49
+!i122 66
 R0
-Z135 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd
-Z136 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd
+Z291 8D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd
+Z292 FD:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd
 l0
 L4 1
 V=Taa;YjW9A>j3mMNFPLDh0
 !s100 m70aK:g>^g_aT[KPl0kNc1
 R6
 32
-R134
+R188
 !i10b 1
-Z137 !s108 1685049458.000000
-Z138 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd|
-Z139 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd|
+R200
+Z293 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd|
+Z294 !s107 D:/ISEL/2223/LEIC/s2/LIC/Testes/Terminal_Count.vhd|
 !i113 1
 R11
 R12
@@ -1190,18 +2116,59 @@ Aarc_tc
 R2
 R3
 DEx4 work 14 terminal_count 0 22 =Taa;YjW9A>j3mMNFPLDh0
-!i122 49
+!i122 66
 l11
-Z140 L10 4
+L10 4
 Ve@NOI;MKZ0<J7K]W5gN130
-Z141 !s100 Y[J`FkfXPceKdWeLcF]iN2
+!s100 Y[J`FkfXPceKdWeLcF]iN2
 R6
 32
-R134
+R188
 !i10b 1
-R137
-R138
-R139
+R200
+R293
+R294
+!i113 1
+R11
+R12
+Eterminal_count_tb
+Z295 w1685305751
+R2
+R3
+!i122 121
+R0
+Z296 8D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Terminal_Count/Terminal_Count_tb.vhd
+Z297 FD:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Terminal_Count/Terminal_Count_tb.vhd
+l0
+L4 1
+V`T8CQ_JB?N6k[;H_WU>Kf3
+!s100 Z38F0?6=R117LCK04@[ee2
+R6
+32
+Z298 !s110 1685305756
+!i10b 1
+Z299 !s108 1685305756.000000
+Z300 !s90 -reportprogress|300|-work|work|D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Terminal_Count/Terminal_Count_tb.vhd|
+Z301 !s107 D:/ISEL/2223/LEIC/s2/LIC/Projeto/Entrega1/Files/Terminal_Count/Terminal_Count_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 17 terminal_count_tb 0 22 `T8CQ_JB?N6k[;H_WU>Kf3
+!i122 121
+l21
+L7 59
+VoXfDJ:9<=D9oXDYUPMglV0
+!s100 >o[UF3AfdFQZNfBa[k?;L1
+R6
+32
+R298
+!i10b 1
+R299
+R300
+R301
 !i113 1
 R11
 R12

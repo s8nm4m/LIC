@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri May 26 09:37:16 2023
+Fitter Status : Successful - Sun May 28 18:14:58 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
 Top-level Entity Name : SCA
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 432 / 49,760 ( < 1 % )
+Total logic elements : 433 / 49,760 ( < 1 % )
     Total combinational functions : 404 / 49,760 ( < 1 % )
     Dedicated logic registers : 233 / 49,760 ( < 1 % )
 Total registers : 233

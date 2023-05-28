@@ -15,10 +15,9 @@ end component;
 
 --UUT signals
 constant MCLK_PERIOD : time := 2 ns;
-constant MCLK_HALF_PERIOD : time := MCLK_PERIOD / 2;
 
-signal A_tb, B_tb, Y_tb:std_logic_vector(3 downto 0);
-signal S_tb, CLK_tb: std_logic;
+signal A_tb, B_tb, Y_tb : std_logic_vector(3 downto 0);
+signal S_tb : std_logic;
 
 -- 3 ns
 begin
@@ -30,14 +29,6 @@ B => B_tb,
 S => S_tb,
 Y => Y_tb);
 
-CLK_gen : process
-begin
-CLK_tb <= '0';
-wait for MCLK_HALF_PERIOD;
-CLK_tb <= '1';
-wait for MCLK_PERIOD;
-end process;
-
 stimulus: process 
 begin 
 
@@ -48,8 +39,6 @@ wait for MCLK_PERIOD;
 
 S_tb <= '0';
 wait for MCLK_PERIOD;
-
-
 wait;
 end process;
 end;
