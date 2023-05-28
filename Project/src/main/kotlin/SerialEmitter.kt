@@ -18,7 +18,6 @@ object SerialEmitter {
     }
 
     // escreve 5 bits de informação, 1 a 1, no usbport
-
     fun send(addr: Destination, data: Int) {
         val mask = if (addr == Destination.DOOR) SSDOOR else SSLCD
         HAL.clrBits(mask)

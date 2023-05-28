@@ -3168,3 +3168,6 @@ sim:/keydecode_tb/uut/control/CLK \
 sim:/keydecode_tb/uut/control/Reset \
 sim:/keydecode_tb/uut/control/Kval \
 sim:/keydecode_tb/uut/control/Kscan
+run
+# End time: 23:27:25 on May 28,2023, Elapsed time: 0:51:46
+# Errors: 0, Warnings: 0
