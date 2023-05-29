@@ -26,10 +26,8 @@ process(CurrentState, enRx, eq5, accept)
 				else NextState <= NOT_BUSY;
 				end if;
 			when COUNT =>
-				if (enRx = '1') then
-					if(eq5 = '1') then NextState <= VALIDATE;
-					else NextState <= NOT_BUSY;
-					end if;
+				if (enRx = '1' and eq5 = '1') then NextState <= VALIDATE;
+				elsif (enRx = '1' and eq5 = '0') then NextState <= NOT_BUSY;
 				else NextState <= COUNT;
 				end if;
 			when VALIDATE =>
