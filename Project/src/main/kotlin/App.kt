@@ -1,5 +1,6 @@
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import kotlin.system.exitProcess
 
 object App {
     private var log = HashSet<List<String>>() // lista de logs
@@ -76,6 +77,7 @@ object App {
         DoorMechanism.close(DEFAULT_SPEED)
         Users.writeUsers(users)
         Log.writeLog(log)
+        exitProcess(0)
     }
 
     // imprime a lista de users registados
@@ -161,15 +163,21 @@ object App {
     fun mKey() {
         TUI.clear()
         TUI.writeString("Out of Service")
-        usersList()
-        insertUser()
-        usersList()
-        val user = readln()
-        val m = readln()
-        insertMessage(user, m)
-        usersList()
-        removeUser()
-        usersList()
+        println("Commands: New Del AddMsg Exit")
+        val command = readln()
+        when (command.lowercase()) {
+            "new" -> insertUser()
+            "del" -> removeUser()
+            "addmsg" -> {
+                println("UIN?")
+                val uin = readln()
+                println("Message to add?")
+                val message = readln()
+                insertMessage(uin, message)
+            }
+
+            "exit" -> turnOff()
+        }
     }
 }
 
@@ -179,15 +187,14 @@ fun main() {
         if (!M.isM()) {
             App.printTime()
             val user = App.getUIN()
-            val pin = App.getPIN()
-            App.logIn(user, pin)
+            if (user != null) {
+                val pin = App.getPIN()
+                if (pin != null)
+                    App.logIn(user, pin)
+            }
         } else {
             while (M.isM()) {
                 App.mKey()
-            }
-            if (!M.isM()) {
-                App.turnOff()
-                break
             }
         }
     }

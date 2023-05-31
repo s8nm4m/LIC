@@ -75,7 +75,6 @@ object TUI {
         while (uin.length < MAX_UIN_LENGTH) {
             val c = readKey()
             if (c == KBD.NONE) {
-                clear()
                 break
             } else if (uin.isNotEmpty() && c == '*') {
                 clear()
