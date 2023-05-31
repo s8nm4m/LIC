@@ -5,9 +5,9 @@ import java.io.PrintWriter
 object FileAccess {
 
     // le o conteúdo de um ficheiro txt
-    fun readFile(name: String): ArrayList<String> {
+    fun readFile(name: String): HashSet<String> {
         val reader = BufferedReader(FileReader(name))
-        val list = ArrayList<String>()
+        val list = HashSet<String>()
         var line: String?
         line = reader.readLine()
         while (line != null) {

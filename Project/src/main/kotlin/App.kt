@@ -2,7 +2,7 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 object App {
-    private var log = ArrayList<List<String>>() // lista de logs
+    private var log = HashSet<List<String>>() // lista de logs
     private var users = HashMap<String, List<String>>() // lista de users registados
     private const val MAX_NAME_LENGHT = 16 // tamanho maximo do nome do user
     private const val DEFAULT_SPEED = 10
@@ -27,12 +27,13 @@ object App {
     // regista um user novo se houver espaço
     fun insertUser() {
         if (users.size == MAX_USERS) {
-            TUI.writeMessage("Database is full.")
+            TUI.writeString("Database is full.")
         } else {
             var i = 0
+            var txt = ""
             while (i < users.size) {
-                val txt = if (i < 10) "00$i" else if (i < 100) "0$i" else i
-                if (users["$txt"] == null) break
+                txt = if (i < 10) "00$i" else if (i < 100) "0$i" else "$i"
+                if (users[txt] == null) break
                 else i++
             }
             var name: String
@@ -42,9 +43,8 @@ object App {
             } while (name.length > MAX_NAME_LENGHT)
             println("Insert PIN")
             val pin = readln()
-            val txt = if (i < 10) "00$i" else if (i < 100) "0$i" else i
             val newUser = ("$txt;$pin;$name;").split(";").dropLast(1)
-            users["$txt"] = newUser
+            users[txt] = newUser
         }
     }
 
@@ -96,21 +96,21 @@ object App {
                 TUI.clear()
                 isIn = true
                 val txt = i.value[NAME_MASK]
-                TUI.writeMessage(txt)
+                TUI.writeString(txt)
                 Thread.sleep(DISPLAY_TIME)
                 if (i.value.size == HAS_MSG) {
                     TUI.clear()
-                    TUI.writeMessage(i.value[MSG_MASK])
+                    TUI.writeString(i.value[MSG_MASK])
                 }
                 DoorMechanism.open(DEFAULT_SPEED)
                 while (!DoorMechanism.finished());
                 if (i.value.size == HAS_MSG) {
-                    if (TUI.readKey() == '*'.code) {
+                    if (TUI.readKey() == '*') {
                         users[i.key] = i.value.dropLast(1)
                         TUI.clearSecondLine()
                     }
                 }
-                if (TUI.readKey() == '#'.code) {
+                if (TUI.readKey() == '#') {
                     TUI.clear()
                     val newPin = TUI.newPIN()
                     if (newPin != null) {
@@ -118,7 +118,7 @@ object App {
                         val u = i.value.map { if (it == oldpin) newPin else it }
                         users[i.key] = u
                         Users.writeUsers(users)
-                        TUI.writeMessage("Pin changed with success.")
+                        TUI.writeString("Pin changed with success.")
                     }
                 }
                 DoorMechanism.close(DEFAULT_SPEED)
@@ -128,7 +128,7 @@ object App {
         }
         if (!isIn) {
             TUI.clear()
-            TUI.writeMessage("User not registred.")
+            TUI.writeString("User not registred.")
             Thread.sleep(2000)
         }
         return user
@@ -139,7 +139,7 @@ object App {
         TUI.clear()
         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
         val current = LocalDateTime.now().format(formatter)
-        TUI.writeMessage(current)
+        TUI.writeString(current)
         TUI.nextLine()
     }
 
@@ -160,7 +160,7 @@ object App {
     //manutenção
     fun mKey() {
         TUI.clear()
-        TUI.writeMessage("Out of Service")
+        TUI.writeString("Out of Service")
         usersList()
         insertUser()
         usersList()

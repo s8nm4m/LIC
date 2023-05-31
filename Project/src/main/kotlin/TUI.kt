@@ -18,7 +18,7 @@ object TUI {
     }
 
     // escreve uma frase no lcd
-    private fun writeString(text: String) {
+    fun writeString(text: String) {
         if (text.length >= MAX_TEXT_LENGTH) {
             for (i in 0 until MAX_TEXT_LENGTH) {
                 writeChar(text[i])
@@ -32,8 +32,8 @@ object TUI {
     }
 
     // le uma tecla do kbd
-    fun readKey(): Int {
-        return KBD.waitKey(TIMEOUT).code
+    fun readKey(): Char {
+        return KBD.waitKey(TIMEOUT)
     }
 
     // limpa o display do lcd
@@ -44,16 +44,6 @@ object TUI {
     // poe o cursor no inicio da segunda linha
     fun nextLine() {
         LCD.cursor(SECOND_LINE, FIRST_COL)
-    }
-
-    // Escreve uma frase em cada linha separando po ":". Caso não haja ":", escreve tudo na mesma linha enquanto tiver espaço
-    fun writeMessage(text: String) {
-        val s = text.split(":")
-        writeString(s[0])
-        if (s.size > 1) {
-            nextLine()
-            writeString(s[1])
-        }
     }
 
     //pede ao utilizador para introduzir o seu UIN
@@ -83,7 +73,7 @@ object TUI {
     fun readUIN(): String? {
         var uin = ""
         while (uin.length < MAX_UIN_LENGTH) {
-            val c = readKey().toChar()
+            val c = readKey()
             if (c == KBD.NONE) {
                 clear()
                 break
@@ -138,5 +128,5 @@ fun main() {
     TUI.nextLine()
     TUI.writePIN()
     TUI.readPIN()
-    TUI.writeMessage("Andre:Ola")
+    TUI.writeString("Andre:Ola")
 }
