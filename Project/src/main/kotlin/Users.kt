@@ -1,13 +1,19 @@
 object Users {
     private const val FILENAME = "USERS.txt"
+    private const val UIN_MASK = 0x00
+    private const val PIN_MASK = 0x01
+    private const val NAME_MASK = 0x02
+    private const val MSG_MASK = 0x03
+    private const val SPLITTER = ';'
+    private const val EMPTY_MSG = ""
 
     // le o ficheiro txt e guarda os users registados
     fun getUsers(): HashMap<Int, User> {
         val map = HashMap<Int, User>()
         val list = FileAccess.readFile(FILENAME)
         for (line in list) {
-            val a = line.split(";")
-            val user = User(a[0].toInt(), a[1].toInt(), a[2], a[3])
+            val a = line.split(SPLITTER)
+            val user = User(a[UIN_MASK].toInt(), a[PIN_MASK].toInt(), a[NAME_MASK], a[MSG_MASK])
             map[user.uin] = user
         }
         return map
@@ -17,23 +23,17 @@ object Users {
     fun writeUsers(userList: HashMap<Int, User>) {
         val list = ArrayList<String>()
         for (user in userList.values) {
-            list.add("${user.uin};${user.pin};${user.name};${user.msg};")
+            list.add("${user.uin}$SPLITTER${user.pin}$SPLITTER${user.name}$SPLITTER${user.msg}$SPLITTER")
         }
         FileAccess.writeFile(FILENAME, list)
     }
 
-    class User {
-        val uin: Int
-        var pin: Int
-        val name: String
-        var msg: String
+    class User(id: Int, pw: Int, n: String, message: String = EMPTY_MSG) {
+        val uin: Int = id
+        var pin: Int = pw
+        val name: String = n
+        var msg: String = message
 
-        constructor(id: Int, pw: Int, n: String, message: String = "") {
-            uin = id
-            pin = pw
-            name = n
-            msg = message
-        }
     }
 
     // le o conteudo do ficheiro USERS

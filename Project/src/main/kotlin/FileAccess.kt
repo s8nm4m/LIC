@@ -17,7 +17,7 @@ object FileAccess {
         return list
     }
 
-    // escreve o conteúdo do output num ficheiro txt
+    // escreve o conteúdo do ‘output’ num ficheiro txt
     fun writeFile(name: String, output: ArrayList<String>) {
         val writer = PrintWriter(name)
         for (i in output) {

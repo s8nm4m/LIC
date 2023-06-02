@@ -1,5 +1,7 @@
+@file:Suppress("ControlFlowWithEmptyBody")
+
 object DoorMechanism { // Controla o estado do mecanismo de abertura da porta.
-    private const val OPEN = 1
+    private const val OPEN = 0x01
 
     // Inicia a classe, estabelecendo os valores iniciais.
     fun init() {

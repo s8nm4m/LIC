@@ -1,14 +1,16 @@
 import isel.leic.UsbPort
 
 object HAL {
-    private var lastState = 0
+    private const val OFF = 0x00
+    private const val INIT_STATE = 0x00
+    private var lastState = INIT_STATE
     private var initialize = false
 
     // inicia o usbport a 0 e atualiza o lastState para 0
     fun init() {
         if (!initialize) {
-            UsbPort.write(0)
-            lastState = 0
+            UsbPort.write(INIT_STATE)
+            lastState = INIT_STATE
             initialize = true
         }
     }
@@ -17,7 +19,7 @@ object HAL {
     fun readBits(mask: Int) = UsbPort.read().and(mask)
 
     // verifica se o bit indicado na máscara está on ou off
-    fun isBit(mask: Int) = UsbPort.read().and(mask) != 0
+    fun isBit(mask: Int) = UsbPort.read().and(mask) != OFF
 
     // coloca o(s) bit(s) indicado(s9 na máscara a on
     fun setBits(mask: Int) {

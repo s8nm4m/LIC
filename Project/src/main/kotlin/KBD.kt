@@ -2,20 +2,20 @@ object KBD {
     private const val Kval = 0x01
     private const val Kack = 0x01
     private const val K = 0x1E
-    const val waitTime: Long = 2000
-    private const val sleepTime: Long = 10
-    private const val CODE1 = 0
-    private const val CODE2 = 4
-    private const val CODE3 = 8
-    private const val CODE4 = 1
-    private const val CODE5 = 5
-    private const val CODE6 = 9
-    private const val CODE7 = 2
-    private const val CODE8 = 6
-    private const val CODE9 = 10
-    private const val CODE0 = 7
-    private const val CODEEXT = 3
-    private const val CODEHASH = 11
+    const val waitTime = 2000L
+    private const val sleepTime = 10L
+    private const val CODE1 = 0x00
+    private const val CODE2 = 0x04
+    private const val CODE3 = 0x08
+    private const val CODE4 = 0x01
+    private const val CODE5 = 0x05
+    private const val CODE6 = 0x09
+    private const val CODE7 = 0x02
+    private const val CODE8 = 0x06
+    private const val CODE9 = 0x0A
+    private const val CODE0 = 0x07
+    private const val CODEEXT = 0x03
+    private const val CODEHASH = 0x0B
 
     // inicia o HAL e coloca o bit correspondente a K Ack a 0
     fun init() {

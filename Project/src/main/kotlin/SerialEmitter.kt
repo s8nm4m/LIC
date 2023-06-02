@@ -1,14 +1,14 @@
 object SerialEmitter {
 
     enum class Destination { LCD, DOOR }
-    private const val SLEEPTIME : Long = 1
+    private const val SLEEPTIME = 1L
     private const val SSLCD = 0x02
     private const val SDX = 0x04
     private const val SCLOCK = 0x08
     private const val SSDOOR = 0x10
     private const val busy = 0x20
     private const val MAX_LENGTH = 5
-    private const val OFF = 0
+    private const val OFF = 0x00
 
     // inicia o HAL e coloca os bits relativos ao SS tanto do lcd como da door a 1 (pois são active low)
     fun init() {
