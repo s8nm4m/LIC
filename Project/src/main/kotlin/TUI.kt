@@ -99,7 +99,6 @@ object TUI {
                 writeInt(c)
             }
         }
-        println(uin)
         return uin
     }
 
@@ -127,7 +126,6 @@ object TUI {
                 writeChar('*')
             }
         }
-        println(pin)
         return pin
     }
 
@@ -146,5 +144,5 @@ fun main() {
     TUI.nextLine()
     TUI.writePIN()
     TUI.readPIN()
-    TUI.writeString("Andre:Ola")
+    TUI.writeString("Hello World")
 }
