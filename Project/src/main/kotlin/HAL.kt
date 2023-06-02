@@ -4,7 +4,7 @@ object HAL {
     private var lastState = 0
     private var initialize = false
 
-    // inicial o usbport a 0 e atualiza o lastState para 0
+    // inicia o usbport a 0 e atualiza o lastState para 0
     fun init() {
         if (!initialize) {
             UsbPort.write(0)
