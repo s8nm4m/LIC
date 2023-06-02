@@ -4,7 +4,7 @@ import kotlin.system.exitProcess
 
 object App {
     private var log = HashSet<List<String>>() // lista de logs
-    private var users = HashMap<String, List<String>>() // lista de users registados
+    private var users = HashMap<Int, Users.User>() // lista de users registados
     private const val MAX_NAME_LENGHT = 16 // tamanho maximo do nome do user
     private const val DEFAULT_SPEED = 10
     private const val UIN_MASK = 0
@@ -14,6 +14,8 @@ object App {
     private const val HAS_MSG = 4
     private const val DISPLAY_TIME = 1000L
     private const val MAX_USERS = 1000
+    private const val CLEAR_MSG = '*'.code
+    private const val CHANGE_PIN = '#'.code
 
     //inicia as classes subsequentes e fecha a porta
     fun init() {
@@ -30,12 +32,10 @@ object App {
         if (users.size == MAX_USERS) {
             TUI.writeString("Database is full.")
         } else {
-            var i = 0
-            var txt = ""
-            while (i < users.size) {
-                txt = if (i < 10) "00$i" else if (i < 100) "0$i" else "$i"
-                if (users[txt] == null) break
-                else i++
+            var id = 0
+            while (id < users.size) {
+                if (users[id] == null) break
+                else id++
             }
             var name: String
             do {
@@ -43,32 +43,30 @@ object App {
                 name = readln()
             } while (name.length > MAX_NAME_LENGHT)
             println("Insert PIN")
-            val pin = readln()
-            val newUser = ("$txt;$pin;$name;").split(";").dropLast(1)
-            users[txt] = newUser
+            val pin = readln().toInt()
+            val newUser = Users.User(id, pin, name)
+            users[id] = newUser
         }
     }
 
     //remove um user
     fun removeUser() {
-        val uin = readln()
+        val uin = readln().toInt()
         println("Confirm removal of user $uin? (Y|N)")
         val confirm = readln()
-        if (confirm.first() == 'y' || confirm.first() == 'Y') {
+        if (confirm.lowercase().first() == 'y') {
             users.remove(uin)
         }
     }
 
     // coloca uma mensagem num user
-    fun insertMessage(uin: String, message: String) {
-        val user = users[uin]
-        users.remove(uin)
-        var txt = ""
-        for (i in user!!) {
-            txt += "$i;"
-        }
-        val updatedUser = ("$txt$message;").split(";").dropLast(1)
-        users[updatedUser[UIN_MASK]] = updatedUser
+    fun insertMessage() {
+        println("UIN?")
+        val uin = readln().toInt()
+        println("Message to add?")
+        val message = readln()
+        users[uin]?.msg = message
+        TUI.writeString("Message added successfully.")
     }
 
     // regista a lista de users atualizada e os logs, depois desligando o sistema
@@ -89,51 +87,46 @@ object App {
 
     // dá ‘login’ caso o uin e pin existam na base de dados, abre e fecha a porta, e ainda pode remover a mensasagem ou
     // alterar o pin currente
-    fun logIn(uin: String?, pin: String?): List<String>? {
-        var isIn = false
-        var user: List<String>? = null
-        for (i in users) {
-            if (i.value[UIN_MASK] == uin && i.value[PIN_MASK] == pin) {
-                user = i.value
+    fun logIn(uin: Int, pin: Int): Users.User? {
+        val user = users[uin]
+        if (user != null && user.pin == pin) {
+            TUI.clear()
+            TUI.writeString(user.name)
+            Thread.sleep(DISPLAY_TIME)
+            openDoor()
+            if (user.msg != "") {
                 TUI.clear()
-                isIn = true
-                val txt = i.value[NAME_MASK]
-                TUI.writeString(txt)
-                Thread.sleep(DISPLAY_TIME)
-                if (i.value.size == HAS_MSG) {
+                TUI.writeString(user.msg)
+                if (TUI.readKey() == '*'.code) {
+                    user.msg = ""
                     TUI.clear()
-                    TUI.writeString(i.value[MSG_MASK])
                 }
-                DoorMechanism.open(DEFAULT_SPEED)
-                while (!DoorMechanism.finished());
-                if (i.value.size == HAS_MSG) {
-                    if (TUI.readKey() == '*') {
-                        users[i.key] = i.value.dropLast(1)
-                        TUI.clearSecondLine()
-                    }
-                }
-                if (TUI.readKey() == '#') {
-                    TUI.clear()
-                    val newPin = TUI.newPIN()
-                    if (newPin != null) {
-                        val oldpin = i.value[PIN_MASK]
-                        val u = i.value.map { if (it == oldpin) newPin else it }
-                        users[i.key] = u
-                        Users.writeUsers(users)
-                        TUI.writeString("Pin changed with success.")
-                    }
-                }
-                DoorMechanism.close(DEFAULT_SPEED)
-                while (!DoorMechanism.finished());
-                break
             }
-        }
-        if (!isIn) {
+            if (TUI.readKey() == '#'.code) {
+                TUI.clear()
+                val newPin = TUI.newPIN()
+                if (newPin != null) {
+                    user.pin = newPin
+                    TUI.writeString("Pin changed successfully.")
+                }
+            }
+            closeDoor()
+        } else {
             TUI.clear()
             TUI.writeString("User not registred.")
             Thread.sleep(2000)
         }
         return user
+    }
+
+    private fun closeDoor() {
+        DoorMechanism.close(DEFAULT_SPEED)
+        while (!DoorMechanism.finished());
+    }
+
+    private fun openDoor() {
+        DoorMechanism.open(DEFAULT_SPEED)
+        while (!DoorMechanism.finished());
     }
 
     // vai buscar a data e hora e escreve-as no lcd
@@ -146,7 +139,7 @@ object App {
     }
 
     // le o uin introduzido
-    fun getUIN(): String? {
+    fun getUIN(): Int? {
         TUI.writeUIN()
         val user = TUI.readUIN()
         TUI.clearSecondLine()
@@ -154,7 +147,7 @@ object App {
     }
 
     // le o pin introduzido
-    fun getPIN(): String? {
+    fun getPIN(): Int? {
         TUI.writePIN()
         return TUI.readPIN()
     }
@@ -169,11 +162,8 @@ object App {
             "new" -> insertUser()
             "del" -> removeUser()
             "addmsg" -> {
-                println("UIN?")
-                val uin = readln()
-                println("Message to add?")
-                val message = readln()
-                insertMessage(uin, message)
+
+                insertMessage()
             }
 
             "exit" -> turnOff()

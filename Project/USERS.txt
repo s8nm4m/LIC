@@ -1,5 +1,5 @@
-000;1249;Alan Turing;Turing machine is ready;
-001;2072;George Boole;
-002;0000;Maurice Karnaugh;Simplification is possible;
-003;0000;John von Neumann;
-006;0000;Kathleen Booth;
+0;1249;Alan Turing;Turing machine is ready;
+1;2072;George Boole;;
+2;0;Maurice Karnaugh;Simplification is possible;
+3;0;John von Neumann;;
+6;0;Kathleen Booth;;

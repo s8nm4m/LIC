@@ -1,10 +1,15 @@
+import kotlin.math.pow
+
 object TUI {
     private const val MAX_TEXT_LENGTH = 16
-    private const val MAX_UIN_LENGTH = 3
-    private const val MAX_PIN_LENGTH = 4
+    private const val MAX_UIN_LENGTH = 2 //including 0
+    private const val MAX_PIN_LENGTH = 3 //including 0
     private const val TIMEOUT: Long = 5000
     private const val SECOND_LINE = 1
     private const val FIRST_COL = 0
+    private const val EMPTY = 0
+    private const val ASTERISK = '*'.code
+    private const val BASE = 10
 
     // inicia o lcd e o kbd
     fun init() {
@@ -17,10 +22,14 @@ object TUI {
         LCD.write(char)
     }
 
+    private fun writeInt(i: Int) {
+        LCD.write(i.toChar())
+    }
+
     // escreve uma frase no lcd
     fun writeString(text: String) {
         if (text.length >= MAX_TEXT_LENGTH) {
-            for (i in 0 until MAX_TEXT_LENGTH) {
+            for (i in EMPTY until MAX_TEXT_LENGTH) {
                 writeChar(text[i])
             }
             nextLine()
@@ -32,7 +41,7 @@ object TUI {
     }
 
     // le uma tecla do kbd
-    fun readKey(): Char {
+    fun readKey(): Int {
         return KBD.waitKey(TIMEOUT)
     }
 
@@ -57,7 +66,7 @@ object TUI {
     }
 
     // Pede o novo pin, e depois pede uma confirmaçao. Caso sejam iguais retorna esse valor, caso contrario retorna null
-    fun newPIN(): String? {
+    fun newPIN(): Int? {
         writePIN()
         val pin = readPIN()
         nextLine()
@@ -70,46 +79,56 @@ object TUI {
     //le o UIN intrduzido pelo utilizador com 3 caracteres
     //caso seja lido um extrisco durante este processo, ele limpa o que ja foi lido e começa a ler de início, caso ainda estivesse vazio, para de ler
     // se houver um timeout, para de ler
-    fun readUIN(): String? {
-        var uin = ""
-        while (uin.length < MAX_UIN_LENGTH) {
+    fun readUIN(): Int? {
+        var uin = EMPTY
+        var unit = BASE.toDouble().pow(MAX_UIN_LENGTH.toDouble()).toInt()
+        var empty = true
+        for (i in EMPTY..MAX_UIN_LENGTH) {
             val c = readKey()
-            if (c == KBD.NONE) {
-                break
-            } else if (uin.isNotEmpty() && c == '*') {
+            if (c == KBD.NONE.code) {
+                return null
+            } else if (empty && c == ASTERISK) {
                 clear()
                 writeUIN()
-            } else if (c == '*') {
-                break
+            } else if (c == ASTERISK) {
+                return null
             } else {
-                uin += c
-                writeChar(c)
+                empty = false
+                uin += (c - '0'.code) * unit
+                unit /= BASE
+                writeInt(c)
             }
         }
-        return if (uin.length == MAX_UIN_LENGTH) uin else null
+        println(uin)
+        return uin
     }
 
     //le o PIN intrduzido pelo utilizador com 4 caracteres
     //caso seja lido um extrisco durante este processo, ele limpa o que ja foi lido e começa a ler do início, caso ainda estivesse vazio, para de ler
     // se houver um timeout, para de ler
-    fun readPIN(): String? {
-        var pin = ""
-        while (pin.length < MAX_PIN_LENGTH) {
-            val c = readKey().toChar()
-            if (c == KBD.NONE) {
+    fun readPIN(): Int? {
+        var pin = EMPTY
+        var unit = BASE.toDouble().pow(MAX_PIN_LENGTH.toDouble()).toInt()
+        var empty = true
+        for (i in EMPTY..MAX_PIN_LENGTH) {
+            val c = readKey()
+            if (c == KBD.NONE.code) {
                 clear()
-                break
-            } else if (pin.isNotEmpty() && c == '*') {
+                return null
+            } else if (empty && c == ASTERISK) {
                 clear()
                 writePIN()
-            } else if (c == '*') {
-                break
+            } else if (c == ASTERISK) {
+                return null
             } else {
-                pin += c
+                empty = false
+                pin += (c - '0'.code) * unit
+                unit /= BASE
                 writeChar('*')
             }
         }
-        return if (pin.length == MAX_PIN_LENGTH) pin else null
+        println(pin)
+        return pin
     }
 
     // limpa a segunda linha, sem alterar o conteudo da primeira, e prepara-se para escrever no inico da segunda linha

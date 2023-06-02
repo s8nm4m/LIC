@@ -26,22 +26,22 @@ object KBD {
     const val NONE = 0.toChar()
 
     // le o que é escrito no teclado e devolve o que leu, caso não consiga ler nada devolve NONE
-    private fun getKey(): Char {
+    private fun getKey(): Int {
         if (HAL.isBit(Kval)) {
             val c = when (HAL.readBits(K).shr(1)) {
-                CODE1 -> '1'
-                CODE2 -> '2'
-                CODE3 -> '3'
-                CODE4 -> '4'
-                CODE5 -> '5'
-                CODE6 -> '6'
-                CODE7 -> '7'
-                CODE8 -> '8'
-                CODE9 -> '9'
-                CODEEXT -> '*'
-                CODE0 -> '0'
-                CODEHASH -> '#'
-                else -> NONE
+                CODE1 -> '1'.code
+                CODE2 -> '2'.code
+                CODE3 -> '3'.code
+                CODE4 -> '4'.code
+                CODE5 -> '5'.code
+                CODE6 -> '6'.code
+                CODE7 -> '7'.code
+                CODE8 -> '8'.code
+                CODE9 -> '9'.code
+                CODEEXT -> '*'.code
+                CODE0 -> '0'.code
+                CODEHASH -> '#'.code
+                else -> NONE.code
             }
             HAL.setBits(Kack)
             while (HAL.isBit(Kval)) {
@@ -50,17 +50,17 @@ object KBD {
             HAL.clrBits(Kack)
             return c
         }
-        return NONE
+        return NONE.code
     }
 
     // chama o getKey() até passar o tempo de timeout ou até ler uma tecla
-    fun waitKey(timeout: Long): Char {
+    fun waitKey(timeout: Long): Int {
         val timeInit = System.currentTimeMillis()
         while (true) {
             val time = System.currentTimeMillis()
             val c = getKey()
-            if (c != NONE) return c
-            if (time - timeInit >= timeout) return NONE
+            if (c != NONE.code) return c
+            if (time - timeInit >= timeout) return NONE.code
         }
     }
 }

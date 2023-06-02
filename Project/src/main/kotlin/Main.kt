@@ -9,8 +9,8 @@ fun main() {
     while (true) {
         val v = KBD.waitKey(2000)
         println(v)
-        if (v != KBD.NONE) {
-            LCD.write(v)
+        if (v != KBD.NONE.code) {
+            LCD.write(v.toString())
             pass += v
             println(pass)
             if (pass.length >= 4 && pass != "1234") {
