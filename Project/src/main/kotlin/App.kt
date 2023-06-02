@@ -1,6 +1,13 @@
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.system.exitProcess
+import java.security.SecureRandom
+import java.security.spec.KeySpec
+import java.util.*
+import javax.crypto.SecretKey
+import javax.crypto.SecretKeyFactory
+import javax.crypto.spec.PBEKeySpec
+import kotlin.math.abs
 
 object App {
     private var log = HashSet<List<String>>() // lista de logs
@@ -16,6 +23,36 @@ object App {
     private const val MAX_USERS = 1000
     private const val CLEAR_MSG = '*'.code
     private const val CHANGE_PIN = '#'.code
+    private const val ALGORITHM = "PBKDF2WithHmacSHA512"
+    private const val ITERATIONS = 50
+    private const val KEY_LENGTH = 128
+    private const val SECRET = "RandomSecret"
+
+    // Gera código encriptado
+    fun generateRandomSalt(): ByteArray {
+        val random = SecureRandom()
+        val salt = ByteArray(16)
+        random.nextBytes(salt)
+        return salt
+    }
+
+    private fun ByteArray.toHexString(): String =
+        HexFormat.of().formatHex(this)
+
+    fun Int.toCharArray(): CharArray = toString().toCharArray()
+
+    // Gera código de encriptação de 4 digitos representativos da password do user // salt = fun generateRandomSalt()
+    fun generateHash(password: Int, salt: ByteArray): Int {
+        val combinedSalt = "$salt$SECRET"
+        val factory: SecretKeyFactory = SecretKeyFactory.getInstance(ALGORITHM)
+        val spec: KeySpec = PBEKeySpec(password.toCharArray(), combinedSalt.toByteArray(), ITERATIONS, KEY_LENGTH)
+        val key: SecretKey = factory.generateSecret(spec)
+        val hash: ByteArray = key.encoded
+        return abs(hash.toHexString().hashCode()%10000)
+    }
+
+    //examplo -> println(generateHash(a, generateRandomSalt()))
+
 
     //inicia as classes subsequentes e fecha a porta
     fun init() {
