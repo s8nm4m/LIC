@@ -13,7 +13,7 @@ import kotlin.system.exitProcess
 object App {
     private var log = HashSet<String>() // lista de logs
     private var users = HashMap<Int, Users.User>() // lista de users registados
-    private val ERROR_ADD_MSG = "User doesnt exist."
+    private const val ERROR_ADD_MSG = "User doesnt exist."
     private const val DATE_FORMAT = "yyyy-MM-dd HH:mm"
     private const val PIN_CHANGED = "Pin changed successfully."
     private const val MSG_ADDED = "Message added successfully."
@@ -21,6 +21,7 @@ object App {
     private const val DEFAULT_SPEED = 10
     private const val DISPLAY_TIME = 1000L
     private const val MAX_USERS = 1000
+    private const val PIN_ENCRIPTION_MAX = MAX_USERS * 10
     private const val CLEAR_MSG = '*'.code
     private const val CHANGE_PIN = '#'.code
     private const val ALGORITHM_KEY = "PBKDF2WithHmacSHA512"
@@ -53,7 +54,7 @@ object App {
         val spec: KeySpec = PBEKeySpec(password.toCharArray(), combinedSalt.toByteArray(), ITERATIONS, KEY_LENGTH)
         val key: SecretKey = factory.generateSecret(spec)
         val hash: ByteArray = key.encoded
-        return abs(hash.toHexString().hashCode() % 10000)
+        return abs(hash.toHexString().hashCode() % (PIN_ENCRIPTION_MAX))
     }
 
     //inicia as classes subsequentes e fecha a porta
@@ -108,10 +109,10 @@ object App {
         println(INSERT_MSG)
         val message = readln()
         users[uin]?.msg = message
-        if (users[uin] != null){
+        if (users[uin] != null) {
             println(MSG_ADDED)
-            usersList()}
-        else
+            usersList()
+        } else
             println(ERROR_ADD_MSG)
     }
 
