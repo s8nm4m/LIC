@@ -13,6 +13,7 @@ import kotlin.system.exitProcess
 object App {
     private var log = HashSet<String>() // lista de logs
     private var users = HashMap<Int, Users.User>() // lista de users registados
+    private val ERROR_ADD_MSG = "User doesnt exist."
     private const val DATE_FORMAT = "yyyy-MM-dd HH:mm"
     private const val PIN_CHANGED = "Pin changed successfully."
     private const val MSG_ADDED = "Message added successfully."
@@ -68,7 +69,7 @@ object App {
     // regista um user novo se houver espaço
     private fun insertUser() {
         if (users.size == MAX_USERS) {
-            TUI.writeString(FULL_DATABASE)
+            println(FULL_DATABASE)
         } else {
             var id = 0
             while (id < users.size) {
@@ -107,8 +108,11 @@ object App {
         println(INSERT_MSG)
         val message = readln()
         users[uin]?.msg = message
-        TUI.writeString(MSG_ADDED)
-        usersList()
+        if (users[uin] != null){
+            println(MSG_ADDED)
+            usersList()}
+        else
+            println(ERROR_ADD_MSG)
     }
 
     // regista a lista de users atualizada e os logs, depois desligando o sistema

@@ -33,7 +33,6 @@ object Users {
         var pin: Int = pw
         val name: String = n
         var msg: String = message
-
     }
 
     // le o conteudo do ficheiro USERS
