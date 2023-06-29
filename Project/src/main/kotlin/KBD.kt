@@ -69,6 +69,6 @@ fun main() {
     KBD.init()
     while (true) {
         val c = KBD.waitKey(KBD.waitTime)
-        println(c)
+        println(c.toChar())
     }
 }

@@ -5,7 +5,7 @@ entity DoorController is
 port(
 Dval, Sclose, Sopen, Psensor, Reset, CLK : in std_logic;
 Din : in std_logic_vector(4 downto 0);
-OnOff, done, OpenClose : out std_logic;
+OnOff, done : out std_logic;
 Dout : out std_logic_vector(4 downto 0));
 end DoorController;
 
@@ -48,7 +48,6 @@ end process;
 OnOff <= '1' when ((CurrentState = OPEN_DOOR and Sopen = '0') 
 			or (CurrentState = CLOSE_DOOR and Psensor = '0' and Sclose = '0')) 
 			else '0';
-OpenClose <= '1'when (CurrentState = OPEN_DOOR) else '0';
 done <= '1' when (CurrentState = FINISHED) else '0';
 Dout(4 downto 1) <= Din(4 downto 1);
 Dout(0) <= '1' when (CurrentState = OPEN_DOOR) else '0';
