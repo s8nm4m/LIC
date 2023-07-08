@@ -101,7 +101,7 @@ object TUI {
                 clear()
                 return null
             } else if (empty && c == ASTERISK) {
-                clearSecondLine()
+                clear()
                 if (type == PIN) writePIN() else writeUIN()
             } else if (c == ASTERISK) {
                 return null

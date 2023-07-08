@@ -122,6 +122,7 @@ object App {
         DoorMechanism.close(DEFAULT_SPEED)
         Users.writeUsers(users)
         Log.writeLog(log)
+
         exitProcess(0)
     }
 
@@ -230,6 +231,7 @@ object App {
             "del" -> removeUser()
             "addmsg" -> insertMessage()
             "exit" -> turnOff()
+            "return" -> return
             else -> println(WRONG_COMMAND)
         }
     }

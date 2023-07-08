@@ -1,0 +1,29 @@
+set_global_assignment -name FAMILY "MAX 10 FPGA"
+set_global_assignment -name DEVICE 10M50DAF484C6GES
+set_global_assignment -name TOP_LEVEL_ENTITY "DE10_Lite"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name SDC_FILE DE10_Lite.sdc
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+
+# clock
+set_location_assignment PIN_P11 -to CLK
+
+# inputs
+set_location_assignment PIN_C10 -to Kack
+set_location_assignment PIN_C11 -to Reset
+
+# outputs
+set_location_assignment PIN_A8 -to Kval
+set_location_assignment PIN_D13 -to K[0]
+set_location_assignment PIN_C13 -to K[1]
+set_location_assignment PIN_E14 -to K[2]
+set_location_assignment PIN_D14 -to K[3]
+
+#Keypad
+set_location_assignment PIN_W5     -to I[0]
+set_location_assignment PIN_AA14   -to I[1]
+set_location_assignment PIN_W12    -to I[2]
+set_location_assignment PIN_AB12   -to I[3]
+set_location_assignment PIN_AB11   -to O[0]
+set_location_assignment PIN_AB10   -to O[1]
+set_location_assignment PIN_AA9    -to O[2]

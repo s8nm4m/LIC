@@ -84,7 +84,7 @@ object LCD {
     // Escreve um caráter na posição corrente.
     fun write(c: Char) {
         writeDATA(c.code)
-        Thread.sleep(50)
+//        Thread.sleep(50)
     }
 
     // Escreve uma “string” na posição corrente.

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Test
-Fri Jun 09 09:28:23 2023
+Thu Jun 29 20:55:15 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -100,13 +100,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 09 09:28:23 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 29 20:55:15 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Test                                        ;
 ; Top-level Entity Name              ; SCA                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 449                                         ;
-;     Total combinational functions  ; 417                                         ;
+; Total logic elements               ; 448                                         ;
+;     Total combinational functions  ; 416                                         ;
 ;     Dedicated logic registers      ; 219                                         ;
 ; Total registers                    ; 219                                         ;
 ; Total pins                         ; 74                                          ;
@@ -234,36 +234,36 @@ https://fpgasoftware.intel.com/eula.
 ; DoorMechanism/door_emulation_seg.vhd                               ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_emulation_seg.vhd                               ;             ;
 ; DoorMechanism/counter_pl.vhd                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd                                       ;             ;
 ; DoorMechanism/adder_rc.vhd                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd                                         ;             ;
-; UsbPort.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd                                                        ;             ;
-; Terminal_Count.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd                                                 ;             ;
-; SLCDC.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd                                                          ;             ;
-; ShiftRegister.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd                                                  ;             ;
-; SerialReceiver.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd                                                 ;             ;
-; SerialControl.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd                                                  ;             ;
-; SDC.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd                                                            ;             ;
-; SCA.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd                                                            ;             ;
-; RingBufferControl.vhd                                              ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd                                              ;             ;
-; RingBuffer.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd                                                     ;             ;
-; Registry.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd                                                       ;             ;
-; RAM.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd                                                            ;             ;
-; OutputBuffer.vhd                                                   ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd                                                   ;             ;
-; MUX4x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd                                                         ;             ;
-; MUX2x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd                                                         ;             ;
-; MemoryAddressControl.vhd                                           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd                                           ;             ;
-; LCDDispatcher.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd                                                  ;             ;
-; KeyScan.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd                                                        ;             ;
-; KeyDecode.vhd                                                      ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd                                                      ;             ;
-; KeyControl.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd                                                     ;             ;
-; KeyboardReader.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd                                                 ;             ;
-; full_add.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd                                                       ;             ;
-; FFD.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd                                                            ;             ;
-; DoorController.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd                                                 ;             ;
-; Dispatcher.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Dispatcher.vhd                                                     ;             ;
-; Decoder.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd                                                        ;             ;
-; Counter.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd                                                        ;             ;
-; clkDIV.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd                                                         ;             ;
-; BufferControl.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd                                                  ;             ;
-; adder.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd                                                          ;             ;
+; ../Projeto/Entrega Final/UsbPort/UsbPort.vhd                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/UsbPort/UsbPort.vhd                                 ;             ;
+; ../Projeto/Entrega Final/SLCDC/SLCDC.vhd                           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SLCDC/SLCDC.vhd                                     ;             ;
+; ../Projeto/Entrega Final/ShiftRegister/ShiftRegister.vhd           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/ShiftRegister/ShiftRegister.vhd                     ;             ;
+; ../Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd                   ;             ;
+; ../Projeto/Entrega Final/SerialControl/SerialControl.vhd           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialControl/SerialControl.vhd                     ;             ;
+; ../Projeto/Entrega Final/SDC/SDC.vhd                               ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SDC/SDC.vhd                                         ;             ;
+; ../Projeto/Entrega Final/SCA/SCA.vhd                               ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd                                         ;             ;
+; ../Projeto/Entrega Final/RingBufferControl/RingBufferControl.vhd   ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBufferControl/RingBufferControl.vhd             ;             ;
+; ../Projeto/Entrega Final/RingBuffer/RingBuffer.vhd                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBuffer/RingBuffer.vhd                           ;             ;
+; ../Projeto/Entrega Final/Registry/Registry.vhd                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Registry/Registry.vhd                               ;             ;
+; ../Projeto/Entrega Final/RAM/RAM.vhd                               ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RAM/RAM.vhd                                         ;             ;
+; ../Projeto/Entrega Final/OutputBuffer/OutputBuffer.vhd             ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/OutputBuffer/OutputBuffer.vhd                       ;             ;
+; ../Projeto/Entrega Final/MUX4x1/MUX4x1.vhd                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MUX4x1/MUX4x1.vhd                                   ;             ;
+; ../Projeto/Entrega Final/MUX2x1/MUX2x1.vhd                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MUX2x1/MUX2x1.vhd                                   ;             ;
+; ../Projeto/Entrega Final/MAC/MemoryAddressControl.vhd              ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MAC/MemoryAddressControl.vhd                        ;             ;
+; ../Projeto/Entrega Final/LCDDispatcher/LCDDispatcher.vhd           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/LCDDispatcher/LCDDispatcher.vhd                     ;             ;
+; ../Projeto/Entrega Final/KeyScan/KeyScan.vhd                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyScan/KeyScan.vhd                                 ;             ;
+; ../Projeto/Entrega Final/KeyDecode/KeyDecode.vhd                   ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyDecode/KeyDecode.vhd                             ;             ;
+; ../Projeto/Entrega Final/KeyControl/KeyControl.vhd                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyControl/KeyControl.vhd                           ;             ;
+; ../Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd                   ;             ;
+; ../Projeto/Entrega Final/full_adder/full_add.vhd                   ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/full_adder/full_add.vhd                             ;             ;
+; ../Projeto/Entrega Final/FFD/FFD.vhd                               ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/FFD/FFD.vhd                                         ;             ;
+; ../Projeto/Entrega Final/Dispatcher/Dispatcher.vhd                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Dispatcher/Dispatcher.vhd                           ;             ;
+; ../Projeto/Entrega Final/Decoder/Decoder.vhd                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Decoder/Decoder.vhd                                 ;             ;
+; ../Projeto/Entrega Final/Counter/Counter.vhd                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd                                 ;             ;
+; ../Projeto/Entrega Final/clkDIV/clkDIV.vhd                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/clkDIV/clkDIV.vhd                                   ;             ;
+; ../Projeto/Entrega Final/BufferControl/BufferControl.vhd           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/BufferControl/BufferControl.vhd                     ;             ;
+; ../Projeto/Entrega Final/adder/adder.vhd                           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/adder/adder.vhd                                     ;             ;
+; ../Projeto/Entrega Final/Terminal_Count/Terminal_Count.vhd         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Terminal_Count/Terminal_Count.vhd                   ;             ;
+; doorcontroller.vhd                                                 ; yes             ; Auto-Found VHDL File                         ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/doorcontroller.vhd                                                 ;             ;
 ; sld_virtual_jtag.v                                                 ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v                                                  ;             ;
 ; sld_virtual_jtag_basic.v                                           ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v                                            ;             ;
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                       ;             ;
@@ -277,6 +277,34 @@ https://fpgasoftware.intel.com/eula.
 ; db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                    ;             ;
 ; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                      ;             ;
+; MemoryAddressControl.vhd                                           ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd                                           ;             ;
+; full_add.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd                                                       ;             ;
+; KeyboardReader.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd                                                 ;             ;
+; UsbPort.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd                                                        ;             ;
+; clkDIV.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd                                                         ;             ;
+; Terminal_Count.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd                                                 ;             ;
+; Registry.vhd                                                       ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd                                                       ;             ;
+; MUX2x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd                                                         ;             ;
+; FFD.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd                                                            ;             ;
+; adder.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd                                                          ;             ;
+; MUX4x1.vhd                                                         ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd                                                         ;             ;
+; Counter.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd                                                        ;             ;
+; Decoder.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd                                                        ;             ;
+; KeyScan.vhd                                                        ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd                                                        ;             ;
+; KeyControl.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd                                                     ;             ;
+; KeyDecode.vhd                                                      ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd                                                      ;             ;
+; SCA.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd                                                            ;             ;
+; SLCDC.vhd                                                          ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd                                                          ;             ;
+; SerialReceiver.vhd                                                 ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd                                                 ;             ;
+; LCDDispatcher.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd                                                  ;             ;
+; SerialControl.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd                                                  ;             ;
+; ShiftRegister.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd                                                  ;             ;
+; SDC.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd                                                            ;             ;
+; RAM.vhd                                                            ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd                                                            ;             ;
+; RingBufferControl.vhd                                              ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd                                              ;             ;
+; RingBuffer.vhd                                                     ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd                                                     ;             ;
+; BufferControl.vhd                                                  ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd                                                  ;             ;
+; OutputBuffer.vhd                                                   ; yes             ; User VHDL File                               ; C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd                                                   ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -285,16 +313,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 449                      ;
+; Estimated Total logic elements              ; 448                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 417                      ;
+; Total combinational functions               ; 416                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
 ;     -- 4 input functions                    ; 167                      ;
-;     -- 3 input functions                    ; 97                       ;
+;     -- 3 input functions                    ; 96                       ;
 ;     -- <=2 input functions                  ; 153                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 348                      ;
+;     -- normal mode                          ; 347                      ;
 ;     -- arithmetic mode                      ; 69                       ;
 ;                                             ;                          ;
 ; Total registers                             ; 219                      ;
@@ -307,7 +335,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 107                      ;
-; Total fan-out                               ; 2003                     ;
+; Total fan-out                               ; 2000                     ;
 ; Average fan-out                             ; 2.53                     ;
 +---------------------------------------------+--------------------------+
 
@@ -317,12 +345,12 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SCA                                                                                                                                    ; 417 (10)            ; 219 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 74   ; 0            ; 0          ; |SCA                                                                                                                                                                                                                                                                                                                                            ; SCA                               ; work         ;
+; |SCA                                                                                                                                    ; 416 (10)            ; 219 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 74   ; 0            ; 0          ; |SCA                                                                                                                                                                                                                                                                                                                                            ; SCA                               ; work         ;
 ;    |FFD:fdoor|                                                                                                                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:fdoor                                                                                                                                                                                                                                                                                                                                  ; FFD                               ; work         ;
 ;    |FFD:ffperson|                                                                                                                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:ffperson                                                                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
 ;    |FFD:flcd|                                                                                                                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:flcd                                                                                                                                                                                                                                                                                                                                   ; FFD                               ; work         ;
 ;    |FFD:fsc|                                                                                                                            ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|FFD:fsc                                                                                                                                                                                                                                                                                                                                    ; FFD                               ; work         ;
-;    |KeyboardReader:kr|                                                                                                                  ; 157 (0)             ; 56 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr                                                                                                                                                                                                                                                                                                                          ; KeyboardReader                    ; work         ;
+;    |KeyboardReader:kr|                                                                                                                  ; 156 (0)             ; 56 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr                                                                                                                                                                                                                                                                                                                          ; KeyboardReader                    ; work         ;
 ;       |KeyDecode:kd|                                                                                                                    ; 66 (0)              ; 39 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd                                                                                                                                                                                                                                                                                                             ; KeyDecode                         ; work         ;
 ;          |CLKDIV:clock|                                                                                                                 ; 51 (51)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock                                                                                                                                                                                                                                                                                                ; CLKDIV                            ; work         ;
 ;          |KeyControl:control|                                                                                                           ; 4 (4)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control                                                                                                                                                                                                                                                                                          ; KeyControl                        ; work         ;
@@ -344,8 +372,8 @@ https://fpgasoftware.intel.com/eula.
 ;             |FFD:ff1|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|OutputBuffer:obuff|Registry:outreg|FFD:ff1                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
 ;             |FFD:ff2|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|OutputBuffer:obuff|Registry:outreg|FFD:ff2                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
 ;             |FFD:ff3|                                                                                                                   ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|OutputBuffer:obuff|Registry:outreg|FFD:ff3                                                                                                                                                                                                                                                                               ; FFD                               ; work         ;
-;       |RingBuffer:rbuff|                                                                                                                ; 86 (0)              ; 11 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff                                                                                                                                                                                                                                                                                                         ; RingBuffer                        ; work         ;
-;          |MemoryAddressControl:mac|                                                                                                     ; 17 (4)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac                                                                                                                                                                                                                                                                                ; MemoryAddressControl              ; work         ;
+;       |RingBuffer:rbuff|                                                                                                                ; 85 (0)              ; 11 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff                                                                                                                                                                                                                                                                                                         ; RingBuffer                        ; work         ;
+;          |MemoryAddressControl:mac|                                                                                                     ; 16 (3)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac                                                                                                                                                                                                                                                                                ; MemoryAddressControl              ; work         ;
 ;             |Counter:incrementGet|                                                                                                      ; 5 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet                                                                                                                                                                                                                                                           ; Counter                           ; work         ;
 ;                |Registry:reg|                                                                                                           ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg                                                                                                                                                                                                                                              ; Registry                          ; work         ;
 ;                   |FFD:ff0|                                                                                                             ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SCA|KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac|Counter:incrementGet|Registry:reg|FFD:ff0                                                                                                                                                                                                                                      ; FFD                               ; work         ;
@@ -1115,19 +1143,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 10                          ;
 ;     ENA CLR           ; 20                          ;
 ;     plain             ; 68                          ;
-; cycloneiii_lcell_comb ; 314                         ;
+; cycloneiii_lcell_comb ; 313                         ;
 ;     arith             ; 61                          ;
 ;         2 data inputs ; 60                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 253                         ;
+;     normal            ; 252                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 29                          ;
 ;         2 data inputs ; 43                          ;
-;         3 data inputs ; 66                          ;
+;         3 data inputs ; 65                          ;
 ;         4 data inputs ; 113                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.93                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1146,7 +1174,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 09 09:27:43 2023
+    Info: Processing started: Thu Jun 29 20:54:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Test -c Test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1171,100 +1199,97 @@ Info (12021): Found 2 design units, including 1 entities, in source file doormec
 Info (12021): Found 2 design units, including 1 entities, in source file doormechanism/adder_rc.vhd
     Info (12022): Found design unit 1: adder_rc-Structural File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd Line: 33
     Info (12023): Found entity 1: adder_rc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/adder_rc.vhd Line: 20
-Info (12021): Found 2 design units, including 1 entities, in source file usbport.vhd
-    Info (12022): Found design unit 1: UsbPort-bdf_type File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 33
-    Info (12023): Found entity 1: UsbPort File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 25
-Info (12021): Found 2 design units, including 1 entities, in source file terminal_count.vhd
-    Info (12022): Found design unit 1: Terminal_Count-arc_tc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd Line: 10
-    Info (12023): Found entity 1: Terminal_Count File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Terminal_Count.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file slcdc.vhd
-    Info (12022): Found design unit 1: SLCDC-arc_slcdc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 11
-    Info (12023): Found entity 1: SLCDC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file shiftregister.vhd
-    Info (12022): Found design unit 1: ShiftRegister-arc_sr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd Line: 10
-    Info (12023): Found entity 1: ShiftRegister File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/ShiftRegister.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file serialreceiver.vhd
-    Info (12022): Found design unit 1: SerialReceiver-arc_sr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 11
-    Info (12023): Found entity 1: SerialReceiver File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file serialcontrol.vhd
-    Info (12022): Found design unit 1: SerialControl-arc_sc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd Line: 10
-    Info (12023): Found entity 1: SerialControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file sdc.vhd
-    Info (12022): Found design unit 1: SDC-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd Line: 11
-    Info (12023): Found entity 1: SDC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file sca.vhd
-    Info (12022): Found design unit 1: SCA-arc_sca File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 14
-    Info (12023): Found entity 1: SCA File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ringbuffercontrol.vhd
-    Info (12022): Found design unit 1: RingBufferControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd Line: 10
-    Info (12023): Found entity 1: RingBufferControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ringbuffer.vhd
-    Info (12022): Found design unit 1: RingBuffer-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 12
-    Info (12023): Found entity 1: RingBuffer File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file registry.vhd
-    Info (12022): Found design unit 1: Registry-arc_reg File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd Line: 11
-    Info (12023): Found entity 1: Registry File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Registry.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
-    Info (12022): Found design unit 1: RAM-behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 34
-    Info (12023): Found entity 1: RAM File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 21
-Info (12021): Found 2 design units, including 1 entities, in source file outputbuffer.vhd
-    Info (12022): Found design unit 1: OutputBuffer-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 12
-    Info (12023): Found entity 1: OutputBuffer File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file mux4x1.vhd
-    Info (12022): Found design unit 1: MUX4x1-arc_mux File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd Line: 10
-    Info (12023): Found entity 1: MUX4x1 File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX4x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
-    Info (12022): Found design unit 1: MUX2x1-arc_mux File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd Line: 10
-    Info (12023): Found entity 1: MUX2x1 File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MUX2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file memoryaddresscontrol.vhd
-    Info (12022): Found design unit 1: MemoryAddressControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd Line: 11
-    Info (12023): Found entity 1: MemoryAddressControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/MemoryAddressControl.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file lcddispatcher.vhd
-    Info (12022): Found design unit 1: LCDDispatcher-arc_lcdd File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd Line: 12
-    Info (12023): Found entity 1: LCDDispatcher File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keyscan.vhd
-    Info (12022): Found design unit 1: KeyScan-arc_Keyscan File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 13
-    Info (12023): Found entity 1: KeyScan File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keydecode.vhd
-    Info (12022): Found design unit 1: KeyDecode-arc_kd File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 13
-    Info (12023): Found entity 1: KeyDecode File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keycontrol.vhd
-    Info (12022): Found design unit 1: KeyControl-arcKC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd Line: 10
-    Info (12023): Found entity 1: KeyControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keyboardreader.vhd
-    Info (12022): Found design unit 1: KeyboardReader-kr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 13
-    Info (12023): Found entity 1: KeyboardReader File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file full_add.vhd
-    Info (12022): Found design unit 1: full_add-arc_fa File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd Line: 9
-    Info (12023): Found entity 1: full_add File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/full_add.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ffd.vhd
-    Info (12022): Found design unit 1: FFD-LogicFunction File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd Line: 14
-    Info (12023): Found entity 1: FFD File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/FFD.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file doorcontroller.vhd
-    Info (12022): Found design unit 1: DoorController-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 12
-    Info (12023): Found entity 1: DoorController File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file dispatcher.vhd
-    Info (12022): Found design unit 1: Dispatcher-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Dispatcher.vhd Line: 10
-    Info (12023): Found entity 1: Dispatcher File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Dispatcher.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
-    Info (12022): Found design unit 1: Decoder-arc_dec File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd Line: 10
-    Info (12023): Found entity 1: Decoder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Decoder.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
-    Info (12022): Found design unit 1: Counter-arc_cc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 13
-    Info (12023): Found entity 1: Counter File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file clkdiv.vhd
-    Info (12022): Found design unit 1: CLKDIV-bhv File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd Line: 11
-    Info (12023): Found entity 1: CLKDIV File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/clkDIV.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file buffercontrol.vhd
-    Info (12022): Found design unit 1: BufferControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 10
-    Info (12023): Found entity 1: BufferControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file adder.vhd
-    Info (12022): Found design unit 1: adder-arc_adder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 12
-    Info (12023): Found entity 1: adder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/usbport/usbport.vhd
+    Info (12022): Found design unit 1: UsbPort-bdf_type File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/UsbPort/UsbPort.vhd Line: 33
+    Info (12023): Found entity 1: UsbPort File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/UsbPort/UsbPort.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/slcdc/slcdc.vhd
+    Info (12022): Found design unit 1: SLCDC-arc_slcdc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SLCDC/SLCDC.vhd Line: 11
+    Info (12023): Found entity 1: SLCDC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SLCDC/SLCDC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/shiftregister/shiftregister.vhd
+    Info (12022): Found design unit 1: ShiftRegister-arc_sr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/ShiftRegister/ShiftRegister.vhd Line: 10
+    Info (12023): Found entity 1: ShiftRegister File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/ShiftRegister/ShiftRegister.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/serialreceiver/serialreceiver.vhd
+    Info (12022): Found design unit 1: SerialReceiver-arc_sr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd Line: 11
+    Info (12023): Found entity 1: SerialReceiver File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/serialcontrol/serialcontrol.vhd
+    Info (12022): Found design unit 1: SerialControl-arc_sc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialControl/SerialControl.vhd Line: 10
+    Info (12023): Found entity 1: SerialControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialControl/SerialControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/sdc/sdc.vhd
+    Info (12022): Found design unit 1: SDC-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SDC/SDC.vhd Line: 11
+    Info (12023): Found entity 1: SDC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SDC/SDC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/sca/sca.vhd
+    Info (12022): Found design unit 1: SCA-arc_sca File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 14
+    Info (12023): Found entity 1: SCA File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/ringbuffercontrol/ringbuffercontrol.vhd
+    Info (12022): Found design unit 1: RingBufferControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBufferControl/RingBufferControl.vhd Line: 10
+    Info (12023): Found entity 1: RingBufferControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBufferControl/RingBufferControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/ringbuffer/ringbuffer.vhd
+    Info (12022): Found design unit 1: RingBuffer-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBuffer/RingBuffer.vhd Line: 12
+    Info (12023): Found entity 1: RingBuffer File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBuffer/RingBuffer.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/registry/registry.vhd
+    Info (12022): Found design unit 1: Registry-arc_reg File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Registry/Registry.vhd Line: 11
+    Info (12023): Found entity 1: Registry File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Registry/Registry.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/ram/ram.vhd
+    Info (12022): Found design unit 1: RAM-behavioral File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RAM/RAM.vhd Line: 34
+    Info (12023): Found entity 1: RAM File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RAM/RAM.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/outputbuffer/outputbuffer.vhd
+    Info (12022): Found design unit 1: OutputBuffer-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/OutputBuffer/OutputBuffer.vhd Line: 12
+    Info (12023): Found entity 1: OutputBuffer File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/OutputBuffer/OutputBuffer.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/mux4x1/mux4x1.vhd
+    Info (12022): Found design unit 1: MUX4x1-arc_mux File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MUX4x1/MUX4x1.vhd Line: 10
+    Info (12023): Found entity 1: MUX4x1 File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MUX4x1/MUX4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/mux2x1/mux2x1.vhd
+    Info (12022): Found design unit 1: MUX2x1-arc_mux File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MUX2x1/MUX2x1.vhd Line: 10
+    Info (12023): Found entity 1: MUX2x1 File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MUX2x1/MUX2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/mac/memoryaddresscontrol.vhd
+    Info (12022): Found design unit 1: MemoryAddressControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MAC/MemoryAddressControl.vhd Line: 11
+    Info (12023): Found entity 1: MemoryAddressControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/MAC/MemoryAddressControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/lcddispatcher/lcddispatcher.vhd
+    Info (12022): Found design unit 1: LCDDispatcher-arc_lcdd File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/LCDDispatcher/LCDDispatcher.vhd Line: 12
+    Info (12023): Found entity 1: LCDDispatcher File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/LCDDispatcher/LCDDispatcher.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/keyscan/keyscan.vhd
+    Info (12022): Found design unit 1: KeyScan-arc_Keyscan File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyScan/KeyScan.vhd Line: 13
+    Info (12023): Found entity 1: KeyScan File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyScan/KeyScan.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/keydecode/keydecode.vhd
+    Info (12022): Found design unit 1: KeyDecode-arc_kd File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyDecode/KeyDecode.vhd Line: 13
+    Info (12023): Found entity 1: KeyDecode File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyDecode/KeyDecode.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/keycontrol/keycontrol.vhd
+    Info (12022): Found design unit 1: KeyControl-arcKC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyControl/KeyControl.vhd Line: 10
+    Info (12023): Found entity 1: KeyControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyControl/KeyControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/keyboardreader/keyboardreader.vhd
+    Info (12022): Found design unit 1: KeyboardReader-kr File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd Line: 13
+    Info (12023): Found entity 1: KeyboardReader File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/full_adder/full_add.vhd
+    Info (12022): Found design unit 1: full_add-arc_fa File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/full_adder/full_add.vhd Line: 9
+    Info (12023): Found entity 1: full_add File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/full_adder/full_add.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/ffd/ffd.vhd
+    Info (12022): Found design unit 1: FFD-LogicFunction File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/FFD/FFD.vhd Line: 14
+    Info (12023): Found entity 1: FFD File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/FFD/FFD.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/dispatcher/dispatcher.vhd
+    Info (12022): Found design unit 1: Dispatcher-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Dispatcher/Dispatcher.vhd Line: 10
+    Info (12023): Found entity 1: Dispatcher File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Dispatcher/Dispatcher.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/decoder/decoder.vhd
+    Info (12022): Found design unit 1: Decoder-arc_dec File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Decoder/Decoder.vhd Line: 10
+    Info (12023): Found entity 1: Decoder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Decoder/Decoder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/counter/counter.vhd
+    Info (12022): Found design unit 1: Counter-arc_cc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd Line: 13
+    Info (12023): Found entity 1: Counter File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/clkdiv/clkdiv.vhd
+    Info (12022): Found design unit 1: CLKDIV-bhv File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/clkDIV/clkDIV.vhd Line: 11
+    Info (12023): Found entity 1: CLKDIV File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/clkDIV/clkDIV.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/buffercontrol/buffercontrol.vhd
+    Info (12022): Found design unit 1: BufferControl-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/BufferControl/BufferControl.vhd Line: 10
+    Info (12023): Found entity 1: BufferControl File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/BufferControl/BufferControl.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/adder/adder.vhd
+    Info (12022): Found design unit 1: adder-arc_adder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/adder/adder.vhd Line: 12
+    Info (12023): Found entity 1: adder File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/adder/adder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/ammit/desktop/isel/2223/leic/s2/lic/lic/projeto/entrega final/terminal_count/terminal_count.vhd
+    Info (12022): Found design unit 1: Terminal_Count-arc_tc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Terminal_Count/Terminal_Count.vhd Line: 10
+    Info (12023): Found entity 1: Terminal_Count File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Terminal_Count/Terminal_Count.vhd Line: 4
 Info (12127): Elaborating entity "SCA" for the top level hierarchy
-Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(160): port or argument "inputPort" has 1/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 160
-Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(160): port or argument "outputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 160
-Info (12128): Elaborating entity "door_mecanism" for hierarchy "door_mecanism:dm" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 79
+Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(160): port or argument "inputPort" has 1/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 160
+Critical Warning (10920): VHDL Incomplete Partial Association warning at SCA.vhd(160): port or argument "outputPort" has 3/8 unassociated elements File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 160
+Info (12128): Elaborating entity "door_mecanism" for hierarchy "door_mecanism:dm" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 79
 Info (12128): Elaborating entity "CLKDIV" for hierarchy "door_mecanism:dm|CLKDIV:UCLK" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 81
 Info (12128): Elaborating entity "counter_pl" for hierarchy "door_mecanism:dm|counter_pl:U6" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 86
 Info (12128): Elaborating entity "adder_rc" for hierarchy "door_mecanism:dm|counter_pl:U6|adder_rc:U1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/counter_pl.vhd Line: 74
@@ -1275,41 +1300,44 @@ Info (12128): Elaborating entity "ShiftRegister_lr" for hierarchy "door_mecanism
 Info (12128): Elaborating entity "register_D_E_R_value" for hierarchy "door_mecanism:dm|ShiftRegister_lr:U7|register_D_E_R_value:U1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/ShiftRegister_lr.vhd Line: 53
 Warning (10492): VHDL Process Statement warning at register_D_E_R_value.vhd(41): signal "RST_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 41
 Info (12128): Elaborating entity "door_emulation_seg" for hierarchy "door_mecanism:dm|door_emulation_seg:U0" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/door_mecanism.vhd Line: 95
-Info (12128): Elaborating entity "FFD" for hierarchy "FFD:ffperson" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 97
-Info (12128): Elaborating entity "SDC" for hierarchy "SDC:serialDoorC" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 129
-Info (12128): Elaborating entity "SerialReceiver" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd Line: 31
-Info (12128): Elaborating entity "Counter" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 37
-Info (12128): Elaborating entity "adder" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 44
-Info (12128): Elaborating entity "full_add" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/adder.vhd Line: 22
-Info (12128): Elaborating entity "MUX2x1" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|MUX2x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 50
-Info (12128): Elaborating entity "Registry" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 56
-Info (12128): Elaborating entity "Terminal_Count" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Terminal_Count:utc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Counter.vhd Line: 65
-Info (12128): Elaborating entity "SerialControl" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 47
-Info (12128): Elaborating entity "ShiftRegister" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialReceiver.vhd Line: 59
-Info (12128): Elaborating entity "DoorController" for hierarchy "SDC:serialDoorC|DoorController:doorControl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SDC.vhd Line: 42
-Info (12128): Elaborating entity "KeyboardReader" for hierarchy "KeyboardReader:kr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 142
-Info (12128): Elaborating entity "KeyDecode" for hierarchy "KeyboardReader:kr|KeyDecode:kd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 45
-Info (12128): Elaborating entity "CLKDIV" for hierarchy "KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 39
-Info (12128): Elaborating entity "KeyScan" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 44
-Info (12128): Elaborating entity "Decoder" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Decoder:dec" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 50
-Info (12128): Elaborating entity "MUX4x1" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|MUX4x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyScan.vhd Line: 55
-Info (12128): Elaborating entity "KeyControl" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyDecode.vhd Line: 53
-Info (12128): Elaborating entity "RingBuffer" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 54
-Info (12128): Elaborating entity "RingBufferControl" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 43
-Info (12128): Elaborating entity "MemoryAddressControl" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 57
-Info (12128): Elaborating entity "RAM" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|RAM:memory" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBuffer.vhd Line: 67
-Warning (10492): VHDL Process Statement warning at RAM.vhd(43): signal "ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at RAM.vhd(46): signal "din" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RAM.vhd Line: 46
-Info (12128): Elaborating entity "OutputBuffer" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyboardReader.vhd Line: 64
-Info (12128): Elaborating entity "BufferControl" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/OutputBuffer.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at BufferControl.vhd(23): signal "CurrentState" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 23
-Info (12128): Elaborating entity "SLCDC" for hierarchy "SLCDC:sl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 151
-Info (12128): Elaborating entity "LCDDispatcher" for hierarchy "SLCDC:sl|LCDDispatcher:lcdd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SLCDC.vhd Line: 42
-Info (12128): Elaborating entity "Dispatcher" for hierarchy "SLCDC:sl|LCDDispatcher:lcdd|Dispatcher:disp" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/LCDDispatcher.vhd Line: 32
-Info (12128): Elaborating entity "UsbPort" for hierarchy "UsbPort:usb" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 160
-Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
-Info (12130): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
-Info (12133): Instantiated megafunction "UsbPort:usb|sld_virtual_jtag:b2v_inst" with the following parameter: File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/UsbPort.vhd Line: 80
+Info (12128): Elaborating entity "FFD" for hierarchy "FFD:ffperson" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 97
+Info (12128): Elaborating entity "SDC" for hierarchy "SDC:serialDoorC" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 129
+Info (12128): Elaborating entity "SerialReceiver" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SDC/SDC.vhd Line: 31
+Info (12128): Elaborating entity "Counter" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd Line: 37
+Info (12128): Elaborating entity "adder" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd Line: 44
+Info (12128): Elaborating entity "full_add" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|adder:ad|full_add:fa1" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/adder/adder.vhd Line: 22
+Info (12128): Elaborating entity "MUX2x1" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|MUX2x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd Line: 50
+Info (12128): Elaborating entity "Registry" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Registry:reg" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd Line: 56
+Info (12128): Elaborating entity "Terminal_Count" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|Counter:c|Terminal_Count:utc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Counter/Counter.vhd Line: 65
+Info (12128): Elaborating entity "SerialControl" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd Line: 47
+Info (12128): Elaborating entity "ShiftRegister" for hierarchy "SDC:serialDoorC|SerialReceiver:serialR|ShiftRegister:sr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd Line: 59
+Warning (12125): Using design file doorcontroller.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: DoorController-arc File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/doorcontroller.vhd Line: 12
+    Info (12023): Found entity 1: DoorController File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/doorcontroller.vhd Line: 4
+Info (12128): Elaborating entity "DoorController" for hierarchy "SDC:serialDoorC|DoorController:doorControl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SDC/SDC.vhd Line: 42
+Info (12128): Elaborating entity "KeyboardReader" for hierarchy "KeyboardReader:kr" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 142
+Info (12128): Elaborating entity "KeyDecode" for hierarchy "KeyboardReader:kr|KeyDecode:kd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd Line: 45
+Info (12128): Elaborating entity "CLKDIV" for hierarchy "KeyboardReader:kr|KeyDecode:kd|CLKDIV:clock" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyDecode/KeyDecode.vhd Line: 39
+Info (12128): Elaborating entity "KeyScan" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyDecode/KeyDecode.vhd Line: 44
+Info (12128): Elaborating entity "Decoder" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|Decoder:dec" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyScan/KeyScan.vhd Line: 50
+Info (12128): Elaborating entity "MUX4x1" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyScan:scan|MUX4x1:mux" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyScan/KeyScan.vhd Line: 55
+Info (12128): Elaborating entity "KeyControl" for hierarchy "KeyboardReader:kr|KeyDecode:kd|KeyControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyDecode/KeyDecode.vhd Line: 53
+Info (12128): Elaborating entity "RingBuffer" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd Line: 54
+Info (12128): Elaborating entity "RingBufferControl" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBuffer/RingBuffer.vhd Line: 43
+Info (12128): Elaborating entity "MemoryAddressControl" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|MemoryAddressControl:mac" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBuffer/RingBuffer.vhd Line: 57
+Info (12128): Elaborating entity "RAM" for hierarchy "KeyboardReader:kr|RingBuffer:rbuff|RAM:memory" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBuffer/RingBuffer.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at RAM.vhd(43): signal "ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RAM/RAM.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at RAM.vhd(46): signal "din" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RAM/RAM.vhd Line: 46
+Info (12128): Elaborating entity "OutputBuffer" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd Line: 64
+Info (12128): Elaborating entity "BufferControl" for hierarchy "KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/OutputBuffer/OutputBuffer.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at BufferControl.vhd(23): signal "CurrentState" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/BufferControl/BufferControl.vhd Line: 23
+Info (12128): Elaborating entity "SLCDC" for hierarchy "SLCDC:sl" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 151
+Info (12128): Elaborating entity "LCDDispatcher" for hierarchy "SLCDC:sl|LCDDispatcher:lcdd" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SLCDC/SLCDC.vhd Line: 42
+Info (12128): Elaborating entity "Dispatcher" for hierarchy "SLCDC:sl|LCDDispatcher:lcdd|Dispatcher:disp" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/LCDDispatcher/LCDDispatcher.vhd Line: 32
+Info (12128): Elaborating entity "UsbPort" for hierarchy "UsbPort:usb" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 160
+Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/UsbPort/UsbPort.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jtag:b2v_inst" File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/UsbPort/UsbPort.vhd Line: 80
+Info (12133): Instantiated megafunction "UsbPort:usb|sld_virtual_jtag:b2v_inst" with the following parameter: File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/UsbPort/UsbPort.vhd Line: 80
     Info (12134): Parameter "lpm_type" = "sld_virtual_jtag"
     Info (12134): Parameter "sld_auto_instance_index" = "YES"
     Info (12134): Parameter "sld_instance_index" = "0"
@@ -1324,7 +1352,7 @@ Info (12131): Elaborated megafunction instantiation "UsbPort:usb|sld_virtual_jta
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 415
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "UsbPort:usb|sld_virtual_jtag:b2v_inst|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.06.09.09:28:03 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.06.29.20:55:01 Progress: Loading sld4508bb82/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1347,46 +1375,46 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/db/ip/sld4508bb82/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Info (284007): State machine "|SCA|SLCDC:sl|LCDDispatcher:lcdd|Dispatcher:disp|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/Dispatcher.vhd Line: 13
-Info (284007): State machine "|SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd Line: 14
-Info (284007): State machine "|SCA|KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/BufferControl.vhd Line: 14
-Info (284007): State machine "|SCA|KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/RingBufferControl.vhd Line: 14
-Info (284007): State machine "|SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/KeyControl.vhd Line: 14
-Info (284007): State machine "|SCA|SDC:serialDoorC|DoorController:doorControl|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorController.vhd Line: 16
-Info (284007): State machine "|SCA|SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SerialControl.vhd Line: 14
+Info (284007): State machine "|SCA|SLCDC:sl|LCDDispatcher:lcdd|Dispatcher:disp|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/Dispatcher/Dispatcher.vhd Line: 13
+Info (284007): State machine "|SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialControl/SerialControl.vhd Line: 14
+Info (284007): State machine "|SCA|KeyboardReader:kr|OutputBuffer:obuff|BufferControl:control|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/BufferControl/BufferControl.vhd Line: 14
+Info (284007): State machine "|SCA|KeyboardReader:kr|RingBuffer:rbuff|RingBufferControl:control|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/RingBufferControl/RingBufferControl.vhd Line: 14
+Info (284007): State machine "|SCA|KeyboardReader:kr|KeyDecode:kd|KeyControl:control|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/KeyControl/KeyControl.vhd Line: 14
+Info (284007): State machine "|SCA|SDC:serialDoorC|DoorController:doorControl|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/doorcontroller.vhd Line: 16
+Info (284007): State machine "|SCA|SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc|CurrentState" will be implemented as a safe state machine. File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SerialControl/SerialControl.vhd Line: 14
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/DoorMechanism/register_D_E_R_value.vhd Line: 40
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
-    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Testes/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/ammit/Desktop/ISEL/2223/LEIC/s2/LIC/LIC/Projeto/Entrega Final/SCA/SCA.vhd Line: 11
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 532 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 531 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 67 output pins
-    Info (21061): Implemented 453 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Fri Jun 09 09:28:23 2023
-    Info: Elapsed time: 00:00:40
+    Info (21061): Implemented 452 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Thu Jun 29 20:55:15 2023
+    Info: Elapsed time: 00:00:34
     Info: Total CPU time (on all processors): 00:01:08
 
 

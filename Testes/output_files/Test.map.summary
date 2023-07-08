@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Jun 09 09:28:23 2023
+Analysis & Synthesis Status : Successful - Thu Jun 29 20:55:15 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Test
 Top-level Entity Name : SCA
 Family : MAX 10
-Total logic elements : 449
-    Total combinational functions : 417
+Total logic elements : 448
+    Total combinational functions : 416
     Dedicated logic registers : 219
 Total registers : 219
 Total pins : 74

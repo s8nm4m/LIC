@@ -124,6 +124,11 @@ set_location_assignment PIN_L19 -to HEX5[7]
 set_location_assignment PIN_E14 -to Sopen
 set_location_assignment PIN_D14 -to Sclose
 set_location_assignment PIN_A11 -to Psensor
+set_global_assignment -name STATE_MACHINE_PROCESSING GRAY
+set_global_assignment -name SAFE_STATE_MACHINE ON
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE DoorMechanism/ShiftRegister_lr.vhd
 set_global_assignment -name VHDL_FILE DoorMechanism/register_D_E_R_value.vhd
 set_global_assignment -name VHDL_FILE DoorMechanism/full_adder.vhd
@@ -131,39 +136,34 @@ set_global_assignment -name VHDL_FILE DoorMechanism/door_mecanism.vhd
 set_global_assignment -name VHDL_FILE DoorMechanism/door_emulation_seg.vhd
 set_global_assignment -name VHDL_FILE DoorMechanism/counter_pl.vhd
 set_global_assignment -name VHDL_FILE DoorMechanism/adder_rc.vhd
-set_global_assignment -name VHDL_FILE UsbPort.vhd
-set_global_assignment -name VHDL_FILE Terminal_Count.vhd
-set_global_assignment -name VHDL_FILE SLCDC.vhd
-set_global_assignment -name VHDL_FILE ShiftRegister.vhd
-set_global_assignment -name VHDL_FILE SerialReceiver.vhd
-set_global_assignment -name VHDL_FILE SerialControl.vhd
-set_global_assignment -name VHDL_FILE SDC.vhd
-set_global_assignment -name VHDL_FILE SCA.vhd
-set_global_assignment -name VHDL_FILE RingBufferControl.vhd
-set_global_assignment -name VHDL_FILE RingBuffer.vhd
-set_global_assignment -name VHDL_FILE Registry.vhd
-set_global_assignment -name VHDL_FILE RAM.vhd
-set_global_assignment -name VHDL_FILE OutputBuffer.vhd
-set_global_assignment -name VHDL_FILE MUX4x1.vhd
-set_global_assignment -name VHDL_FILE MUX2x1.vhd
-set_global_assignment -name VHDL_FILE MemoryAddressControl.vhd
-set_global_assignment -name VHDL_FILE LCDDispatcher.vhd
-set_global_assignment -name VHDL_FILE KeyScan.vhd
-set_global_assignment -name VHDL_FILE KeyDecode.vhd
-set_global_assignment -name VHDL_FILE KeyControl.vhd
-set_global_assignment -name VHDL_FILE KeyboardReader.vhd
-set_global_assignment -name VHDL_FILE full_add.vhd
-set_global_assignment -name VHDL_FILE FFD.vhd
-set_global_assignment -name VHDL_FILE DoorController.vhd
-set_global_assignment -name VHDL_FILE Dispatcher.vhd
-set_global_assignment -name VHDL_FILE Decoder.vhd
-set_global_assignment -name VHDL_FILE Counter.vhd
-set_global_assignment -name VHDL_FILE clkDIV.vhd
-set_global_assignment -name VHDL_FILE BufferControl.vhd
-set_global_assignment -name VHDL_FILE adder.vhd
-set_global_assignment -name STATE_MACHINE_PROCESSING GRAY
-set_global_assignment -name SAFE_STATE_MACHINE ON
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/UsbPort/UsbPort.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/SLCDC/SLCDC.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/ShiftRegister/ShiftRegister.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/SerialReceiver/SerialReceiver.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/SerialControl/SerialControl.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/SDC/SDC.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/SCA/SCA.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/RingBufferControl/RingBufferControl.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/RingBuffer/RingBuffer.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/Registry/Registry.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/RAM/RAM.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/OutputBuffer/OutputBuffer.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/MUX4x1/MUX4x1.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/MUX2x1/MUX2x1.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/MAC/MemoryAddressControl.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/LCDDispatcher/LCDDispatcher.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/KeyScan/KeyScan.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/KeyDecode/KeyDecode.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/KeyControl/KeyControl.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/KeyboardReader/KeyboardReader.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/full_adder/full_add.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/FFD/FFD.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/Dispatcher/Dispatcher.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/Decoder/Decoder.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/Counter/Counter.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/clkDIV/clkDIV.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/BufferControl/BufferControl.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/adder/adder.vhd"
+set_global_assignment -name VHDL_FILE "../Projeto/Entrega Final/Terminal_Count/Terminal_Count.vhd"
+set_global_assignment -name SOURCE_FILE db/Test.cmp.rdb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

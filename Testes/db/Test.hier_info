@@ -943,15 +943,15 @@ TC <= TC.DB_MAX_OUTPUT_PORT_TYPE
 
 |SCA|SDC:serialDoorC|SerialReceiver:serialR|SerialControl:sc
 Reset => CurrentState~3.DATAIN
-enRx => NextState.OUTPUTSELECT
-enRx => NextState.OUTPUTSELECT
+enRx => GenerateNextState.IN0
+enRx => GenerateNextState.IN0
 enRx => Selector0.IN3
 enRx => Selector1.IN1
 accept => NextState.STILL_BUSY.DATAA
 accept => Selector0.IN2
 accept => Selector2.IN2
-eq5 => NextState.DATAB
-eq5 => NextState.DATAB
+eq5 => GenerateNextState.IN1
+eq5 => GenerateNextState.IN1
 CLK => CurrentState~1.DATAIN
 clr <= clr.DB_MAX_OUTPUT_PORT_TYPE
 wr <= wr.DB_MAX_OUTPUT_PORT_TYPE
@@ -2168,15 +2168,15 @@ TC <= TC.DB_MAX_OUTPUT_PORT_TYPE
 
 |SCA|SLCDC:sl|SerialReceiver:sr|SerialControl:sc
 Reset => CurrentState~3.DATAIN
-enRx => NextState.OUTPUTSELECT
-enRx => NextState.OUTPUTSELECT
+enRx => GenerateNextState.IN0
+enRx => GenerateNextState.IN0
 enRx => Selector0.IN3
 enRx => Selector1.IN1
 accept => NextState.STILL_BUSY.DATAA
 accept => Selector0.IN2
 accept => Selector2.IN2
-eq5 => NextState.DATAB
-eq5 => NextState.DATAB
+eq5 => GenerateNextState.IN1
+eq5 => GenerateNextState.IN1
 CLK => CurrentState~1.DATAIN
 clr <= clr.DB_MAX_OUTPUT_PORT_TYPE
 wr <= wr.DB_MAX_OUTPUT_PORT_TYPE
